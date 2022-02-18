@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    // Recognize Jest global variables like `test` and `expect`
     'jest/globals': true,
   },
   extends: ['eslint:recommended', 'airbnb', 'plugin:react/recommended', 'prettier'],
