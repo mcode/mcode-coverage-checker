@@ -84,7 +84,7 @@
 
    ... Then add those configs to our `.eslintrc.*` file so we use them when linting, ensuring they're the highest priority
 
-   ```json
+   ```js
    module.exports = {
    	// ...
      extends: ['eslint:recommended', 'airbnb', 'airbnb/hooks', 'plugin:react/recommended', 'prettier'],
@@ -116,7 +116,20 @@
      //...
    ```
 
-7. Set up [husky](https://typicode.github.io/husky/#/?id=automatic-recommended) with the npx init command
+7. Set up some default prettier rules by creating the following `.prettierrc` file in your projects root directory
+
+   ```json
+   {
+       "endOfLine": "auto",
+       "printWidth": 120,
+       "tabWidth": 2,
+       "singleQuote": true,
+       "semi": true,
+       "trailingComma": "all"
+   }
+   ```
+
+8. Set up [husky](https://typicode.github.io/husky/#/?id=automatic-recommended) with the npx init command
 
    ```shell
    npx husky-init && npm install
@@ -131,22 +144,22 @@
    npx lint-staged
    ```
 
-8. [Set up tailwindcss](https://tailwindcss.com/docs/guides/create-react-app) in your project and [set up your editor](https://tailwindcss.com/docs/editor-setup) to work with tailwind by installing PostCSS Language Support and Tailwind CSS IntelliSense extensions
+9. [Set up tailwindcss](https://tailwindcss.com/docs/guides/create-react-app) in your project and [set up your editor](https://tailwindcss.com/docs/editor-setup) to work with tailwind by installing PostCSS Language Support and Tailwind CSS IntelliSense extensions
 
-9. Set up some common editor level settings by adding this `settings.json` file to a `.vscode` directory in your project's root directory to support auto formatting/suggestions for tailwind and formatting your code with prettier onSave.
+10. Set up some common editor level settings by adding this `settings.json` file to a `.vscode` directory in your project's root directory to support auto formatting/suggestions for tailwind and formatting your code with prettier onSave.
 
-   ```json
-   {
-     "editor.defaultFormatter": "esbenp.prettier-vscode",
-     "editor.formatOnSave": true,
-     "editor.quickSuggestions": {
-       "strings": true
-     },
-     "css.validate": false
-   }
-   ```
+    ```json
+    {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true,
+      "editor.quickSuggestions": {
+        "strings": true
+      },
+      "css.validate": false
+    }
+    ```
 
-10. Set up editor level debugging by adding this `launch.json` file to your `.vscode` directory
+11. Set up editor level debugging by adding this `launch.json` file to your `.vscode` directory
 
     ```json
     {
@@ -166,9 +179,9 @@
     }
     ```
 
-11. Create a `.github` directory in your project's root directory
+12. Create a `.github` directory in your project's root directory
 
-12. Create a `.github/workflows` directory and a `.github/workflows/deploy-workflow.yaml` file for automatically deploying your built application to GH Pages, using the `yaml` below as an example
+13. Create a `.github/workflows` directory and a `.github/workflows/deploy-workflow.yaml` file for automatically deploying your built application to GH Pages, using the `yaml` below as an example
 
     ```yaml
     name: Deploy to GH Pages
@@ -209,7 +222,7 @@
     }
     ```
 
-13. Create a `.github/PULL_REQUEST_TEMPLATE.md` file containing all the things contributers to the codebase should consider. A thorough but onerous example is provided below.
+14. Create a `.github/PULL_REQUEST_TEMPLATE.md` file containing all the things contributers to the codebase should consider. A thorough but onerous example is provided below.
 
     ```markdown
     Pull requests into this project require the following. Submitter and reviewer should :white_check_mark: when done. For items that are not-applicable, note it's not-applicable ("N/A") and :white_check_mark:.
