@@ -11,7 +11,7 @@
 
    ```sh
    npm install --save-dev eslint
-   npx eslint init
+   npx eslint --init
    ```
 
    ... Then add a few lines to `package.json`  to run our linter as an `npm` script.
