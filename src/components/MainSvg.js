@@ -23,6 +23,47 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '380px',
+                    marginLeft: '934px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <font style={{ fontSize: '11px' }}>
+                        <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Modality</span>
+                      </font>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="993" y="383" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Modality
               </text>
@@ -92,6 +133,60 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '95px',
+                    height: '1px',
+                    paddingTop: '636px',
+                    marginLeft: '435px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '13px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93px', height: 'auto', wordBreak: 'break-word', fontSize: '13px' }}>
+                        <div style={{ fontSize: '13px' }} align="center">
+                          <span
+                            style={{
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              fontWeight: 'bold',
+                              lineHeight: '14px',
+                              color: 'rgb(0 , 0 , 0)',
+                              fontSize: '13px',
+                            }}
+                          >
+                            <font style={{ fontSize: '13px' }}>Genomic Region Studied</font>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="483" y="640" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="13px" textAnchor="middle">
                 Genomic Region...
               </text>
@@ -121,6 +216,74 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '94px',
+                    height: '1px',
+                    paddingTop: '476px',
+                    marginLeft: '281px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '13px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              fontWeight: 'bold',
+                              lineHeight: '15.5px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Genomics
+                          </span>
+                        </div>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '13px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              fontWeight: 'bold',
+                              lineHeight: '15.5px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Report
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="328" y="480" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Genomics...
               </text>
@@ -205,6 +368,74 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '97px',
+                    height: '1px',
+                    paddingTop: '559px',
+                    marginLeft: '136px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '13px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              fontWeight: 'bold',
+                              lineHeight: '15.5px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Genomic
+                          </span>
+                        </div>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '13px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              fontWeight: 'bold',
+                              lineHeight: '15.5px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Variant
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="185" y="563" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Genomic...
               </text>
@@ -224,6 +455,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '130px',
+                    height: '1px',
+                    paddingTop: '738px',
+                    marginLeft: '33px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Amino Acid Change
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="98" y="742" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Amino Acid Change
               </text>
@@ -243,6 +527,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '130px',
+                    height: '1px',
+                    paddingTop: '792px',
+                    marginLeft: '33px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Molecular Consequence
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="98" y="796" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Molecular Consequence
               </text>
@@ -262,6 +599,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '133px',
+                    height: '1px',
+                    paddingTop: '792px',
+                    marginLeft: '206px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '121.8px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Cytogenic Location
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="272" y="796" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Cytogenic Location
               </text>
@@ -281,6 +671,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '133px',
+                    height: '1px',
+                    paddingTop: '820px',
+                    marginLeft: '206px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Cytogen. Nomenclature
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="273" y="824" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Cytogen. Nomenclature
               </text>
@@ -317,6 +760,74 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '96px',
+                    height: '1px',
+                    paddingTop: '476px',
+                    marginLeft: '137px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '13px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93px', height: 'auto', wordBreak: 'break-word', fontSize: '13px' }}>
+                        <div style={{ fontSize: '13px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '13px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              fontWeight: 'bold',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Genomic
+                          </span>
+                        </div>
+                        <div style={{ fontSize: '13px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '13px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              fontWeight: 'bold',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Specimen
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="185" y="480" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="13px" textAnchor="middle">
                 Genomic...
               </text>
@@ -333,6 +844,45 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '89px',
+                    height: '1px',
+                    paddingTop: '490px',
+                    marginLeft: '23px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      Specimen Type
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="68" y="493" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Specimen...
               </text>
@@ -371,6 +921,58 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '126px',
+                    height: '1px',
+                    paddingTop: '185px',
+                    marginLeft: '210px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '13px',
+                              fontWeight: 'bold',
+                              whiteSpace: 'pre-wrap',
+                            }}
+                          >
+                            Stage Group
+                          </span>
+                          <br />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="273" y="188" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Stage Group
               </text>
@@ -400,6 +1002,74 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '125px',
+                    height: '1px',
+                    paddingTop: '254px',
+                    marginLeft: '211px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '13px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              fontWeight: 'bold',
+                              lineHeight: '15.5px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Primary
+                          </span>
+                        </div>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '13px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              fontWeight: 'bold',
+                              lineHeight: '15.5px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Cancer Condition
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="273" y="257" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Primary...
               </text>
@@ -433,6 +1103,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '227px',
+                    marginLeft: '53px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Asserted Date
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="112" y="230" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Asserted Date
               </text>
@@ -449,6 +1172,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '253px',
+                    marginLeft: '53px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '160.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '10px',
+                              color: 'rgb(0 , 0 , 0)',
+                              fontSize: '11px',
+                            }}
+                          >
+                            <font style={{ fontSize: '11px' }}>Histology/Morphology</font>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="112" y="256" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Histology/Morphology
               </text>
@@ -476,6 +1252,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '116px',
+                    height: '1px',
+                    paddingTop: '279px',
+                    marginLeft: '55px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Body site
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="113" y="282" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Body site
               </text>
@@ -500,6 +1329,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '116px',
+                    height: '1px',
+                    paddingTop: '171px',
+                    marginLeft: '55px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Staging System
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="113" y="174" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Staging System
               </text>
@@ -509,6 +1391,46 @@ function MainSvg() {
         <rect x="9" y="23.75" width="264" height="20" rx="3" ry="3" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '262px',
+                  height: '1px',
+                  paddingTop: '34px',
+                  marginLeft: '10px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: #4D4D4D; "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '34px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(77, 77, 77)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontWeight: 'bold',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    <font style={{ fontSize: '34px' }}>mCODE STU 2</font>
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="141"
               y="44"
@@ -537,6 +1459,53 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '100px',
+                    height: '1px',
+                    paddingTop: '34px',
+                    marginLeft: '446px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font size="1">
+                            <span style={{ whiteSpace: 'pre-wrap' }}>
+                              <b style={{ fontSize: '16px' }}>Disease</b>
+                            </span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="496" y="37" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Disease
               </text>
@@ -558,6 +1527,53 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '99px',
+                    height: '1px',
+                    paddingTop: '111px',
+                    marginLeft: '446px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '16px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93px', height: 'auto', wordBreak: 'break-word', fontSize: '16px' }}>
+                        <div style={{ fontSize: '16px' }} align="center">
+                          <font style={{ fontSize: '16px' }}>
+                            <span style={{ fontSize: '16px', whiteSpace: 'pre-wrap' }}>
+                              <b style={{ fontSize: '16px' }}>Genomics</b>
+                            </span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="496" y="116" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="16px" textAnchor="middle">
                 Genomics
               </text>
@@ -579,6 +1595,53 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '106px',
+                    height: '1px',
+                    paddingTop: '72px',
+                    marginLeft: '552px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font size="1">
+                            <span style={{ whiteSpace: 'pre-wrap' }}>
+                              <b style={{ fontSize: '16px' }}>Patient</b>
+                            </span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="605" y="76" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Patient
               </text>
@@ -600,6 +1663,53 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '106px',
+                    height: '1px',
+                    paddingTop: '33px',
+                    marginLeft: '552px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font size="1">
+                            <span style={{ whiteSpace: 'pre-wrap' }}>
+                              <b style={{ fontSize: '16px' }}>Treatment</b>
+                            </span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="605" y="37" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Treatment
               </text>
@@ -618,6 +1728,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '116px',
+                    height: '1px',
+                    paddingTop: '20px',
+                    marginLeft: '904px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Medication
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="962" y="23" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Medication
               </text>
@@ -646,6 +1809,53 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '126px',
+                    height: '1px',
+                    paddingTop: '60px',
+                    marginLeft: '733px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #333333; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '13px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(51, 51, 51)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word', fontSize: '13px' }}>
+                        <div style={{ fontSize: '13px' }} align="center">
+                          <font style={{ fontSize: '13px' }}>
+                            <span style={{ whiteSpace: 'pre-wrap', fontSize: '13px' }}>
+                              <b style={{ fontSize: '13px' }}>Cancer-Related Medication Request</b>
+                            </span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="796" y="64" fill="#333333" fontFamily="Helvetica" fontSize="13px" textAnchor="middle">
                 Cancer-Related Medic...
               </text>
@@ -667,6 +1877,53 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '99px',
+                    height: '1px',
+                    paddingTop: '72px',
+                    marginLeft: '446px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font size="1">
+                            <span style={{ whiteSpace: 'pre-wrap' }}>
+                              <b style={{ fontSize: '16px' }}>Outcome</b>
+                            </span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="496" y="76" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Outcome
               </text>
@@ -688,6 +1945,53 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '106px',
+                    height: '1px',
+                    paddingTop: '111px',
+                    marginLeft: '552px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ fontSize: '16px', whiteSpace: 'pre-wrap' }}>
+                              <b>Assessment</b>
+                            </span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="605" y="115" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Assessment
               </text>
@@ -708,6 +2012,52 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '96px',
+                    height: '1px',
+                    paddingTop: '155px',
+                    marginLeft: '448px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        fontWeight: 'bold',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93px', height: 'auto', wordBreak: 'break-word', fontSize: '12px' }}>
+                        <div style={{ fontSize: '12px' }} align="center">
+                          <font style={{ fontSize: '12px' }}>
+                            <span style={{ fontSize: '12px', whiteSpace: 'pre-wrap' }}>Profile</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text
                 x="496"
                 y="159"
@@ -813,6 +2163,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '111px',
+                    height: '1px',
+                    paddingTop: '466px',
+                    marginLeft: '751px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Birth Date</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="807" y="469" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Birth Date
               </text>
@@ -829,6 +2224,45 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '111px',
+                    height: '1px',
+                    paddingTop: '493px',
+                    marginLeft: '751px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      Gender
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="807" y="496" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Gender
               </text>
@@ -866,6 +2300,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '133px',
+                    height: '1px',
+                    paddingTop: '655px',
+                    marginLeft: '206px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Gene Studied
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="273" y="659" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Gene Studied
               </text>
@@ -885,6 +2372,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '130px',
+                    height: '1px',
+                    paddingTop: '655px',
+                    marginLeft: '33px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Variation
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="98" y="658" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Variation
               </text>
@@ -904,6 +2444,60 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '130px',
+                    height: '1px',
+                    paddingTop: '682px',
+                    marginLeft: '33px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                              fontWeight: 'normal',
+                            }}
+                          >
+                            DNA Change
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="98" y="686" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 DNA Change
               </text>
@@ -923,6 +2517,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '133px',
+                    height: '1px',
+                    paddingTop: '682px',
+                    marginLeft: '206px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Genomic Source Class
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="273" y="686" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Genomic Source Class
               </text>
@@ -944,6 +2591,53 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '69px',
+                    height: '1px',
+                    paddingTop: '825px',
+                    marginLeft: '1011px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font size="1">
+                            <span style={{ whiteSpace: 'pre-wrap' }}>
+                              <b style={{ fontSize: '13px' }}>CBC</b>
+                            </span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="1046" y="829" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 CBC
               </text>
@@ -969,6 +2663,53 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '69px',
+                    height: '1px',
+                    paddingTop: '825px',
+                    marginLeft: '935px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font size="1">
+                            <span style={{ whiteSpace: 'pre-wrap' }}>
+                              <b style={{ fontSize: '13px' }}>CMP</b>
+                            </span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="970" y="829" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 CMP
               </text>
@@ -989,6 +2730,45 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '98px',
+                    height: '1px',
+                    paddingTop: '751px',
+                    marginLeft: '699px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <b>ECOG Performance Status</b>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="748" y="754" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 ECOG Performance...
               </text>
@@ -1010,6 +2790,53 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '69px',
+                    height: '1px',
+                    paddingTop: '825px',
+                    marginLeft: '858px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font size="1">
+                            <span style={{ whiteSpace: 'pre-wrap' }}>
+                              <b style={{ fontSize: '13px' }}>Weight</b>
+                            </span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="893" y="829" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Weight
               </text>
@@ -1031,6 +2858,46 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '106px',
+                    height: '1px',
+                    paddingTop: '825px',
+                    marginLeft: '668px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        fontWeight: 'bold',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      Blood Pressure
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text
                 x="721"
                 y="829"
@@ -1060,6 +2927,53 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '69px',
+                    height: '1px',
+                    paddingTop: '825px',
+                    marginLeft: '782px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font style={{ fontSize: '14px' }}>
+                            <span style={{ whiteSpace: 'pre-wrap' }}>
+                              <b>Height</b>
+                            </span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="817" y="829" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Height
               </text>
@@ -1076,6 +2990,46 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '76px',
+                    height: '1px',
+                    paddingTop: '516px',
+                    marginLeft: '442px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        fontWeight: 'bold',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <span style={{ fontWeight: 'normal', fontSize: '11px' }}>Death Date</span>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text
                 x="480"
                 y="519"
@@ -1100,6 +3054,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '111px',
+                    height: '1px',
+                    paddingTop: '519px',
+                    marginLeft: '751px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Zip Code</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="807" y="522" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Zip Code
               </text>
@@ -1120,6 +3119,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '546px',
+                    marginLeft: '749px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>US Core Race</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="808" y="549" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 US Core Race
               </text>
@@ -1140,6 +3184,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '573px',
+                    marginLeft: '749px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>US Core Ethnicity</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="808" y="576" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 US Core Ethnicity
               </text>
@@ -1176,6 +3265,50 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '126px',
+                    height: '1px',
+                    paddingTop: '239px',
+                    marginLeft: '733px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <b style={{ whiteSpace: 'pre-wrap', fontSize: '13px' }}>Cancer-Related Surgical Procedure</b>
+                          <br />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="796" y="242" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Cancer-Related Surgic...
               </text>
@@ -1195,6 +3328,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '116px',
+                    height: '1px',
+                    paddingTop: '225px',
+                    marginLeft: '904px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Procedure Code
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="962" y="228" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Procedure Code
               </text>
@@ -1214,6 +3400,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '116px',
+                    height: '1px',
+                    paddingTop: '250px',
+                    marginLeft: '904px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Body Site
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="962" y="253" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Body Site
               </text>
@@ -1223,6 +3462,46 @@ function MainSvg() {
         <rect x="812.5" y="789" width="130" height="20" rx="3" ry="3" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '128px',
+                  height: '1px',
+                  paddingTop: '799px',
+                  marginLeft: '814px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: #666666; "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '13px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(102, 102, 102)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontWeight: 'bold',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    <font style={{ fontSize: '14px' }}>External Profiles</font>
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="878"
               y="803"
@@ -1249,6 +3528,45 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '89px',
+                    height: '1px',
+                    paddingTop: '462px',
+                    marginLeft: '23px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      Collection Site
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="68" y="465" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Collection Site
               </text>
@@ -1268,6 +3586,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '109px',
+                    height: '1px',
+                    paddingTop: '739px',
+                    marginLeft: '352px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Gene Mutations
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="406" y="743" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Gene Mutations
               </text>
@@ -1287,6 +3658,60 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '109px',
+                    height: '1px',
+                    paddingTop: '766px',
+                    marginLeft: '352px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                              fontWeight: 'normal',
+                            }}
+                          >
+                            Gene Studied
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="406" y="770" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Gene Studied
               </text>
@@ -1306,6 +3731,60 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '109px',
+                    height: '1px',
+                    paddingTop: '793px',
+                    marginLeft: '352px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                              fontWeight: 'normal',
+                            }}
+                          >
+                            Coordinate System
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="406" y="797" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Coordinate System
               </text>
@@ -1325,6 +3804,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '140px',
+                    height: '1px',
+                    paddingTop: '739px',
+                    marginLeft: '505px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            DNA Ranges Examined
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="575" y="743" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 DNA Ranges Examined
               </text>
@@ -1344,6 +3876,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '140px',
+                    height: '1px',
+                    paddingTop: '766px',
+                    marginLeft: '505px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            DNA Region Description
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="575" y="770" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 DNA Region Description
               </text>
@@ -1363,6 +3948,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '140px',
+                    height: '1px',
+                    paddingTop: '793px',
+                    marginLeft: '505px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Reference Sequence ID
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="575" y="797" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Reference Sequence ID
               </text>
@@ -1382,6 +4020,46 @@ function MainSvg() {
         />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe flex-start',
+                  width: '130px',
+                  height: '1px',
+                  paddingTop: '41px',
+                  marginLeft: '287px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'left' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '8px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    This illustration is not a formal part of the mCODE specification. For brevity and clarity, names
+                    and structural relationships shown here may deviate from the specification.
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text x="287" y="43" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="8px">
               This illustration is not a forma...
             </text>
@@ -1401,6 +4079,56 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '95px',
+                    height: '1px',
+                    paddingTop: '111px',
+                    marginLeft: '225px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '10px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141px', height: 'auto', wordBreak: 'break-word', fontSize: '10px' }}>
+                        <div style={{ fontSize: '10px' }} align="center">
+                          <font style={{ fontSize: '10px' }}>
+                            <span style={{ fontSize: '10px', whiteSpace: 'pre-wrap' }}>
+                              <b style={{ fontSize: '10px' }}>Distant Metastases </b>
+                            </span>
+                          </font>
+                        </div>
+                        <div style={{ fontSize: '10px' }} align="center">
+                          <b style={{ whiteSpace: 'pre-wrap', fontSize: '10px' }}>(M) Category</b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="273" y="114" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="10px" textAnchor="middle">
                 Distant Metastases...
               </text>
@@ -1421,6 +4149,61 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '95px',
+                    height: '1px',
+                    paddingTop: '111px',
+                    marginLeft: '121px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '10px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141px', height: 'auto', wordBreak: 'break-word', fontSize: '10px' }}>
+                        <div style={{ fontSize: '10px' }} align="center">
+                          <font style={{ fontSize: '10px' }}>
+                            <span style={{ fontSize: '10px', whiteSpace: 'pre-wrap' }}>
+                              <b style={{ fontSize: '10px' }}>Primary Tumor</b>
+                            </span>
+                          </font>
+                        </div>
+                        <div style={{ fontSize: '10px' }} align="center">
+                          <font style={{ fontSize: '10px' }}>
+                            <span style={{ fontSize: '10px', whiteSpace: 'pre-wrap' }}>
+                              <b style={{ fontSize: '10px' }}>(T) </b>
+                            </span>
+                          </font>
+                          <b style={{ whiteSpace: 'pre-wrap', fontSize: '10px' }}>Category</b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="169" y="114" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="10px" textAnchor="middle">
                 Primary Tumor...
               </text>
@@ -1441,6 +4224,61 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '95px',
+                    height: '1px',
+                    paddingTop: '111px',
+                    marginLeft: '330px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '10px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141px', height: 'auto', wordBreak: 'break-word', fontSize: '10px' }}>
+                        <div style={{ fontSize: '10px' }} align="center">
+                          <font style={{ fontSize: '10px' }}>
+                            <span style={{ fontSize: '10px', whiteSpace: 'pre-wrap' }}>
+                              <b style={{ fontSize: '10px' }}>Regional Nodes </b>
+                            </span>
+                          </font>
+                        </div>
+                        <div style={{ fontSize: '10px' }} align="center">
+                          <font style={{ fontSize: '10px' }}>
+                            <span style={{ fontSize: '10px', whiteSpace: 'pre-wrap' }}>
+                              <b style={{ fontSize: '10px' }}>(N) </b>
+                            </span>
+                          </font>
+                          <b style={{ whiteSpace: 'pre-wrap', fontSize: '10px' }}>Category</b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="377" y="114" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="10px" textAnchor="middle">
                 Regional Nodes...
               </text>
@@ -1461,6 +4299,54 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '126px',
+                    height: '1px',
+                    paddingTop: '414px',
+                    marginLeft: '210px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word', fontSize: '13px' }}>
+                        <div align="center">
+                          <font style={{ fontSize: '13px' }}>
+                            <span style={{ whiteSpace: 'pre-wrap' }}>
+                              <b>Tumor </b>
+                            </span>
+                          </font>
+                          <b style={{ whiteSpace: 'pre-wrap' }}>Marker Test</b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="273" y="418" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Tumor Marker Test
               </text>
@@ -1477,6 +4363,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '116px',
+                    height: '1px',
+                    paddingTop: '362px',
+                    marginLeft: '55px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <font style={{ fontSize: '11px' }}>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Test Type</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="113" y="365" fill="#000000" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Test Type
               </text>
@@ -1492,6 +4423,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '114px',
+                    height: '1px',
+                    paddingTop: '755px',
+                    marginLeft: '968px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <font style={{ fontSize: '11px' }}>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Condition Code</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="1025" y="758" fill="#000000" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Condition Code
               </text>
@@ -1520,6 +4496,49 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '96px',
+                    height: '1px',
+                    paddingTop: '688px',
+                    marginLeft: '701px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word', fontSize: '13px' }}>
+                        <div align="center">
+                          <b>Comorbidities (Elixhauser)</b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="749" y="691" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Comorbidities (E...
               </text>
@@ -1581,6 +4600,49 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '103px',
+                    height: '1px',
+                    paddingTop: '450px',
+                    marginLeft: '569px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '160.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span style={{ whiteSpace: 'pre-wrap' }}>Location</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="620" y="453" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Location
               </text>
@@ -1601,6 +4663,46 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '106px',
+                    height: '1px',
+                    paddingTop: '415px',
+                    marginLeft: '566px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        fontWeight: 'bold',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <span style={{ fontSize: '11px' }}>Body Structure Identifier</span>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text
                 x="619"
                 y="418"
@@ -1666,6 +4768,47 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '106px',
+                    height: '1px',
+                    paddingTop: '374px',
+                    marginLeft: '507px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <span style={{ fontSize: '12px' }}>
+                        <b style={{ fontSize: '12px' }}>Tumor Specimen</b>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="560" y="378" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Tumor Specimen
               </text>
@@ -1685,6 +4828,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '104px',
+                    height: '1px',
+                    paddingTop: '313px',
+                    marginLeft: '568px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '160.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '10px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Longest Dimension
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="620" y="316" fill="#000000" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Longest Dimension
               </text>
@@ -1705,6 +4901,53 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '126px',
+                    height: '1px',
+                    paddingTop: '159px',
+                    marginLeft: '733px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #333333; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '13px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(51, 51, 51)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word', fontSize: '13px' }}>
+                        <div style={{ fontSize: '13px' }} align="center">
+                          <font style={{ fontSize: '13px' }}>
+                            <span style={{ whiteSpace: 'pre-wrap', fontSize: '13px' }}>
+                              <b style={{ fontSize: '13px' }}>Cancer-Related Medication Administration</b>
+                            </span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="796" y="162" fill="#333333" fontFamily="Helvetica" fontSize="13px" textAnchor="middle">
                 Cancer-Related Medic...
               </text>
@@ -1738,6 +4981,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '70px',
+                    marginLeft: '902px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Procedure Intent
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="961" y="73" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Procedure Intent
               </text>
@@ -1756,6 +5052,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '116px',
+                    height: '1px',
+                    paddingTop: '123px',
+                    marginLeft: '904px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Medication
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="962" y="126" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Medication
               </text>
@@ -1774,6 +5123,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '116px',
+                    height: '1px',
+                    paddingTop: '148px',
+                    marginLeft: '904px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <font style={{ fontSize: '11px' }}>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Reason</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="962" y="151" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Reason
               </text>
@@ -1826,6 +5220,53 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '126px',
+                    height: '1px',
+                    paddingTop: '355px',
+                    marginLeft: '733px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font size="1">
+                            <span style={{ whiteSpace: 'pre-wrap' }}>
+                              <b style={{ fontSize: '13px' }}>Radiotherapy Course Summary</b>
+                            </span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="796" y="358" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Radiotherapy Course S...
               </text>
@@ -1841,6 +5282,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '123px',
+                    height: '1px',
+                    paddingTop: '328px',
+                    marginLeft: '899px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <font style={{ fontSize: '11px' }}>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>No. Sessions</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="961" y="331" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 No. Sessions
               </text>
@@ -1857,6 +5343,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '123px',
+                    height: '1px',
+                    paddingTop: '354px',
+                    marginLeft: '899px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Modality/Technique
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="961" y="357" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Modality/Technique
               </text>
@@ -1881,6 +5420,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '198px',
+                    marginLeft: '902px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Termination Reason
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="961" y="201" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Termination Reason
               </text>
@@ -1904,6 +5496,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '433px',
+                    marginLeft: '902px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Doses Delivered
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="961" y="436" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Doses Delivered
               </text>
@@ -1946,6 +5591,49 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '116px',
+                    height: '1px',
+                    paddingTop: '45px',
+                    marginLeft: '904px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span style={{ whiteSpace: 'pre-wrap' }}>Reason</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="962" y="48" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Reason
               </text>
@@ -1973,6 +5661,45 @@ function MainSvg() {
         />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '114px',
+                  height: '1px',
+                  paddingTop: '825px',
+                  marginLeft: '434px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '9px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    mCODE IG version 2.0.0 11/12/2021
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text x="491" y="827" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="9px" textAnchor="middle">
               mCODE IG version 2.0.0 1...
             </text>
@@ -1991,6 +5718,60 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '130px',
+                    height: '1px',
+                    paddingTop: '710px',
+                    marginLeft: '33px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                              fontWeight: 'normal',
+                            }}
+                          >
+                            DNA Change Type
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="98" y="714" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 DNA Change Type
               </text>
@@ -2019,6 +5800,48 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '98px',
+                    height: '1px',
+                    paddingTop: '557px',
+                    marginLeft: '914px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        fontWeight: 'bold',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <font size="1">
+                        <span style={{ whiteSpace: 'pre-wrap', fontSize: '12px' }}>Radiotherapy Volume</span>
+                      </font>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text
                 x="963"
                 y="560"
@@ -2046,6 +5869,47 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '460px',
+                    marginLeft: '934px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <font style={{ fontSize: '11px' }}>
+                        <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Total Dose</span>
+                      </font>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="993" y="464" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Total Dose
               </text>
@@ -2065,6 +5929,47 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '486px',
+                    marginLeft: '934px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <font style={{ fontSize: '11px' }}>
+                        <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>No. Fractions</span>
+                      </font>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="993" y="489" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 No. Fractions
               </text>
@@ -2117,6 +6022,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '130px',
+                    height: '1px',
+                    paddingTop: '820px',
+                    marginLeft: '33px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Clinical Significance
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="98" y="823" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Clinical Significance
               </text>
@@ -2144,6 +6102,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '133px',
+                    height: '1px',
+                    paddingTop: '710px',
+                    marginLeft: '206px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Copy Number
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="273" y="714" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Copy Number
               </text>
@@ -2163,6 +6174,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '133px',
+                    height: '1px',
+                    paddingTop: '738px',
+                    marginLeft: '206px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Allelic Frequency
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="273" y="742" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Allelic Frequency
               </text>
@@ -2198,6 +6262,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '130px',
+                    height: '1px',
+                    paddingTop: '765px',
+                    marginLeft: '33px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Amino Acid Change Type
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="98" y="769" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Amino Acid Change Type
               </text>
@@ -2217,6 +6334,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '133px',
+                    height: '1px',
+                    paddingTop: '765px',
+                    marginLeft: '206px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Allelic State
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="272" y="769" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Allelic State
               </text>
@@ -2252,6 +6422,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '76px',
+                    height: '1px',
+                    paddingTop: '673px',
+                    marginLeft: '825px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Risk Score</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="863" y="677" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Risk Score
               </text>
@@ -2271,6 +6486,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '104px',
+                    height: '1px',
+                    paddingTop: '338px',
+                    marginLeft: '568px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '160.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '10px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Other Dimension
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="620" y="341" fill="#000000" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Other Dimension
               </text>
@@ -2295,6 +6563,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '98px',
+                    height: '1px',
+                    paddingTop: '219px',
+                    marginLeft: '448px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '13px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font style={{ fontSize: '10px' }}>
+                            <span style={{ whiteSpace: 'pre-wrap' }}>Extension</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="497" y="223" fill="#000000" fontFamily="Helvetica" fontSize="13px" textAnchor="middle">
                 Extension
               </text>
@@ -2311,6 +6624,47 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '405px',
+                    marginLeft: '934px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <font style={{ fontSize: '11px' }}>
+                        <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Technique</span>
+                      </font>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="993" y="408" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Technique
               </text>
@@ -2343,6 +6697,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '116px',
+                    height: '1px',
+                    paddingTop: '196px',
+                    marginLeft: '55px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Clinical/Pathological
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="113" y="199" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Clinical/Pathological
               </text>
@@ -2371,6 +6778,53 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '414px',
+                    marginLeft: '53px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word', fontSize: '13px' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ whiteSpace: 'pre-wrap' }}>
+                              <b>Specimen</b>
+                            </span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="112" y="418" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Specimen
               </text>
@@ -2401,6 +6855,53 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '116px',
+                    height: '1px',
+                    paddingTop: '572px',
+                    marginLeft: '509px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font size="1">
+                            <span style={{ whiteSpace: 'pre-wrap' }}>
+                              <b style={{ fontSize: '18px' }}>Cancer Patient</b>
+                            </span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="567" y="576" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Cancer Patient
               </text>
@@ -2417,6 +6918,46 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '76px',
+                    height: '1px',
+                    paddingTop: '253px',
+                    marginLeft: '521px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        fontWeight: 'bold',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <span style={{ fontWeight: 'normal', fontSize: '11px' }}>Method</span>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text
                 x="559"
                 y="256"
@@ -2467,6 +7008,45 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '90px',
+                    height: '1px',
+                    paddingTop: '559px',
+                    marginLeft: '25px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      Present/Absent
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="70" y="562" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Present/Absent
               </text>
@@ -2511,6 +7091,45 @@ function MainSvg() {
         <rect x="602" y="149" width="66" height="4" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '64px',
+                  height: '1px',
+                  paddingTop: '151px',
+                  marginLeft: '603px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '9px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    reference to another profile
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text x="635" y="154" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="9px" textAnchor="middle">
               reference to a...
             </text>
@@ -2526,6 +7145,45 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '106px',
+                    height: '1px',
+                    paddingTop: '481px',
+                    marginLeft: '566px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <span style={{ fontWeight: 'normal', fontSize: '11px' }}>Evidence Type</span>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="619" y="484" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Evidence Type
               </text>
@@ -2550,6 +7208,45 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '96px',
+                    height: '1px',
+                    paddingTop: '627px',
+                    marginLeft: '959px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Location</span>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="1007" y="631" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Location
               </text>
@@ -2569,6 +7266,47 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '96px',
+                    height: '1px',
+                    paddingTop: '653px',
+                    marginLeft: '960px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <font>
+                        <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Location Qualifier</span>
+                      </font>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="1008" y="657" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Location Qualifi...
               </text>
@@ -2601,6 +7339,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '306px',
+                    marginLeft: '14px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Laterality
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="73" y="309" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Laterality
               </text>
@@ -2617,6 +7408,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '332px',
+                    marginLeft: '14px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Location Qualifier
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="73" y="335" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Location Qualifier
               </text>
@@ -2649,6 +7493,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '111px',
+                    height: '1px',
+                    paddingTop: '413px',
+                    marginLeft: '751px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Name</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="807" y="416" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Name
               </text>
@@ -2665,6 +7554,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '111px',
+                    height: '1px',
+                    paddingTop: '440px',
+                    marginLeft: '751px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Contact Info</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="807" y="443" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Contact Info
               </text>
@@ -2696,6 +7630,47 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '115px',
+                    height: '1px',
+                    paddingTop: '276px',
+                    marginLeft: '934px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <font style={{ fontSize: '11px' }}>
+                        <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Laterality</span>
+                      </font>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="992" y="280" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Laterality
               </text>
@@ -2711,6 +7686,47 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '115px',
+                    height: '1px',
+                    paddingTop: '301px',
+                    marginLeft: '934px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <font style={{ fontSize: '11px' }}>
+                        <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Location Qualifier</span>
+                      </font>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="992" y="305" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Location Qualifier
               </text>
@@ -2736,6 +7752,46 @@ function MainSvg() {
         <rect x="525.98" y="595" width="76.02" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '74px',
+                  height: '1px',
+                  paddingTop: '604px',
+                  marginLeft: '527px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '8px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Patient (US Core)
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="564"
               y="606"
@@ -2766,6 +7822,46 @@ function MainSvg() {
         <rect x="137.75" y="578" width="119.5" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '118px',
+                  height: '1px',
+                  paddingTop: '587px',
+                  marginLeft: '139px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Observation (US Core Lab Result)
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="198"
               y="589"
@@ -2782,6 +7878,46 @@ function MainSvg() {
         <rect x="140" y="498" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '34px',
+                  height: '1px',
+                  paddingTop: '507px',
+                  marginLeft: '141px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Specimen
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="158"
               y="509"
@@ -2798,6 +7934,46 @@ function MainSvg() {
         <rect x="94" y="424" width="36" height="17" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '34px',
+                  height: '1px',
+                  paddingTop: '433px',
+                  marginLeft: '95px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Specimen
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="112"
               y="435"
@@ -2814,6 +7990,46 @@ function MainSvg() {
         <rect x="230" y="199" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '34px',
+                  height: '1px',
+                  paddingTop: '208px',
+                  marginLeft: '231px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Observation
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="248"
               y="210"
@@ -2830,6 +8046,46 @@ function MainSvg() {
         <rect x="121" y="123" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '34px',
+                  height: '1px',
+                  paddingTop: '132px',
+                  marginLeft: '122px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Observation
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="139"
               y="134"
@@ -2846,6 +8102,46 @@ function MainSvg() {
         <rect x="330" y="123" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '34px',
+                  height: '1px',
+                  paddingTop: '132px',
+                  marginLeft: '331px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Observation
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="348"
               y="134"
@@ -2862,6 +8158,46 @@ function MainSvg() {
         <rect x="225" y="123" width="37" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '35px',
+                  height: '1px',
+                  paddingTop: '132px',
+                  marginLeft: '226px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Observation
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="244"
               y="134"
@@ -2878,6 +8214,46 @@ function MainSvg() {
         <rect x="535.75" y="384" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '34px',
+                  height: '1px',
+                  paddingTop: '393px',
+                  marginLeft: '537px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Specimen
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="554"
               y="395"
@@ -2894,6 +8270,46 @@ function MainSvg() {
         <rect x="486.99" y="442" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '34px',
+                  height: '1px',
+                  paddingTop: '451px',
+                  marginLeft: '488px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    BodyStructure
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="505"
               y="453"
@@ -2910,6 +8326,46 @@ function MainSvg() {
         <rect x="746" y="82" width="98" height="19" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '96px',
+                  height: '1px',
+                  paddingTop: '92px',
+                  marginLeft: '747px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    MedicationRequest (US Core)
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="795"
               y="94"
@@ -2926,6 +8382,46 @@ function MainSvg() {
         <rect x="780" y="182" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '34px',
+                  height: '1px',
+                  paddingTop: '191px',
+                  marginLeft: '781px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    MedicationAdministration
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="798"
               y="193"
@@ -2942,6 +8438,46 @@ function MainSvg() {
         <rect x="600.88" y="523" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '34px',
+                  height: '1px',
+                  paddingTop: '532px',
+                  marginLeft: '602px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Observation
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="619"
               y="534"
@@ -2958,6 +8494,46 @@ function MainSvg() {
         <rect x="730" y="705" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '34px',
+                  height: '1px',
+                  paddingTop: '714px',
+                  marginLeft: '731px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Observation
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="748"
               y="716"
@@ -2974,6 +8550,46 @@ function MainSvg() {
         <rect x="730" y="643" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '34px',
+                  height: '1px',
+                  paddingTop: '652px',
+                  marginLeft: '731px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Observation
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="748"
               y="654"
@@ -2990,6 +8606,46 @@ function MainSvg() {
         <rect x="760" y="261" width="76" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '74px',
+                  height: '1px',
+                  paddingTop: '270px',
+                  marginLeft: '761px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Procedure (US Core)
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="798"
               y="272"
@@ -3006,6 +8662,46 @@ function MainSvg() {
         <rect x="763" y="377" width="68" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '66px',
+                  height: '1px',
+                  paddingTop: '386px',
+                  marginLeft: '764px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Procedure (US Core)
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="797"
               y="388"
@@ -3022,6 +8718,46 @@ function MainSvg() {
         <rect x="954.25" y="571.25" width="36" height="19" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '34px',
+                  height: '1px',
+                  paddingTop: '581px',
+                  marginLeft: '955px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    BodyStructure
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="972"
               y="583"
@@ -3038,6 +8774,46 @@ function MainSvg() {
         <rect x="482.99" y="334" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '34px',
+                  height: '1px',
+                  paddingTop: '343px',
+                  marginLeft: '484px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Observation
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="501"
               y="345"
@@ -3064,6 +8840,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '95px',
+                    height: '1px',
+                    paddingTop: '688px',
+                    marginLeft: '436px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Component</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="483" y="691" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Component
               </text>
@@ -3080,6 +8901,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '96px',
+                    height: '1px',
+                    paddingTop: '610px',
+                    marginLeft: '137px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Component</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="185" y="614" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Component
               </text>
@@ -3096,6 +8962,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '116px',
+                    height: '1px',
+                    paddingTop: '387px',
+                    marginLeft: '55px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <font style={{ fontSize: '11px' }}>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Result Value</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="113" y="390" fill="#000000" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Result Value
               </text>
@@ -3105,6 +9016,46 @@ function MainSvg() {
         <rect x="464" y="170" width="61.99" height="10" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '60px',
+                  height: '1px',
+                  paddingTop: '175px',
+                  marginLeft: '465px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '8px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Base Resource
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="495"
               y="177"
@@ -3131,6 +9082,47 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '96px',
+                    height: '1px',
+                    paddingTop: '602px',
+                    marginLeft: '959px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <font>
+                        <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Volume Type</span>
+                      </font>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="1007" y="606" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Volume Type
               </text>
@@ -3157,6 +9149,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '106px',
+                    height: '1px',
+                    paddingTop: '728px',
+                    marginLeft: '970px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <font style={{ fontSize: '11px' }}>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Present/Absent</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="1023" y="731" fill="#000000" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Present/Absent
               </text>
@@ -3175,6 +9212,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '76px',
+                    height: '1px',
+                    paddingTop: '700px',
+                    marginLeft: '825px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Component</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="863" y="704" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Component
               </text>
@@ -3192,6 +9274,45 @@ function MainSvg() {
         <rect x="609" y="169" width="52" height="19" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '50px',
+                  height: '1px',
+                  paddingTop: '179px',
+                  marginLeft: '610px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '9px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    property of a profile
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text x="635" y="181" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="9px" textAnchor="middle">
               property of...
             </text>
@@ -3210,6 +9331,47 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '512px',
+                    marginLeft: '934px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <font style={{ fontSize: '11px' }}>
+                        <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Body Volume</span>
+                      </font>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="993" y="515" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Body Volume
               </text>
@@ -3236,6 +9398,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '106px',
+                    height: '1px',
+                    paddingTop: '700px',
+                    marginLeft: '928px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <font style={{ fontSize: '11px' }}>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Comorbidity Type</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="981" y="703" fill="#000000" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Comorbidity Type
               </text>
@@ -3308,6 +9515,45 @@ function MainSvg() {
         <rect x="604" y="207" width="62" height="4" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '60px',
+                  height: '1px',
+                  paddingTop: '209px',
+                  marginLeft: '605px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '9px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    slice (repeated element that is specialized)
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text x="635" y="212" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="9px" textAnchor="middle">
               slice (repeat...
             </text>
@@ -3323,6 +9569,46 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '76px',
+                    height: '1px',
+                    paddingTop: '281px',
+                    marginLeft: '522px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        fontWeight: 'bold',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <span style={{ fontWeight: '400', fontSize: '11px' }}>Component</span>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text
                 x="560"
                 y="284"
@@ -3365,6 +9651,46 @@ function MainSvg() {
         <rect x="1026.01" y="692" width="60" height="15" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '58px',
+                  height: '1px',
+                  paddingTop: '700px',
+                  marginLeft: '1027px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '9px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    38 types
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="1056"
               y="702"
@@ -3391,6 +9717,46 @@ function MainSvg() {
         />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '151px',
+                  height: '1px',
+                  paddingTop: '66px',
+                  marginLeft: '48px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '10px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontWeight: 'bold; fontStyle: italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Click embedded links to see FHIR artifact definitions
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="124"
               y="69"
@@ -3415,6 +9781,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '94px',
+                    height: '1px',
+                    paddingTop: '559px',
+                    marginLeft: '281px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Result
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="328" y="563" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Result
               </text>
@@ -3439,6 +9858,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '95px',
+                    height: '1px',
+                    paddingTop: '529px',
+                    marginLeft: '281px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Test Type</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="329" y="532" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Test Type
               </text>
@@ -3494,6 +9958,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '76px',
+                    height: '1px',
+                    paddingTop: '764px',
+                    marginLeft: '825px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Interpretation</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="863" y="768" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Interpretation
               </text>
@@ -3512,6 +10021,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '76px',
+                    height: '1px',
+                    paddingTop: '739px',
+                    marginLeft: '825px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Score</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="863" y="742" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Score
               </text>
@@ -3564,6 +10118,45 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '98px',
+                    height: '1px',
+                    paddingTop: '624px',
+                    marginLeft: '699px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <b>Karnofsky Performance Status</b>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="748" y="627" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Karnofsky Perfor...
               </text>
@@ -3590,6 +10183,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '76px',
+                    height: '1px',
+                    paddingTop: '637px',
+                    marginLeft: '825px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Interpretation</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="863" y="641" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Interpretation
               </text>
@@ -3608,6 +10246,51 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '76px',
+                    height: '1px',
+                    paddingTop: '612px',
+                    marginLeft: '825px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: #000000; "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '93.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <font>
+                            <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Score</span>
+                          </font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="863" y="615" fill="#000000" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Score
               </text>
@@ -3641,6 +10324,46 @@ function MainSvg() {
         <rect x="730" y="769" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '34px',
+                  height: '1px',
+                  paddingTop: '778px',
+                  marginLeft: '731px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Observation
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="748"
               y="780"
@@ -3700,6 +10423,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '173px',
+                    marginLeft: '902px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Procedure Intent
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="961" y="176" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Procedure Intent
               </text>
@@ -3723,6 +10499,59 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '95px',
+                    marginLeft: '902px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              lineHeight: '12px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Termination Reason
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="961" y="98" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Termination Reason
               </text>
@@ -3751,6 +10580,65 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '125px',
+                    height: '1px',
+                    paddingTop: '358px',
+                    marginLeft: '211px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '12px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                        <div align="center">
+                          <span style={{ fontSize: '13px', whiteSpace: 'pre-wrap' }}>
+                            <b>Secondary</b>
+                          </span>
+                        </div>
+                        <div align="center">
+                          <span
+                            style={{
+                              fontSize: '13px',
+                              whiteSpace: 'pre-wrap',
+                              textDecoration: 'none',
+                              fontWeight: 'bold',
+                              lineHeight: '15.5px',
+                              color: 'rgb(0 , 0 , 0)',
+                            }}
+                          >
+                            Cancer Condition
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="273" y="362" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
                 Secondary...
               </text>
@@ -3792,6 +10680,49 @@ function MainSvg() {
           />
           <g transform="translate(-0.5 -0.5)">
             <switch>
+              <foreignObject
+                pointerEvents="none"
+                width="100%"
+                height="100%"
+                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                style={{ overflow: 'visible', textAlign: 'left' }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'unsafe center',
+                    justifyContent: 'unsafe center',
+                    width: '118px',
+                    height: '1px',
+                    paddingTop: '311px',
+                    marginLeft: '213px',
+                  }}
+                >
+                  <div
+                    data-drawioColors="color: rgba(0, 0, 0, 1); "
+                    style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                  >
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontFamily: 'Helvetica',
+                        color: 'rgb(0, 0, 0)',
+                        lineHeight: 1.2,
+                        pointerEvents: 'all',
+                        whiteSpace: 'normal',
+                        overflowWrap: 'normal',
+                      }}
+                    >
+                      <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                        <div style={{ fontSize: '11px' }} align="center">
+                          <span style={{ whiteSpace: 'pre-wrap' }}>Related Condition</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
               <text x="272" y="314" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
                 Related Condition
               </text>
@@ -3827,6 +10758,46 @@ function MainSvg() {
         <rect x="603" y="423" width="36" height="17" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '34px',
+                  height: '1px',
+                  paddingTop: '432px',
+                  marginLeft: '604px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Identifier
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="621"
               y="434"
@@ -3843,6 +10814,46 @@ function MainSvg() {
         <rect x="273" y="497" width="106" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '104px',
+                  height: '1px',
+                  paddingTop: '506px',
+                  marginLeft: '274px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    DiagnosticReport (US Core)
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="326"
               y="508"
@@ -3859,6 +10870,46 @@ function MainSvg() {
         <rect x="436.24" y="657" width="119.5" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '118px',
+                  height: '1px',
+                  paddingTop: '666px',
+                  marginLeft: '437px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Observation (US Core Lab Result)
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="496"
               y="668"
@@ -3875,6 +10926,46 @@ function MainSvg() {
         <rect x="235" y="273" width="74.5" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '73px',
+                  height: '1px',
+                  paddingTop: '282px',
+                  marginLeft: '236px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Condition (US Core)
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="272"
               y="284"
@@ -3891,6 +10982,46 @@ function MainSvg() {
         <rect x="235" y="376" width="74.5" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '73px',
+                  height: '1px',
+                  paddingTop: '385px',
+                  marginLeft: '236px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Condition (US Core)
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="272"
               y="387"
@@ -3907,6 +11038,46 @@ function MainSvg() {
         <rect x="213.5" y="430" width="119.5" height="18" fill="none" stroke="none" pointerEvents="all" />
         <g transform="translate(-0.5 -0.5)">
           <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '118px',
+                  height: '1px',
+                  paddingTop: '439px',
+                  marginLeft: '215px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '7px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      fontStyle: 'italic',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    Observation (US Core Lab Result)
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
             <text
               x="273"
               y="441"
