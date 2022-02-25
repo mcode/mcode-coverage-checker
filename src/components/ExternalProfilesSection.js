@@ -1,9 +1,8 @@
 function ExternalProfilesSection() {
   return (
     <>
-      {/* Rect around External Profiles */}
-      <rect x="812.5" y="789" width="130" height="20" rx="3" ry="3" fill="none" stroke="none" pointerEvents="all" />
       {/* External Profiles Header */}
+      <rect x="812.5" y="789" width="130" height="20" rx="3" ry="3" fill="none" stroke="none" pointerEvents="all" />
       <g transform="translate(-0.5 -0.5)">
         <switch>
           <foreignObject
