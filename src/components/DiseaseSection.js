@@ -1,8 +1,8 @@
 function DiseaseSection() {
   return (
     <>
-      {/* Tumor Marker Test Section */}
       {/*  */}
+      {/* Tumor Marker Test Section */}
       {/* Patient to Tumor Market Test  */}
       <path
         d="M 336.75 414 L 411.57 414 Q 421.57 414 421.57 424 L 421.57 562 Q 421.57 572 431.57 572 L 506.25 572"

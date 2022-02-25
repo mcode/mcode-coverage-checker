@@ -32,6 +32,7 @@ function MainSvg() {
         <TreatmentSection />
         <ExternalProfilesSection />
       </g>
+      {/* Displays if app fails to load SVG */}
       <switch>
         <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" />
         <a
