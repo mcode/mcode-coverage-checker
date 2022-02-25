@@ -22,6 +22,8 @@ Insert description for the solution this PR implements to address the bug.
 ## Important Changes
 Please list important files (meaning substantial or integral to the PR) along with a list of the general changes that should be highlighted for reviewers.
 
+_General changes_
+
 `example_file.js`
 - Example change (ex: refactored import function)
 
@@ -36,14 +38,8 @@ Please list any recommendations regarding what reviewers should test and if ther
 - [ ] This PR includes the correct GH issue reference.
 - [ ] Comment added to the relevant GH issue(s) with a link to this PR
 - [ ] Code diff has been reviewed (it **does not** contain: additional white space, not applicable code changes, debug statements, etc.)
-- [ ] If UI changes have been made, Chrome Dev Tools Lighthouse accessibility test has been executed to ensure no 508 issues were introduced.
-- [ ] Tests are included and test edge cases
-- [ ] Tests have been run locally and pass
-- [ ] Test fixtures updated and documented as necessary
 
 @ACCT1 :
 - [ ] Code is maintainable and reusable, reuses existing code and infrastructure where appropriate, and accomplishes the task’s purpose
-- [ ] The tests appropriately test the new code, including edge cases
 - [ ] You have tried to break the code
-- [ ] If applicable, you have considered possible performance regressions
 - [ ] Tested all recommendations listed in the "Testing Recommendations" section. The application behaves as expected with this PR.

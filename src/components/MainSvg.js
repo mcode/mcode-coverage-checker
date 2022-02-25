@@ -27,9 +27,9 @@ function MainSvg() {
         <PatientSection />
         <GenomicSection />
         <OutcomeSection />
-        <AssessmentSection />
-        <LegendSection />
         <TreatmentSection />
+        <LegendSection />
+        <AssessmentSection />
         <ExternalProfilesSection />
       </g>
       {/* Displays if app fails to load SVG */}
