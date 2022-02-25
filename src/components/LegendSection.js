@@ -573,7 +573,7 @@ function LegendSection() {
       </a>
       {/* Rect around Property of a Profile */}
       <rect x="609" y="169" width="52" height="19" fill="none" stroke="none" pointerEvents="all" />
-      {/* Property of a Profile */}
+      {/* Property of a Profile text */}
       <g transform="translate(-0.5 -0.5)">
         <switch>
           <foreignObject
@@ -620,8 +620,65 @@ function LegendSection() {
           </text>
         </switch>
       </g>
+      {/* Profile Base Resource Footnote Label */}
+      <rect x="464" y="170" width="61.99" height="10" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '60px',
+                height: '1px',
+                paddingTop: '175px',
+                marginLeft: '465px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '8px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  Base Resource
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="495"
+            y="177"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="8px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            Base Resource
+          </text>
+        </switch>
+      </g>
       {/* Rect around referenceToAnotherProfile Note */}
-      <rect x="602" y="149" width="66" height="4" fill="black" stroke="none" pointerEvents="all" />
+      <rect x="602" y="149" width="66" height="4" fill="none" stroke="none" pointerEvents="all" />
       {/* Reference to another profile note */}
       <g transform="translate(-0.5 -0.5)">
         <switch>
@@ -669,11 +726,93 @@ function LegendSection() {
           </text>
         </switch>
       </g>
+      {/* Reference Line Legend Example */}
+      <a href="https://www.hl7.org/fhir/references.html" target="_blank" rel="noreferrer">
+        <path
+          d="M 562.99 153.5 L 601 153.5"
+          fill="none"
+          stroke="#6e6e6e"
+          strokeWidth="3"
+          strokeMiterlimit="10"
+          strokeDasharray="3 3"
+          pointerEvents="stroke"
+        />
+      </a>
+      {/* Slice symbol  */}
+      <a href="https://www.hl7.org/fhir/profiling.html#slicing" target="_blank" rel="noreferrer">
+        <rect x="565.75" y="207" width="29" height="4" fill="#ffffff" stroke="none" pointerEvents="all" />
+        <path
+          d="M 565.75 207 L 594.75 207 M 594.75 211 L 565.75 211"
+          fill="none"
+          stroke="#474747"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+          pointerEvents="all"
+        />
+      </a>
+      {/* Slice Symbol Legend Example */}
+      <a href="https://www.hl7.org/fhir/element.html" target="_blank" rel="noreferrer">
+        <path
+          d="M 561.75 179.25 L 600 179"
+          fill="none"
+          stroke="#6e6e6e"
+          strokeWidth="3"
+          strokeMiterlimit="10"
+          pointerEvents="stroke"
+        />
+      </a>
+      {/* Slice text */}
+      <rect x="604" y="207" width="62" height="4" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '60px',
+                height: '1px',
+                paddingTop: '209px',
+                marginLeft: '605px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '9px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  slice (repeated element that is specialized)
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text x="635" y="212" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="9px" textAnchor="middle">
+            slice (repeat...
+          </text>
+        </switch>
+      </g>
       {/*  */}
       {/* Additional Metadata */}
-      {/* Rect behind mCODE STU 2 Heading */}
-      <rect x="9" y="23.75" width="264" height="20" rx="3" ry="3" fill="none" stroke="none" pointerEvents="all" />
       {/* mCODE STU2 Heading */}
+      <rect x="9" y="23.75" width="264" height="20" rx="3" ry="3" fill="none" stroke="none" pointerEvents="all" />
       <g transform="translate(-0.5 -0.5)">
         <switch>
           <foreignObject
@@ -729,7 +868,65 @@ function LegendSection() {
           </text>
         </switch>
       </g>
-      {/* Rect around disclaimer */}
+      {/* Click embedded links subtitle  */}
+      <rect x="47" y="58.5" width="153" height="15" rx="2.25" ry="2.25" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '151px',
+                height: '1px',
+                paddingTop: '66px',
+                marginLeft: '48px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '10px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontWeight: 'bold; fontStyle: italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  Click embedded links to see FHIR artifact definitions
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="124"
+            y="69"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="10px"
+            textAnchor="middle"
+            fontWeight="bold"
+            fontStyle="italic"
+          >
+            Click embedded links to see FH...
+          </text>
+        </switch>
+      </g>
+      {/* Disclaimer */}
       <rect
         x="282"
         y="12"
@@ -741,7 +938,6 @@ function LegendSection() {
         stroke="none"
         pointerEvents="all"
       />
-      {/* Disclaimer */}
       <g transform="translate(-0.5 -0.5)">
         <switch>
           <foreignObject
@@ -789,7 +985,7 @@ function LegendSection() {
           </text>
         </switch>
       </g>
-      {/* Rect around Footer notes */}
+      {/* Footer */}
       <rect
         x="433.24"
         y="817"
@@ -801,7 +997,6 @@ function LegendSection() {
         stroke="none"
         pointerEvents="all"
       />
-      {/* Footer */}
       <g transform="translate(-0.5 -0.5)">
         <switch>
           <foreignObject

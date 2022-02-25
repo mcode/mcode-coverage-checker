@@ -102,6 +102,204 @@ function GenomicSection() {
           </switch>
         </g>
       </a>
+      {/* Genomics Report Diagnostic Report base resource footnote */}
+      <rect x="273" y="497" width="106" height="18" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '104px',
+                height: '1px',
+                paddingTop: '506px',
+                marginLeft: '274px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  DiagnosticReport (US Core)
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="326"
+            y="508"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            DiagnosticReport (US Core)
+          </text>
+        </switch>
+      </g>
+      {/* Genomics Report to Test Result */}
+      <path
+        d="M 327 501 L 327 547.5"
+        fill="none"
+        stroke="#a6d192"
+        strokeWidth="4"
+        strokeMiterlimit="10"
+        pointerEvents="stroke"
+      />
+      {/* Genomics Report.Test Type */}
+      <a href="StructureDefinition-mcode-genomics-report-definitions.html#DiagnosticReport.code" target="_blank">
+        <path
+          d="M 307.61 517 L 346.39 517 C 363.29 517 377 522.15 377 528.5 C 377 534.85 363.29 540 346.39 540 L 307.61 540 C 290.71 540 277 534.85 277 528.5 C 277 522.15 290.71 517 307.61 517 Z"
+          fill="#a6d192"
+          stroke="#ffffff"
+          strokeMiterlimit="10"
+          pointerEvents="all"
+        />
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '95px',
+                  height: '1px',
+                  paddingTop: '529px',
+                  marginLeft: '281px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '12px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                      <div align="center">
+                        <font>
+                          <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Test Type</span>
+                        </font>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
+            <text x="329" y="532" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
+              Test Type
+            </text>
+          </switch>
+        </g>
+      </a>
+      {/* Genomics Report.Test Result */}
+      <a href="StructureDefinition-mcode-genomics-report-definitions.html#DiagnosticReport.result" target="_blank">
+        <path
+          d="M 308 547.5 L 346 547.5 C 362.57 547.5 376 552.65 376 559 C 376 565.35 362.57 570.5 346 570.5 L 308 570.5 C 291.43 570.5 278 565.35 278 559 C 278 552.65 291.43 547.5 308 547.5 Z"
+          fill="#a6d192"
+          stroke="#ffffff"
+          strokeMiterlimit="10"
+          pointerEvents="all"
+        />
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '94px',
+                  height: '1px',
+                  paddingTop: '559px',
+                  marginLeft: '281px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '12px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    <div style={{ width: '93.0px', height: 'auto', wordBreak: 'break-word' }}>
+                      <div align="center">
+                        <span
+                          style={{
+                            fontSize: '11px',
+                            whiteSpace: 'pre-wrap',
+                            textDecoration: 'none',
+                            lineHeight: '12px',
+                            color: 'rgb(0 , 0 , 0)',
+                          }}
+                        >
+                          Result
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
+            <text x="328" y="563" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
+              Result
+            </text>
+          </switch>
+        </g>
+      </a>
       {/*  */}
       {/* Genomic Specimen Section */}
       {/* Report to Specimen */}
@@ -203,6 +401,63 @@ function GenomicSection() {
           </switch>
         </g>
       </a>
+      {/* Genomic Specimen Specimen BaseResource Footnote */}
+      <rect x="140" y="498" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '34px',
+                height: '1px',
+                paddingTop: '507px',
+                marginLeft: '141px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  Specimen
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="158"
+            y="509"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            Specimen
+          </text>
+        </switch>
+      </g>
       {/* Specimen to Specimen Type  */}
       <path
         d="M 133.5 476 L 128.25 476 Q 123 476 123 483 L 123 486.5 Q 123 490 118 490 L 113 490"
@@ -348,6 +603,36 @@ function GenomicSection() {
         strokeDasharray="4 4"
         pointerEvents="stroke"
       />
+      {/* Report Result to Variant */}
+      <path
+        d="M 278 559 L 234 559"
+        fill="none"
+        stroke="#a6d192"
+        strokeWidth="4"
+        strokeMiterlimit="10"
+        strokeDasharray="4 4"
+        pointerEvents="stroke"
+      />
+      {/* Result to Variant slice symbol */}
+      <rect
+        x="240"
+        y="557"
+        width="29"
+        height="4"
+        fill="#ffffff"
+        stroke="none"
+        transform="rotate(90,254.5,559)"
+        pointerEvents="all"
+      />
+      <path
+        d="M 240 557 L 269 557 M 269 561 L 240 561"
+        fill="none"
+        stroke="#474747"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        transform="rotate(90,254.5,559)"
+        pointerEvents="all"
+      />
       {/* Genomic Variant */}
       <a href="StructureDefinition-mcode-genomic-variant.html" target="_blank">
         <rect
@@ -437,6 +722,63 @@ function GenomicSection() {
           </switch>
         </g>
       </a>
+      {/* Genetic Variant US CORE Condition BaseResource Footnote */}
+      <rect x="137.75" y="578" width="119.5" height="18" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '118px',
+                height: '1px',
+                paddingTop: '587px',
+                marginLeft: '139px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  Observation (US Core Lab Result)
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="198"
+            y="589"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            Observation (US Core Lab Resul...
+          </text>
+        </switch>
+      </g>
       {/* Variant.component */}
       <a href="StructureDefinition-mcode-genomic-variant-definitions.html#Observation.component" target="_blank">
         <path
@@ -499,6 +841,16 @@ function GenomicSection() {
           </switch>
         </g>
       </a>
+      {/* Variant Component Slice Symbol */}
+      <rect x="169" y="634" width="29" height="4" fill="#ffffff" stroke="none" pointerEvents="all" />
+      <path
+        d="M 169 634 L 198 634 M 198 638 L 169 638"
+        fill="none"
+        stroke="#474747"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        pointerEvents="all"
+      />
       {/* Variant to Variation */}
       <path
         d="M 183.5 581.5 L 183.51 645.03 Q 183.51 655.03 173.77 655.03 L 164.03 655.03"
@@ -1717,7 +2069,17 @@ function GenomicSection() {
         </g>
       </a>
       {/*  */}
-      {/* Genomic Region Section */}
+      {/* Genomic Region Studied Section */}
+      {/* Result to Region Studied slice symbol */}
+      <rect x="312.5" y="584.25" width="29" height="4" fill="#ffffff" stroke="none" pointerEvents="all" />
+      <path
+        d="M 312.5 584.25 L 341.5 584.25 M 341.5 588.25 L 312.5 588.25"
+        fill="none"
+        stroke="#474747"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        pointerEvents="all"
+      />
       {/* Gene Region to Gene Mutations */}
       <path
         d="M 461.5 739 L 471.51 739.01 Q 481.51 739.03 481.51 729.03 L 481.51 661"
@@ -1726,6 +2088,135 @@ function GenomicSection() {
         strokeWidth="4"
         strokeMiterlimit="10"
         pointerEvents="stroke"
+      />
+      {/* Region US Core Lab Result Base Resource Footnote */}
+      <rect x="436.24" y="657" width="119.5" height="18" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '118px',
+                height: '1px',
+                paddingTop: '666px',
+                marginLeft: '437px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  Observation (US Core Lab Result)
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="496"
+            y="668"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            Observation (US Core Lab Resul...
+          </text>
+        </switch>
+      </g>
+      {/* Region Studied.Component */}
+      <a href="StructureDefinition-mcode-genomic-region-studied-definitions.html#Observation.component" target="_blank">
+        <path
+          d="M 462.48 676 L 501.26 676 C 518.16 676 531.87 681.15 531.87 687.5 C 531.87 693.85 518.16 699 501.26 699 L 462.48 699 C 445.58 699 431.87 693.85 431.87 687.5 C 431.87 681.15 445.58 676 462.48 676 Z"
+          fill="#a6d192"
+          stroke="#ffffff"
+          strokeMiterlimit="10"
+          pointerEvents="all"
+        />
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '95px',
+                  height: '1px',
+                  paddingTop: '688px',
+                  marginLeft: '436px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '12px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                      <div align="center">
+                        <font>
+                          <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Component</span>
+                        </font>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
+            <text x="483" y="691" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
+              Component
+            </text>
+          </switch>
+        </g>
+      </a>
+      {/* Region Studied Component Slice Symbol */}
+      <rect x="466.75" y="710" width="29" height="4" fill="#ffffff" stroke="none" pointerEvents="all" />
+      <path
+        d="M 466.75 710 L 495.75 710 M 495.75 714 L 466.75 714"
+        fill="none"
+        stroke="#474747"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        pointerEvents="all"
       />
       {/* Region Studied.Mutations */}
       <a

@@ -81,6 +81,63 @@ function TreatmentSection() {
           </switch>
         </g>
       </a>
+      {/* CRMR "MedicationRequest" Base Resource Footnote */}
+      <rect x="746" y="82" width="98" height="19" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '96px',
+                height: '1px',
+                paddingTop: '92px',
+                marginLeft: '747px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  MedicationRequest (US Core)
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="795"
+            y="94"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            MedicationRequest (US Core)
+          </text>
+        </switch>
+      </g>
       {/* Cancer-related Medication Request to medication */}
       <path
         d="M 860 60 L 870.43 60 Q 880.43 60 880.43 50 L 880.43 30 Q 880.43 20 890.43 20 L 900.88 20"
@@ -311,8 +368,86 @@ function TreatmentSection() {
           </switch>
         </g>
       </a>
+      {/* CRMRequest.Termination Reason */}
+      <a href="StructureDefinition-mcode-treatment-termination-reason.html" target="_blank">
+        <path
+          d="M 920.88 84 L 1000.88 84 L 1020.88 95 L 1000.88 106 L 920.88 106 L 900.88 95 Z"
+          fill="#ede50c"
+          stroke="none"
+          pointerEvents="all"
+        />
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '118px',
+                  height: '1px',
+                  paddingTop: '95px',
+                  marginLeft: '902px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '11px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                      <div style={{ fontSize: '11px' }} align="center">
+                        <span
+                          style={{
+                            fontSize: '11px',
+                            whiteSpace: 'pre-wrap',
+                            textDecoration: 'none',
+                            lineHeight: '12px',
+                            color: 'rgb(0 , 0 , 0)',
+                          }}
+                        >
+                          Termination Reason
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
+            <text x="961" y="98" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
+              Termination Reason
+            </text>
+          </switch>
+        </g>
+      </a>
+      {/* CRMRequest to Termination Reason */}
+      <path
+        d="M 860 60 L 870.43 60 Q 880.43 60 880.43 70 L 880.43 85.03 Q 880.43 95.03 890.43 95.01 L 900.88 95"
+        fill="none"
+        stroke="#ede50c"
+        strokeWidth="4"
+        strokeMiterlimit="10"
+        pointerEvents="stroke"
+      />
       {/*  */}
-      {/* Cancer-related Surgial Procedure section  */}
+      {/* Cancer-related Surgical Procedure section  */}
       {/* Patient to Surgical Procedure */}
       <path
         d="M 626.25 560 L 681 560 Q 691 560 691 550 L 691 246 Q 691 236 701 236 L 720.03 236 Q 730.03 236 730.01 237.25 L 730 238.5"
@@ -388,6 +523,63 @@ function TreatmentSection() {
           </switch>
         </g>
       </a>
+      {/* CancerRelated Surgical Procedure "Procedure" base resource footnote */}
+      <rect x="760" y="261" width="76" height="18" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '74px',
+                height: '1px',
+                paddingTop: '270px',
+                marginLeft: '761px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  Procedure (US Core)
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="798"
+            y="272"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            Procedure (US Core)
+          </text>
+        </switch>
+      </g>
       {/* CancerRelated Surgical Procedure to procedure code */}
       <path
         d="M 860 238.5 L 870.71 238.5 Q 880.71 238.5 880.71 231.75 L 880.71 228.38 Q 880.71 225 890.71 225 L 900.88 225"
@@ -764,6 +956,63 @@ function TreatmentSection() {
           </switch>
         </g>
       </a>
+      {/* CRMA "MedicationAdministration" Base Resource Footnote */}
+      <rect x="780" y="182" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '34px',
+                height: '1px',
+                paddingTop: '191px',
+                marginLeft: '781px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  MedicationAdministration
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="798"
+            y="193"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            Medication...
+          </text>
+        </switch>
+      </g>
       {/* Cancer Related Medication Administration to Medication */}
       <path
         d="M 860 158.5 L 870.71 158.5 Q 880.71 158.5 880.71 148.5 L 880.71 133 Q 880.71 123 890.71 123 L 900.88 123"
@@ -914,6 +1163,84 @@ function TreatmentSection() {
             </foreignObject>
             <text x="962" y="151" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
               Reason
+            </text>
+          </switch>
+        </g>
+      </a>
+      {/* CRMAdministration to Procedure Intent */}
+      <path
+        d="M 860 158.5 L 870.71 158.5 Q 880.71 158.5 880.71 165.75 L 880.71 169.38 Q 880.71 173 890.71 173 L 900.88 173"
+        fill="none"
+        stroke="#ede50c"
+        strokeWidth="4"
+        strokeMiterlimit="10"
+        pointerEvents="stroke"
+      />
+      {/* Cancer-related Medication Administration.procedure intent */}
+      <a href="StructureDefinition-mcode-procedure-intent.html" target="_blank">
+        <path
+          d="M 920.88 162 L 1000.88 162 L 1020.88 173 L 1000.88 184 L 920.88 184 L 900.88 173 Z"
+          fill="#ede50c"
+          stroke="none"
+          pointerEvents="all"
+        />
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '118px',
+                  height: '1px',
+                  paddingTop: '173px',
+                  marginLeft: '902px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '11px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    <div style={{ width: '112.2px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                      <div style={{ fontSize: '11px' }} align="center">
+                        <span
+                          style={{
+                            fontSize: '11px',
+                            whiteSpace: 'pre-wrap',
+                            textDecoration: 'none',
+                            lineHeight: '12px',
+                            color: 'rgb(0 , 0 , 0)',
+                          }}
+                        >
+                          Procedure Intent
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
+            <text x="961" y="176" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
+              Procedure Intent
             </text>
           </switch>
         </g>
@@ -1076,6 +1403,63 @@ function TreatmentSection() {
           </switch>
         </g>
       </a>
+      {/* RadiotherapyCourseSummary procedure baser resource footnote */}
+      <rect x="763" y="377" width="68" height="18" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '66px',
+                height: '1px',
+                paddingTop: '386px',
+                marginLeft: '764px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  Procedure (US Core)
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="797"
+            y="388"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            Procedure (US Core)
+          </text>
+        </switch>
+      </g>
       {/* RadiotherapyCourseSummary to Number of Sessions */}
       <path
         d="M 860 354.5 L 869.5 354.5 Q 879 354.5 879 344.5 L 879 336.25 Q 879 328 888.69 328 L 898.38 328"
@@ -1578,6 +1962,76 @@ function TreatmentSection() {
           </switch>
         </g>
       </a>
+      {/* Dose Delivered to Body Volume */}
+      <path
+        d="M 913.48 439.31 L 913.48 503 Q 913.48 513 923.24 513 L 928.13 513 Q 933.01 513 933.01 512.5 L 933.01 512"
+        fill="none"
+        stroke="#ede50c"
+        strokeWidth="4"
+        strokeMiterlimit="10"
+        pointerEvents="stroke"
+      />
+      {/* Radiotherapy Dose Delivered.Body Volume */}
+      <a
+        href="StructureDefinition-mcode-radiotherapy-dose-delivered-to-volume-definitions.html#Extension.extension:volume"
+        target="_blank"
+      >
+        <path
+          d="M 953.01 501 L 1033.01 501 L 1053.01 512 L 1033.01 523 L 953.01 523 L 933.01 512 Z"
+          fill="#ede50c"
+          stroke="#ffffff"
+          strokeMiterlimit="10"
+          pointerEvents="all"
+        />
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '118px',
+                  height: '1px',
+                  paddingTop: '512px',
+                  marginLeft: '934px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '11px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    <font style={{ fontSize: '11px' }}>
+                      <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Body Volume</span>
+                    </font>
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
+            <text x="993" y="515" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
+              Body Volume
+            </text>
+          </switch>
+        </g>
+      </a>
       {/*  */}
       {/* Radiotherapy Volume Section */}
       {/* Body Volume to Radiotherapy Volume */}
@@ -1661,6 +2115,130 @@ function TreatmentSection() {
           </switch>
         </g>
       </a>
+      {/* Radiotherapy Volume body structure base resource footnote */}
+      <rect x="954.25" y="571.25" width="36" height="19" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '34px',
+                height: '1px',
+                paddingTop: '581px',
+                marginLeft: '955px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  BodyStructure
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="972"
+            y="583"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            BodyStruct...
+          </text>
+        </switch>
+      </g>
+      {/* Radiotherapy Volume.Volume Type */}
+      <a href="StructureDefinition-mcode-radiotherapy-volume-definitions.html#BodyStructure.morphology" target="_blank">
+        <path
+          d="M 986.61 591.25 L 1025.39 591.25 C 1042.29 591.25 1056 596.17 1056 602.25 C 1056 608.33 1042.29 613.25 1025.39 613.25 L 986.61 613.25 C 969.71 613.25 956 608.33 956 602.25 C 956 596.17 969.71 591.25 986.61 591.25 Z"
+          fill="#ede50c"
+          stroke="#ffffff"
+          strokeMiterlimit="10"
+          pointerEvents="all"
+        />
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '96px',
+                  height: '1px',
+                  paddingTop: '602px',
+                  marginLeft: '959px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '12px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    <font>
+                      <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Volume Type</span>
+                    </font>
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
+            <text x="1007" y="606" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
+              Volume Type
+            </text>
+          </switch>
+        </g>
+      </a>
+      {/* Radiotherapy Volume to Location */}
+      <path
+        d="M 956 627.25 L 946.5 627.25 Q 937 627.25 937 617.25 L 937 585 Q 937 575 937.5 575 L 938 575"
+        fill="none"
+        stroke="#ede50c"
+        strokeWidth="4"
+        strokeMiterlimit="10"
+        pointerEvents="stroke"
+      />
       {/* Radiotherapy Volume.location */}
       <a href="StructureDefinition-mcode-radiotherapy-volume-definitions.html#BodyStructure.location" target="_blank">
         <path

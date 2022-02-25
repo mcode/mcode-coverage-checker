@@ -82,6 +82,72 @@ function DiseaseSection() {
           </switch>
         </g>
       </a>
+      {/* Tumor Marker test Observation base Resource footnote */}
+      <rect x="213.5" y="430" width="119.5" height="18" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '118px',
+                height: '1px',
+                paddingTop: '439px',
+                marginLeft: '215px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  Observation (US Core Lab Result)
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="273"
+            y="441"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            Observation (US Core Lab Result)
+          </text>
+        </switch>
+      </g>
+      {/* Tumor Marker Test to Test Type */}
+      <path
+        d="M 172 362 L 180.64 362 Q 189.29 362 189.29 372 L 189.29 404 Q 189.29 414 198.02 414 L 206.75 414"
+        fill="none"
+        stroke="#ffb366"
+        strokeWidth="4"
+        strokeMiterlimit="10"
+        pointerEvents="stroke"
+      />
       {/* Tumor Marker Test.Test Type */}
       <a href="StructureDefinition-mcode-tumor-marker-test-definitions.html#Observation.code">
         <path
@@ -144,7 +210,78 @@ function DiseaseSection() {
           </switch>
         </g>
       </a>
-      {/* Tumor Marker Test to Speciment */}
+      {/* Tumor Marker Test to Result Value */}
+      <path
+        d="M 206.75 414 L 198.02 414 Q 189.29 414 189.29 404 L 189.29 395.5 Q 189.29 387 180.64 387 L 172 387"
+        fill="none"
+        stroke="#ffb366"
+        strokeWidth="4"
+        strokeMiterlimit="10"
+        pointerEvents="stroke"
+      />
+      {/* Tumor Marker Test.Result Value */}
+      <a href="StructureDefinition-mcode-tumor-marker-test-definitions.html#Observation.value[x]" target="_blank">
+        <path
+          d="M 88.73 376 L 135.27 376 C 155.55 376 172 380.92 172 387 C 172 393.08 155.55 398 135.27 398 L 88.73 398 C 68.45 398 52 393.08 52 387 C 52 380.92 68.45 376 88.73 376 Z"
+          fill="#f6b26b"
+          stroke="#ffffff"
+          strokeMiterlimit="10"
+          pointerEvents="all"
+        />
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '116px',
+                  height: '1px',
+                  paddingTop: '387px',
+                  marginLeft: '55px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: #000000; "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '11px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    <div style={{ width: '93px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                      <div style={{ fontSize: '11px' }} align="center">
+                        <font style={{ fontSize: '11px' }}>
+                          <span style={{ fontSize: '11px', whiteSpace: 'pre-wrap' }}>Result Value</span>
+                        </font>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
+            <text x="113" y="390" fill="#000000" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
+              Result Value
+            </text>
+          </switch>
+        </g>
+      </a>
+      {/* Tumor Marker Test to Specimen */}
       <path
         d="M 206.75 414 L 172 414"
         fill="none"
@@ -222,6 +359,63 @@ function DiseaseSection() {
           </switch>
         </g>
       </a>
+      {/* Disease Specimen BaseResource Footnote */}
+      <rect x="94" y="424" width="36" height="17" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '34px',
+                height: '1px',
+                paddingTop: '433px',
+                marginLeft: '95px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  Specimen
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="112"
+            y="435"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            Specimen
+          </text>
+        </switch>
+      </g>
       {/*  */}
       {/* Primary CancerCondition Section */}
       {/* Patient to Primary Cancer Condition */}
@@ -319,6 +513,133 @@ function DiseaseSection() {
             </foreignObject>
             <text x="273" y="257" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
               Primary...
+            </text>
+          </switch>
+        </g>
+      </a>
+      {/* Primary Cancer Condition "Condition US CORE" Base Resource Footnote */}
+      <rect x="235" y="273" width="74.5" height="18" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '73px',
+                height: '1px',
+                paddingTop: '282px',
+                marginLeft: '236px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  Condition (US Core)
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="272"
+            y="284"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            Condition (US Core)
+          </text>
+        </switch>
+      </g>
+      {/* Related Condition to Primary Condition */}
+      <path
+        d="M 271.75 300 L 271.75 277"
+        fill="none"
+        stroke="#f6b26b"
+        strokeWidth="4"
+        strokeMiterlimit="10"
+        strokeDasharray="4 4"
+        pointerEvents="stroke"
+      />
+      {/* Primary Condition to Related Condition */}
+      <a href="http://hl7.org/fhir/R4/extension-condition-related.html" target="_blank" rel="noreferrer">
+        <path
+          d="M 231.75 300 L 311.75 300 L 331.75 311 L 311.75 322 L 231.75 322 L 211.75 311 Z"
+          fill="#f6b26b"
+          stroke="#ffffff"
+          strokeMiterlimit="10"
+          pointerEvents="all"
+        />
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '118px',
+                  height: '1px',
+                  paddingTop: '311px',
+                  marginLeft: '213px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '11px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    <div style={{ width: '102.6px', height: 'auto', wordBreak: 'break-word', fontSize: '11px' }}>
+                      <div style={{ fontSize: '11px' }} align="center">
+                        <span style={{ whiteSpace: 'pre-wrap' }}>Related Condition</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
+            <text x="272" y="314" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="11px" textAnchor="middle">
+              Related Condition
             </text>
           </switch>
         </g>
@@ -719,6 +1040,164 @@ function DiseaseSection() {
         </g>
       </a>
       {/*  */}
+      {/* Secondary Cancer Condition Section */}
+      {/* Patient to Secondary Cancer Condition  */}
+      <path
+        d="M 336.75 358 L 411.57 358 Q 421.57 358 421.57 368 L 421.57 562 Q 421.57 572 431.57 572 L 506.25 572"
+        fill="none"
+        stroke="#f6b26b"
+        strokeWidth="4"
+        strokeMiterlimit="10"
+        strokeDasharray="4 4"
+        pointerEvents="stroke"
+      />
+      {/* Secondary Cancer Condition */}
+      <a href="StructureDefinition-mcode-secondary-cancer-condition.html" target="_blank">
+        <rect
+          x="206.75"
+          y="336"
+          width="130"
+          height="44"
+          rx="6.6"
+          ry="6.6"
+          fill="#f6b26b"
+          stroke="#ffffff"
+          pointerEvents="all"
+        />
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointerEvents="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style={{ overflow: 'visible', textAlign: 'left' }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'unsafe center',
+                  justifyContent: 'unsafe center',
+                  width: '125px',
+                  height: '1px',
+                  paddingTop: '358px',
+                  marginLeft: '211px',
+                }}
+              >
+                <div
+                  data-drawioColors="color: rgba(0, 0, 0, 1); "
+                  style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+                >
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '12px',
+                      fontFamily: 'Helvetica',
+                      color: 'rgb(0, 0, 0)',
+                      lineHeight: 1.2,
+                      pointerEvents: 'all',
+                      whiteSpace: 'normal',
+                      overflowWrap: 'normal',
+                    }}
+                  >
+                    <div style={{ width: '141.0px', height: 'auto', wordBreak: 'break-word' }}>
+                      <div align="center">
+                        <span style={{ fontSize: '13px', whiteSpace: 'pre-wrap' }}>
+                          <b>Secondary</b>
+                        </span>
+                      </div>
+                      <div align="center">
+                        <span
+                          style={{
+                            fontSize: '13px',
+                            whiteSpace: 'pre-wrap',
+                            textDecoration: 'none',
+                            fontWeight: 'bold',
+                            lineHeight: '15.5px',
+                            color: 'rgb(0 , 0 , 0)',
+                          }}
+                        >
+                          Cancer Condition
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
+            <text x="273" y="362" fill="rgba(0, 0, 0, 1)" fontFamily="Helvetica" fontSize="12px" textAnchor="middle">
+              Secondary...
+            </text>
+          </switch>
+        </g>
+      </a>
+      {/* Secondary Cancer Condition "Condition US CORE" Base Resource Footnote */}
+      <rect x="235" y="376" width="74.5" height="18" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '73px',
+                height: '1px',
+                paddingTop: '385px',
+                marginLeft: '236px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  Condition (US Core)
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="272"
+            y="387"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            Condition (US Core)
+          </text>
+        </switch>
+      </g>
+      {/* Related Condition to Secondary Cancer Condition  */}
+      <path
+        d="M 271.75 336 L 271.75 322"
+        fill="none"
+        stroke="#f6b26b"
+        strokeWidth="4"
+        strokeMiterlimit="10"
+        pointerEvents="stroke"
+      />
+      {/*  */}
       {/* Stage Group Section */}
       {/* PrimaryCancerCondition to Stage Group */}
       <path
@@ -803,6 +1282,63 @@ function DiseaseSection() {
           </switch>
         </g>
       </a>
+      {/* Stage Group Observation Base Resource Footnote */}
+      <rect x="230" y="199" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '34px',
+                height: '1px',
+                paddingTop: '208px',
+                marginLeft: '231px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  Observation
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="248"
+            y="210"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            Observation
+          </text>
+        </switch>
+      </g>
       {/* Stage Group to Primary Tumor */}
       <path
         d="M 271.75 166 L 271.75 156.43 Q 271.75 146.86 261.75 146.86 L 177 146.86 Q 167 146.86 167 137.43 L 167 128"
@@ -889,6 +1425,73 @@ function DiseaseSection() {
           </switch>
         </g>
       </a>
+      {/* Tumor Category Observation Base Resource Footnote */}
+      <rect x="121" y="123" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '34px',
+                height: '1px',
+                paddingTop: '132px',
+                marginLeft: '122px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  Observation
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="139"
+            y="134"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            Observation
+          </text>
+        </switch>
+      </g>
+      {/* Stage Group to Metastates */}
+      <path
+        d="M 271.75 166 L 271 128"
+        fill="none"
+        stroke="#f6b26b"
+        strokeWidth="4"
+        strokeMiterlimit="10"
+        strokeDasharray="4 4"
+        pointerEvents="stroke"
+      />
       {/* Stage Group.Metastases */}
       <a href="StructureDefinition-mcode-tnm-distant-metastases-category.html" target="_blank">
         <rect
@@ -960,6 +1563,63 @@ function DiseaseSection() {
           </switch>
         </g>
       </a>
+      {/* Distant Metastases Observation Base Resource Footnote */}
+      <rect x="225" y="123" width="37" height="18" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '35px',
+                height: '1px',
+                paddingTop: '132px',
+                marginLeft: '226px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  Observation
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="244"
+            y="134"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            Observation
+          </text>
+        </switch>
+      </g>
       {/* Stage Group to Regional Nodes */}
       <path
         d="M 271.75 166 L 271.75 156.43 Q 271.75 146.86 281.75 146.86 L 365.5 146.86 Q 375.5 146.86 375.5 137.43 L 375.5 128"
@@ -1046,6 +1706,63 @@ function DiseaseSection() {
           </switch>
         </g>
       </a>
+      {/* Regional Node Observation Base Resource Footnote */}
+      <rect x="330" y="123" width="36" height="18" fill="none" stroke="none" pointerEvents="all" />
+      <g transform="translate(-0.5 -0.5)">
+        <switch>
+          <foreignObject
+            pointerEvents="none"
+            width="100%"
+            height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+            style={{ overflow: 'visible', textAlign: 'left' }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'unsafe center',
+                justifyContent: 'unsafe center',
+                width: '34px',
+                height: '1px',
+                paddingTop: '132px',
+                marginLeft: '331px',
+              }}
+            >
+              <div
+                data-drawioColors="color: rgba(0, 0, 0, 1); "
+                style={{ boxSizing: 'border-box', fontSize: '0px', textAlign: 'center' }}
+              >
+                <div
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '7px',
+                    fontFamily: 'Helvetica',
+                    color: 'rgb(0, 0, 0)',
+                    lineHeight: 1.2,
+                    pointerEvents: 'all',
+                    fontStyle: 'italic',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'normal',
+                  }}
+                >
+                  Observation
+                </div>
+              </div>
+            </div>
+          </foreignObject>
+          <text
+            x="348"
+            y="134"
+            fill="rgba(0, 0, 0, 1)"
+            fontFamily="Helvetica"
+            fontSize="7px"
+            textAnchor="middle"
+            fontStyle="italic"
+          >
+            Observation
+          </text>
+        </switch>
+      </g>
       {/* Stage Group to Staging System */}
       <path
         d="M 172 171 L 180.64 171 Q 189.29 171 189.29 177.75 L 189.29 181.13 Q 189.29 184.5 198.02 184.5 L 206.75 184.5"
