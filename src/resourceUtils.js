@@ -1,5 +1,4 @@
 const fhirpath = require('fhirpath');
-const testBundle = require('./bundle.json');
 
 // Patient
 
@@ -187,10 +186,6 @@ function getRadiotherapyVolume(bundle) {
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-volume')",
   );
 }
-
-console.log(getPatient(testBundle));
-console.log(getTumorMarkerTest(testBundle));
-console.log(getComorbidities(testBundle));
 
 module.exports = {
   getPatient,
