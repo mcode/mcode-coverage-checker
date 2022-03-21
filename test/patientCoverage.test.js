@@ -2,7 +2,12 @@ const testBundle = require('./patientBundle.json');
 const { getPatientCoverage } = require('../src/lib/patientCoverage');
 
 describe('getPatientCoverage()', () => {
-  const res = getPatientCoverage(testBundle)
+  const res = getPatientCoverage(testBundle);
+
+  test('Result should have length equal to number of patients in bundle', () => {
+    expect(res.length).toBe(2);
+  });
+
   test('All values should be true when patient has all fields covered', () => {
     expect(res[1].Name).toBe(true);
     expect(res[1]['Contact Info']).toBe(true);
