@@ -2,25 +2,21 @@
   "resourceType": "Bundle",
   "id": "mcode-patient-bundle-jenny-m",
   "meta": {
-    "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle"]
+    "profile": [
+      "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle"
+    ]
   },
   "type": "collection",
   "entry": [
-    {
-      "resource": {
-        "resourceType": "Patient",
-        "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"]
-        }
-      }
-    },
     {
       "fullUrl": "http://example.org/fhir/Patient/cancer-patient-jenny-m",
       "resource": {
         "resourceType": "Patient",
         "id": "cancer-patient-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"
+          ]
         },
         "text": {
           "status": "extensions",
@@ -81,14 +77,18 @@
         "name": [
           {
             "family": "M",
-            "given": ["Jenny"]
+            "given": [
+              "Jenny"
+            ]
           }
         ],
         "gender": "female",
         "birthDate": "1965-01-01",
         "address": [
           {
-            "line": ["123 Main St"],
+            "line": [
+              "123 Main St"
+            ],
             "city": "Anytown",
             "postalCode": "12345",
             "country": "United States"
@@ -130,7 +130,9 @@
         "resourceType": "Condition",
         "id": "primary-cancer-condition-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition"
+          ]
         },
         "text": {
           "status": "extensions",
@@ -217,7 +219,9 @@
         "resourceType": "MedicationRequest",
         "id": "cancer-related-medication-request-cyclophosphamide-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request"
+          ]
         },
         "text": {
           "status": "extensions",
@@ -320,7 +324,9 @@
         "resourceType": "Observation",
         "id": "cancer-disease-status-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status"
+          ]
         },
         "text": {
           "status": "extensions",
@@ -381,7 +387,9 @@
         "resourceType": "Observation",
         "id": "genomic-variant-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomic-variant"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomic-variant"
+          ]
         },
         "text": {
           "status": "generated",
@@ -514,7 +522,9 @@
         "resourceType": "DiagnosticReport",
         "id": "genomics-report-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomics-report"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomics-report"
+          ]
         },
         "text": {
           "status": "generated",
@@ -573,7 +583,9 @@
         "resourceType": "Procedure",
         "id": "cancer-related-surgical-procedure-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure"
+          ]
         },
         "text": {
           "status": "extensions",
@@ -642,7 +654,9 @@
         "resourceType": "Procedure",
         "id": "radiotherapy-treatment-summary-chest-wall-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-course-summary"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-course-summary"
+          ]
         },
         "text": {
           "status": "extensions",
@@ -828,7 +842,9 @@
         "resourceType": "Observation",
         "id": "tnm-clinical-stage-group-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-stage-group"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-stage-group"
+          ]
         },
         "text": {
           "status": "generated",
@@ -885,7 +901,9 @@
         "resourceType": "Observation",
         "id": "tnm-clinical-primary-tumor-category-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-primary-tumor-category"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-primary-tumor-category"
+          ]
         },
         "text": {
           "status": "generated",
@@ -930,7 +948,9 @@
         "resourceType": "Observation",
         "id": "tnm-clinical-regional-nodes-category-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-regional-nodes-category"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-regional-nodes-category"
+          ]
         },
         "text": {
           "status": "generated",
@@ -975,7 +995,9 @@
         "resourceType": "Observation",
         "id": "tnm-clinical-distant-metastases-category-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category"
+          ]
         },
         "text": {
           "status": "generated",
@@ -1020,7 +1042,9 @@
         "resourceType": "Specimen",
         "id": "genomic-specimen-left-breast-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomic-specimen"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomic-specimen"
+          ]
         },
         "text": {
           "status": "generated",
@@ -1065,7 +1089,9 @@
         "resourceType": "Observation",
         "id": "genomic-region-studied-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomic-region-studied"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomic-region-studied"
+          ]
         },
         "text": {
           "status": "generated",
@@ -1156,7 +1182,9 @@
         "resourceType": "Observation",
         "id": "ecog-performance-status-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-ecog-performance-status"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-ecog-performance-status"
+          ]
         },
         "text": {
           "status": "generated",
@@ -1209,7 +1237,9 @@
         "resourceType": "Observation",
         "id": "tumor-marker-test-er-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test"
+          ]
         },
         "text": {
           "status": "generated",
@@ -1261,7 +1291,9 @@
         "resourceType": "Observation",
         "id": "tumor-marker-test-pr-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test"
+          ]
         },
         "text": {
           "status": "generated",
@@ -1313,7 +1345,9 @@
         "resourceType": "Observation",
         "id": "tumor-marker-test-her2-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test"
+          ]
         },
         "text": {
           "status": "generated",
@@ -1365,7 +1399,9 @@
         "resourceType": "Observation",
         "id": "tumor-marker-test-oncotype-dx-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test"
+          ]
         },
         "text": {
           "status": "generated",
@@ -1426,7 +1462,9 @@
         "resourceType": "MedicationRequest",
         "id": "cancer-related-medication-request-doxorubicin-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request"
+          ]
         },
         "text": {
           "status": "extensions",
@@ -1529,7 +1567,9 @@
         "resourceType": "MedicationRequest",
         "id": "cancer-related-medication-request-paclitaxel-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request"
+          ]
         },
         "text": {
           "status": "extensions",
@@ -1632,7 +1672,9 @@
         "resourceType": "MedicationRequest",
         "id": "cancer-related-medication-request-anastrozole-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request"
+          ]
         },
         "text": {
           "status": "extensions",
@@ -1735,7 +1777,9 @@
         "resourceType": "Observation",
         "id": "cancer-related-mcode-comorbidities-elixhauser-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbidities-elixhauser"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbidities-elixhauser"
+          ]
         },
         "text": {
           "status": "extensions",
@@ -1995,7 +2039,9 @@
         "resourceType": "Observation",
         "id": "bodyweight-jenny-m-2018-03-16",
         "meta": {
-          "profile": ["http://hl7.org/fhir/StructureDefinition/bodyweight"]
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/bodyweight"
+          ]
         },
         "text": {
           "status": "generated",
@@ -2038,7 +2084,9 @@
         "resourceType": "Observation",
         "id": "us-core-observation-lab-neutrophils-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"]
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+          ]
         },
         "text": {
           "status": "generated",
@@ -2109,7 +2157,9 @@
         "resourceType": "Organization",
         "id": "us-core-organization-physician-services-inc",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"]
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+          ]
         },
         "text": {
           "status": "generated",
@@ -2137,7 +2187,9 @@
         ],
         "address": [
           {
-            "line": ["123 Corporate Drive"],
+            "line": [
+              "123 Corporate Drive"
+            ],
             "city": "Anytown",
             "state": "MA",
             "postalCode": "12345",
@@ -2152,7 +2204,9 @@
         "resourceType": "Observation",
         "id": "us-core-smokingstatus-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"]
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"
+          ]
         },
         "text": {
           "status": "generated",
@@ -2200,7 +2254,9 @@
         "resourceType": "Procedure",
         "id": "us-core-procedure-biopsy-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"]
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+          ]
         },
         "text": {
           "status": "generated",
@@ -2254,7 +2310,9 @@
         "resourceType": "Procedure",
         "id": "us-core-procedure-mammogram-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"]
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+          ]
         },
         "text": {
           "status": "generated",
@@ -2334,7 +2392,9 @@
         "resourceType": "Procedure",
         "id": "us-core-procedure-mammogram-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"]
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+          ]
         },
         "text": {
           "status": "generated",
@@ -2411,7 +2471,9 @@
         "resourceType": "DiagnosticReport",
         "id": "us-core-diagnosticreport-lab-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"]
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+          ]
         },
         "text": {
           "status": "generated",
@@ -2545,7 +2607,9 @@
         "resourceType": "Observation",
         "id": "us-core-observation-lab-tumor-invasion-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"]
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+          ]
         },
         "text": {
           "status": "generated",
@@ -2595,7 +2659,9 @@
         "resourceType": "Observation",
         "id": "us-core-observation-lab-tumor-margins-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"]
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+          ]
         },
         "text": {
           "status": "generated",
@@ -2645,7 +2711,9 @@
         "resourceType": "Observation",
         "id": "us-core-observation-lab-sentinel-nodes-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"]
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+          ]
         },
         "text": {
           "status": "generated",
@@ -2705,7 +2773,9 @@
         "resourceType": "Observation",
         "id": "tumor-size-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-size"]
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-size"
+          ]
         },
         "text": {
           "status": "generated",
@@ -2774,7 +2844,9 @@
         "resourceType": "Observation",
         "id": "us-core-observation-lab-tumor-dcis-jenny-m",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"]
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+          ]
         },
         "text": {
           "status": "generated",
@@ -2824,7 +2896,9 @@
         "resourceType": "Practitioner",
         "id": "us-core-practitioner-owen-oncologist",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"]
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+          ]
         },
         "text": {
           "status": "generated",
@@ -2839,14 +2913,20 @@
         "name": [
           {
             "family": "Oncologist",
-            "given": ["Owen"],
-            "prefix": ["Dr."]
+            "given": [
+              "Owen"
+            ],
+            "prefix": [
+              "Dr."
+            ]
           }
         ],
         "address": [
           {
             "use": "work",
-            "line": ["123 Corporate Drive"],
+            "line": [
+              "123 Corporate Drive"
+            ],
             "city": "Anytown",
             "state": "MA",
             "postalCode": "12345",
@@ -2875,7 +2955,9 @@
         "resourceType": "Practitioner",
         "id": "us-core-practitioner-peter-pathologist",
         "meta": {
-          "profile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"]
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+          ]
         },
         "text": {
           "status": "generated",
@@ -2890,14 +2972,20 @@
         "name": [
           {
             "family": "Pathologist",
-            "given": ["Peter"],
-            "prefix": ["Dr."]
+            "given": [
+              "Peter"
+            ],
+            "prefix": [
+              "Dr."
+            ]
           }
         ],
         "address": [
           {
             "use": "work",
-            "line": ["123 Corporate Drive"],
+            "line": [
+              "123 Corporate Drive"
+            ],
             "city": "Anytown",
             "state": "MA",
             "postalCode": "12345",

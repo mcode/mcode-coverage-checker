@@ -1,5 +1,4 @@
 const fhirpath = require('fhirpath');
-const testbundle = require('./bundle.json');
 const { getPatient } = require('./resourceUtils');
 
 /**
@@ -14,7 +13,7 @@ function getPatientCoverage(bundle) {
   patients.forEach((patient) => {
     coverage.push({
       Name: fhirpath.evaluate(patient, 'Patient.name.exists()')[0],
-      'Contact Info': fhirpath.evaluate(patient, 'Patient.telecom.exists()')[0],
+      'Contact Info': fhirpath.evaluate(patient, 'Patient.contact.telecom.exists()')[0],
       'Birth Date': fhirpath.evaluate(patient, 'Patient.birthDate.exists()')[0],
       Gender: fhirpath.evaluate(patient, 'Patient.gender.exists()')[0],
       'Zip Code': fhirpath.evaluate(patient, 'Patient.address.exists() and Patient.address.postalCode.exists()')[0],
@@ -30,8 +29,6 @@ function getPatientCoverage(bundle) {
   });
   return coverage;
 }
-
-console.log(getPatientCoverage(testbundle));
 
 module.exports = {
   getPatientCoverage,
