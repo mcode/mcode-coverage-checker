@@ -18,8 +18,8 @@
     "test": "jest",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint --fix ./src"
+    "lint": "eslint \"./**/*.js\"",
+    "lint-fix": "eslint \"./**/*.js\" --fix"
   },
   "eslintConfig": {
     "extends": [
