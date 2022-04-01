@@ -1,6 +1,5 @@
 const fhirpath = require('fhirpath');
 const { getPatient } = require('./resourceUtils');
-
 /**
  * Takes a bundle and returns the coverage of patient resources in that bundle
  * @param {Object} bundle, an mCODE bundle

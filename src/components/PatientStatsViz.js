@@ -1,22 +1,17 @@
-import PropTypes from 'prop-types';
-import { patientStats } from '../lib/statsUtils';
+// import PropTypes from 'prop-types';
 
-function PatientStatsViz({ coverageData }) {
-  const stats = patientStats(coverageData);
+// eslint-disable-next-line react/prop-types
+function PatientStatsViz({ stats }) {
   return (
     <>
       <h1>Patient Coverage</h1>
-      <p>{stats}</p>
+      <p>{JSON.stringify(stats)}</p>
     </>
   );
 }
 
-PatientStatsViz.propTypes = {
-  coverageData: PropTypes.shape({}),
-};
-
-PatientStatsViz.defaultProps = {
-  coverageData: null,
-};
+// PatientStatsViz.propTypes = {
+//   coverageData: PropTypes.shape({}).isRequired,
+// };
 
 export default PatientStatsViz;

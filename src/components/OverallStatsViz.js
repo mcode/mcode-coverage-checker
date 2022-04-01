@@ -1,22 +1,17 @@
-import PropTypes from 'prop-types';
-import { overallStats } from '../lib/statsUtils';
+// import PropTypes from 'prop-types';
 
-function OverallStatsViz({ coverageData }) {
-  const stats = overallStats(coverageData);
+// eslint-disable-next-line react/prop-types
+function OverallStatsViz({ stats }) {
   return (
     <>
       <h1>Overall Coverage</h1>
-      <p>{stats}</p>
+      <p>{JSON.stringify(stats)}</p>
     </>
   );
 }
 
-OverallStatsViz.propTypes = {
-  coverageData: PropTypes.shape({}),
-};
-
-OverallStatsViz.defaultProps = {
-  coverageData: null,
-};
+// OverallStatsViz.propTypes = {
+//   coverageData: PropTypes.shape({}).isRequired,
+// };
 
 export default OverallStatsViz;
