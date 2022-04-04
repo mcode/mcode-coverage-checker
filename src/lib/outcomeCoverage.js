@@ -10,32 +10,48 @@ const testbundle = require('../../test/fullBundle.json');
  */
 function getOutcomeCoverage(bundle) {
   const diseaseStatus = getDiseaseStatus(bundle);
-  const coverage = [];
+  const diseaseStatusCoverage = { profile: 'Disease Status', coverage: [] };
   diseaseStatus.forEach((status) => {
-    coverage.push({
-      'Evidence Type': fhirpath.evaluate(
-        status,
-        "Observation.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status-evidence-type').exists()",
-      )[0],
+    diseaseStatusCoverage.coverage.push({
+      resourceID: fhirpath.evaluate(status, 'Observation.id')[0],
+      data: {
+        'Evidence Type': {
+          covered: fhirpath.evaluate(
+            status,
+            "Observation.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status-evidence-type').exists()",
+          )[0],
+        },
+      },
     });
   });
   const tumors = getTumor(bundle);
+  const tumorCoverage = { profile: 'Tumor', coverage: [] };
   tumors.forEach((tumor) => {
-    coverage.push({
-      Location: fhirpath.evaluate(tumor, 'BodyStructure.location.exists()')[0],
+    tumorCoverage.coverage.push({
+      resourceID: fhirpath.evaluate(tumor, 'BodyStructure.id')[0],
+      data: {
+        Location: { covered: fhirpath.evaluate(tumor, 'BodyStructure.location.exists()')[0] },
+      },
     });
   });
   const tumorSize = getTumorSize(bundle);
+  const tumorSizeCoverage = { profile: 'Tumor Size', coverage: [] };
   tumorSize.forEach((size) => {
-    coverage.push({
-      Method: fhirpath.evaluate(size, 'Observation.method.exists()')[0],
-      Component: fhirpath.evaluate(size, 'Observation.component.exists()')[0],
+    tumorSizeCoverage.coverage.push({
+      resourceID: fhirpath.evaluate(size, 'Observation.id')[0],
+      data: {
+        Method: { covered: fhirpath.evaluate(size, 'Observation.method.exists()')[0] },
+        Component: { covered: fhirpath.evaluate(size, 'Observation.component.exists()')[0] },
+      },
     });
   });
-  return coverage;
+  return {
+    section: 'Outcome',
+    data: [diseaseStatusCoverage, tumorCoverage, tumorSizeCoverage],
+  };
 }
 
-console.log(getOutcomeCoverage(testbundle));
+console.log(JSON.stringify(getOutcomeCoverage(testbundle), null, 2));
 
 module.exports = {
   getOutcomeCoverage,
