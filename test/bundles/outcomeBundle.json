@@ -1,0 +1,309 @@
+{
+  "resourceType": "Bundle",
+  "id": "mcode-patient-bundle-jenny-m",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle"
+    ]
+  },
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "empty-disease-status",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status"
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/cancer-disease-status-jenny-m",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cancer-disease-status-jenny-m",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status"
+          ]
+        },
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cancer-disease-status-jenny-m\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mcode-cancer-disease-status.html\">Cancer Disease Status Profile</a></p></div><p><b>Cancer Disease Status Evidence Type Extension</b>: Imaging (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#363679005)</span></p><p><b>status</b>: final</p><p><b>code</b>: Cancer Disease Progression <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#97509-4)</span></p><p><b>subject</b>: <a href=\"#Patient_cancer-patient-jenny-m\">See above (Patient/cancer-patient-jenny-m)</a></p><p><b>focus</b>: <a href=\"#Condition_primary-cancer-condition-jenny-m\">See above (Condition/primary-cancer-condition-jenny-m)</a></p><p><b>effective</b>: 2018-11-01</p><p><b>performer</b>: <a href=\"#Practitioner_us-core-practitioner-owen-oncologist\">See above (Practitioner/us-core-practitioner-owen-oncologist)</a></p><p><b>value</b>: Patient's condition improved (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#268910001)</span></p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status-evidence-type",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "363679005",
+                  "display": "Imaging (procedure)"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "97509-4",
+              "display": "Cancer Disease Progression"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cancer-patient-jenny-m"
+        },
+        "focus": [
+          {
+            "reference": "Condition/primary-cancer-condition-jenny-m"
+          }
+        ],
+        "effectiveDateTime": "2018-11-01",
+        "performer": [
+          {
+            "reference": "Practitioner/us-core-practitioner-owen-oncologist"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "268910001",
+              "display": "Patient's condition improved (finding)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "whatever",
+      "resource": {
+        "resourceType": "BodyStructure",
+        "id": "empty-tumor",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor"
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "whatever",
+      "resource": {
+        "resourceType": "BodyStructure",
+        "id": "tumor-lobular-carcinoma-left-breast",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor"
+          ]
+        },
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"tumor-lobular-carcinoma-left-breast\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mcode-tumor.html\">Tumor Profile</a></p></div><p><b>Related Condition Extension</b>: <a href=\"Condition-primary-cancer-condition-breast.html\">Condition/primary-cancer-condition-breast</a></p><p><b>identifier</b>: BodyStructure: Tumor 1234 (USUAL)</p><p><b>location</b>: Left breast structure (body structure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#80248007)</span></p><p><b>patient</b>: <a href=\"Patient-cancer-patient-eve-anyperson.html\">Patient/cancer-patient-eve-anyperson</a> \" ANYPERSON\"</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-related-condition",
+            "valueReference": {
+              "reference": "Condition/primary-cancer-condition-breast"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/resource-types",
+                  "code": "BodyStructure"
+                }
+              ]
+            },
+            "system": "http://radiology.hospital.example.org",
+            "value": "Tumor 1234"
+          }
+        ],
+        "location": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "80248007",
+              "display": "Left breast structure (body structure)"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/cancer-patient-eve-anyperson"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/tumor-size-jenny-m",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "empty-tumor-size",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-size"
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/tumor-size-jenny-m",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tumor-size-jenny-m",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-size"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"tumor-size-jenny-m\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mcode-tumor-size.html\">Tumor Size Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Size Tumor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21889-1)</span></p><p><b>subject</b>: <a href=\"#Patient_cancer-patient-jenny-m\">See above (Patient/cancer-patient-jenny-m)</a></p><p><b>effective</b>: 2018-04-01T00:00:00Z</p><p><b>method</b>: Pathology report gross observation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#24419-4)</span></p><p><b>specimen</b>: <a href=\"Specimen-tumor-specimen-left-breast-jenny-m.html\">Specimen/tumor-specimen-left-breast-jenny-m</a></p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Size.maximum dimension in Tumor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#33728-7)</span></td><td>2.5 centimeters<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cm = 'cm')</span></td></tr></table></div>"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21889-1",
+              "display": "Size Tumor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cancer-patient-jenny-m"
+        },
+        "effectiveDateTime": "2018-04-01T00:00:00Z",
+        "method": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "24419-4",
+              "display": "Pathology report gross observation"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/tumor-specimen-left-breast-jenny-m"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "33728-7",
+                  "display": "Size.maximum dimension in Tumor"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 2.5,
+              "unit": "centimeters",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "33729-5"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "whatever",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "empty-tumor-specimen",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-specimen"
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "whatever",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "tumor-specimen-left-breast-jenny-m",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-specimen"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"tumor-specimen-left-breast-jenny-m\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mcode-tumor-specimen.html\">Tumor Specimen Profile</a></p></div><p><b>identifier</b>: BodyStructure: Tumor 1234 (USUAL)</p><p><b>status</b>: available</p><p><b>type</b>: Tumor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v2-0487.html\">specimenType</a>#TUMOR)</span></p><p><b>subject</b>: <a href=\"Patient-cancer-patient-jenny-m.html\">Patient/cancer-patient-jenny-m</a> \" M\"</p><p><b>receivedTime</b>: 2018-04-01</p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>BodySite</b></td></tr><tr><td>*</td><td>Left breast structure (body structure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#80248007)</span></td></tr></table></div>"
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/resource-types",
+                  "code": "BodyStructure"
+                }
+              ]
+            },
+            "system": "http://radiology.hospital.example.org",
+            "value": "Tumor 1234"
+          }
+        ],
+        "status": "available",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+              "code": "TUMOR"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cancer-patient-jenny-m"
+        },
+        "receivedTime": "2018-04-01",
+        "collection": {
+          "bodySite": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "80248007",
+                "display": "Left breast structure (body structure)"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

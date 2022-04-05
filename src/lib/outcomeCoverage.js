@@ -1,12 +1,10 @@
 const fhirpath = require('fhirpath');
-const { getDiseaseStatus, getTumor, getTumorSize } = require('./resourceUtils');
-const testbundle = require('../../test/fullBundle.json');
+const { getDiseaseStatus, getTumor, getTumorSize, getTumorSpecimen } = require('./resourceUtils');
 
 /**
  * Takes a bundle and returns the coverage of outcome resources in that bundle
  * @param {Object} bundle, an mCODE bundle
- * @return {Array}, an array of objects where each object has keys corresponding to fields in the mCODE diagram
- * and boolean values indicating if the field is covered
+ * @return {Object}, an object representing the coverage of the Outcome dection of the mCODE diagram
  */
 function getOutcomeCoverage(bundle) {
   const diseaseStatus = getDiseaseStatus(bundle);
@@ -30,6 +28,12 @@ function getOutcomeCoverage(bundle) {
     tumorCoverage.coverage.push({
       resourceID: fhirpath.evaluate(tumor, 'BodyStructure.id')[0],
       data: {
+        'Body Structure Identifier': {
+          covered: fhirpath.evaluate(
+            tumor,
+            "BodyStructure.identifier.type.coding.where(system = 'http://hl7.org/fhir/resource-types' and code = 'BodyStructure').exists()",
+          )[0],
+        },
         Location: { covered: fhirpath.evaluate(tumor, 'BodyStructure.location.exists()')[0] },
       },
     });
@@ -42,16 +46,41 @@ function getOutcomeCoverage(bundle) {
       data: {
         Method: { covered: fhirpath.evaluate(size, 'Observation.method.exists()')[0] },
         Component: { covered: fhirpath.evaluate(size, 'Observation.component.exists()')[0] },
+        'Longest Dimension': {
+          covered: fhirpath.evaluate(
+            size,
+            "Observation.component.code.coding.where(system = 'http://loinc.org' and code = '33728-7').exists()",
+          )[0],
+        },
+        'Other Dimension': {
+          covered: fhirpath.evaluate(
+            size,
+            "Observation.component.code.coding.where(system = 'http://loinc.org' and code = '33729-5').exists()",
+          )[0],
+        },
+      },
+    });
+  });
+  const tumorSpecimen = getTumorSpecimen(bundle);
+  const tumorSpecimenCoverage = { profile: 'Tumor Specimen', coverage: [] };
+  tumorSpecimen.forEach((specimen) => {
+    tumorSpecimenCoverage.coverage.push({
+      resourceID: fhirpath.evaluate(specimen, 'Specimen.id')[0],
+      data: {
+        Type: {
+          covered: fhirpath.evaluate(
+            specimen,
+            "Specimen.type.coding.where(code = 'TUMOR' and system = 'http://terminology.hl7.org/CodeSystem/v2-0487').exists()",
+          )[0],
+        },
       },
     });
   });
   return {
     section: 'Outcome',
-    data: [diseaseStatusCoverage, tumorCoverage, tumorSizeCoverage],
+    data: [diseaseStatusCoverage, tumorCoverage, tumorSizeCoverage, tumorSpecimenCoverage],
   };
 }
-
-console.log(JSON.stringify(getOutcomeCoverage(testbundle), null, 2));
 
 module.exports = {
   getOutcomeCoverage,

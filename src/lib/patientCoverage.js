@@ -1,6 +1,6 @@
 const fhirpath = require('fhirpath');
 const { getPatient } = require('./resourceUtils');
-const testbundle = require('../../test/fullBundle.json');
+
 /**
  * Takes a bundle and returns the coverage of patient resources in that bundle
  * @param {Object} bundle, an mCODE bundle
@@ -32,6 +32,9 @@ function getPatientCoverage(bundle) {
             "Patient.extension.where(url='http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity').exists()",
           )[0],
         },
+        'Death Date': {
+          covered: fhirpath.evaluate(patient, 'Patient.deceasedDateTime.exists()')[0],
+        },
       },
     });
   });
@@ -40,8 +43,6 @@ function getPatientCoverage(bundle) {
     data: [patientCoverage],
   };
 }
-
-console.log(JSON.stringify(getPatientCoverage(testbundle), null, 2));
 
 module.exports = {
   getPatientCoverage,
