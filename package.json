@@ -1,5 +1,6 @@
 {
   "name": "mcode-coverage-checker",
+  "homepage": "http://mcode.github.io/mcode-coverage-checker",
   "version": "0.1.0",
   "contributors": [
     "Julian Carter <jacarter@mitre.org>",
@@ -24,6 +25,8 @@
     "test": "jest",
     "eject": "react-scripts eject",
     "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint \"./**/*.js\"",
     "lint-fix": "eslint \"./**/*.js\" --fix"
   },
@@ -62,6 +65,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "gh-pages": "^3.2.3",
     "husky": "^7.0.0",
     "jest": "^27.5.1",
     "lint-staged": "^12.3.4",
