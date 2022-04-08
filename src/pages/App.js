@@ -3,6 +3,7 @@ import MainVisualization from '../components/MainVisualization';
 import coverageChecker from '../lib/coverageChecker/coverageChecker';
 import testbundle from '../data/fullBundle.json';
 import styles from './App.module.css';
+import MainSvg from '../components/oldSvg/MainSvg';
 
 function App() {
   const coverageData = coverageChecker(testbundle);
@@ -14,6 +15,7 @@ function App() {
       </header>
       <div className={styles.app}>
         <MainVisualization coverageData={coverageData} className={styles.app} />
+        <MainSvg />
       </div>
     </>
   );

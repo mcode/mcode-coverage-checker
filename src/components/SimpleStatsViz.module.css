@@ -4,6 +4,10 @@
   align-items: baseline;
 }
 
+.stats-container:first-of-type {
+  margin: 1rem 0;
+}
+
 .title {
   font-size: 1.5rem;
 }

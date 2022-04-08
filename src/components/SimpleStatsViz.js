@@ -1,4 +1,3 @@
-// import PropTypes from 'prop-types';
 import styles from './SimpleStatsViz.module.css';
 
 function coverageDisplayText(stats) {
@@ -13,9 +12,7 @@ function isCoverageZero(stats) {
   return stats.percentage === 0;
 }
 
-// eslint-disable-next-line react/prop-types
 function SimpleStatsViz({ title, stats, larger = false }) {
-  console.log(styles);
   return (
     <div className={styles['stats-container']}>
       <h1 className={`${styles.title} ${larger && styles.larger}`}>{title}</h1>
@@ -29,9 +26,5 @@ function SimpleStatsViz({ title, stats, larger = false }) {
     </div>
   );
 }
-
-// SimpleStatsViz.propTypes = {
-//   coverageData: PropTypes.shape({}).isRequired,
-// };
 
 export default SimpleStatsViz;
