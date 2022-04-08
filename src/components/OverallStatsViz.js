@@ -1,13 +1,12 @@
 // import PropTypes from 'prop-types';
+import { getOverallStats } from '../lib/coverageStats/coverageStats';
+import SimpleStatsViz from './SimpleStatsViz';
 
 // eslint-disable-next-line react/prop-types
-function OverallStatsViz({ stats }) {
-  return (
-    <>
-      <h1>Overall Coverage</h1>
-      <p>{JSON.stringify(stats)}</p>
-    </>
-  );
+function OverallStatsViz({ coverageData }) {
+  const stats = getOverallStats(coverageData);
+
+  return <SimpleStatsViz title="Overall Coverage" stats={stats} larger />;
 }
 
 // OverallStatsViz.propTypes = {

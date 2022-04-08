@@ -1,9 +1,9 @@
 const { log } = require('../logger');
-const { patientId } = require('../coverageSectionIds');
+const { patientId, outcomeId } = require('../coverageSectionIds');
 const coverageCheckerFactory = require('./coverageCheckerFactory');
 
 function coverageChecker(bundle) {
-  const sections = [patientId];
+  const sections = [patientId, outcomeId];
   return sections.map((section) => {
     log(coverageCheckerFactory);
     const sectionCoverageChecker = coverageCheckerFactory(section);

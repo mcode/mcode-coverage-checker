@@ -2,18 +2,20 @@ import { log } from '../lib/logger';
 import MainVisualization from '../components/MainVisualization';
 import coverageChecker from '../lib/coverageChecker/coverageChecker';
 import testbundle from '../data/fullBundle.json';
-
-import './App.css';
+import styles from './App.module.css';
 
 function App() {
   const coverageData = coverageChecker(testbundle);
   log(coverageData);
   return (
-    <div className="App">
-      <header className="App-header">
-        <MainVisualization coverageData={coverageData} />
+    <>
+      <header className={styles['app-header']}>
+        <div className={styles['app-header-content']}>mCODE Coverage Checker</div>
       </header>
-    </div>
+      <div className={styles.app}>
+        <MainVisualization coverageData={coverageData} className={styles.app} />
+      </div>
+    </>
   );
 }
 

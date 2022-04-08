@@ -1,0 +1,18 @@
+.app {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.app-header {
+  background-color: blanchedalmond;
+  width: 100vw;
+  min-height: 70px;
+}
+
+.app-header-content {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 2rem;
+}

@@ -1,17 +1,15 @@
 // import PropTypes from 'prop-types';
-import { getOverallStats, getPatientStats } from '../lib/coverageStats/statsUtils';
 import OverallStatsViz from './OverallStatsViz';
 import PatientStatsViz from './PatientStatsViz';
+import OutcomeStatsViz from './OutcomeStatsViz';
 
 // eslint-disable-next-line react/prop-types
 function MainVisualization({ coverageData }) {
-  const overallStats = getOverallStats(coverageData);
-  const patientStats = getPatientStats(coverageData);
-
   return (
     <>
-      <OverallStatsViz stats={overallStats} />
-      <PatientStatsViz stats={patientStats} />
+      <OverallStatsViz coverageData={coverageData} />
+      <PatientStatsViz coverageData={coverageData} />
+      <OutcomeStatsViz coverageData={coverageData} />
     </>
   );
 }
