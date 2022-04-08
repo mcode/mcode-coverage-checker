@@ -2,11 +2,11 @@ const fhirpath = require('fhirpath');
 const { getDiseaseStatus, getTumor, getTumorSize, getTumorSpecimen } = require('./resourceUtils');
 
 /**
- * Takes a bundle and returns the coverage of outcome resources in that bundle
+ * Takes a bundle and returns the coverage of disease status resources in that bundle
  * @param {Object} bundle, an mCODE bundle
- * @return {Object}, an object representing the coverage of the Outcome dection of the mCODE diagram
+ * @return {Object}, an object representing the coverage of all disease status resources
  */
-function getOutcomeCoverage(bundle) {
+function getDiseaseStatusCoverage(bundle) {
   const diseaseStatus = getDiseaseStatus(bundle);
   const diseaseStatusCoverage = { profile: 'Disease Status', coverage: [] };
   diseaseStatus.forEach((status) => {
@@ -22,6 +22,15 @@ function getOutcomeCoverage(bundle) {
       },
     });
   });
+  return diseaseStatusCoverage;
+}
+
+/**
+ * Takes a bundle and returns the coverage of tumor resources in that bundle
+ * @param {Object} bundle, an mCODE bundle
+ * @return {Object}, an object representing the coverage of all tumor resources
+ */
+function getTumorCoverage(bundle) {
   const tumors = getTumor(bundle);
   const tumorCoverage = { profile: 'Tumor', coverage: [] };
   tumors.forEach((tumor) => {
@@ -38,6 +47,15 @@ function getOutcomeCoverage(bundle) {
       },
     });
   });
+  return tumorCoverage;
+}
+
+/**
+ * Takes a bundle and returns the coverage of tumor size resources in that bundle
+ * @param {Object} bundle, an mCODE bundle
+ * @return {Object}, an object representing the coverage of all tumor size resources
+ */
+function getTumorSizeCoverage(bundle) {
   const tumorSize = getTumorSize(bundle);
   const tumorSizeCoverage = { profile: 'Tumor Size', coverage: [] };
   tumorSize.forEach((size) => {
@@ -61,6 +79,15 @@ function getOutcomeCoverage(bundle) {
       },
     });
   });
+  return tumorSizeCoverage;
+}
+
+/**
+ * Takes a bundle and returns the coverage of tumor specimen resources in that bundle
+ * @param {Object} bundle, an mCODE bundle
+ * @return {Object}, an object representing the coverage of all tumor specimen resources
+ */
+function getTumorSpecimenCoverage(bundle) {
   const tumorSpecimen = getTumorSpecimen(bundle);
   const tumorSpecimenCoverage = { profile: 'Tumor Specimen', coverage: [] };
   tumorSpecimen.forEach((specimen) => {
@@ -76,9 +103,23 @@ function getOutcomeCoverage(bundle) {
       },
     });
   });
+  return tumorSpecimenCoverage;
+}
+
+/**
+ * Takes a bundle and returns the coverage of outcome resources in that bundle
+ * @param {Object} bundle, an mCODE bundle
+ * @return {Object}, an object representing the coverage of the Outcome dection of the mCODE diagram
+ */
+function getOutcomeCoverage(bundle) {
   return {
     section: 'Outcome',
-    data: [diseaseStatusCoverage, tumorCoverage, tumorSizeCoverage, tumorSpecimenCoverage],
+    data: [
+      getDiseaseStatusCoverage(bundle),
+      getTumorCoverage(bundle),
+      getTumorSizeCoverage(bundle),
+      getTumorSpecimenCoverage(bundle),
+    ],
   };
 }
 

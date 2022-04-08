@@ -32,8 +32,11 @@ function getPatientCoverage(bundle) {
             "Patient.extension.where(url='http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity').exists()",
           )[0],
         },
-        'Death Date': {
-          covered: fhirpath.evaluate(patient, 'Patient.deceasedDateTime.exists()')[0],
+        Deceased: {
+          covered: fhirpath.evaluate(
+            patient,
+            'Patient.deceasedDateTime.exists() or Patient.deceasedBoolean.exists()',
+          )[0],
         },
       },
     });

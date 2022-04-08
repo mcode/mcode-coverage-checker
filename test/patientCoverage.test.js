@@ -20,7 +20,7 @@ describe('getPatientCoverage()', () => {
     expect(res.data[0].coverage[1].data['Zip Code'].covered).toBe(true);
     expect(res.data[0].coverage[1].data['US Core Race'].covered).toBe(true);
     expect(res.data[0].coverage[1].data['US Core Ethnicity'].covered).toBe(true);
-    expect(res.data[0].coverage[1].data['Death Date'].covered).toBe(true);
+    expect(res.data[0].coverage[1].data.Deceased.covered).toBe(true);
   });
 
   test('All values should be false when patient is missing every field', () => {
@@ -31,6 +31,6 @@ describe('getPatientCoverage()', () => {
     expect(res.data[0].coverage[0].data['Zip Code'].covered).toBe(false);
     expect(res.data[0].coverage[0].data['US Core Race'].covered).toBe(false);
     expect(res.data[0].coverage[0].data['US Core Ethnicity'].covered).toBe(false);
-    expect(res.data[0].coverage[0].data['Death Date'].covered).toBe(false);
+    expect(res.data[0].coverage[0].data.Deceased.covered).toBe(false);
   });
 });
