@@ -15,7 +15,8 @@
           "profile": [
             "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"
           ]
-        }
+        },
+        "id": "empty-patient"
       }
     },
     {
@@ -92,6 +93,7 @@
             ]
           }
         ],
+        "deceasedDateTime": "1900-01-01",
         "gender": "female",
         "birthDate": "1965-01-01",
         "address": [

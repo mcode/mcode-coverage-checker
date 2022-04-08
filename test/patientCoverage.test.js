@@ -1,30 +1,36 @@
-const testBundle = require('./patientBundle.json');
+const testBundle = require('./bundles/patientBundle.json');
 const { getPatientCoverage } = require('../src/lib/patientCoverage');
 
 describe('getPatientCoverage()', () => {
   const res = getPatientCoverage(testBundle);
 
-  test('Result should have length equal to number of patients in bundle', () => {
-    expect(res.length).toBe(2);
+  test('Section object should have length equal to number of profiles in section', () => {
+    expect(res.data.length).toBe(1);
+  });
+
+  test('Coverage array should have length equal to number of patients in bundle', () => {
+    expect(res.data[0].coverage.length).toBe(2);
   });
 
   test('All values should be true when patient has all fields covered', () => {
-    expect(res[1].Name).toBe(true);
-    expect(res[1]['Contact Info']).toBe(true);
-    expect(res[1]['Birth Date']).toBe(true);
-    expect(res[1].Gender).toBe(true);
-    expect(res[1]['Zip Code']).toBe(true);
-    expect(res[1]['US Core Race']).toBe(true);
-    expect(res[1]['US Core Ethnicity']).toBe(true);
+    expect(res.data[0].coverage[1].data.Name.covered).toBe(true);
+    expect(res.data[0].coverage[1].data['Contact Info'].covered).toBe(true);
+    expect(res.data[0].coverage[1].data['Birth Date'].covered).toBe(true);
+    expect(res.data[0].coverage[1].data.Gender.covered).toBe(true);
+    expect(res.data[0].coverage[1].data['Zip Code'].covered).toBe(true);
+    expect(res.data[0].coverage[1].data['US Core Race'].covered).toBe(true);
+    expect(res.data[0].coverage[1].data['US Core Ethnicity'].covered).toBe(true);
+    expect(res.data[0].coverage[1].data.Deceased.covered).toBe(true);
   });
 
   test('All values should be false when patient is missing every field', () => {
-    expect(res[0].Name).toBe(false);
-    expect(res[0]['Contact Info']).toBe(false);
-    expect(res[0]['Birth Date']).toBe(false);
-    expect(res[0].Gender).toBe(false);
-    expect(res[0]['Zip Code']).toBe(false);
-    expect(res[0]['US Core Race']).toBe(false);
-    expect(res[0]['US Core Ethnicity']).toBe(false);
-  })
+    expect(res.data[0].coverage[0].data.Name.covered).toBe(false);
+    expect(res.data[0].coverage[0].data['Contact Info'].covered).toBe(false);
+    expect(res.data[0].coverage[0].data['Birth Date'].covered).toBe(false);
+    expect(res.data[0].coverage[0].data.Gender.covered).toBe(false);
+    expect(res.data[0].coverage[0].data['Zip Code'].covered).toBe(false);
+    expect(res.data[0].coverage[0].data['US Core Race'].covered).toBe(false);
+    expect(res.data[0].coverage[0].data['US Core Ethnicity'].covered).toBe(false);
+    expect(res.data[0].coverage[0].data.Deceased.covered).toBe(false);
+  });
 });

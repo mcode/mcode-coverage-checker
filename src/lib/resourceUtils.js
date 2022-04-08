@@ -39,13 +39,6 @@ function getTumorSpecimen(bundle) {
   );
 }
 
-function getBodyStructureIdentifier(bundle) {
-  return fhirpath.evaluate(
-    bundle,
-    "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-structure-identifier')",
-  );
-}
-
 // Disease
 
 function getTumorMarkerTest(bundle) {
@@ -193,7 +186,6 @@ module.exports = {
   getTumor,
   getTumorSize,
   getTumorSpecimen,
-  getBodyStructureIdentifier,
   getTumorMarkerTest,
   getPrimaryCancerCondition,
   getSecondaryCancerCondition,
