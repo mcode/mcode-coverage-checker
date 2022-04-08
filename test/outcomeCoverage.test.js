@@ -1,5 +1,5 @@
 const testBundle = require('./bundles/outcomeBundle.json');
-const { getOutcomeCoverage } = require('../src/lib/outcomeCoverage');
+const { getOutcomeCoverage } = require('../src/lib/coverageChecker/outcomeCoverage');
 
 describe('getOutcomeCoverage()', () => {
   const res = getOutcomeCoverage(testBundle);

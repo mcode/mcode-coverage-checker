@@ -1,4 +1,4 @@
-const { error } = require('./logger');
+const { error } = require('../logger');
 const { getPatientCoverage } = require('./patientCoverage');
 const { getOutcomeCoverage } = require('./outcomeCoverage');
 const { patientId, outcomeId } = require('./coverageSectionIds');

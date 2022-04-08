@@ -1,4 +1,4 @@
-const { log } = require('./logger');
+const { log } = require('../logger');
 const { patientId } = require('./coverageSectionIds');
 const coverageCheckerFactory = require('./coverageCheckerFactory');
 
