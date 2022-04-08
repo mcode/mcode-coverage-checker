@@ -4,6 +4,10 @@ object-assign
 @license MIT
 */
 
+/*! https://mths.be/codepointat v0.2.0 by @mathias */
+
+/*! https://mths.be/fromcodepoint v0.2.1 by @mathias */
+
 /** @license React v0.20.2
  * scheduler.production.min.js
  *
