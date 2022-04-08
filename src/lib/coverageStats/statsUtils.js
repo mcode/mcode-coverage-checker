@@ -27,8 +27,6 @@ function getSectionTotalCount(sectionObject) {
 }
 
 module.exports = {
-  getProfileCoveredCount,
-  getProfileTotalCount,
   getSectionCoveredCount,
   getSectionTotalCount,
 };

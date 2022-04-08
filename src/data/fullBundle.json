@@ -1012,9 +1012,7 @@
         "resourceType": "Specimen",
         "id": "tumor-specimen-left-breast-jenny-m",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-specimen"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-specimen"]
         },
         "text": {
           "status": "generated",
@@ -1067,9 +1065,7 @@
         "resourceType": "BodyStructure",
         "id": "tumor-lobular-carcinoma-left-breast",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor"]
         },
         "text": {
           "status": "extensions",

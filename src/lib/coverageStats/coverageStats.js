@@ -1,4 +1,4 @@
-const { patientId } = require('../coverageChecker/coverageSectionIds');
+const { patientId } = require('../coverageSectionIds');
 const { getSectionCoveredCount, getSectionTotalCount } = require('./statsUtils');
 
 // Coverage stats - percentage and raw counts - for all sections

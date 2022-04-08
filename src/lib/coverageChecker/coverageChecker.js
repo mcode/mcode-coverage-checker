@@ -1,5 +1,5 @@
 const { log } = require('../logger');
-const { patientId } = require('./coverageSectionIds');
+const { patientId } = require('../coverageSectionIds');
 const coverageCheckerFactory = require('./coverageCheckerFactory');
 
 function coverageChecker(bundle) {

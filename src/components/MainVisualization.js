@@ -1,5 +1,5 @@
 // import PropTypes from 'prop-types';
-import { getOverallStats, getPatientStats } from '../lib/statsUtils';
+import { getOverallStats, getPatientStats } from '../lib/coverageStats/statsUtils';
 import OverallStatsViz from './OverallStatsViz';
 import PatientStatsViz from './PatientStatsViz';
 
