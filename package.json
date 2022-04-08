@@ -1,6 +1,11 @@
 {
   "name": "mcode-coverage-checker",
   "version": "0.1.0",
+  "contributors": [
+    "Julian Carter <jacarter@mitre.org>",
+    "Dylan Mendelowitz <dmendelowitz@mitre.org>",
+    "Dylan Phelan <dtphelan1@gmail.com>"
+  ],
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
