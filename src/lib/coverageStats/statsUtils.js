@@ -32,6 +32,8 @@ function getSectionTotalCount(sectionObject) {
  */
 function getAllSectionsCoverage(coverageData) {
   const totalCovered = coverageData.reduce((accum, sectionObject) => accum + getSectionCoveredCount(sectionObject), 0);
+  // TODO: Since empty sections have no profiles with keys, totalPossible should be declarative informatino
+  // stored elsewhere in the app, not inferred information based on sections
   const totalPossible = coverageData.reduce((accum, sectionObject) => accum + getSectionTotalCount(sectionObject), 0);
   return {
     percentage: totalPossible === 0 ? totalPossible : totalCovered / totalPossible,
