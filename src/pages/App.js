@@ -1,13 +1,24 @@
-import MainSvg from '../components/MainSvg';
-import './App.css';
+import { log } from '../lib/logger';
+import MainVisualization from '../components/MainVisualization';
+import coverageChecker from '../lib/coverageChecker/coverageChecker';
+import testbundle from '../data/fullBundle.json';
+import styles from './App.module.css';
+import MainSvg from '../components/oldSvg/MainSvg';
 
 function App() {
+  const coverageData = coverageChecker(testbundle);
+  // TODO: Remove this when website is in 1.0
+  log(coverageData);
   return (
-    <div className="App">
-      <header className="App-header">
-        <MainSvg />
+    <>
+      <header className={styles['app-header']}>
+        <div className={styles['app-header-content']}>mCODE Coverage Checker</div>
       </header>
-    </div>
+      <div className={styles.app}>
+        <MainVisualization coverageData={coverageData} className={styles.app} />
+        <MainSvg />
+      </div>
+    </>
   );
 }
 

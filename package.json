@@ -1,12 +1,19 @@
 {
   "name": "mcode-coverage-checker",
+  "homepage": "http://mcode.github.io/mcode-coverage-checker",
   "version": "0.1.0",
+  "contributors": [
+    "Julian Carter <jacarter@mitre.org>",
+    "Dylan Mendelowitz <dmendelowitz@mitre.org>",
+    "Dylan Phelan <dtphelan1@gmail.com>"
+  ],
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
     "fhirpath": "^2.12.0",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
@@ -18,6 +25,8 @@
     "test": "jest",
     "eject": "react-scripts eject",
     "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint \"./**/*.js\"",
     "lint-fix": "eslint \"./**/*.js\" --fix"
   },
@@ -56,6 +65,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "gh-pages": "^3.2.3",
     "husky": "^7.0.0",
     "jest": "^27.5.1",
     "lint-staged": "^12.3.4",
