@@ -34,7 +34,7 @@ function getAllSectionsCoverage(coverageData) {
   const totalCovered = coverageData.reduce((accum, sectionObject) => accum + getSectionCoveredCount(sectionObject), 0);
   const totalPossible = coverageData.reduce((accum, sectionObject) => accum + getSectionTotalCount(sectionObject), 0);
   return {
-    percentage: totalCovered / totalPossible,
+    percentage: totalPossible === 0 ? totalPossible : totalCovered / totalPossible,
     covered: totalCovered,
     possible: totalPossible,
   };
