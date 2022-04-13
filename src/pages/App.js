@@ -7,6 +7,7 @@ import MainSvg from '../components/oldSvg/MainSvg';
 
 function App() {
   const coverageData = coverageChecker(testbundle);
+  // TODO: Remove this when website is in 1.0
   log(coverageData);
   return (
     <>
