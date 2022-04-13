@@ -31,7 +31,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## CoverageData Shape
 
-Coverage checkers in this application create JSON objects reporting on the coverage for various mCODE profiles and their critical data elements. For and example of what that CoverageData object looks like, see below.
+Coverage checkers in this application create JSON objects reporting on the coverage for various mCODE profiles and their critical data elements. For an example of what that CoverageData object looks like, see below.
 
 ```json
 {
