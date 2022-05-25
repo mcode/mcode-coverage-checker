@@ -3,7 +3,7 @@ const { getPatient } = require('./resourceUtils');
 /**
  * Takes a bundle and returns the coverage of patient resources in that bundle
  * @param {Object} bundle, an mCODE bundle
- * @return {Object}, an object representing the coverage of the Patient dection of the mCODE diagram
+ * @return {Object}, an object representing the coverage of the Patient section of the mCODE diagram
  */
 function getPatientCoverage(bundle) {
   const patients = getPatient(bundle);

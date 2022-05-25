@@ -109,7 +109,7 @@ function getTumorSpecimenCoverage(bundle) {
 /**
  * Takes a bundle and returns the coverage of outcome resources in that bundle
  * @param {Object} bundle, an mCODE bundle
- * @return {Object}, an object representing the coverage of the Outcome dection of the mCODE diagram
+ * @return {Object}, an object representing the coverage of the Outcome section of the mCODE diagram
  */
 function getOutcomeCoverage(bundle) {
   return {
