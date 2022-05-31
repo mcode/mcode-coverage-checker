@@ -1,0 +1,534 @@
+{
+  "resourceType": "Bundle",
+  "id": "mcode-patient-bundle-jenny-m",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle"
+    ]
+  },
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "whatever",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "empty-tumor-marker-test",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test"
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/tumor-marker-test-er-jenny-m",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tumor-marker-test-er-jenny-m",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"tumor-marker-test-er-jenny-m\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mcode-tumor-marker-test.html\">Tumor Marker Test Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85337-4)</span></p><p><b>subject</b>: <a href=\"#Patient_cancer-patient-jenny-m\">See above (Patient/cancer-patient-jenny-m)</a></p><p><b>effective</b>: 2018-03-10</p><p><b>performer</b>: <a href=\"#Practitioner_us-core-practitioner-owen-oncologist\">See above (Practitioner/us-core-practitioner-owen-oncologist)</a></p><p><b>value</b>: Positive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6576-8)</span></p></div>"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85337-4",
+              "display": "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cancer-patient-jenny-m"
+        },
+        "effectiveDateTime": "2018-03-10",
+        "performer": [
+          {
+            "reference": "Practitioner/us-core-practitioner-owen-oncologist"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA6576-8",
+              "display": "Positive"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "whatever",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "empty-primary-cancer",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition"
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/primary-cancer-condition-jenny-m",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "primary-cancer-condition-jenny-m",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition"
+          ]
+        },
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"primary-cancer-condition-jenny-m\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mcode-primary-cancer-condition.html\">Primary Cancer Condition Profile</a></p></div><p><b>Histology-Morphology-Behavior Extension</b>: Adenocarcinoma, no subtype, intermediate grade (morphologic abnormality) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#413448000)</span></p><p><b>clinicalStatus</b>: Remission <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#remission)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Primary malignant neoplasm of female left breast (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#353431000119107)</span></p><p><b>subject</b>: <a href=\"#Patient_cancer-patient-jenny-m\">See above (Patient/cancer-patient-jenny-m)</a></p><p><b>onset</b>: 2018-03-16</p><p><b>asserter</b>: <a href=\"#Practitioner_us-core-practitioner-owen-oncologist\">See above (Practitioner/us-core-practitioner-owen-oncologist)</a></p><h3>Stages</h3><table class=\"grid\"><tr><td>-</td><td><b>Summary</b></td><td><b>Assessment</b></td></tr><tr><td>*</td><td>3C <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (cancerstaging.org#3C)</span></td><td><a href=\"#Observation_tnm-clinical-stage-group-jenny-m\">See above (Observation/tnm-clinical-stage-group-jenny-m)</a></td></tr></table></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-histology-morphology-behavior",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "413448000",
+                  "display": "Adenocarcinoma, no subtype, intermediate grade (morphologic abnormality)"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+            "valueDateTime": "<dateTime>"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "remission"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "353431000119107",
+              "display": "Primary malignant neoplasm of female left breast (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cancer-patient-jenny-m"
+        },
+        "onsetDateTime": "2018-03-16",
+        "asserter": {
+          "reference": "Practitioner/us-core-practitioner-owen-oncologist"
+        },
+        "stage": [
+          {
+            "summary": {
+              "coding": [
+                {
+                  "system": "http://cancerstaging.org",
+                  "code": "3C"
+                }
+              ]
+            },
+            "assessment": [
+              {
+                "reference": "Observation/tnm-clinical-stage-group-jenny-m"
+              }
+            ]
+          }
+        ],
+        "bodySite": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "7771000",
+                      "display": "Left (qualifier value)"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier",
+                "valueCodeableConcept": {
+                  "coding": []
+                }
+              }
+            ],
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "39607008",
+                "display": "Lung structure (body structure)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "whatever",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "empty-secondary-cancer",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition"
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "whatever",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "secondary-cancer-condition-brain-mets",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition"
+          ]
+        },
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"secondary-cancer-condition-brain-mets\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mcode-secondary-cancer-condition.html\">Secondary Cancer Condition Profile</a></p></div><p><b>related</b>: <a href=\"Condition-primary-cancer-condition-nsclc.html\">Condition/primary-cancer-condition-nsclc</a></p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Secondary malignant neoplasm of brain <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#94225005)</span></p><p><b>subject</b>: <a href=\"Patient-cancer-patient-john-anyperson.html\">Patient/cancer-patient-john-anyperson</a> \" ANYPERSON\"</p><p><b>onset</b>: 2019-05-01</p><p><b>asserter</b>: <a href=\"Practitioner-us-core-practitioner-kyle-anydoc.html\">Practitioner/us-core-practitioner-kyle-anydoc</a> \" ANYDOC\"</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/condition-related",
+            "valueReference": {
+              "reference": "Condition/primary-cancer-condition-nsclc"
+            }
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "94225005",
+              "display": "Secondary malignant neoplasm of brain"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cancer-patient-john-anyperson"
+        },
+        "onsetDateTime": "2019-05-01",
+        "asserter": {
+          "reference": "Practitioner/us-core-practitioner-kyle-anydoc"
+        }
+      }
+    },
+    {
+      "fullUrl": "whatever",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "empty-stage-group",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-stage-group"
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/tnm-clinical-stage-group-jenny-m",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-clinical-stage-group-jenny-m",
+        "meta": {
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-stage-group"]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"tnm-clinical-stage-group-jenny-m\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mcode-cancer-stage-group.html\">Cancer Stage Group Profile</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Stage group.clinical Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21908-9)</span></p><p><b>subject</b>: <a href=\"#Patient_cancer-patient-jenny-m\">See above (Patient/cancer-patient-jenny-m)</a></p><p><b>effective</b>: 2018-03-16</p><p><b>value</b>: IIB <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (cancerstaging.org#2B)</span></p><p><b>method</b>: American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#897275008)</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-tnm-pathologic-primary-tumor-category-jenny-m.html\">Observation/tnm-pathologic-primary-tumor-category-jenny-m</a></li><li><a href=\"Observation-tnm-pathologic-regional-nodes-category-jenny-m.html\">Observation/tnm-pathologic-regional-nodes-category-jenny-m</a></li><li><a href=\"Observation-tnm-pathologic-distant-metastases-category-jenny-m.html\">Observation/tnm-pathologic-distant-metastases-category-jenny-m</a></li></ul></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21908-9",
+              "display": "Stage group.clinical Cancer"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cancer-patient-jenny-m"
+        },
+        "effectiveDateTime": "2018-03-16",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://cancerstaging.org",
+              "code": "2B",
+              "display": "IIB"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "897275008",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/tnm-pathologic-primary-tumor-category-jenny-m"
+          },
+          {
+            "reference": "Observation/tnm-pathologic-regional-nodes-category-jenny-m"
+          },
+          {
+            "reference": "Observation/tnm-pathologic-distant-metastases-category-jenny-m"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "whatever",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "empty-primary-tumor",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-primary-tumor-category"
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/tnm-clinical-primary-tumor-category-jenny-m",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-clinical-primary-tumor-category-jenny-m",
+        "meta": {
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-primary-tumor-category"]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"tnm-clinical-primary-tumor-category-jenny-m\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mcode-tnm-primary-tumor-category.html\">TNM Primary Tumor Category Profile</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Primary tumor.clinical [Class] Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21905-5)</span></p><p><b>subject</b>: <a href=\"#Patient_cancer-patient-jenny-m\">See above (Patient/cancer-patient-jenny-m)</a></p><p><b>effective</b>: 2018-03-16</p><p><b>value</b>: cT3 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (cancerstaging.org#cT3)</span></p><p><b>method</b>: American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#897275008)</span></p></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21905-5",
+              "display": "Primary tumor.clinical [Class] Cancer"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cancer-patient-jenny-m"
+        },
+        "effectiveDateTime": "2018-03-16",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://cancerstaging.org",
+              "code": "cT3"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "897275008",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "whatever",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "empty-distant-metastases",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category"
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/tnm-clinical-distant-metastases-category-jenny-m",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-clinical-distant-metastases-category-jenny-m",
+        "meta": {
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category"]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"tnm-clinical-distant-metastases-category-jenny-m\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mcode-tnm-distant-metastases-category.html\">TNM Distant Metastases Category Profile</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Distant metastases.clinical [Class] Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21907-1)</span></p><p><b>subject</b>: <a href=\"#Patient_cancer-patient-jenny-m\">See above (Patient/cancer-patient-jenny-m)</a></p><p><b>effective</b>: 2018-03-16</p><p><b>value</b>: cM0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (cancerstaging.org#cM0)</span></p><p><b>method</b>: American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#897275008)</span></p></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21907-1",
+              "display": "Distant metastases.clinical [Class] Cancer"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cancer-patient-jenny-m"
+        },
+        "effectiveDateTime": "2018-03-16",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://cancerstaging.org",
+              "code": "cM0"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "897275008",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "whatever",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "empty-regional-nodes",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-regional-nodes-category"
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/tnm-clinical-regional-nodes-category-jenny-m",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-clinical-regional-nodes-category-jenny-m",
+        "meta": {
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-regional-nodes-category"]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"tnm-clinical-regional-nodes-category-jenny-m\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mcode-tnm-regional-nodes-category.html\">TNM Regional Nodes Category Profile</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Regional lymph nodes.clinical [Class] Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21906-3)</span></p><p><b>subject</b>: <a href=\"#Patient_cancer-patient-jenny-m\">See above (Patient/cancer-patient-jenny-m)</a></p><p><b>effective</b>: 2018-03-16</p><p><b>value</b>: cN0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (cancerstaging.org#cN0)</span></p><p><b>method</b>: American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#897275008)</span></p></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21906-3",
+              "display": "Regional lymph nodes.clinical [Class] Cancer"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cancer-patient-jenny-m"
+        },
+        "effectiveDateTime": "2018-03-16",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://cancerstaging.org",
+              "code": "cN0"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "897275008",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
