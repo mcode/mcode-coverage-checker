@@ -1,4 +1,4 @@
-const { patientId, outcomeId } = require('../coverageSectionIds');
+const { patientSectionId, outcomeSectionId, diseaseSectionId, treatmentSectionId } = require('../coverageSectionIds');
 const { getAllSectionsCoverage } = require('./statsUtils');
 
 /**
@@ -16,7 +16,7 @@ function getOverallStats(coverageData) {
  * @returns An object reporting percentage coverage and raw counts
  */
 function getPatientStats(coverageData) {
-  const patientData = coverageData.filter((sectionObject) => sectionObject.section === patientId);
+  const patientData = coverageData.filter((sectionObject) => sectionObject.section === patientSectionId);
   return getOverallStats(patientData);
 }
 
@@ -26,7 +26,27 @@ function getPatientStats(coverageData) {
  * @returns An object reporting percentage coverage and raw counts
  */
 function getOutcomeStats(coverageData) {
-  const outcomeData = coverageData.filter((sectionObject) => sectionObject.section === outcomeId);
+  const outcomeData = coverageData.filter((sectionObject) => sectionObject.section === outcomeSectionId);
+  return getOverallStats(outcomeData);
+}
+
+/**
+ * Compute coverage stats across only the Disease section
+ * @param {CoverageData Object} coverageData conforming to the standard CoverageData format (explored in README)
+ * @returns An object reporting percentage coverage and raw counts
+ */
+function getDiseaseStats(coverageData) {
+  const outcomeData = coverageData.filter((sectionObject) => sectionObject.section === diseaseSectionId);
+  return getOverallStats(outcomeData);
+}
+
+/**
+ * Compute coverage stats across only the Treatment section
+ * @param {CoverageData Object} coverageData conforming to the standard CoverageData format (explored in README)
+ * @returns An object reporting percentage coverage and raw counts
+ */
+function getTreatmentStats(coverageData) {
+  const outcomeData = coverageData.filter((sectionObject) => sectionObject.section === treatmentSectionId);
   return getOverallStats(outcomeData);
 }
 
@@ -34,4 +54,6 @@ module.exports = {
   getOverallStats,
   getPatientStats,
   getOutcomeStats,
+  getDiseaseStats,
+  getTreatmentStats,
 };
