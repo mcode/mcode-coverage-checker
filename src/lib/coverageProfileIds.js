@@ -1,5 +1,5 @@
 // Think of this file as an ENUM
-const treatmentProfiles = {
+const treatmentProfileIds = {
   cancerRelatedMedicationRequestId: 'Cancer Related Medication Request',
   cancerRelatedMedicationAdministrationId: 'Cancer Related Medication Administration',
   cancerRelatedSurgicalProcedureId: 'Cancer Related Procedure',
@@ -7,4 +7,4 @@ const treatmentProfiles = {
   radiotherapyVolumeId: 'Radiotherapy Volume',
 };
 
-module.exports = { treatmentProfiles };
+module.exports = { treatmentProfileIds };

@@ -224,6 +224,4 @@ function getTreatmentCoverage(bundle) {
 
 module.exports = {
   getTreatmentCoverage,
-  treatmentProfileIds,
-  treatmentSectionId,
 };
