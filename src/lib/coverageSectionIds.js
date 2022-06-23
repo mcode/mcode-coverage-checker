@@ -1,5 +1,7 @@
 // Think of this file as an ENUM
-const patientId = 'Patient';
-const outcomeId = 'Outcome';
+const patientSectionId = 'Patient';
+const outcomeSectionId = 'Outcome';
+const diseaseSectionId = 'Disease';
+const treatmentSectionId = 'Treatment';
 
-module.exports = { patientId, outcomeId };
+module.exports = { patientSectionId, outcomeSectionId, diseaseSectionId, treatmentSectionId };

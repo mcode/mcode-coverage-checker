@@ -36,7 +36,6 @@ Please list any recommendations regarding what reviewers should test and if ther
 - [ ] This PR describes why these changes were made.
 - [ ] This PR is into the correct branch.
 - [ ] This PR includes the correct JIRA issue reference.
-- [ ] Comment added to the relevant JIRA issue(s) with a link to this PR
 - [ ] Code diff has been reviewed (it **does not** contain: additional white space, not applicable code changes, debug statements, etc.)
 
 @ACCT1 :
