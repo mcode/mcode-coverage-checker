@@ -192,11 +192,11 @@ function getRadiotherapyVolumeCoverage(bundle) {
     radiotherapyVolumeCoverage.coverage.push({
       resourceId: fhirpath.evaluate(bodyStructure, 'BodyStructure.id')[0],
       data: {
-        'Volume Type': fhirpath.evaluate(bodyStructure, 'BodyStructure.morphology.codeableConcept.exists()'),
-        Location: fhirpath.evaluate(bodyStructure, 'BodyStructure.location.codeableConcept.exists()'),
+        'Volume Type': fhirpath.evaluate(bodyStructure, 'BodyStructure.morphology.codeableConcept.coding.exists()'),
+        Location: fhirpath.evaluate(bodyStructure, 'BodyStructure.location.codeableConcept.coding.exists()'),
         'Location Qualifier': fhirpath.evaluate(
           bodyStructure,
-          'BodyStructure.locationQualifier.codeableConcept.exists()',
+          'BodyStructure.locationQualifier.codeableConcept.coding.exists()',
         ),
       },
     });
