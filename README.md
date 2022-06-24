@@ -6,14 +6,19 @@ A web application for calculating a FHIR bundles mCODE Coverage
 
 In the project directory, you can run:
 
+### `npm install`
+
+Downloads all dependencies currently present within the `package.jason' file\
+
+This must be run before using the other scripts in order to ensure the app's proper functionality.
+
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
-You may also see any lint errors in the console.\
-If the terminal returns 'react scripts: not found' run `npm install` to install all dependencies currently present within the `package.json` file.
+You may also see any lint errors in the console.
 
 ### `npm test`
 
