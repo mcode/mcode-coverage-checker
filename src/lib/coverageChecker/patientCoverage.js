@@ -1,5 +1,7 @@
 const fhirpath = require('fhirpath');
 const { getPatient } = require('./resourceUtils');
+const { patientSectionId } = require('../coverageSectionIds');
+const { patientProfileIds } = require('../coverageProfileIds');
 /**
  * Takes a bundle and returns the coverage of patient resources in that bundle
  * @param {Object} bundle, an mCODE bundle
@@ -7,7 +9,8 @@ const { getPatient } = require('./resourceUtils');
  */
 function getPatientCoverage(bundle) {
   const patients = getPatient(bundle);
-  const patientCoverage = { profile: 'Cancer Patient', coverage: [] };
+  const { cancerPatientId } = patientProfileIds;
+  const patientCoverage = { profile: cancerPatientId, coverage: [] };
   patients.forEach((patient) => {
     patientCoverage.coverage.push({
       resourceID: fhirpath.evaluate(patient, 'Patient.id')[0],
@@ -41,7 +44,7 @@ function getPatientCoverage(bundle) {
     });
   });
   return {
-    section: 'Patient',
+    section: patientSectionId,
     data: [patientCoverage],
   };
 }

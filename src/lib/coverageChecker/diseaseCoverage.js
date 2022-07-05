@@ -8,6 +8,8 @@ const {
   getTNMDistantMetastasesCategory,
   getTNMRegionalNodesCategory,
 } = require('./resourceUtils');
+const { diseaseSectionId } = require('../coverageSectionIds');
+const { diseaseProfileIds } = require('../coverageProfileIds');
 
 /**
  * Takes a bundle and returns the coverage of tummor marker test resources in that bundle
@@ -16,7 +18,8 @@ const {
  */
 function getTumorMarkerTestCoverage(bundle) {
   const tumorMarker = getTumorMarkerTest(bundle);
-  const tumorMarkerCoverage = { profile: 'Tumor Marker Test', coverage: [] };
+  const { tumorMarkerTestId } = diseaseProfileIds;
+  const tumorMarkerCoverage = { profile: tumorMarkerTestId, coverage: [] };
   tumorMarker.forEach((marker) => {
     tumorMarkerCoverage.coverage.push({
       resourceID: fhirpath.evaluate(marker, 'Observation.id')[0],
@@ -43,7 +46,8 @@ function getTumorMarkerTestCoverage(bundle) {
  */
 function getPrimaryCancerConditionCoverage(bundle) {
   const primaryCancer = getPrimaryCancerCondition(bundle);
-  const primaryCancerCoverage = { profile: 'Primary Cancer Condition', coverage: [] };
+  const { primaryCancerConditionId } = diseaseProfileIds;
+  const primaryCancerCoverage = { profile: primaryCancerConditionId, coverage: [] };
   primaryCancer.forEach((condition) => {
     primaryCancerCoverage.coverage.push({
       resourceID: fhirpath.evaluate(condition, 'Condition.id')[0],
@@ -88,7 +92,8 @@ function getPrimaryCancerConditionCoverage(bundle) {
  */
 function getSecondaryCancerConditionCoverage(bundle) {
   const secondaryCancer = getSecondaryCancerCondition(bundle);
-  const secondaryCancerCoverage = { profile: 'Secondary Cancer Condition', coverage: [] };
+  const { secondaryCancerConditionId } = diseaseProfileIds;
+  const secondaryCancerCoverage = { profile: secondaryCancerConditionId, coverage: [] };
   secondaryCancer.forEach((condition) => {
     secondaryCancerCoverage.coverage.push({
       resourceID: fhirpath.evaluate(condition, 'Condition.id')[0],
@@ -112,7 +117,8 @@ function getSecondaryCancerConditionCoverage(bundle) {
  */
 function getStageGroupCoverage(bundle) {
   const stageGroup = getStageGroup(bundle);
-  const stageGroupCoverage = { profile: 'Stage Group', coverage: [] };
+  const { stageGroupId } = diseaseProfileIds;
+  const stageGroupCoverage = { profile: stageGroupId, coverage: [] };
   stageGroup.forEach((group) => {
     stageGroupCoverage.coverage.push({
       resourceID: fhirpath.evaluate(group, 'Observation.id')[0],
@@ -136,7 +142,8 @@ function getStageGroupCoverage(bundle) {
  */
 function getTNMPrimaryTumorCategoryCoverage(bundle) {
   const tumorCategory = getTNMPrimaryTumorCategory(bundle);
-  const tumorCategoryCoverage = { profile: 'Primary Tumor Category', coverage: [] };
+  const { primaryTumorId } = diseaseProfileIds;
+  const tumorCategoryCoverage = { profile: primaryTumorId, coverage: [] };
   tumorCategory.forEach((category) => {
     tumorCategoryCoverage.coverage.push({
       resourceID: fhirpath.evaluate(category, 'Observation.id')[0],
@@ -157,7 +164,8 @@ function getTNMPrimaryTumorCategoryCoverage(bundle) {
  */
 function getTNMDistantMetastasesCategoryCoverage(bundle) {
   const metastasesCategory = getTNMDistantMetastasesCategory(bundle);
-  const metastasesCategoryCoverage = { profile: 'Distant Metastases Category', coverage: [] };
+  const { distantMetastasesId } = diseaseProfileIds;
+  const metastasesCategoryCoverage = { profile: distantMetastasesId, coverage: [] };
   metastasesCategory.forEach((category) => {
     metastasesCategoryCoverage.coverage.push({
       resourceID: fhirpath.evaluate(category, 'Observation.id')[0],
@@ -178,7 +186,8 @@ function getTNMDistantMetastasesCategoryCoverage(bundle) {
  */
 function getTNMRegionalNodesCategoryCoverage(bundle) {
   const nodesCategory = getTNMRegionalNodesCategory(bundle);
-  const nodesCategoryCoverage = { profile: 'Regional Nodes Category', coverage: [] };
+  const { regionalNodesId } = diseaseProfileIds;
+  const nodesCategoryCoverage = { profile: regionalNodesId, coverage: [] };
   nodesCategory.forEach((category) => {
     nodesCategoryCoverage.coverage.push({
       resourceID: fhirpath.evaluate(category, 'Observation.id')[0],
@@ -199,7 +208,7 @@ function getTNMRegionalNodesCategoryCoverage(bundle) {
  */
 function getDiseaseCoverage(bundle) {
   return {
-    section: 'Disease',
+    section: diseaseSectionId,
     data: [
       getTumorMarkerTestCoverage(bundle),
       getPrimaryCancerConditionCoverage(bundle),
