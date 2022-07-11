@@ -1,0 +1,235 @@
+{
+  "resourceType": "Bundle",
+  "id": "mcode-patient-bundle-jenny-m",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle"
+    ]
+  },
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "test",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "empty-comorbidities",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbidities-elixhauser"
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/cancer-related-mcode-comorbidities-elixhauser-jenny-m",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cancer-related-mcode-comorbidities-elixhauser-jenny-m",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbidities-elixhauser"
+          ]
+        },
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cancer-related-mcode-comorbidities-elixhauser-jenny-m\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mcode-comorbidities-elixhauser.html\">Comorbidities Elixhauser Profile</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Elixhauser Comorbidity Panel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-loinc-requested-cs.html\">Requested LOINC Codes Code System</a>#comorbidities-elixhauser)</span></p><p><b>subject</b>: <a href=\"#Patient_cancer-patient-jenny-m\">See above (Patient/cancer-patient-jenny-m)</a></p><p><b>effective</b>: 2018-03-16</p><p><b>performer</b>: <a href=\"#Practitioner_us-core-practitioner-owen-oncologist\">See above (Practitioner/us-core-practitioner-owen-oncologist)</a></p><blockquote><p><b>component</b></p><p><b>Comorbid Condition Reference Extension</b>: <a href=\"Condition-us-core-condition-depression-jenny-m.html\">Condition/us-core-condition-depression-jenny-m</a></p><p><b>code</b>: Depression (Elixhauser comorbidity category) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-loinc-requested-cs.html\">Requested LOINC Codes Code System</a>#DEPRESS)</span></p><p><b>value</b>: Present (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#52101004)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Comorbid Condition Reference Extension</b>: <a href=\"Condition-us-core-condition-hypertension-jenny-m.html\">Condition/us-core-condition-hypertension-jenny-m</a></p><p><b>code</b>: Hypertension, complicated (Elixhauser comorbidity category) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-loinc-requested-cs.html\">Requested LOINC Codes Code System</a>#HTN_CX)</span></p><p><b>value</b>: Present (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#52101004)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Arthropathies (Elixhauser comorbidity category) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-loinc-requested-cs.html\">Requested LOINC Codes Code System</a>#ARTH)</span></p><p><b>value</b>: Absent (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#2667000)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Congestive heart failure (Elixhauser comorbidity category) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-loinc-requested-cs.html\">Requested LOINC Codes Code System</a>#CHF)</span></p><p><b>value</b>: Absent (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#2667000)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Chronic pulmonary disease (Elixhauser comorbidity category) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-loinc-requested-cs.html\">Requested LOINC Codes Code System</a>#LUNG_CHRONIC)</span></p><p><b>value</b>: Absent (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#2667000)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diabetes without chronic complications (Elixhauser comorbidity category) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-loinc-requested-cs.html\">Requested LOINC Codes Code System</a>#DIAB_UNCX)</span></p><p><b>value</b>: Absent (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#2667000)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diabetes with chronic complications (Elixhauser comorbidity category) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-loinc-requested-cs.html\">Requested LOINC Codes Code System</a>#DIAB_CX)</span></p><p><b>value</b>: Absent (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#2667000)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Obesity (Elixhauser comorbidity category) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-loinc-requested-cs.html\">Requested LOINC Codes Code System</a>#OBESE)</span></p><p><b>value</b>: Absent (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#2667000)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Peripheral vascular disease (Elixhauser comorbidity category) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-loinc-requested-cs.html\">Requested LOINC Codes Code System</a>#PERIVASC)</span></p><p><b>value</b>: Absent (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#2667000)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Pulmonary circulation disease (Elixhauser comorbidity category) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-loinc-requested-cs.html\">Requested LOINC Codes Code System</a>#PULMCIRC)</span></p><p><b>value</b>: Absent (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#2667000)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Renal failure, moderate (Elixhauser comorbidity category) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-loinc-requested-cs.html\">Requested LOINC Codes Code System</a>#RENLFL_MOD)</span></p><p><b>value</b>: Absent (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#2667000)</span></p></blockquote></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/us/mcode/CodeSystem/loinc-requested-cs",
+              "code": "comorbidities-elixhauser",
+              "display": "Elixhauser Comorbidity Panel"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cancer-patient-jenny-m"
+        },
+        "effectiveDateTime": "2018-03-16",
+        "performer": [
+          {
+            "reference": "Practitioner/us-core-practitioner-owen-oncologist"
+          }
+        ],
+        "valueInteger": 12,
+        "component": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbid-condition-reference",
+                "valueReference": {
+                  "reference": "Condition/us-core-condition-depression-jenny-m"
+                }
+              },
+              {
+                "url" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbid-condition-code",
+                "valueCodeableConcept" : {
+                  "coding" : [
+                    {
+                      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+                      "code" : "I50.32",
+                      "display" : "Chronic diastolic (congestive) heart failure"
+                    }
+                  ]
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/mcode/CodeSystem/loinc-requested-cs",
+                  "code": "DEPRESS"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "52101004",
+                  "display": "Present (qualifier value)"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "test",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "empty-ecog",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-ecog-performance-status"
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/ecog-performance-status-jenny-m",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ecog-performance-status-jenny-m",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-ecog-performance-status"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ecog-performance-status-jenny-m\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mcode-ecog-performance-status.html\">ECOG Performance Status Profile</a></p></div><p><b>status</b>: final</p><p><b>code</b>: ECOG Performance Status score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#89247-1)</span></p><p><b>subject</b>: <a href=\"#Patient_cancer-patient-jenny-m\">See above (Patient/cancer-patient-jenny-m)</a></p><p><b>effective</b>: 2018-04-12</p><p><b>performer</b>: <a href=\"#Practitioner_us-core-practitioner-owen-oncologist\">See above (Practitioner/us-core-practitioner-owen-oncologist)</a></p><p><b>value</b>: 0</p><p><b>interpretation</b>: Fully active, able to carry on all pre-disease performance without restriction <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA9622-7)</span></p><p><b>method</b>: Physical examination procedure (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#5880005)</span></p></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "89247-1"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cancer-patient-jenny-m"
+        },
+        "effectiveDateTime": "2018-04-12",
+        "performer": [
+          {
+            "reference": "Practitioner/us-core-practitioner-owen-oncologist"
+          }
+        ],
+        "valueInteger": 0,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "LA9622-7",
+                "display": "Fully active, able to carry on all pre-disease performance without restriction"
+              }
+            ]
+          }
+        ],
+        "method": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "5880005",
+              "display": "Physical examination procedure (procedure)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "test",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "empty-karnofsky",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-karnofsky-performance-status"
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "test",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "karnofsky-performance-status-normal-activity",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-karnofsky-performance-status"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"karnofsky-performance-status-normal-activity\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mcode-karnofsky-performance-status.html\">Karnofsky Performance Status Profile</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Karnofsky Performance Status score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#89243-0)</span></p><p><b>subject</b>: <a href=\"Patient-cancer-patient-john-anyperson.html\">Patient/cancer-patient-john-anyperson</a> \" ANYPERSON\"</p><p><b>effective</b>: 2019-04-01</p><p><b>performer</b>: <a href=\"Practitioner-us-core-practitioner-kyle-anydoc.html\">Practitioner/us-core-practitioner-kyle-anydoc</a> \" ANYDOC\"</p><p><b>value</b>: 90</p><p><b>interpretation</b>: Able to carry on normal activity; minor signs or symptoms of disease <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA29176-7)</span></p><p><b>method</b>: Clinical examination <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#5880005)</span></p></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "89243-0"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cancer-patient-john-anyperson"
+        },
+        "effectiveDateTime": "2019-04-01",
+        "performer": [
+          {
+            "reference": "Practitioner/us-core-practitioner-kyle-anydoc"
+          }
+        ],
+        "valueInteger": 90,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "LA29176-7",
+                "display": "Able to carry on normal activity; minor signs or symptoms of disease"
+              }
+            ]
+          }
+        ],
+        "method": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "5880005",
+              "display": "Clinical examination"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

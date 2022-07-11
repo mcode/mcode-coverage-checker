@@ -1,5 +1,7 @@
 const fhirpath = require('fhirpath');
 const { getDiseaseStatus, getTumor, getTumorSize, getTumorSpecimen } = require('./resourceUtils');
+const { outcomeSectionId } = require('../coverageSectionIds');
+const { outcomeProfileIds } = require('../coverageProfileIds');
 
 /**
  * Takes a bundle and returns the coverage of disease status resources in that bundle
@@ -8,7 +10,8 @@ const { getDiseaseStatus, getTumor, getTumorSize, getTumorSpecimen } = require('
  */
 function getDiseaseStatusCoverage(bundle) {
   const diseaseStatus = getDiseaseStatus(bundle);
-  const diseaseStatusCoverage = { profile: 'Disease Status', coverage: [] };
+  const { diseaseStatusId } = outcomeProfileIds;
+  const diseaseStatusCoverage = { profile: diseaseStatusId, coverage: [] };
   diseaseStatus.forEach((status) => {
     diseaseStatusCoverage.coverage.push({
       resourceID: fhirpath.evaluate(status, 'Observation.id')[0],
@@ -32,7 +35,8 @@ function getDiseaseStatusCoverage(bundle) {
  */
 function getTumorCoverage(bundle) {
   const tumors = getTumor(bundle);
-  const tumorCoverage = { profile: 'Tumor', coverage: [] };
+  const { tumorId } = outcomeProfileIds;
+  const tumorCoverage = { profile: tumorId, coverage: [] };
   tumors.forEach((tumor) => {
     tumorCoverage.coverage.push({
       resourceID: fhirpath.evaluate(tumor, 'BodyStructure.id')[0],
@@ -57,7 +61,8 @@ function getTumorCoverage(bundle) {
  */
 function getTumorSizeCoverage(bundle) {
   const tumorSize = getTumorSize(bundle);
-  const tumorSizeCoverage = { profile: 'Tumor Size', coverage: [] };
+  const { tumorSizeId } = outcomeProfileIds;
+  const tumorSizeCoverage = { profile: tumorSizeId, coverage: [] };
   tumorSize.forEach((size) => {
     tumorSizeCoverage.coverage.push({
       resourceID: fhirpath.evaluate(size, 'Observation.id')[0],
@@ -89,7 +94,8 @@ function getTumorSizeCoverage(bundle) {
  */
 function getTumorSpecimenCoverage(bundle) {
   const tumorSpecimen = getTumorSpecimen(bundle);
-  const tumorSpecimenCoverage = { profile: 'Tumor Specimen', coverage: [] };
+  const { tumorSpecimenId } = outcomeProfileIds;
+  const tumorSpecimenCoverage = { profile: tumorSpecimenId, coverage: [] };
   tumorSpecimen.forEach((specimen) => {
     tumorSpecimenCoverage.coverage.push({
       resourceID: fhirpath.evaluate(specimen, 'Specimen.id')[0],
@@ -113,7 +119,7 @@ function getTumorSpecimenCoverage(bundle) {
  */
 function getOutcomeCoverage(bundle) {
   return {
-    section: 'Outcome',
+    section: outcomeSectionId,
     data: [
       getDiseaseStatusCoverage(bundle),
       getTumorCoverage(bundle),

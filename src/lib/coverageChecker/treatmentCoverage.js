@@ -34,13 +34,13 @@ function getCancerRelatedMedicationRequestCoverage(bundle) {
             'MedicationRequest.reasonCode.exists() or MedicationRequest.reasonReference.exists()',
           )[0],
         },
-        ProcedureIntent: {
+        'Procedure Intent': {
           covered: fhirpath.evaluate(
             request,
             "MedicationRequest.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent').exists()",
           )[0],
         },
-        TerminationReason: {
+        'Termination Reason': {
           covered: fhirpath.evaluate(
             request,
             "MedicationRequest.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-treatment-termination-reason').exists()",
@@ -77,7 +77,7 @@ function getCancerRelatedMedicationAdministrationCoverage(bundle) {
         Reason: {
           covered: fhirpath.evaluate(
             administration,
-            'MedicationAdministration.reasonCode.exists() or MedicationRequest.reasonReference.exists()',
+            'MedicationAdministration.reasonCode.exists() or MedicationAdministration.reasonReference.exists()',
           )[0],
         },
         'Procedure Intent': {
@@ -112,16 +112,24 @@ function getCancerRelatedSurgicalProcedureCoverage(bundle) {
     cancerRelatedSurgicalProcedureCoverage.coverage.push({
       resourceId: fhirpath.evaluate(procedure, 'Procedure.id')[0],
       data: {
-        'Procedure Code': fhirpath.evaluate(procedure, 'Procedure.code.coding.exists()')[0],
-        'Body Site': fhirpath.evaluate(procedure, 'Procedure.bodySite.exists()')[0],
-        Laterality: fhirpath.evaluate(
-          procedure,
-          "Procedure.bodySite.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier').exists()",
-        )[0],
-        'Location Qualifier': fhirpath.evaluate(
-          procedure,
-          "Procedure.bodySite.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier').exists()",
-        )[0],
+        'Procedure Code': {
+          covered: fhirpath.evaluate(procedure, 'Procedure.code.coding.exists()')[0],
+        },
+        'Body Site': {
+          covered: fhirpath.evaluate(procedure, 'Procedure.bodySite.exists()')[0],
+        },
+        Laterality: {
+          covered: fhirpath.evaluate(
+            procedure,
+            "Procedure.bodySite.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier').exists()",
+          )[0],
+        },
+        'Location Qualifier': {
+          covered: fhirpath.evaluate(
+            procedure,
+            "Procedure.bodySite.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier').exists()",
+          )[0],
+        },
       },
     });
   });
@@ -141,38 +149,54 @@ function getRadiotherapyCourseSummaryCoverage(bundle) {
     radiotherapyCourseSummaryCoverage.coverage.push({
       resourceId: fhirpath.evaluate(procedure, 'Procedure.id')[0],
       data: {
-        'No. Sessions': fhirpath.evaluate(
-          procedure,
-          "Procedure.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-sessions').exists()",
-        )[0],
-        'Modality and Technique': fhirpath.evaluate(
-          procedure,
-          "Procedure.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique').exists()",
-        )[0],
-        Modality: fhirpath.evaluate(
-          procedure,
-          "Procedure.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique').extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality').exists()",
-        )[0],
-        Technique: fhirpath.evaluate(
-          procedure,
-          "Procedure.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique').extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique').exists()",
-        )[0],
-        'Doses Delivered': fhirpath.evaluate(
-          procedure,
-          "Procedure.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume').exists()",
-        )[0],
-        'Total Dose': fhirpath.evaluate(
-          procedure,
-          "Procedure.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume').extension.where(url = 'totalDoseDelivered').exists()",
-        )[0],
-        'No. Fractions': fhirpath.evaluate(
-          procedure,
-          "Procedure.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume').extension.where(url = 'fractionsDelivered').exists()",
-        )[0],
-        'Body Volume': fhirpath.evaluate(
-          procedure,
-          "Procedure.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume').extension.where(url = 'volume').exists()",
-        )[0],
+        'No. Sessions': {
+          covered: fhirpath.evaluate(
+            procedure,
+            "Procedure.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-sessions').exists()",
+          )[0],
+        },
+        'Modality and Technique': {
+          covered: fhirpath.evaluate(
+            procedure,
+            "Procedure.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique').exists()",
+          )[0],
+        },
+        Modality: {
+          covered: fhirpath.evaluate(
+            procedure,
+            "Procedure.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique').extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality').exists()",
+          )[0],
+        },
+        Technique: {
+          covered: fhirpath.evaluate(
+            procedure,
+            "Procedure.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique').extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique').exists()",
+          )[0],
+        },
+        'Doses Delivered': {
+          covered: fhirpath.evaluate(
+            procedure,
+            "Procedure.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume').exists()",
+          )[0],
+        },
+        'Total Dose': {
+          covered: fhirpath.evaluate(
+            procedure,
+            "Procedure.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume').extension.where(url = 'totalDoseDelivered').exists()",
+          )[0],
+        },
+        'No. Fractions': {
+          covered: fhirpath.evaluate(
+            procedure,
+            "Procedure.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume').extension.where(url = 'fractionsDelivered').exists()",
+          )[0],
+        },
+        'Body Volume': {
+          covered: fhirpath.evaluate(
+            procedure,
+            "Procedure.extension.where(url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume').extension.where(url = 'volume').exists()",
+          )[0],
+        },
       },
     });
   });
@@ -192,12 +216,15 @@ function getRadiotherapyVolumeCoverage(bundle) {
     radiotherapyVolumeCoverage.coverage.push({
       resourceId: fhirpath.evaluate(bodyStructure, 'BodyStructure.id')[0],
       data: {
-        'Volume Type': fhirpath.evaluate(bodyStructure, 'BodyStructure.morphology.codeableConcept.coding.exists()'),
-        Location: fhirpath.evaluate(bodyStructure, 'BodyStructure.location.codeableConcept.coding.exists()'),
-        'Location Qualifier': fhirpath.evaluate(
-          bodyStructure,
-          'BodyStructure.locationQualifier.codeableConcept.coding.exists()',
-        ),
+        'Volume Type': {
+          covered: fhirpath.evaluate(bodyStructure, 'BodyStructure.morphology.coding.exists()')[0],
+        },
+        Location: {
+          covered: fhirpath.evaluate(bodyStructure, 'BodyStructure.location.coding.exists()')[0],
+        },
+        'Location Qualifier': {
+          covered: fhirpath.evaluate(bodyStructure, 'BodyStructure.locationQualifier.coding.exists()')[0],
+        },
       },
     });
   });
