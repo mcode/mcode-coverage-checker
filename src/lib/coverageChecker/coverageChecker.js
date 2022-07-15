@@ -3,6 +3,7 @@ const { getOutcomeCoverage } = require('./outcomeCoverage');
 const { getDiseaseCoverage } = require('./diseaseCoverage');
 const { getTreatmentCoverage } = require('./treatmentCoverage');
 const { getAssessmentCoverage } = require('./assessmentCoverage');
+const { getGenomicsCoverage } = require('./genomicsCoverage');
 
 /**
  * Computes mCODE coverage statistics for a FHIR bundle
@@ -16,6 +17,7 @@ function coverageChecker(bundle) {
     getDiseaseCoverage(bundle),
     getTreatmentCoverage(bundle),
     getAssessmentCoverage(bundle),
+    getGenomicsCoverage(bundle),
   ];
 }
 
