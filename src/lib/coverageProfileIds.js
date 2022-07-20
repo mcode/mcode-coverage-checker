@@ -34,4 +34,18 @@ const diseaseProfileIds = {
   regionalNodesId: 'Regional Nodes Category',
 };
 
-module.exports = { treatmentProfileIds, assessmentProfileIds, outcomeProfileIds, patientProfileIds, diseaseProfileIds };
+const genomicsProfileIds = {
+  genomicsReportId: 'Genomics Report',
+  genomicSpecimenId: 'Genomic Specimen',
+  genomicVariantId: 'Genomic Variant',
+  genomicRegionStidiedId: 'Genomic Region Studied',
+};
+
+module.exports = {
+  treatmentProfileIds,
+  assessmentProfileIds,
+  outcomeProfileIds,
+  patientProfileIds,
+  diseaseProfileIds,
+  genomicsProfileIds,
+};
