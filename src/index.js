@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NewApp from './pages/NewApp';
 import App from './pages/App';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Routes>
+      <Route path="mcode-coverage-checker" element={<App />} />
+      <Route path="NewApp" element={<NewApp />} />
+    </Routes>
+  </Router>,
   document.getElementById('root'),
 );
 
