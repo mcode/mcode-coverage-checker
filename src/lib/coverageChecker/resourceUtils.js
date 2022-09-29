@@ -3,10 +3,7 @@ const fhirpath = require('fhirpath');
 // Patient
 
 function getPatient(bundle) {
-  return fhirpath.evaluate(
-    bundle,
-    "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient')",
-  );
+  return fhirpath.evaluate(bundle, 'Bundle.entry.resource.ofType(Patient)');
 }
 
 // Outcome
