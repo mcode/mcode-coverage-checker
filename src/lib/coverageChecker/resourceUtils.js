@@ -1,40 +1,64 @@
 const fhirpath = require('fhirpath');
 
 // Patient
-// No reliable requirements for mCODE Patients or US Core Patients: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-patient.html#conformance
+// No reliable conformance requirements for mCODE Patients or US Core Patients: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-patient.html#conformance
 function getPatient(bundle) {
-  return fhirpath.evaluate(bundle, 'Bundle.entry.resource.ofType(Patient)');
+  const metaProfiledResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient')",
+  );
+  const constrainedResources = fhirpath.evaluate(bundle, 'Bundle.entry.resource.ofType(Patient)');
+  return metaProfiledResources || constrainedResources;
 }
 
 // Outcome
 // Disease Statuses must have code of LOINC `97509-4`: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-disease-status.html#conformance
 function getDiseaseStatus(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status')",
+  );
+  const constrainedResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.ofType(Observation).where(code.coding.code = '97509-4' and code.coding.system = 'http://loinc.org')",
   );
+  return metaProfiledResources || constrainedResources;
 }
-// No reliable requirements for Tumor BodyStructures: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-tumor.html#conformance
+// No reliable conformance requirements for Tumor BodyStructures: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-tumor.html#conformance
 function getTumor(bundle) {
-  return fhirpath.evaluate(bundle, 'Bundle.entry.resource.ofType(BodyStructure)');
+  const metaProfiledResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor')",
+  );
+  const constrainedResources = fhirpath.evaluate(bundle, 'Bundle.entry.resource.ofType(BodyStructure)');
+  return metaProfiledResources || constrainedResources;
 }
 // Tumor Size measurements must have an Observation.code of LOINC `21889-1` : https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-tumor-size.html#conformance
 function getTumorSize(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-size')",
+  );
+  const constrainedResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.ofType(Observation).where(code.coding.code = '21889-1' and code.coding.system = 'http://loinc.org')",
   );
+  return metaProfiledResources || constrainedResources;
 }
 // TumorSpecimen's must have a Specimen.type of `TUMOR` from system http://terminology.hl7.org/CodeSystem/v2-0487: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-tumor-specimen.html#conformance
 function getTumorSpecimen(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-specimen')",
+  );
+  const constrainedResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.ofType(Specimen).where(type.coding.code = 'TUMOR' and type.coding.system = 'http://terminology.hl7.org/CodeSystem/v2-0487')",
   );
+  return metaProfiledResources || constrainedResources;
 }
 
 // Disease
-
 function getTumorMarkerTest(bundle) {
   return fhirpath.evaluate(
     bundle,
