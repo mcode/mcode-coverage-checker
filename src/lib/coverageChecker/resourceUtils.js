@@ -59,53 +59,92 @@ function getTumorSpecimen(bundle) {
 }
 
 // Disease
+// Tumor Marker Tests must have a code from an extensible valueset: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-tumor-marker-test.html#conformance
 function getTumorMarkerTest(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    // TODO: Figure out how to check valuesets or filter after the fact
+    'Bundle.entry.resource.ofType(Observation)',
+  );
+  return metaProfiledResources || constrainedResources;
 }
-
+// Secondary Cancer Conditions must have a code from an extensible valueset: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-secondary-cancer-condition.html#conformance
 function getSecondaryCancerCondition(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    // TODO: Figure out how to check valuesets or filter after
+    'Bundle.entry.resource.ofType(Condition)',
+  );
+  return metaProfiledResources || constrainedResources;
 }
-
+// Primary Cancer Conditions must have a code from extensible valueset: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-primary-cancer-condition.html#conformance
 function getPrimaryCancerCondition(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    // TODO: Figure out how to check valuesets or filter after
+    'Bundle.entry.resource.ofType(Condition)',
+  );
+  return metaProfiledResources || constrainedResources;
 }
-
+// Stage Groups must have a code from the following – LOINC 21908-9, 21902-2, or 21914-7: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-stage-group.html#conformance
 function getStageGroup(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-stage-group')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.ofType(Observation).where(code.coding.system = 'http://loinc.org' and (code.coding.code = '21908-9' or code.coding.code = '21902-2' or code.coding.code = '21914-7'))",
+  );
+  return metaProfiledResources || constrainedResources;
 }
-
+// Primary Tumor Categories must have a code from the following – LOINC 21905-5, 21899-0, or 21911-3: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-tnm-primary-tumor-category.html#conformance
 function getTNMPrimaryTumorCategory(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-primary-tumor-category')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.ofType(Observation).where(code.coding.system = 'http://loinc.org' and (code.coding.code = '21905-5' or code.coding.code = '21899-0' or code.coding.code = '21911-3'))",
+  );
+  return metaProfiledResources || constrainedResources;
 }
-
+// Metastases Categories must have a code from the following – LOINC 21907-1, 21901-4, or 21913-9: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-tnm-distant-metastases-category.html#conformance
 function getTNMDistantMetastasesCategory(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.ofType(Observation).where(code.coding.system = 'http://loinc.org' and (code.coding.code = '21907-1' or code.coding.code = '21901-4' or code.coding.code = '21913-9'))",
+  );
+  return metaProfiledResources || constrainedResources;
 }
-
+// Regional Node categories must have a code from the following - LOINC 21906-3, 21900-6, or 21912-1: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-tnm-regional-nodes-category.html#conformance
 function getTNMRegionalNodesCategory(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-regional-nodes-category')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.ofType(Observation).where(code.coding.system = 'http://loinc.org' and (code.coding.code = '21906-3' or code.coding.code = '21900-6' or code.coding.code = '21912-1'))",
+  );
+  return metaProfiledResources || constrainedResources;
 }
 
 // Genomics
