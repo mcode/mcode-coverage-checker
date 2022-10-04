@@ -59,7 +59,7 @@ function getTumorSpecimen(bundle) {
 }
 
 // Disease
-// Tumor Marker Tests must have a code from an extensible valueset: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-tumor-marker-test.html#conformance
+// Tumor Marker Tests must have a code from an extensible valueset, TumorMarkerTestVS: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-tumor-marker-test.html#conformance
 function getTumorMarkerTest(bundle) {
   const metaProfiledResources = fhirpath.evaluate(
     bundle,
@@ -72,7 +72,7 @@ function getTumorMarkerTest(bundle) {
   );
   return metaProfiledResources || constrainedResources;
 }
-// Secondary Cancer Conditions must have a code from an extensible valueset: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-secondary-cancer-condition.html#conformance
+// Secondary Cancer Conditions must have a code from an extensible valueset, SecondaryCancerDisorderVS: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-secondary-cancer-condition.html#conformance
 function getSecondaryCancerCondition(bundle) {
   const metaProfiledResources = fhirpath.evaluate(
     bundle,
@@ -85,7 +85,7 @@ function getSecondaryCancerCondition(bundle) {
   );
   return metaProfiledResources || constrainedResources;
 }
-// Primary Cancer Conditions must have a code from extensible valueset: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-primary-cancer-condition.html#conformance
+// Primary Cancer Conditions must have a code from extensible valueset, PrimaryCancerDisorderVS: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-primary-cancer-condition.html#conformance
 function getPrimaryCancerCondition(bundle) {
   const metaProfiledResources = fhirpath.evaluate(
     bundle,
@@ -148,51 +148,69 @@ function getTNMRegionalNodesCategory(bundle) {
 }
 
 // Genomics
-
+// GenomicsReport must have a LOINC code 81247-9: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-genomics-report.html#conformance
 function getGenomicsReport(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomics-report')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.ofType(DiagnosticReport).where(code.coding.system = 'http://loinc.org' and code.coding.code = '81247-9')",
+  );
+  return metaProfiledResources || constrainedResources;
 }
-
+// GenomicsSpecimen must have a code form the GenomicSpecimenTypeVS: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-genomic-specimen.html#conformance
 function getGenomicSpecimen(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomic-specimen')",
   );
+  // TODO: Figure out how to check valuesets or filter after
+  const constrainedResources = fhirpath.evaluate(bundle, 'Bundle.entry.resource.ofType(Specimen)');
+  return metaProfiledResources || constrainedResources;
 }
-
+// GenomicsVariant must have a LOINC code `69548-6`: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-genomic-variant.html#conformance
 function getGenomicVariant(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomic-variant')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.ofType(Observation).where(code.coding.system = 'http://loinc.org' and code.coding.code = '69548-6')",
+  );
+  return metaProfiledResources || constrainedResources;
 }
-
+// GenomicsRegion must have a LOINC code `53041-0`: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-genomic-region-studied.html#conformance
 function getGenomicRegionStudied(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomic-region-studied')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.ofType(Observation).where(code.coding.system = 'http://loinc.org' and code.coding.code = '53041-0')",
+  );
+  return metaProfiledResources || constrainedResources;
 }
 
 // Assessment
-
+// KarnofskyStatus must have
 function getKarnofskyPerformanceStatus(bundle) {
   return fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-karnofsky-performance-status')",
   );
 }
-
+// Comorbidities must have
 function getComorbidities(bundle) {
   return fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbidities-elixhauser')",
   );
 }
-
+// ECOG must have
 function getECOGPerfomanceStatus(bundle) {
   return fhirpath.evaluate(
     bundle,
@@ -201,35 +219,35 @@ function getECOGPerfomanceStatus(bundle) {
 }
 
 // Treatment
-
+// CancerRelatedMedicationRequests must
 function getCancerRelatedMedicationRequest(bundle) {
   return fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request')",
   );
 }
-
+// CancerRelatedMedicationAdministration must
 function getCancerRelatedMedicationAdministration(bundle) {
   return fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration')",
   );
 }
-
+// CancerRelatedMedicationSurgicalProcedure
 function getCancerRelatedSurgicalProcedure(bundle) {
   return fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure')",
   );
 }
-
+// Radiotheraphy Course Summary
 function getRadiotherapyCourseSummary(bundle) {
   return fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-course-summary')",
   );
 }
-
+// Radiotherapy Volume must
 function getRadiotherapyVolume(bundle) {
   return fhirpath.evaluate(
     bundle,
