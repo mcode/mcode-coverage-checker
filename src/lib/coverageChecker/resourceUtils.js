@@ -196,26 +196,41 @@ function getGenomicRegionStudied(bundle) {
 }
 
 // Assessment
-// KarnofskyStatus must have
+// KarnofskyStatus must have a LOINC code `89243-0`: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-karnofsky-performance-status.html#conformance
 function getKarnofskyPerformanceStatus(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-karnofsky-performance-status')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.ofType(Observation).where(code.coding.system = 'http://loinc.org' and code.coding.code = '89243-0')",
+  );
+  return metaProfiledResources || constrainedResources;
 }
-// Comorbidities must have
+// Comorbidities must have a code `comorbidities-elixhauser` from codesystem `http://hl7.org/fhir/us/mcode/CodeSystem/loinc-requested-cs`: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-comorbidities-elixhauser.html#conformance
 function getComorbidities(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbidities-elixhauser')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.ofType(Observation).where(code.coding.system = 'http://hl7.org/fhir/us/mcode/CodeSystem/loinc-requested-cs' and code.coding.code = 'comorbidities-elixhauser')",
+  );
+  return metaProfiledResources || constrainedResources;
 }
-// ECOG must have
+// ECOG must have a LOINC code `89247-1`: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-ecog-performance-status.html#conformance
 function getECOGPerfomanceStatus(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-ecog-performance-status')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.ofType(Observation).where(code.coding.system = 'http://loinc.org' and code.coding.code = '89247-1')",
+  );
+  return metaProfiledResources || constrainedResources;
 }
 
 // Treatment
