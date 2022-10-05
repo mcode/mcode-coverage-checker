@@ -1,4 +1,8 @@
 const fhirpath = require('fhirpath');
+// NOTE: See here: https://stackoverflow.com/questions/33704714/cant-require-default-export-value-in-babel-6-x
+const ValueSetCodeChecker = require('./ValueSetCodeChecker').default;
+
+const vsChecker = new ValueSetCodeChecker();
 
 // Patient
 // No reliable conformance requirements for mCODE Patients or US Core Patients: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-patient.html#conformance
@@ -65,11 +69,17 @@ function getTumorMarkerTest(bundle) {
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test')",
   );
-  const constrainedResources = fhirpath.evaluate(
-    bundle,
-    // TODO: Figure out how to check valuesets or filter after the fact
-    'Bundle.entry.resource.ofType(Observation)',
-  );
+  const constrainedResources = fhirpath
+    .evaluate(
+      bundle,
+      // TODO: Figure out how to check valuesets or filter after the fact
+      'Bundle.entry.resource.ofType(Observation)',
+    )
+    .filter((observation) =>
+      observation.code.coding.some((coding) =>
+        vsChecker.checkCodeInVs(coding.code, coding.system, 'TumorMarkerTestVS'),
+      ),
+    );
   return metaProfiledResources || constrainedResources;
 }
 // Secondary Cancer Conditions must have a code from an extensible valueset, SecondaryCancerDisorderVS: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-secondary-cancer-condition.html#conformance
@@ -78,11 +88,17 @@ function getSecondaryCancerCondition(bundle) {
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition')",
   );
-  const constrainedResources = fhirpath.evaluate(
-    bundle,
-    // TODO: Figure out how to check valuesets or filter after
-    'Bundle.entry.resource.ofType(Condition)',
-  );
+  const constrainedResources = fhirpath
+    .evaluate(
+      bundle,
+      // TODO: Figure out how to check valuesets or filter after
+      'Bundle.entry.resource.ofType(Condition)',
+    )
+    .filter((condition) =>
+      condition.code.coding.some((coding) =>
+        vsChecker.checkCodeInVs(coding.code, coding.system, 'SecondaryCancerDisorderVS'),
+      ),
+    );
   return metaProfiledResources || constrainedResources;
 }
 // Primary Cancer Conditions must have a code from extensible valueset, PrimaryCancerDisorderVS: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-primary-cancer-condition.html#conformance
@@ -91,11 +107,13 @@ function getPrimaryCancerCondition(bundle) {
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition')",
   );
-  const constrainedResources = fhirpath.evaluate(
-    bundle,
-    // TODO: Figure out how to check valuesets or filter after
-    'Bundle.entry.resource.ofType(Condition)',
-  );
+  const constrainedResources = fhirpath
+    .evaluate(bundle, 'Bundle.entry.resource.ofType(Condition)')
+    .filter((condition) =>
+      condition.code.coding.some((coding) =>
+        vsChecker.checkCodeInVs(coding.code, coding.system, 'PrimaryCancerDisorderVS'),
+      ),
+    );
   return metaProfiledResources || constrainedResources;
 }
 // Stage Groups must have a code from the following – LOINC 21908-9, 21902-2, or 21914-7: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-stage-group.html#conformance
@@ -160,14 +178,18 @@ function getGenomicsReport(bundle) {
   );
   return metaProfiledResources || constrainedResources;
 }
-// GenomicsSpecimen must have a code form the GenomicSpecimenTypeVS: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-genomic-specimen.html#conformance
+// GenomicsSpecimen must have a type form the extensible valueset GenomicSpecimenTypeVS: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-genomic-specimen.html#conformance
 function getGenomicSpecimen(bundle) {
   const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomic-specimen')",
   );
   // TODO: Figure out how to check valuesets or filter after
-  const constrainedResources = fhirpath.evaluate(bundle, 'Bundle.entry.resource.ofType(Specimen)');
+  const constrainedResources = fhirpath
+    .evaluate(bundle, 'Bundle.entry.resource.ofType(Specimen)')
+    .filter((specimen) =>
+      specimen.type.coding.some((coding) => vsChecker.checkCodeInVs(coding.code, coding.system, 'TumorMarkerTestVS')),
+    );
   return metaProfiledResources || constrainedResources;
 }
 // GenomicsVariant must have a LOINC code `69548-6`: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-genomic-variant.html#conformance
@@ -234,35 +256,45 @@ function getECOGPerfomanceStatus(bundle) {
 }
 
 // Treatment
-// CancerRelatedMedicationRequests must
+// CancerRelatedMedicationRequests must have a reference to a CancerCondition: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-related-medication-request.html#conformance
 function getCancerRelatedMedicationRequest(bundle) {
   return fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request')",
   );
 }
-// CancerRelatedMedicationAdministration must
+// CancerRelatedMedicationAdministration must have a reference to a CancerCondition: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-related-medication-administration.html#conformance
 function getCancerRelatedMedicationAdministration(bundle) {
   return fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration')",
   );
 }
-// CancerRelatedMedicationSurgicalProcedure
+// CancerRelatedMedicationSurgicalProcedure must have a SNOMED code `387713003`: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-related-surgical-procedure.html#conformance
 function getCancerRelatedSurgicalProcedure(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.ofType(Observation).where(code.coding.system = 'http://snomed.info/sct' and code.coding.code = '387713003')",
+  );
+  return metaProfiledResources || constrainedResources;
 }
-// Radiotheraphy Course Summary
+// Radiotheraphy Course Summary must have a code `USCRS-33529` from codesystem `http://hl7.org/fhir/us/mcode/CodeSystem/snomed-requested-cs`, which differs from the stated conformance guidelines but is mentioned in the diff-table: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-radiotherapy-course-summary.html#conformance
 function getRadiotherapyCourseSummary(bundle) {
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-course-summary')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    "Bundle.entry.resource.ofType(Observation).where(code.coding.system = 'http://hl7.org/fhir/us/mcode/CodeSystem/snomed-requested-cs' and code.coding.code = 'USCRS-33529')",
+  );
+  return metaProfiledResources || constrainedResources;
 }
-// Radiotherapy Volume must
+// Radiotherapy Volume must have a code from ValueSet `RadiotherapyVolumeTypeVS`: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-radiotherapy-volume.html#conformance
 function getRadiotherapyVolume(bundle) {
   return fhirpath.evaluate(
     bundle,

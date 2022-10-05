@@ -5,7 +5,7 @@ const {
   getCancerRelatedSurgicalProcedure,
   getRadiotherapyCourseSummary,
   getRadiotherapyVolume,
-} = require('./resourceUtils');
+} = require('../resourceFilters');
 const { treatmentSectionId } = require('../coverageSectionIds');
 const { treatmentProfileIds } = require('../coverageProfileIds');
 

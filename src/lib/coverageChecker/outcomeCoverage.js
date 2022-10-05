@@ -1,5 +1,5 @@
 const fhirpath = require('fhirpath');
-const { getDiseaseStatus, getTumor, getTumorSize, getTumorSpecimen } = require('./resourceUtils');
+const { getDiseaseStatus, getTumor, getTumorSize, getTumorSpecimen } = require('../resourceFilters');
 const { outcomeSectionId } = require('../coverageSectionIds');
 const { outcomeProfileIds } = require('../coverageProfileIds');
 
