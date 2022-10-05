@@ -8,6 +8,6 @@ It's best to have a clean working directory before generating new ValueSets, as 
 2. Move all ValueSets into a folder, for ease of access by the MEF'S `vs-expansion-script`. Below is a series of commands that will help with this (on OSX), but you could also do this manually.
    `cd some/path/to/local/fhir-mCODE-ig/fsh-generated/resources && mkdir valuesets && find * -name "ValueSet-*.json" | xargs -I '{}' cp {} ./valuesets`
 3. Remove all irrelevant ValueSets from this folder, leaving behind only the ones to be expanded.
-4. In the MEF, update the`PREEXPANSIONPATH` global variable in `vs-expansion-script.js` to point to the folder made to house the ValueSets in step 2.
+4. In `vs-expansion-script.js`, update the`PREEXPANSIONPATH` global variable to point to the ValueSets' folder defined by step 2.
 5. Run `vs-expansion-script.js` using node.
 6. For all failed expansions, determine if manual expansion is feasible (i.e. if there is just 1-2 codes that reference codeSystems GG's server do not support). If feasible, manually expand those VS.

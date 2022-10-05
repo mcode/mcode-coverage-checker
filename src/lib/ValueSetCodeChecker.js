@@ -4,6 +4,7 @@ import PrimaryCancerDisorderVS from './valueSets/ValueSet-mcode-primary-cancer-d
 import RadiotherapyVolumeTypeVS from './valueSets/ValueSet-mcode-radiotherapy-volume-type-vs.json';
 import GenomicSpecimenTypeVS from './valueSets/ValueSet-mcode-genomic-specimen-type-vs.json';
 
+// Map names used in VS to the corresponding JSON
 const DEFAULTVSLOOKUP = {
   TumorMarkerTestVS,
   SecondaryCancerDisorderVS,
