@@ -7,7 +7,6 @@ const vsChecker = new ValueSetCodeChecker();
 // Patient
 // No reliable conformance requirements for mCODE Patients or US Core Patients: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-patient.html#conformance
 function getPatient(bundle) {
-  // TODO
   const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient')",
@@ -257,21 +256,31 @@ function getECOGPerfomanceStatus(bundle) {
 }
 
 // Treatment
-// MedicationRequests that reference a CancerCondition must be CancerRelatedMedicationRequests: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-related-medication-request.html#conformance
+// MedicationRequests that reference a CancerCondition must be CancerRelatedMedicationRequests, either by reasonCode or reasonReference: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-related-medication-request.html#conformance & constraints section
 function getCancerRelatedMedicationRequest(bundle) {
-  // TODO
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    'Bundle.entry.resource.ofType(MedicationRequest).where(reasonCode.exists() or reasonReference.exists())',
+  );
+  // NOTE: these constraints aren't implemented perfectly, we should be checking these reasons for cancer-relevance; being overly permissive is okay at this stage of the filter.
+  return metaProfiledResources || constrainedResources;
 }
-// MedicationAdministrations that reference a CancerCondition must be CancerRelatedMedicationAdministration: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-related-medication-administration.html#conformance
+// MedicationAdministrations that reference a CancerCondition must be CancerRelatedMedicationAdministration, either by reasonCode or reasonReference: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-related-medication-administration.html#conformance & constraints section
 function getCancerRelatedMedicationAdministration(bundle) {
-  // TODO
-  return fhirpath.evaluate(
+  const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration')",
   );
+  const constrainedResources = fhirpath.evaluate(
+    bundle,
+    'Bundle.entry.resource.ofType(MedicationAdministration).where(reasonCode.exists() or reasonReference.exists())',
+  );
+  // NOTE: these constraints aren't implemented perfectly, we should be checking these reasons for cancer-relevance; being overly permissive is okay at this stage of the filter.
+  return metaProfiledResources || constrainedResources;
 }
 // Procedures with a SNOMED code `387713003` must be a CancerRelatedMedicationSurgicalProcedure: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-related-surgical-procedure.html#conformance
 function getCancerRelatedSurgicalProcedure(bundle) {
