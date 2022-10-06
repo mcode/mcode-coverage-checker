@@ -34,7 +34,7 @@ function makeExpansionRequest(vsPath, vs) {
   return axios(config)
     .then((response) => {
       const expansion = response.data;
-      console.log(`SUCCESS: ${vsPath} was expanded`);
+      console.info(`SUCCESS: ${vsPath} was expanded`);
       return { status: 'success', vsPath, vs: expansion };
     })
     .catch((error) => {
@@ -64,15 +64,15 @@ function expandVs() {
 
   // After all requests are finished, write the expanded files
   Promise.all(requests).then((expandedValueSets) => {
-    console.log('\nPost-expansion\n');
+    console.info('\nPost-expansion\n');
     // Print all the failed expansions
-    console.log('All Failed Expansions: \n======================');
-    expandedValueSets.filter(({ status }) => status === 'failure').map(({ vsPath }) => console.log(`${vsPath}`));
-    console.log('');
+    console.info('All Failed Expansions: \n======================');
+    expandedValueSets.filter(({ status }) => status === 'failure').map(({ vsPath }) => console.info(`${vsPath}`));
+    console.info('');
 
     // Save all the successful expansions
     expandedValueSets.forEach(writeVs);
-    console.log('DONE: Wrote all files to disc');
+    console.info('DONE: Wrote all files to disc');
   });
 }
 
