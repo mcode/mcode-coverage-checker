@@ -1,6 +1,6 @@
 const fhirpath = require('fhirpath');
 // NOTE: See here: https://stackoverflow.com/questions/33704714/cant-require-default-export-value-in-babel-6-x
-const ValueSetCodeChecker = require('./ValueSetCodeChecker').default;
+const { ValueSetCodeChecker } = require('./ValueSetCodeChecker');
 
 const vsChecker = new ValueSetCodeChecker();
 
@@ -12,6 +12,7 @@ function getPatient(bundle) {
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient')",
   );
   const constrainedResources = fhirpath.evaluate(bundle, 'Bundle.entry.resource.ofType(Patient)');
+  // NOTE: Being overly permissive is okay at this stage of the filter.
   return metaProfiledResources || constrainedResources;
 }
 
@@ -28,7 +29,7 @@ function getDiseaseStatus(bundle) {
   );
   return metaProfiledResources || constrainedResources;
 }
-// BodyStructures with a morphology code SNOMED-`367651003` must be Tumors: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-tumor.html#conformance
+// BodyStructures with a morphology code SNOMED `367651003` must be Tumors: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-tumor.html#conformance
 function getTumor(bundle) {
   const metaProfiledResources = fhirpath.evaluate(
     bundle,

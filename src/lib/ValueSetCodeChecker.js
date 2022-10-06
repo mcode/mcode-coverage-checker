@@ -1,8 +1,8 @@
-import TumorMarkerTestVS from './valueSets/ValueSet-mcode-tumor-marker-test-vs.json';
-import SecondaryCancerDisorderVS from './valueSets/ValueSet-mcode-secondary-cancer-disorder-vs.json';
-import PrimaryCancerDisorderVS from './valueSets/ValueSet-mcode-primary-cancer-disorder-vs.json';
-import RadiotherapyVolumeTypeVS from './valueSets/ValueSet-mcode-radiotherapy-volume-type-vs.json';
-import GenomicSpecimenTypeVS from './valueSets/ValueSet-mcode-genomic-specimen-type-vs.json';
+const TumorMarkerTestVS = require('./valueSets/ValueSet-mcode-tumor-marker-test-vs.json');
+const SecondaryCancerDisorderVS = require('./valueSets/ValueSet-mcode-secondary-cancer-disorder-vs.json');
+const PrimaryCancerDisorderVS = require('./valueSets/ValueSet-mcode-primary-cancer-disorder-vs.json');
+const RadiotherapyVolumeTypeVS = require('./valueSets/ValueSet-mcode-radiotherapy-volume-type-vs.json');
+const GenomicSpecimenTypeVS = require('./valueSets/ValueSet-mcode-genomic-specimen-type-vs.json');
 
 // Map names used in VS to the corresponding JSON
 const DEFAULTVSLOOKUP = {
@@ -56,4 +56,6 @@ class ValueSetCodeChecker {
   }
 }
 
-export default ValueSetCodeChecker;
+module.exports = {
+  ValueSetCodeChecker,
+};
