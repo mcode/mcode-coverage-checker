@@ -1,8 +1,9 @@
+/* eslint-disable global-require */
 const testBundle = require('./bundles/assessmentBundle.json');
 const { getAssessmentCoverage } = require('../src/lib/coverageChecker/assessmentCoverage');
 
 describe('getAssessmentCoverage()', () => {
-  let res = getAssessmentCoverage(testBundle);
+  const res = getAssessmentCoverage(testBundle);
 
   test('Section object should have length equal to number of profiles in section', () => {
     expect(res.data.length).toBe(3);
@@ -19,9 +20,9 @@ describe('getAssessmentCoverage()', () => {
     const modifiedTestBundle = require('./bundles/assessmentBundle.json');
     modifiedTestBundle.entry
       .filter((entry) => entry.resource.id.startsWith('empty'))
-      .forEach((entry) => delete entry.resource.meta.profile);
+      .forEach((entry) => delete entry.resource.meta.profile); // eslint-disable-line no-param-reassign
 
-    let updatedRes = getAssessmentCoverage(modifiedTestBundle);
+    const updatedRes = getAssessmentCoverage(modifiedTestBundle);
     expect(updatedRes.data[0].coverage.length).toBe(1);
     expect(updatedRes.data[1].coverage.length).toBe(1);
     expect(updatedRes.data[2].coverage.length).toBe(1);
@@ -31,7 +32,7 @@ describe('getAssessmentCoverage()', () => {
     // Iterate through all resources and delete their profile arrays
     const modifiedTestBundle = require('./bundles/assessmentBundle.json');
     modifiedTestBundle.entry.forEach((entry) => {
-      delete entry.resource.meta.profile;
+      delete entry.resource.meta.profile; // eslint-disable-line no-param-reassign
     });
 
     const updatedRes = getAssessmentCoverage(modifiedTestBundle);
