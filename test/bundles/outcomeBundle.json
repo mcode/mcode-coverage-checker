@@ -140,6 +140,14 @@
             }
           ]
         },
+        "morphology": {
+          "coding": [
+            {
+              "code": "367651003",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
         "patient": {
           "reference": "Patient/cancer-patient-eve-anyperson"
         }

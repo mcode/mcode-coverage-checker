@@ -20,11 +20,28 @@ describe('getDiseaseCoverage()', () => {
 
   test('Coverage arrays should not include non-compliant resources if they do not include a meta.profile element', () => {
     // Iterate through our empty resources and delete their profile arrays
-    testBundle.entry
+    const modifiedTestBundle = require('./bundles/diseaseBundle.json');
+    modifiedTestBundle.entry
       .filter((entry) => entry.resource.id.startsWith('empty'))
       .forEach((entry) => delete entry.resource.meta.profile);
 
-    const updatedRes = getDiseaseCoverage(testBundle);
+    const updatedRes = getDiseaseCoverage(modifiedTestBundle);
+
+    expect(updatedRes.data[0].coverage.length).toBe(1);
+    expect(updatedRes.data[1].coverage.length).toBe(1);
+    expect(updatedRes.data[2].coverage.length).toBe(1);
+    expect(updatedRes.data[3].coverage.length).toBe(1);
+    expect(updatedRes.data[4].coverage.length).toBe(1);
+    expect(updatedRes.data[5].coverage.length).toBe(1);
+    expect(updatedRes.data[6].coverage.length).toBe(1);
+  });
+
+  test('Coverage arrays should still include compliant resources if they do not include a meta.profile element', () => {
+    // Iterate through all resources and delete their profile arrays
+    const modifiedTestBundle = require('./bundles/diseaseBundle.json');
+    modifiedTestBundle.entry.forEach((entry) => delete entry.resource.meta.profile);
+
+    const updatedRes = getDiseaseCoverage(modifiedTestBundle);
 
     expect(updatedRes.data[0].coverage.length).toBe(1);
     expect(updatedRes.data[1].coverage.length).toBe(1);

@@ -46,7 +46,7 @@ function getTumor(bundle) {
   );
   const constrainedResources = fhirpath.evaluate(
     bundle,
-    "Bundle.entry.resource.ofType(BodyStructure).where(code.coding.system = 'http://snomed.info/sct' and code.coding.code = '367651003')",
+    "Bundle.entry.resource.ofType(BodyStructure).where(morphology.coding.system = 'http://snomed.info/sct' and morphology.coding.code = '367651003')",
   );
   return mergeWithoutDuplicates(metaProfiledResources, constrainedResources);
 }
@@ -293,7 +293,7 @@ function getCancerRelatedMedicationAdministration(bundle) {
   // NOTE: these constraints aren't implemented perfectly, we should be checking these reasons for cancer-relevance; being overly permissive is okay at this stage of the filter.
   return mergeWithoutDuplicates(metaProfiledResources, constrainedResources);
 }
-// Procedures with a SNOMED code `387713003` must be a CancerRelatedMedicationSurgicalProcedure: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-related-surgical-procedure.html#conformance
+// Procedures with a SNOMED category code `387713003` must be a CancerRelatedMedicationSurgicalProcedure: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-related-surgical-procedure.html#conformance
 function getCancerRelatedSurgicalProcedure(bundle) {
   const metaProfiledResources = fhirpath.evaluate(
     bundle,
@@ -301,7 +301,7 @@ function getCancerRelatedSurgicalProcedure(bundle) {
   );
   const constrainedResources = fhirpath.evaluate(
     bundle,
-    "Bundle.entry.resource.ofType(Procedure).where(code.coding.system = 'http://snomed.info/sct' and code.coding.code = '387713003')",
+    "Bundle.entry.resource.ofType(Procedure).where(category.coding.system = 'http://snomed.info/sct' and category.coding.code = '387713003')",
   );
   return mergeWithoutDuplicates(metaProfiledResources, constrainedResources);
 }
@@ -328,7 +328,7 @@ function getRadiotherapyVolume(bundle) {
     .filter(
       (bodyStructure) =>
         bodyStructure.morphology?.coding?.some((coding) =>
-          vsChecker.checkCodeInVs(coding.code, coding.system, 'TumorMarkerTestVS'),
+          vsChecker.checkCodeInVs(coding.code, coding.system, 'RadiotherapyVolumeTypeVS'),
         ) ?? false,
     );
   return mergeWithoutDuplicates(metaProfiledResources, constrainedResources);

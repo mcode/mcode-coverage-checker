@@ -15,16 +15,27 @@ describe('getAssessmentCoverage()', () => {
   });
 
   test('Coverage arrays should not include non-compliant resources if they do not include a meta.profile element', () => {
-    let emptyComorbidity = testBundle.entry.find((entry) => entry.resource.id === 'empty-comorbidities');
-    delete emptyComorbidity.resource.meta;
+    // Iterate through our empty resources and delete their profile arrays
+    const modifiedTestBundle = require('./bundles/assessmentBundle.json');
+    modifiedTestBundle.entry
+      .filter((entry) => entry.resource.id.startsWith('empty'))
+      .forEach((entry) => delete entry.resource.meta.profile);
 
-    let emptyECOG = testBundle.entry.find((entry) => entry.resource.id === 'empty-ecog');
-    delete emptyECOG.resource.meta;
+    let updatedRes = getAssessmentCoverage(modifiedTestBundle);
+    expect(updatedRes.data[0].coverage.length).toBe(1);
+    expect(updatedRes.data[1].coverage.length).toBe(1);
+    expect(updatedRes.data[2].coverage.length).toBe(1);
+  });
 
-    let emptyKarnof = testBundle.entry.find((entry) => entry.resource.id === 'empty-karnofsky');
-    delete emptyKarnof.resource.meta;
+  test('Coverage arrays should still include compliant resources if they do not include a meta.profile element', () => {
+    // Iterate through all resources and delete their profile arrays
+    const modifiedTestBundle = require('./bundles/assessmentBundle.json');
+    modifiedTestBundle.entry.forEach((entry) => {
+      delete entry.resource.meta.profile;
+    });
 
-    let updatedRes = getAssessmentCoverage(testBundle);
+    const updatedRes = getAssessmentCoverage(modifiedTestBundle);
+
     expect(updatedRes.data[0].coverage.length).toBe(1);
     expect(updatedRes.data[1].coverage.length).toBe(1);
     expect(updatedRes.data[2].coverage.length).toBe(1);
