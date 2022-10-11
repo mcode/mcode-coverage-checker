@@ -106,7 +106,7 @@ function getSecondaryCancerCondition(bundle) {
           vsChecker.checkCodeInVs(coding.code, coding.system, 'SecondaryCancerDisorderVS'),
         ) ?? false,
     );
-  return metaProfiledResources.length > 0 ? metaProfiledResources : constrainedResources;
+  return mergeWithoutDuplicates(metaProfiledResources, constrainedResources);
 }
 // Conditions with a code from extensible valueset, PrimaryCancerDisorderVS, must be Primary Cancer Conditions: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-primary-cancer-condition.html#conformance
 function getPrimaryCancerCondition(bundle) {

@@ -18,6 +18,23 @@ describe('getDiseaseCoverage()', () => {
     expect(res.data[6].coverage.length).toBe(2);
   });
 
+  test('Coverage arrays should not include non-compliant resources if they do not include a meta.profile element', () => {
+    // Iterate through our empty resources and delete their profile arrays
+    testBundle.entry
+      .filter((entry) => entry.resource.id.startsWith('empty'))
+      .forEach((entry) => delete entry.resource.meta.profile);
+
+    const updatedRes = getDiseaseCoverage(testBundle);
+
+    expect(updatedRes.data[0].coverage.length).toBe(1);
+    expect(updatedRes.data[1].coverage.length).toBe(1);
+    expect(updatedRes.data[2].coverage.length).toBe(1);
+    expect(updatedRes.data[3].coverage.length).toBe(1);
+    expect(updatedRes.data[4].coverage.length).toBe(1);
+    expect(updatedRes.data[5].coverage.length).toBe(1);
+    expect(updatedRes.data[6].coverage.length).toBe(1);
+  });
+
   test('All values should be true when tumor marker test has all fields covered', () => {
     const coveredTumorMarker = res.data[0].coverage[1].data;
     expect(coveredTumorMarker['Result Value'].covered).toBe(true);
