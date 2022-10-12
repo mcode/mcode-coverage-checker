@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 const testBundle = require('./bundles/assessmentBundle.json');
 const { getAssessmentCoverage } = require('../src/lib/coverageChecker/assessmentCoverage');
 
@@ -14,6 +15,33 @@ describe('getAssessmentCoverage()', () => {
     expect(res.data[2].coverage.length).toBe(2);
   });
 
+  test('Coverage arrays should not include non-compliant resources if they do not include a meta.profile element', () => {
+    // Iterate through our empty resources and delete their profile arrays
+    const modifiedTestBundle = require('./bundles/assessmentBundle.json');
+    modifiedTestBundle.entry
+      .filter((entry) => entry.resource.id.startsWith('empty'))
+      .forEach((entry) => delete entry.resource.meta.profile); // eslint-disable-line no-param-reassign
+
+    const updatedRes = getAssessmentCoverage(modifiedTestBundle);
+    expect(updatedRes.data[0].coverage.length).toBe(1);
+    expect(updatedRes.data[1].coverage.length).toBe(1);
+    expect(updatedRes.data[2].coverage.length).toBe(1);
+  });
+
+  test('Coverage arrays should still include compliant resources if they do not include a meta.profile element', () => {
+    // Iterate through all resources and delete their profile arrays
+    const modifiedTestBundle = require('./bundles/assessmentBundle.json');
+    modifiedTestBundle.entry.forEach((entry) => {
+      delete entry.resource.meta.profile; // eslint-disable-line no-param-reassign
+    });
+
+    const updatedRes = getAssessmentCoverage(modifiedTestBundle);
+
+    expect(updatedRes.data[0].coverage.length).toBe(1);
+    expect(updatedRes.data[1].coverage.length).toBe(1);
+    expect(updatedRes.data[2].coverage.length).toBe(1);
+  });
+
   test('All values should be true when Karnofsky performance status has all fields covered', () => {
     const coveredKarnofsky = res.data[0].coverage[1].data;
     expect(coveredKarnofsky.Score.covered).toBe(true);
@@ -28,18 +56,18 @@ describe('getAssessmentCoverage()', () => {
 
   test('All values should be true when comorbidities has all fields covered', () => {
     const coveredComorbidities = res.data[1].coverage[1].data;
-    expect(coveredComorbidities["Risk Score"].covered).toBe(true);
-    expect(coveredComorbidities["Present/Absent"].covered).toBe(true);
-    expect(coveredComorbidities["Condition Code"].covered).toBe(true);
-    expect(coveredComorbidities["Condition Reference"].covered).toBe(true);
+    expect(coveredComorbidities['Risk Score'].covered).toBe(true);
+    expect(coveredComorbidities['Present/Absent'].covered).toBe(true);
+    expect(coveredComorbidities['Condition Code'].covered).toBe(true);
+    expect(coveredComorbidities['Condition Reference'].covered).toBe(true);
   });
 
   test('All values should be false when comorbidities is missing every field', () => {
     const emptyComorbidities = res.data[1].coverage[0].data;
-    expect(emptyComorbidities["Risk Score"].covered).toBe(false);
-    expect(emptyComorbidities["Present/Absent"].covered).toBe(false);
-    expect(emptyComorbidities["Condition Code"].covered).toBe(false);
-    expect(emptyComorbidities["Condition Reference"].covered).toBe(false);
+    expect(emptyComorbidities['Risk Score'].covered).toBe(false);
+    expect(emptyComorbidities['Present/Absent'].covered).toBe(false);
+    expect(emptyComorbidities['Condition Code'].covered).toBe(false);
+    expect(emptyComorbidities['Condition Reference'].covered).toBe(false);
   });
 
   test('All values should be true when ECOG performance status has all fields covered', () => {

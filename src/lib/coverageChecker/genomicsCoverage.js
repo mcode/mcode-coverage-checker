@@ -4,7 +4,7 @@ const {
   getGenomicSpecimen,
   getGenomicVariant,
   getGenomicsReport,
-} = require('./resourceUtils');
+} = require('../resourceFilters');
 const { genomicsSectionId } = require('../coverageSectionIds');
 const { genomicsProfileIds } = require('../coverageProfileIds');
 

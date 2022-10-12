@@ -1,6 +1,6 @@
 # mCODE Coverage Checker
 
-A web application for calculating a FHIR bundles mCODE Coverage
+A web application for calculating a FHIR bundle's mCODE Coverage
 
 ## Available Scripts
 

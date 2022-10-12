@@ -1,5 +1,5 @@
 const fhirpath = require('fhirpath');
-const { getPatient } = require('./resourceUtils');
+const { getPatient } = require('../resourceFilters');
 const { patientSectionId } = require('../coverageSectionIds');
 const { patientProfileIds } = require('../coverageProfileIds');
 /**

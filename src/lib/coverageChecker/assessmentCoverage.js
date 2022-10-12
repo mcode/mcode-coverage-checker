@@ -1,5 +1,5 @@
 const fhirpath = require('fhirpath');
-const { getKarnofskyPerformanceStatus, getComorbidities, getECOGPerfomanceStatus } = require('./resourceUtils');
+const { getKarnofskyPerformanceStatus, getComorbidities, getECOGPerfomanceStatus } = require('../resourceFilters');
 const { assessmentSectionId } = require('../coverageSectionIds');
 const { assessmentProfileIds } = require('../coverageProfileIds');
 

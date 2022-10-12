@@ -556,8 +556,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "111111111",
-              "display": "test"
+              "code": "228793007",
+              "display": "Planning target volume (observable entity)"
             }
           ]
         },

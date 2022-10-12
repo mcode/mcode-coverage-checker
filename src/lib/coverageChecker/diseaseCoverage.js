@@ -7,7 +7,7 @@ const {
   getTNMPrimaryTumorCategory,
   getTNMDistantMetastasesCategory,
   getTNMRegionalNodesCategory,
-} = require('./resourceUtils');
+} = require('../resourceFilters');
 const { diseaseSectionId } = require('../coverageSectionIds');
 const { diseaseProfileIds } = require('../coverageProfileIds');
 
