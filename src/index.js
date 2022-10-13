@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NewApp from './pages/NewApp';
 import App from './pages/App';
+import FileUploadPage from './pages/FileUploadPage';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
@@ -10,7 +10,7 @@ ReactDOM.render(
   <Router>
     <Routes>
       <Route path="mcode-coverage-checker" element={<App />} />
-      <Route path="NewApp" element={<NewApp />} />
+      <Route path="file-upload" element={<FileUploadPage />} />
     </Routes>
   </Router>,
   document.getElementById('root'),
