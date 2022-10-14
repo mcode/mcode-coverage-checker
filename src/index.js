@@ -1,18 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
 import App from './pages/App';
 import FileUploadPage from './pages/FileUploadPage';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
 
 ReactDOM.render(
-  <Router>
-    <Routes>
-      <Route path="mcode-coverage-checker" element={<App />} />
-      <Route path="file-upload" element={<FileUploadPage />} />
-    </Routes>
-  </Router>,
+  <RecoilRoot>
+    <Router basename="mcode-coverage-checker">
+      <Routes>
+        <Route path="/file-upload" element={<FileUploadPage />} />
+        <Route path="/" element={<App />} />
+      </Routes>
+    </Router>
+  </RecoilRoot>,
   document.getElementById('root'),
 );
 

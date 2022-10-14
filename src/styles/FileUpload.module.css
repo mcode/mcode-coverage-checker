@@ -1,0 +1,23 @@
+/* Custom webkit styling of progress bar */
+.progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 10px;
+}
+/* Safari/chrome/opera styling */
+.progress[value]::-webkit-progress-bar {
+  border-radius: 10px;
+  @apply bg-background;
+}
+progress[value]::-webkit-progress-value {
+  border-radius: 10px;
+  @apply bg-link;
+}
+/* firefox stylin */
+.progress[value]::-moz-progress-bar {
+  border-radius: 10px;
+  @apply bg-link;
+}

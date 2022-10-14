@@ -2,9 +2,12 @@ import { log } from '../lib/logger';
 import MainVisualization from '../components/MainVisualization';
 import coverageChecker from '../lib/coverageChecker/coverageChecker';
 import testbundle from '../data/fullBundle.json';
-import styles from './App.module.css';
 import MainSvg from '../components/oldSvg/MainSvg';
+<<<<<<< HEAD
 import Rankings from '../components/Rankings';
+=======
+import styles from '../styles/App.module.css';
+>>>>>>> f331ba6 (animations on added/removed elements works; progress bar works in firefox/safari; colors work; recoil works; TBD – drag and drop)
 
 function App() {
   const coverageData = coverageChecker(testbundle);

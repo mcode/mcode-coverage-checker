@@ -12,6 +12,8 @@ module.exports = {
         treatment: '#04b2d9',
         outcome: '#8a45d9',
         link: '#2f80ed',
+        'link-icon-background': '#c8d7eb',
+        'link-tinted': '#e3e6eb',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

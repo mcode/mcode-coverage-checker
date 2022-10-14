@@ -1,18 +1,19 @@
-import styles from './App.module.css';
+import UploadedFiles from '../components/UploadedFiles';
 import FileUpload from '../components/FileUpload';
-import PastFiles from '../components/PastFiles';
+import styles from '../styles/App.module.css';
 
 function FileUploadPage() {
   return (
-    <>
-      <header className={styles['app-header']}>
-        <div className="font-sans font-bold text-4xl">File Upload</div>
-      </header>
+    <div className="h-screen w-screen bg-background py-16 overflow-auto">
       <div className={styles.app}>
-        <FileUpload />
-        <PastFiles />
+        <div className="mb-6">
+          <FileUpload />
+        </div>
+        <div className="mb-6">
+          <UploadedFiles />
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 
