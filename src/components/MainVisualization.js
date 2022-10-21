@@ -4,6 +4,7 @@ import OutcomeStatsViz from './OutcomeStatsViz';
 import DiseaseStatsViz from './DiseaseStatsViz';
 import TreatmentStatsViz from './TreatmentStatsViz';
 import AssessmentStatsViz from './AssessmentStatsViz';
+import GenomicsStatsViz from './GenomicsStatsViz';
 
 function MainVisualization({ coverageData }) {
   return (
@@ -14,6 +15,7 @@ function MainVisualization({ coverageData }) {
       <DiseaseStatsViz coverageData={coverageData} />
       <TreatmentStatsViz coverageData={coverageData} />
       <AssessmentStatsViz coverageData={coverageData} />
+      <GenomicsStatsViz coverageData={coverageData} />
     </>
   );
 }

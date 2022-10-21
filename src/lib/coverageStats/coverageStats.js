@@ -4,6 +4,7 @@ const {
   diseaseSectionId,
   treatmentSectionId,
   assessmentSectionId,
+  genomicsSectionId,
 } = require('../coverageSectionIds');
 const { getAllSectionsCoverage } = require('./statsUtils');
 
@@ -66,6 +67,16 @@ function getAssessmentStats(coverageData) {
   return getOverallStats(assessmentData);
 }
 
+/**
+ * Compute coverage stats across only the Genomics section
+ * @param {CoverageData Object} coverageData conforming to the standard CoverageData format (explored in README)
+ * @returns An object reporting percentage coverage and raw counts
+ */
+function getGenomicsStats(coverageData) {
+  const genomicsData = coverageData.filter((sectionObject) => sectionObject.section === genomicsSectionId);
+  return getOverallStats(genomicsData);
+}
+
 module.exports = {
   getOverallStats,
   getPatientStats,
@@ -73,4 +84,5 @@ module.exports = {
   getDiseaseStats,
   getTreatmentStats,
   getAssessmentStats,
+  getGenomicsStats,
 };
