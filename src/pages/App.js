@@ -1,6 +1,7 @@
 import { log } from '../lib/logger';
 import MainVisualization from '../components/MainVisualization';
 import coverageChecker from '../lib/coverageChecker/coverageChecker';
+import PastFiles from '../components/PastFiles';
 import testbundle from '../data/fullBundle.json';
 import styles from './App.module.css';
 import MainSvg from '../components/oldSvg/MainSvg';
@@ -16,6 +17,7 @@ function App() {
       </header>
       <div className={styles.app}>
         <MainVisualization coverageData={coverageData} className={styles.app} />
+        <PastFiles />
         <MainSvg />
       </div>
     </>
