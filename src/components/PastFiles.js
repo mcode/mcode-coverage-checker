@@ -31,6 +31,9 @@ const files = [
 
 function PastFiles() {
   const [jsonViewIndexes, setJsonViewIndexes] = useState(new Set());
+  // I don't think we'll need this state in prod, pastFiles and setPastFiles
+  // should be passed in as props
+  const [pastFiles, setPastFiles] = useState(files);
 
   function toggleView(index) {
     const modifiedViewIndexes = new Set(jsonViewIndexes);
@@ -40,6 +43,10 @@ function PastFiles() {
       modifiedViewIndexes.add(index);
     }
     setJsonViewIndexes(modifiedViewIndexes);
+  }
+
+  function handleDelete(index) {
+    setPastFiles([...pastFiles.slice(0, index), ...pastFiles.slice(index + 1)]);
   }
 
   return (
@@ -61,8 +68,8 @@ function PastFiles() {
           </tr>
         </thead>
         <tbody>
-          {files && files.length > 0 ? (
-            files.map((file, index) => (
+          {pastFiles && pastFiles.length > 0 ? (
+            pastFiles.map((file, index) => (
               <>
                 <tr key={file.name} className="bg-white border-b" style={{ fontSize: '15px' }}>
                   <td className="px-6 text-base">
@@ -80,7 +87,7 @@ function PastFiles() {
                       <button onClick={() => toggleView(index)} type="button" className="font-bold text-blue-500">
                         {jsonViewIndexes.has(index) ? 'Hide' : 'View'}
                       </button>
-                      <button className="px-6 font-bold text-red-500" type="button">
+                      <button onClick={() => handleDelete(index)} className="px-6 font-bold text-red-500" type="button">
                         Delete
                       </button>
                     </div>
@@ -96,9 +103,11 @@ function PastFiles() {
               </>
             ))
           ) : (
-            <td colSpan="3" className="text-center">
-              No past files to display
-            </td>
+            <tr>
+              <td colSpan="3" className="text-center bg-white italic">
+                No past files to display
+              </td>
+            </tr>
           )}
         </tbody>
       </table>
