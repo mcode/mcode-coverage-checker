@@ -80,14 +80,22 @@ function PastFiles() {
                     />
                     {file.name}
                   </td>
-                  <td className="">{file.size}</td>
-                  <td className="flex flex-row justify-between items-center my-2 h-full">
-                    <div>{file.dateAdded}</div>
+                  <td className="text-gray-500">{file.size}</td>
+                  <td className="flex flex-row justify-between items-center my-4 h-full">
+                    <div className="text-gray-500">{file.dateAdded}</div>
                     <div className="text-xs">
-                      <button onClick={() => toggleView(index)} type="button" className="font-bold text-blue-500">
+                      <button
+                        onClick={() => toggleView(index)}
+                        type="button"
+                        className="font-bold text-blue-500 hover:text-blue-600"
+                      >
                         {jsonViewIndexes.has(index) ? 'Hide' : 'View'}
                       </button>
-                      <button onClick={() => handleDelete(index)} className="px-6 font-bold text-red-500" type="button">
+                      <button
+                        onClick={() => handleDelete(index)}
+                        className="px-6 font-bold text-red-500 hover:text-red-600"
+                        type="button"
+                      >
                         Delete
                       </button>
                     </div>
