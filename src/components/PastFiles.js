@@ -51,11 +51,11 @@ function PastFiles() {
 
   return (
     <>
-      <h1 style={{ fontSize: '32px', fontWeight: 'bold' }}>Past Files</h1>
-      <p style={{ fontSize: '15px' }}>These files are included within the longitudinal data</p>
-      <table style={{ backgroundColor: '#ECECEC' }} className="w-full table-fixed text-left rounded shadow-md">
+      <h1 className="font-bold text-4xl">Past Files</h1>
+      <p className="text-sm">These files are included within the longitudinal data</p>
+      <table className="w-full table-fixed text-left rounded shadow-md bg-gray-100">
         <thead className="text-gray-500 font-thin rounded">
-          <tr className="">
+          <tr>
             <th scope="col" className="px-6 font-normal py-3">
               Name
             </th>
@@ -71,13 +71,9 @@ function PastFiles() {
           {pastFiles && pastFiles.length > 0 ? (
             pastFiles.map((file, index) => (
               <>
-                <tr key={file.name} className="bg-white border-b" style={{ fontSize: '15px' }}>
+                <tr key={file.name} className="bg-white border-b text-sm">
                   <td className="px-6 text-base">
-                    <Icon
-                      icon="bi:file-earmark-code"
-                      className="text-4xl mr-2 my-2"
-                      style={{ color: 'gray', display: 'inline-block' }}
-                    />
+                    <Icon icon="bi:file-earmark-code" className="text-4xl mr-2 my-2 inline-block text-gray-500" />
                     {file.name}
                   </td>
                   <td className="text-gray-500">{file.size}</td>
