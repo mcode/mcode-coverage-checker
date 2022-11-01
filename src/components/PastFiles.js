@@ -411,13 +411,13 @@ function PastFiles() {
                     </div>
                   </td>
                 </tr>
-                {jsonViewIndexes.has(index) ? (
+                {jsonViewIndexes.has(index) && (
                   <tr>
                     <td className="px-6" colSpan="3">
                       <ReactJson src={file.body} collapsed={4} style={{ maxHeight: '400px', overflow: 'auto' }} />
                     </td>
                   </tr>
-                ) : undefined}
+                )}
               </>
             ))
           ) : (
