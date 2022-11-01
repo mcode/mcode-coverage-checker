@@ -1,6 +1,6 @@
 import { Icon } from '@iconify/react';
 import ReactJson from 'react-json-view';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 const files = [
   {
@@ -384,8 +384,8 @@ function PastFiles() {
         <tbody>
           {pastFiles && pastFiles.length > 0 ? (
             pastFiles.map((file, index) => (
-              <>
-                <tr key={file.name} className="bg-white border-b text-sm">
+              <React.Fragment key={file.name}>
+                <tr className="bg-white border-b text-sm">
                   <td className="px-6 text-base">
                     <Icon icon="bi:file-earmark-code" className="text-4xl mr-2 my-2 inline-block text-gray-500" />
                     {file.name}
@@ -412,13 +412,13 @@ function PastFiles() {
                   </td>
                 </tr>
                 {jsonViewIndexes.has(index) && (
-                  <tr key={`${file.name}-json`}>
+                  <tr>
                     <td className="px-6" colSpan="3">
                       <ReactJson src={file.body} collapsed={4} style={{ maxHeight: '400px', overflow: 'auto' }} />
                     </td>
                   </tr>
                 )}
-              </>
+              </React.Fragment>
             ))
           ) : (
             <tr>
