@@ -379,6 +379,7 @@ function PastFiles() {
             <th scope="col" className="font-normal py-3">
               Date added
             </th>
+            <th scope="col" className="font-normal py-3" aria-label="Actions" />
           </tr>
         </thead>
         <tbody>
@@ -393,17 +394,19 @@ function PastFiles() {
                   <td className="text-gray-500">{file.size}</td>
                   <td className="flex flex-row justify-between items-center my-4 h-full">
                     <div className="text-gray-500">{file.dateAdded}</div>
-                    <div className="text-xs">
+                  </td>
+                  <td>
+                    <div className="text-xs flex flex-wrap justify-end pr-6">
                       <button
                         onClick={() => toggleView(index)}
                         type="button"
-                        className="font-bold text-blue-500 hover:text-blue-600"
+                        className="m-2 font-bold text-blue-500 hover:text-blue-600"
                       >
                         {jsonViewIndexes.has(index) ? 'Hide' : 'View'}
                       </button>
                       <button
                         onClick={() => handleDelete(index)}
-                        className="px-6 font-bold text-red-500 hover:text-red-600"
+                        className="m-2 font-bold text-red-500 hover:text-red-600"
                         type="button"
                       >
                         Delete
@@ -412,8 +415,8 @@ function PastFiles() {
                   </td>
                 </tr>
                 {jsonViewIndexes.has(index) && (
-                  <tr>
-                    <td className="px-6" colSpan="3">
+                  <tr key={`${file.name}-json`}>
+                    <td className="px-6" colSpan="4">
                       <ReactJson src={file.body} collapsed={4} style={{ maxHeight: '400px', overflow: 'auto' }} />
                     </td>
                   </tr>
