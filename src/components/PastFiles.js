@@ -422,7 +422,7 @@ function PastFiles() {
             ))
           ) : (
             <tr>
-              <td colSpan="3" className="text-center bg-white italic">
+              <td colSpan="3" className="text-center bg-white italic my-2">
                 No past files to display
               </td>
             </tr>
