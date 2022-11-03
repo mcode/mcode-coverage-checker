@@ -8,6 +8,40 @@ function getProfileCoveredCount(profileObject) {
   );
 }
 
+function getProfileFieldsCoveredCount(profileObject, section) {
+  if (profileObject.coverage.length === 0) {
+    return [];
+  }
+  const fields = Object.keys(profileObject.coverage[0].data);
+  const fieldCounts = [];
+  const totalCount = profileObject.coverage.length;
+  fields.forEach((field) => {
+    const coveredCount = profileObject.coverage.reduce(
+      (accum, coverageObject) => accum + (coverageObject.data[field].covered ? 1 : 0),
+      0,
+    );
+    fieldCounts.push({
+      name: field,
+      profile: profileObject.profile,
+      section,
+      covered: coveredCount,
+      total: totalCount,
+      percentage: coveredCount / totalCount,
+    });
+  });
+  return fieldCounts;
+}
+
+function getAllFieldCoveredCounts(coverageData) {
+  const allFieldsCoveredCount = [];
+  coverageData.forEach((section) => {
+    section.data.forEach((profile) => {
+      allFieldsCoveredCount.push(...getProfileFieldsCoveredCount(profile, section.section));
+    });
+  });
+  return allFieldsCoveredCount;
+}
+
 // Number of total coverable-fields nested in a profile object's several coverage objects
 function getProfileTotalCount(profileObject) {
   return profileObject.coverage.reduce((accum2, coverageObject) => accum2 + Object.keys(coverageObject.data).length, 0);
@@ -44,4 +78,5 @@ function getAllSectionsCoverage(coverageData) {
 
 module.exports = {
   getAllSectionsCoverage,
+  getAllFieldCoveredCounts,
 };

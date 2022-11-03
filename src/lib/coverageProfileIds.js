@@ -38,7 +38,7 @@ const genomicsProfileIds = {
   genomicsReportId: 'Genomics Report',
   genomicSpecimenId: 'Genomic Specimen',
   genomicVariantId: 'Genomic Variant',
-  genomicRegionStidiedId: 'Genomic Region Studied',
+  genomicRegionStudiedId: 'Genomic Region Studied',
 };
 
 module.exports = {
