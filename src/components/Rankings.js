@@ -1,14 +1,7 @@
 import { useState } from 'react';
 import { getAllFieldCoveredCounts } from '../lib/coverageStats/statsUtils';
+import { sectionColors } from '../lib/coverageSectionIds';
 
-const SectionColors = {
-  Patient: 'fill-[#D24200]',
-  Outcome: 'fill-[#8A45D9]',
-  Disease: 'fill-[#F2B84B]',
-  Treatment: 'fill-[#04B2D9]',
-  Assessment: 'fill-[#F2913D]',
-  Genomics: 'fill-[#26C485]',
-};
 const MINNUMSHOWN = 5;
 
 function Rankings({ coverageData }) {
@@ -33,20 +26,20 @@ function Rankings({ coverageData }) {
         <tbody>
           {fields.slice(0, numShown).map((field) => (
             <tr key={[field.profile, field.name].join()}>
-              <td>
-                <svg className={`${SectionColors[field.section]}`} width="5" height="40">
-                  <rect width="5" height="40" />
+              <td className="w-5 py-1">
+                <svg className={`${sectionColors[field.section]}`} width="5" height="40">
+                  <rect width="5" height="40" rx="1" />
                 </svg>
               </td>
-              <td>
+              <td className="py-1">
                 <p className="text-[15px]">{field.name}</p>
                 <p className="text-xs text-gray-400">{field.profile}</p>
               </td>
-              <td className="text-[15px]">{`${field.covered}/${field.total}`}</td>
+              <td className="text-[15px] py-1">{`${field.covered}/${field.total}`}</td>
             </tr>
           ))}
           <tr>
-            <td colSpan="3" className="text-center">
+            <td colSpan="3" className="text-center py-1">
               <button onClick={() => toggleRankingsShown()} type="button">
                 {buttonText}
               </button>
