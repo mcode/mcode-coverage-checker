@@ -21,5 +21,8 @@ module.exports = {
     'react/prop-types': 'off',
     // allow jsx syntax in js files
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    // workaround for
+    // https://github.com/import-js/eslint-plugin-import/issues/1810:
+    'import/no-unresolved': ['error', { ignore: ['@formkit/auto-animate.*'] }],
   },
 };

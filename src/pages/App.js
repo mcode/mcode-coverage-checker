@@ -2,9 +2,9 @@ import { log } from '../lib/logger';
 import MainVisualization from '../components/MainVisualization';
 import coverageChecker from '../lib/coverageChecker/coverageChecker';
 import testbundle from '../data/fullBundle.json';
-import styles from './App.module.css';
 import MainSvg from '../components/oldSvg/MainSvg';
 import Rankings from '../components/Rankings';
+import styles from '../styles/App.module.css';
 
 function App() {
   const coverageData = coverageChecker(testbundle);
