@@ -6,6 +6,15 @@ const treatmentSectionId = 'Treatment';
 const assessmentSectionId = 'Assessment';
 const genomicsSectionId = 'Genomics';
 
+const sectionColors = {
+  Patient: 'fill-patient',
+  Outcome: 'fill-outcome',
+  Disease: 'fill-disease',
+  Treatment: 'fill-treatment',
+  Assessment: 'fill-assessment',
+  Genomics: 'fill-genomics',
+};
+
 module.exports = {
   patientSectionId,
   outcomeSectionId,
@@ -13,4 +22,5 @@ module.exports = {
   treatmentSectionId,
   assessmentSectionId,
   genomicsSectionId,
+  sectionColors,
 };

@@ -1,0 +1,54 @@
+import { useState } from 'react';
+import { getAllFieldCoveredCounts } from '../lib/coverageStats/statsUtils';
+import { sectionColors } from '../lib/coverageSectionIds';
+
+const MINNUMSHOWN = 5;
+
+function Rankings({ coverageData }) {
+  const fields = getAllFieldCoveredCounts(coverageData).sort((a, b) => a.percentage - b.percentage);
+  const [numShown, setNumShown] = useState(MINNUMSHOWN);
+  const [buttonText, setButtonText] = useState(`See All ${fields.length}`);
+
+  function toggleRankingsShown() {
+    if (numShown === MINNUMSHOWN) {
+      setNumShown(fields.length);
+      setButtonText('Hide');
+    } else {
+      setNumShown(MINNUMSHOWN);
+      setButtonText(`See All ${fields.length}`);
+    }
+  }
+
+  return (
+    <div>
+      <h1 className="font-bold text-xl pb-3">Rankings</h1>
+      <table className="w-1/3">
+        <tbody>
+          {fields.slice(0, numShown).map((field) => (
+            <tr key={[field.profile, field.name].join()}>
+              <td className="w-5 py-1">
+                <svg className={`${sectionColors[field.section]}`} width="5" height="40">
+                  <rect width="5" height="40" rx="1" />
+                </svg>
+              </td>
+              <td className="py-1">
+                <p className="text-[15px]">{field.name}</p>
+                <p className="text-xs text-gray-400">{field.profile}</p>
+              </td>
+              <td className="text-[15px] py-1">{`${field.covered}/${field.total}`}</td>
+            </tr>
+          ))}
+          <tr>
+            <td colSpan="3" className="text-center py-1">
+              <button onClick={() => toggleRankingsShown()} type="button">
+                {buttonText}
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export default Rankings;
