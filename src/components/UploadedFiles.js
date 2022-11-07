@@ -7,18 +7,18 @@ import { uploadedFilesLookup, uploadedFiles } from '../recoil_state';
 
 function UploadedFiles() {
   const [parent] = useAutoAnimate();
-  const [jsonViewIndexes, setJsonViewIndexes] = useState(new Set());
+  const [jsonViewKeys, setJsonViewKeys] = useState(new Set());
   const files = useRecoilValue(uploadedFiles);
   const [filesLookup, setFilesLookup] = useRecoilState(uploadedFilesLookup);
 
-  function toggleView(index) {
-    const modifiedViewIndexes = new Set(jsonViewIndexes);
-    if (jsonViewIndexes.has(index)) {
-      modifiedViewIndexes.delete(index);
+  function toggleView(key) {
+    const modifiedViewKeys = new Set(jsonViewKeys);
+    if (jsonViewKeys.has(key)) {
+      modifiedViewKeys.delete(key);
     } else {
-      modifiedViewIndexes.add(index);
+      modifiedViewKeys.add(key);
     }
-    setJsonViewIndexes(modifiedViewIndexes);
+    setJsonViewKeys(modifiedViewKeys);
   }
 
   function handleDelete(id) {
@@ -49,8 +49,8 @@ function UploadedFiles() {
         </thead>
         <tbody>
           {files && files.length > 0 ? (
-            files.map((file, index) => (
-              <React.Fragment key={file.name}>
+            files.map((file) => (
+              <React.Fragment key={file.id}>
                 <tr className="bg-white border-b text-sm">
                   <td className="px-6 text-base">
                     <Icon icon="bi:file-earmark-code" className="text-4xl mr-2 my-2 inline-block text-gray-500" />
@@ -61,11 +61,11 @@ function UploadedFiles() {
                     <div className="text-gray-500">{file.dateAdded}</div>
                     <div className="text-xs flex flex-wrap justify-end pr-6">
                       <button
-                        onClick={() => toggleView(index)}
+                        onClick={() => toggleView(file.id)}
                         type="button"
                         className="m-2 font-bold text-blue-500 hover:text-blue-600"
                       >
-                        {jsonViewIndexes.has(index) ? 'Hide' : 'View'}
+                        {jsonViewKeys.has(file.id) ? 'Hide' : 'View'}
                       </button>
                       <button
                         onClick={() => handleDelete(file.id)}
@@ -77,7 +77,7 @@ function UploadedFiles() {
                     </div>
                   </td>
                 </tr>
-                {jsonViewIndexes.has(index) && (
+                {jsonViewKeys.has(file.id) && (
                   <tr>
                     <td className="px-6" colSpan="3">
                       <ReactJson
