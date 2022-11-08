@@ -219,7 +219,6 @@ function FileUpload() {
         {localFiles.map((file) => (
           <FileNotification key={file.id} file={file} progress={progress} removeFile={removeFile} />
         ))}
-        {/*  */}
         {rejectedFiles.map((file) => (
           <RejectedFileNotification key={file.id} file={file} removeFile={removeFile} />
         ))}
