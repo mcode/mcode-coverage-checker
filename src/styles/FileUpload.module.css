@@ -4,7 +4,6 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
   border-radius: 10px;
 }
 /* Safari/chrome/opera styling */
@@ -16,7 +15,7 @@ progress[value]::-webkit-progress-value {
   border-radius: 10px;
   @apply bg-link;
 }
-/* firefox stylin */
+/* firefox styling   */
 .progress[value]::-moz-progress-bar {
   border-radius: 10px;
   @apply bg-link;
