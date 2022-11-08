@@ -8,9 +8,9 @@ export default function FileNotification({ file, progress, removeFile }) {
         <div className="rounded-full p-2 bg-link-icon-background mr-1 h-fit">
           <Icon icon="bi:file-earmark-code" className="text-link h-6 w-6" />
         </div>
-        <div className="w-full">
-          <h2 className="text-sm text-gray-500 text-ellipsis">{file.name}</h2>
-          <p className="text-sm text-gray-500">{file.size}</p>
+        <div className="w-full text-sm">
+          <h2 className="text-gray-500 text-ellipsis">{file.name}</h2>
+          <p className="text-gray-500">{file.size}</p>
           <label htmlFor={`progress-bar-${file.id}`}>
             <progress
               id={`progress-bar-${file.id}`}
