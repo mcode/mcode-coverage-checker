@@ -1,51 +1,63 @@
-import { useState, useMemo } from 'react';
-import { useRecoilState } from 'recoil';
+import { useState, useMemo, useCallback } from 'react';
+import { useSetRecoilState } from 'recoil';
 import { useAutoAnimate } from '@formkit/auto-animate/react';
 import { Icon } from '@iconify/react';
 import { v4 as uuidv4 } from 'uuid';
 import { uploadedFilesLookup } from '../recoil_state';
 import { formatBytes } from '../lib/fileSize';
-import styles from '../styles/FileUpload.module.css';
+import FileNotification from './FileNotification';
+import RejectedFileNotification from './RejectedFileNotification';
 
 function FileUpload() {
-  const [filesLookup, setFilesLookup] = useRecoilState(uploadedFilesLookup);
+  const setFilesLookup = useSetRecoilState(uploadedFilesLookup);
+  // What files are valid to upload
+  function relevantFileFilter(file) {
+    return file.type === 'application/json';
+  }
   // Track a local list of files to determine which should be displayed as notifications temporarily
   const [localFilesLookup, setLocalFilesLookup] = useState({});
-  const localFiles = useMemo(() => Object.values(localFilesLookup).map((file) => file));
+  const localFiles = useMemo(() => Object.values(localFilesLookup).filter((file) => !file.rejected));
+  const rejectedFiles = useMemo(() => Object.values(localFilesLookup).filter((file) => file.rejected));
   const [parent] = useAutoAnimate();
   const [progress, setProgress] = useState({});
   const [dragActive, setDragActive] = useState(false);
 
   // Removes a local file notification, not a file from the store
-  function removeFile(fileObject) {
-    const newLocalFilesLookup = { ...localFilesLookup };
-    delete newLocalFilesLookup[fileObject.id];
-    setLocalFilesLookup(newLocalFilesLookup);
-  }
-
-  // Use the FileReader Object to track progress and resolve promise when finished
-  function readFile(fileObject, newFile, resolve, reject) {
-    const fileId = newFile.id;
-    // Set up fileReader
-    const fileReader = new FileReader();
-    // update progress to 0 when the read begins
-    function readStartHandler() {
+  const removeFile = useCallback(
+    (fileObject) => {
+      const newLocalFilesLookup = { ...localFilesLookup };
+      delete newLocalFilesLookup[fileObject.id];
+      setLocalFilesLookup(newLocalFilesLookup);
+    },
+    [localFilesLookup, setLocalFilesLookup],
+  );
+  // Progress Object Tracking
+  // update progress to 0 when the read begins
+  const readStartHandler = useCallback(
+    (fileId) => {
       setProgress((prevProgress) => {
         const newProgress = { ...prevProgress };
         newProgress[fileId] = 0;
         return newProgress;
       });
-    }
-    // update progress stored in state and new data is loaded
-    function readProgressHandler(e) {
+    },
+    [setProgress],
+  );
+  // update progress stored in state and new data is loaded
+  const readProgressHandler = useCallback(
+    (fileId, e) => {
       setProgress((prevProgress) => {
         const newProgress = { ...prevProgress };
         newProgress[fileId] = e.loaded / e.total;
         return newProgress;
       });
-    }
-    // ensure progress is at 100 and resolve the callback when the read is over
-    function readEndHandler() {
+    },
+    [setProgress],
+  );
+  // ensure progress is at 100 and resolve the callback when the read is over
+
+  const readEndHandler = useCallback(
+    (fileId, newFile, fileReader, resolve) => {
       setProgress((prevProgress) => {
         const newProgress = { ...prevProgress };
         newProgress[fileId] = 1;
@@ -54,18 +66,25 @@ function FileUpload() {
       const body = JSON.parse(fileReader.result);
       const fileWithBody = { ...newFile, body };
       resolve(fileWithBody);
-    }
-    fileReader.onloadstart = readStartHandler;
-    fileReader.onprogress = readProgressHandler;
-    fileReader.onload = readEndHandler;
+    },
+    [setProgress],
+  );
+
+  // Use the FileReader Object to track progress and resolve promise when finished
+  function readFile(fileObject, newFile, resolve, reject) {
+    const fileId = newFile.id;
+    // Set up fileReader
+    const fileReader = new FileReader();
+    fileReader.onloadstart = () => readStartHandler(fileId);
+    fileReader.onprogress = (e) => readProgressHandler(fileId, e);
+    fileReader.onload = () => readEndHandler(fileId, newFile, fileReader, resolve);
     fileReader.onerror = reject;
     fileReader.readAsText(fileObject);
   }
 
-  // Create a new file object and update both local and gloabl lookups with this new data
-  function addFile(fileObject, resolve, reject) {
+  function createFile(fileObject) {
     const fileId = uuidv4();
-    const newFile = {
+    return {
       id: fileId,
       name: fileObject.name,
       size: formatBytes(fileObject.size),
@@ -73,36 +92,68 @@ function FileUpload() {
       dateAdded: new Intl.DateTimeFormat('en-US').format(new Date()),
       body: null,
     };
-    const newFilesLookup = { ...filesLookup };
-    newFilesLookup[fileId] = newFile;
-    setFilesLookup(newFilesLookup);
-    const newLocalFilesLookup = { ...localFilesLookup };
-    newLocalFilesLookup[fileId] = newFile;
-    setLocalFilesLookup(newLocalFilesLookup);
+  }
+
+  // Create a new file object and update both local and gloabl lookups with this new data
+  function addFile(fileObject, resolve, reject) {
+    const newFile = createFile(fileObject);
+    setFilesLookup((prevFilesLookup) => {
+      const newFilesLookup = { ...prevFilesLookup };
+      newFilesLookup[newFile.id] = newFile;
+      return newFilesLookup;
+    });
+    setLocalFilesLookup((prevLocalFilesLookup) => {
+      const newLocalFilesLookup = { ...prevLocalFilesLookup };
+      newLocalFilesLookup[newFile.id] = newFile;
+      return newLocalFilesLookup;
+    });
     readFile(fileObject, newFile, resolve, reject);
   }
 
   // Load files into memory using promises
-  function loadFiles(filesToAdd) {
+  function loadFiles(files) {
+    // Files is a FileList object, we need to convert this into an array for filtering
+    const filesArray = [...files];
     const filePromises = [];
-    for (let index = 0; index < filesToAdd.length; index += 1) {
-      const file = filesToAdd[index];
+    const filesToReject = filesArray.filter((file) => !relevantFileFilter(file));
+    const filesToAdd = filesArray.filter(relevantFileFilter);
+    // For rejected files, create a notification object
+    setLocalFilesLookup((previousFilesLookup) => {
+      const rejectedFilesLookup = { ...previousFilesLookup };
+      filesToReject.forEach((file) => {
+        const rejectionNotification = {
+          ...createFile(file),
+          rejected: true,
+        };
+        rejectionNotification.reason = `File type of ${rejectionNotification.type} is not accepted`;
+        rejectedFilesLookup[rejectionNotification.id] = rejectionNotification;
+      });
+      return rejectedFilesLookup;
+    });
+    // Add all relevant files
+    filesToAdd.forEach((file) =>
       filePromises.push(
         new Promise((resolve, reject) => {
           addFile(file, resolve, reject);
         }),
-      );
-    }
+      ),
+    );
     Promise.all(filePromises).then((fs) => {
       // Update the files lookups, local and global, when all are uploaded
-      const tempFilesLookup = { ...filesLookup };
-      const tempLocalFilesLookup = { ...localFilesLookup };
-      fs.forEach((file) => {
-        tempFilesLookup[file.id] = file;
-        tempLocalFilesLookup[file.id] = file;
+      setFilesLookup((prevFilesLookup) => {
+        const tempFilesLookup = { ...prevFilesLookup };
+        fs.forEach((file) => {
+          tempFilesLookup[file.id] = file;
+        });
+        return tempFilesLookup;
       });
-      setFilesLookup(tempFilesLookup);
-      setLocalFilesLookup(tempLocalFilesLookup);
+      setLocalFilesLookup((prevLocalFilesLookup) => {
+        const tempLocalFilesLookup = { ...prevLocalFilesLookup };
+        fs.forEach((file) => {
+          tempLocalFilesLookup[file.id] = file;
+        });
+        return tempLocalFilesLookup;
+      });
     });
   }
 
@@ -166,33 +217,10 @@ function FileUpload() {
       </div>
       <div ref={parent}>
         {localFiles.map((file) => (
-          <div key={file.id} className="rounded bg-white shadow-sm flex justify-between w-full my-2 p-2">
-            <div className="w-11/12 text-left flex">
-              <div className="rounded-full p-2 bg-link-icon-background mr-1 h-fit">
-                <Icon icon="bi:file-earmark-code" className="text-link h-6 w-6" />
-              </div>
-              <div className="w-full">
-                <h2 className="text-sm text-gray-500 text-ellipsis">{file.name}</h2>
-                <p className="text-sm text-gray-500">{file.size}</p>
-                <label htmlFor={`progress-bar-${file.id}`}>
-                  <progress
-                    id={`progress-bar-${file.id}`}
-                    className={`h-2 w-11/12 w- mr-2 text-link ${styles.progress} `}
-                    max="100"
-                    value={(progress[file.id] * 100).toFixed(0)}
-                  />
-                  <p className="inline">{(progress[file.id] * 100).toFixed(0)}%</p>
-                </label>
-              </div>
-            </div>
-            <div className="flex justify-right">
-              <Icon
-                icon="bi:x-lg"
-                onClick={() => removeFile(file)}
-                className="text-gray-500 h-4 w-4 text-right m-1 cursor-pointer"
-              />
-            </div>
-          </div>
+          <FileNotification key={file.id} file={file} progress={progress} removeFile={removeFile} />
+        ))}
+        {rejectedFiles.map((file) => (
+          <RejectedFileNotification key={file.id} file={file} removeFile={removeFile} />
         ))}
       </div>
     </>
