@@ -10,6 +10,10 @@ import RejectedFileNotification from './RejectedFileNotification';
 
 function FileUpload() {
   const [filesLookup, setFilesLookup] = useRecoilState(uploadedFilesLookup);
+  // What files are valid to upload
+  function relevantFileFilter(file) {
+    return file.type === 'application/json';
+  }
   // Track a local list of files to determine which should be displayed as notifications temporarily
   const [localFilesLookup, setLocalFilesLookup] = useState({});
   const localFiles = useMemo(() => Object.values(localFilesLookup).filter((file) => !file.rejected));
@@ -108,9 +112,6 @@ function FileUpload() {
     // Files is a FileList object, we need to convert this into an array for filtering
     const filesArray = [...files];
     const filePromises = [];
-    function relevantFileFilter(file) {
-      return file.type === 'application/json';
-    }
     const filesToReject = filesArray.filter((file) => !relevantFileFilter(file));
     const filesToAdd = filesArray.filter(relevantFileFilter);
     // For rejected files, create a notification object
