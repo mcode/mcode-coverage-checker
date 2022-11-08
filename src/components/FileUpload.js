@@ -1,5 +1,5 @@
 import { useState, useMemo, useCallback } from 'react';
-import { useRecoilState } from 'recoil';
+import { useSetRecoilState } from 'recoil';
 import { useAutoAnimate } from '@formkit/auto-animate/react';
 import { Icon } from '@iconify/react';
 import { v4 as uuidv4 } from 'uuid';
@@ -9,7 +9,7 @@ import FileNotification from './FileNotification';
 import RejectedFileNotification from './RejectedFileNotification';
 
 function FileUpload() {
-  const [filesLookup, setFilesLookup] = useRecoilState(uploadedFilesLookup);
+  const setFilesLookup = useSetRecoilState(uploadedFilesLookup);
   // What files are valid to upload
   function relevantFileFilter(file) {
     return file.type === 'application/json';
@@ -54,6 +54,8 @@ function FileUpload() {
     },
     [setProgress],
   );
+  // ensure progress is at 100 and resolve the callback when the read is over
+
   const readEndHandler = useCallback(
     (fileId, newFile, fileReader, resolve) => {
       setProgress((prevProgress) => {
@@ -73,9 +75,6 @@ function FileUpload() {
     const fileId = newFile.id;
     // Set up fileReader
     const fileReader = new FileReader();
-
-    // ensure progress is at 100 and resolve the callback when the read is over
-
     fileReader.onloadstart = () => readStartHandler(fileId);
     fileReader.onprogress = (e) => readProgressHandler(fileId, e);
     fileReader.onload = () => readEndHandler(fileId, newFile, fileReader, resolve);
@@ -98,12 +97,16 @@ function FileUpload() {
   // Create a new file object and update both local and gloabl lookups with this new data
   function addFile(fileObject, resolve, reject) {
     const newFile = createFile(fileObject);
-    const newFilesLookup = { ...filesLookup };
-    newFilesLookup[newFile.id] = newFile;
-    setFilesLookup(newFilesLookup);
-    const newLocalFilesLookup = { ...localFilesLookup };
-    newLocalFilesLookup[newFile.id] = newFile;
-    setLocalFilesLookup(newLocalFilesLookup);
+    setFilesLookup((prevFilesLookup) => {
+      const newFilesLookup = { ...prevFilesLookup };
+      newFilesLookup[newFile.id] = newFile;
+      return newFilesLookup;
+    });
+    setLocalFilesLookup((prevLocalFilesLookup) => {
+      const newLocalFilesLookup = { ...prevLocalFilesLookup };
+      newLocalFilesLookup[newFile.id] = newFile;
+      return newLocalFilesLookup;
+    });
     readFile(fileObject, newFile, resolve, reject);
   }
 
