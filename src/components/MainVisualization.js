@@ -6,7 +6,6 @@ import TreatmentStatsViz from './TreatmentStatsViz';
 import AssessmentStatsViz from './AssessmentStatsViz';
 import GenomicsStatsViz from './GenomicsStatsViz';
 import SectionCard from './SectionCard';
-import OverallCard from './OverallCard';
 import {
   getAssessmentStats,
   getDiseaseStats,
@@ -50,41 +49,54 @@ function MainVisualization({ coverageData }) {
   return (
     <>
       <div className="grid grid-cols-3 gap-5">
-        <OverallCard percentage={overall.percentage} numPatients={patient.possible} />
         <SectionCard
-          section="Patient"
+          className="h-48 col-span-3"
+          header={<p className="font-sans font-bold text-4xl">Overall mCODE Coverage</p>}
+          text={<p className="text-s text-gray-400">{patient.possible} Patients</p>}
+          gaugeSize="h-44 w-44"
+          percentage={overall.percentage}
+          color="#000000"
+        />
+        <SectionCard
+          header={<p className="font-sans font-bold text-{32px}">Patient</p>}
+          text={<p className="text-xs text-gray-400">{patientSubcategories} Subcategories</p>}
+          gaugeSize="h-24 w-24"
           percentage={patient.percentage}
-          subcategories={patientSubcategories}
           color="#d24200"
         />
         <SectionCard
-          section="Outcome"
+          header={<p className="font-sans font-bold text-{32px}">Outcome</p>}
+          text={<p className="text-xs text-gray-400">{outcomeSubcategories} Subcategories</p>}
+          gaugeSize="h-24 w-24"
           percentage={outcome.percentage}
-          subcategories={outcomeSubcategories}
           color="#8a45d9"
         />
         <SectionCard
-          section="Disease"
+          header={<p className="font-sans font-bold text-{32px}">Disease</p>}
+          text={<p className="text-xs text-gray-400">{diseaseSubcategories} Subcategories</p>}
+          gaugeSize="h-24 w-24"
           percentage={disease.percentage}
-          subcategories={diseaseSubcategories}
           color="#f2b84b"
         />
         <SectionCard
-          section="Treatment"
+          header={<p className="font-sans font-bold text-{32px}">Treatment</p>}
+          text={<p className="text-xs text-gray-400">{treatmentSubcategories} Subcategories</p>}
+          gaugeSize="h-24 w-24"
           percentage={treatment.percentage}
-          subcategories={treatmentSubcategories}
           color="#04b2d9"
         />
         <SectionCard
-          section="Assessment"
+          header={<p className="font-sans font-bold text-{32px}">Assessment</p>}
+          text={<p className="text-xs text-gray-400">{assessmentSubcategories} Subcategories</p>}
+          gaugeSize="h-24 w-24"
           percentage={assessment.percentage}
-          subcategories={assessmentSubcategories}
           color="#f2913d"
         />
         <SectionCard
-          section="Genomics"
+          header={<p className="font-sans font-bold text-{32px}">Genomics</p>}
+          text={<p className="text-xs text-gray-400">{genomicsSubcategories} Subcategories</p>}
+          gaugeSize="h-24 w-24"
           percentage={genomics.percentage}
-          subcategories={genomicsSubcategories}
           color="#26c485"
         />
       </div>
