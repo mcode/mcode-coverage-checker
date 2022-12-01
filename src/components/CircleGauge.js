@@ -5,9 +5,9 @@ function gaugeDisplayText(percentage) {
   return `${(percentage * 100).toFixed(2).toString()}%`;
 }
 
-function CircleGauge({ percentage, width, height, color }) {
+function CircleGauge({ className, percentage, color }) {
   return (
-    <div style={{ width, height }}>
+    <div className={className}>
       <CircularProgressbar
         value={percentage * 100}
         text={gaugeDisplayText(percentage)}

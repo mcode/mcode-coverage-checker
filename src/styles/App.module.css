@@ -6,10 +6,10 @@
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1rem;
+  background-color: #ececec;
 }
 
 .app-header {
-  background-color: #ececec;
   width: 100vw;
   min-height: 70px;
   display: flex;
