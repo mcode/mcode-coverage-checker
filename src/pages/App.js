@@ -16,8 +16,10 @@ function App() {
         <div className={styles['app-header-content']}>mCODE Coverage Checker</div>
       </header>
       <div className={styles.app}>
-        <MainVisualization coverageData={coverageData} className={styles.app} />
-        <Rankings coverageData={coverageData} />
+        <div className="flex flex-row gap-5 items-start">
+          <MainVisualization coverageData={coverageData} className={styles.app} />
+          <Rankings coverageData={coverageData} />
+        </div>
         <MainSvg />
       </div>
     </>
