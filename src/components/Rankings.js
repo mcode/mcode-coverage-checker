@@ -20,33 +20,37 @@ function Rankings({ coverageData }) {
   }
 
   return (
-    <div>
-      <h1 className="font-bold text-xl pb-3">Rankings</h1>
-      <table className="w-1/3">
-        <tbody>
-          {fields.slice(0, numShown).map((field) => (
-            <tr key={[field.profile, field.name].join()}>
-              <td className="w-5 py-1">
-                <svg className={`${sectionColors[field.section]}`} width="5" height="40">
-                  <rect width="5" height="40" rx="1" />
-                </svg>
-              </td>
-              <td className="py-1">
-                <p className="text-[15px]">{field.name}</p>
-                <p className="text-xs text-gray-400">{field.profile}</p>
-              </td>
-              <td className="text-[15px] py-1">{`${field.covered}/${field.total}`}</td>
-            </tr>
-          ))}
-          <tr>
-            <td colSpan="3" className="text-center py-1">
-              <button onClick={() => toggleRankingsShown()} type="button">
-                {buttonText}
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div className="flex-auto">
+      <div className="bg-white p-2 rounded-widgit">
+        <h1 className="font-bold text-xl pb-3">Rankings</h1>
+        <div className="h-72 overflow-y-auto">
+          <table className="table-auto">
+            <tbody>
+              {fields.slice(0, numShown).map((field) => (
+                <tr key={[field.profile, field.name].join()}>
+                  <td className="w-5 py-1">
+                    <svg className={`${sectionColors[field.section]}`} width="5" height="40">
+                      <rect width="5" height="40" rx="1" />
+                    </svg>
+                  </td>
+                  <td className="w-full py-1">
+                    <p className="text-[15px]">{field.name}</p>
+                    <p className="text-xs text-gray-400">{field.profile}</p>
+                  </td>
+                  <td className="text-[15px] py-1">{`${field.covered}/${field.total}`}</td>
+                </tr>
+              ))}
+              <tr>
+                <td colSpan="3" className="text-center py-1">
+                  <button onClick={() => toggleRankingsShown()} type="button">
+                    {buttonText}
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   );
 }
