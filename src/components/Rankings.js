@@ -5,7 +5,9 @@ import { sectionColors } from '../lib/coverageSectionIds';
 const MINNUMSHOWN = 5;
 
 function Rankings({ coverageData }) {
-  const fields = getAllFieldCoveredCounts(coverageData).sort((a, b) => a.percentage - b.percentage);
+  const [fields, setFields] = useState(
+    getAllFieldCoveredCounts(coverageData).sort((a, b) => a.percentage - b.percentage),
+  );
   const [numShown, setNumShown] = useState(MINNUMSHOWN);
   const [buttonText, setButtonText] = useState(`See All ${fields.length}`);
 
@@ -19,10 +21,37 @@ function Rankings({ coverageData }) {
     }
   }
 
+  const SORT_FUNCTIONS = {
+    Ascending: (a, b) => a.percentage - b.percentage,
+    Descending: (a, b) => b.percentage - a.percentage,
+    Alphabetical: (a, b) => a.name.localeCompare(b.name),
+    ReverseAlphabetical: (a, b) => b.name.localeCompare(a.name),
+  };
+
+  function changeSort(event) {
+    setFields([...fields].sort(SORT_FUNCTIONS[event.target.value]));
+  }
+
   return (
     <div className="flex-auto">
       <div className="bg-white p-2 rounded-widgit">
-        <h1 className="font-bold text-xl pb-3">Rankings</h1>
+        <div className="flex flex-row justify-between">
+          <h1 className="font-bold text-xl pb-3">Rankings</h1>
+          <select id="sortSelect" onChange={changeSort}>
+            <option value="Ascending" key="Ascending">
+              Ascending
+            </option>
+            <option value="Descending" key="Descending">
+              Descending
+            </option>
+            <option value="Alphabetical" key="Alphabetical">
+              Alphabetical
+            </option>
+            <option value="ReverseAlphabetical" key="ReverseAphabetical">
+              Reverse Alphabetical
+            </option>
+          </select>
+        </div>
         <div className="h-72 overflow-y-auto">
           <table className="table-auto">
             <tbody>
