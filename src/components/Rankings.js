@@ -25,7 +25,7 @@ function Rankings({ coverageData }) {
     Ascending: (a, b) => a.percentage - b.percentage,
     Descending: (a, b) => b.percentage - a.percentage,
     Alphabetical: (a, b) => a.name.localeCompare(b.name),
-    ReverseAlphabetical: (a, b) => b.name.localeCompare(a.name),
+    'Reverse Alphabetical': (a, b) => b.name.localeCompare(a.name),
   };
 
   function changeSort(event) {
@@ -35,21 +35,18 @@ function Rankings({ coverageData }) {
   return (
     <div className="flex-auto">
       <div className="bg-white p-2 rounded-widgit">
-        <div className="flex flex-row justify-between">
-          <h1 className="font-bold text-xl pb-3">Rankings</h1>
-          <select id="sortSelect" onChange={changeSort}>
-            <option value="Ascending" key="Ascending">
-              Ascending
-            </option>
-            <option value="Descending" key="Descending">
-              Descending
-            </option>
-            <option value="Alphabetical" key="Alphabetical">
-              Alphabetical
-            </option>
-            <option value="ReverseAlphabetical" key="ReverseAphabetical">
-              Reverse Alphabetical
-            </option>
+        <div className="pb-3 flex flex-row justify-between">
+          <h1 className="font-bold text-xl">Rankings</h1>
+          <select
+            className="mx-2 px-2 bg-white border-2 rounded-widgit shadow-widgit border-background"
+            id="sortSelect"
+            onChange={changeSort}
+          >
+            {Object.keys(SORT_FUNCTIONS).map((sort) => (
+              <option value={sort} key={sort}>
+                {sort}
+              </option>
+            ))}
           </select>
         </div>
         <div className="h-72 overflow-y-auto">
