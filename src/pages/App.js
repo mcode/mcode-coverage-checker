@@ -66,7 +66,7 @@ function App() {
           <MainVisualization coverageData={coverageData} className={styles.app} />
           <Rankings coverageData={coverageData} />
         </div>
-        <LineChart data={dataStatic} xKey="name" yKey="uv" color="#8884d8" />
+        <LineChart data={dataStatic} xKey="name" yKey="uv" hexColor="#8884d8" />
         <MainSvg />
       </div>
     </>
