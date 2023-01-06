@@ -5,19 +5,15 @@ import { sectionColors } from '../lib/coverageSectionIds';
 const MINNUMSHOWN = 5;
 
 function Rankings({ coverageData }) {
-  const [fields, setFields] = useState(
-    getAllFieldCoveredCounts(coverageData).sort((a, b) => a.percentage - b.percentage),
-  );
+  const fields = getAllFieldCoveredCounts(coverageData);
+  const [sortFunction, setSortFunction] = useState('Ascending');
   const [numShown, setNumShown] = useState(MINNUMSHOWN);
-  const [buttonText, setButtonText] = useState(`See All ${fields.length}`);
 
   function toggleRankingsShown() {
     if (numShown === MINNUMSHOWN) {
       setNumShown(fields.length);
-      setButtonText('Hide');
     } else {
       setNumShown(MINNUMSHOWN);
-      setButtonText(`See All ${fields.length}`);
     }
   }
 
@@ -28,10 +24,6 @@ function Rankings({ coverageData }) {
     'Reverse Alphabetical': (a, b) => b.name.localeCompare(a.name),
   };
 
-  function changeSort(event) {
-    setFields([...fields].sort(SORT_FUNCTIONS[event.target.value]));
-  }
-
   return (
     <div className="flex-auto">
       <div className="bg-white p-2 rounded-widgit">
@@ -40,7 +32,7 @@ function Rankings({ coverageData }) {
           <select
             className="mx-2 px-2 bg-white border-2 rounded-widgit shadow-widgit border-background"
             id="sortSelect"
-            onChange={changeSort}
+            onChange={(e) => setSortFunction(e.target.value)}
           >
             {Object.keys(SORT_FUNCTIONS).map((sort) => (
               <option value={sort} key={sort}>
@@ -52,24 +44,27 @@ function Rankings({ coverageData }) {
         <div className="h-72 overflow-y-auto">
           <table className="table-auto">
             <tbody>
-              {fields.slice(0, numShown).map((field) => (
-                <tr key={[field.profile, field.name].join()}>
-                  <td className="w-5 py-1">
-                    <svg className={`${sectionColors[field.section]}`} width="5" height="40">
-                      <rect width="5" height="40" rx="1" />
-                    </svg>
-                  </td>
-                  <td className="w-full py-1">
-                    <p className="text-[15px]">{field.name}</p>
-                    <p className="text-xs text-gray-400">{field.profile}</p>
-                  </td>
-                  <td className="text-[15px] py-1">{`${field.covered}/${field.total}`}</td>
-                </tr>
-              ))}
+              {fields
+                .sort(SORT_FUNCTIONS[sortFunction])
+                .slice(0, numShown)
+                .map((field) => (
+                  <tr key={[field.profile, field.name].join()}>
+                    <td className="w-5 py-1">
+                      <svg className={`${sectionColors[field.section]}`} width="5" height="40">
+                        <rect width="5" height="40" rx="1" />
+                      </svg>
+                    </td>
+                    <td className="w-full py-1">
+                      <p className="text-[15px]">{field.name}</p>
+                      <p className="text-xs text-gray-400">{field.profile}</p>
+                    </td>
+                    <td className="text-[15px] py-1">{`${field.covered}/${field.total}`}</td>
+                  </tr>
+                ))}
               <tr>
                 <td colSpan="3" className="text-center py-1">
                   <button onClick={() => toggleRankingsShown()} type="button">
-                    {buttonText}
+                    {numShown === MINNUMSHOWN ? `See All ${fields.length}` : 'Hide'}
                   </button>
                 </td>
               </tr>
