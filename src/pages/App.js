@@ -1,16 +1,16 @@
-import { log } from '../lib/logger';
+import { useCallback, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useRecoilValue } from 'recoil';
 import MainVisualization from '../components/MainVisualization';
 import coverageChecker from '../lib/coverageChecker/coverageChecker';
-import testbundle from '../data/fullBundle.json';
+import FileSelect from '../components/FileSelect';
 import MainSvg from '../components/oldSvg/MainSvg';
 import Rankings from '../components/Rankings';
 import styles from '../styles/App.module.css';
 import LineChart from '../components/LineChart';
+import { uploadedFiles } from '../recoil_state';
 
 function App() {
-  const coverageData = coverageChecker(testbundle);
-  // TODO: Remove this when website is in 1.0
-  log(coverageData);
   const dataStatic = [
     {
       name: 'Page A',
@@ -55,13 +55,24 @@ function App() {
       amt: 2100,
     },
   ];
+  const files = useRecoilValue(uploadedFiles);
+  const [coverageData, setCoverageData] = useState(coverageChecker(files[0].body));
+
+  const changeDataSource = useCallback(
+    (event) => {
+      setCoverageData(coverageChecker(files.find((file) => file.id === event.target.value).body));
+    },
+    [files],
+  );
 
   return (
     <>
       <header className={styles['app-header']}>
         <div className={styles['app-header-content']}>mCODE Coverage Checker</div>
       </header>
+      <Link to="/file-upload">File Upload</Link>
       <div className={styles.app}>
+        <FileSelect files={files} onChange={changeDataSource} />
         <div className="flex flex-row gap-5 items-start">
           <MainVisualization coverageData={coverageData} className={styles.app} />
           <Rankings coverageData={coverageData} />
