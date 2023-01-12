@@ -30,7 +30,7 @@ function UploadedFiles() {
   return (
     <>
       <h1 className="font-bold text-2xl">All Files</h1>
-      <p className="text-sm">
+      <p className="text-sm text-gray-600">
         These files can be examined in-depth on the dashboard and are included within the longitudinal views.
       </p>
       <table ref={parent} className="my-2 w-full table-fixed text-left rounded shadow-md bg-gray-100">

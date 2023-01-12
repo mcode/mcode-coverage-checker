@@ -10,7 +10,7 @@ import {
 } from '../lib/coverageStats/coverageStats';
 import { getAllFieldCoveredCounts } from '../lib/coverageStats/statsUtils';
 
-function MainVisualization({ coverageData }) {
+function MainVisualization({ coverageData, className }) {
   const overall = getOverallStats(coverageData);
   const patient = getPatientStats(coverageData);
   const outcome = getOutcomeStats(coverageData);
@@ -40,7 +40,7 @@ function MainVisualization({ coverageData }) {
   }/${fields.filter((field) => field.section === 'Genomics').length}`;
 
   return (
-    <div className="grid grid-cols-3 gap-5">
+    <div className={`grid grid-cols-3 gap-5 flex-auto ${className}`}>
       <SectionCard
         className="h-48 col-span-3"
         header={<p className="font-sans font-bold text-4xl">Overall mCODE Coverage</p>}

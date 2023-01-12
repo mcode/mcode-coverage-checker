@@ -4,7 +4,7 @@ import { sectionColors } from '../lib/coverageSectionIds';
 
 const MINNUMSHOWN = 5;
 
-function Rankings({ coverageData }) {
+function Rankings({ coverageData, className }) {
   const fields = getAllFieldCoveredCounts(coverageData);
   const [sortFunction, setSortFunction] = useState('Ascending');
   const [numShown, setNumShown] = useState(MINNUMSHOWN);
@@ -25,7 +25,7 @@ function Rankings({ coverageData }) {
   };
 
   return (
-    <div className="flex-auto">
+    <div className={`flex-auto ${className}`}>
       <div className="bg-white p-2 rounded-widgit">
         <div className="pb-3 flex flex-row justify-between">
           <h1 className="font-bold text-xl">Rankings</h1>

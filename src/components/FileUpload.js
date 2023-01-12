@@ -185,8 +185,6 @@ function FileUpload() {
 
   return (
     <>
-      <div className="font-sans font-bold text-4xl">Upload Files</div>
-      <p className="text-sm">Upload your files here to view them in the dashboard</p>
       <div
         id="file-upload-zone"
         className={` relative h-48 w-100 my-2 rounded-lg border-2 border-link bg-link-tinted ${
