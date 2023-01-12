@@ -8,7 +8,7 @@ function FileUploadPage() {
       <div className="h-screen overflow-auto">
         <div className="mb-6">
           <h1 className="font-sans font-bold text-4xl">Upload Files</h1>
-          <p className="text-sm">Upload your files here to view them in the dashboard</p>
+          <p className="text-sm text-gray-600">Upload your files here to view them in the dashboard</p>
           <FileUpload />
         </div>
         <div className="mb-6">
