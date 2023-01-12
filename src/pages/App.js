@@ -3,7 +3,6 @@ import { useRecoilValue } from 'recoil';
 import MainVisualization from '../components/MainVisualization';
 import coverageChecker from '../lib/coverageChecker/coverageChecker';
 import FileSelect from '../components/FileSelect';
-import MainSvg from '../components/oldSvg/MainSvg';
 import Rankings from '../components/Rankings';
 import LineChart from '../components/LineChart';
 import { uploadedFiles } from '../recoil_state';
@@ -76,7 +75,6 @@ function App() {
           <Rankings coverageData={coverageData} />
         </div>
         <LineChart data={dataStatic} xKey="name" yKey="uv" hexColor="#8884d8" />
-        <MainSvg />
       </div>
     </PageWrapper>
   );
