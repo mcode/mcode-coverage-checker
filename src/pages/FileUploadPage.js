@@ -1,21 +1,21 @@
-import { Link } from 'react-router-dom';
 import UploadedFiles from '../components/UploadedFiles';
 import FileUpload from '../components/FileUpload';
-import styles from '../styles/App.module.css';
+import PageWrapper from '../components/PageWrapper';
 
 function FileUploadPage() {
   return (
-    <div className="h-screen w-screen bg-background py-16 overflow-auto">
-      <div className={styles.app}>
-        <Link to="/">Home</Link>
+    <PageWrapper>
+      <div className="h-screen overflow-auto">
         <div className="mb-6">
+          <h1 className="font-sans font-bold text-4xl">Upload Files</h1>
+          <p className="text-sm">Upload your files here to view them in the dashboard</p>
           <FileUpload />
         </div>
         <div className="mb-6">
           <UploadedFiles />
         </div>
       </div>
-    </div>
+    </PageWrapper>
   );
 }
 

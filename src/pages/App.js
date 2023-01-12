@@ -1,14 +1,13 @@
 import { useCallback, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { useRecoilValue } from 'recoil';
 import MainVisualization from '../components/MainVisualization';
 import coverageChecker from '../lib/coverageChecker/coverageChecker';
 import FileSelect from '../components/FileSelect';
 import MainSvg from '../components/oldSvg/MainSvg';
 import Rankings from '../components/Rankings';
-import styles from '../styles/App.module.css';
 import LineChart from '../components/LineChart';
 import { uploadedFiles } from '../recoil_state';
+import PageWrapper from '../components/PageWrapper';
 
 function App() {
   const dataStatic = [
@@ -66,21 +65,20 @@ function App() {
   );
 
   return (
-    <>
-      <header className={styles['app-header']}>
-        <div className={styles['app-header-content']}>mCODE Coverage Checker</div>
-      </header>
-      <Link to="/file-upload">File Upload</Link>
-      <div className={styles.app}>
+    <PageWrapper>
+      {/* Negative margin sized to height of fileSelect –  moves select moved up into margins, aligns titles */}
+      <div className="-mt-6">
         <FileSelect files={files} onChange={changeDataSource} />
+        <h1 className="font-sans font-bold text-4xl">Coverage Overview</h1>
+        <p className="text-sm text-gray-600">Select a category to analyze it in finer detail</p>
         <div className="flex flex-row gap-5 items-start">
-          <MainVisualization coverageData={coverageData} className={styles.app} />
+          <MainVisualization coverageData={coverageData} />
           <Rankings coverageData={coverageData} />
         </div>
         <LineChart data={dataStatic} xKey="name" yKey="uv" hexColor="#8884d8" />
         <MainSvg />
       </div>
-    </>
+    </PageWrapper>
   );
 }
 
