@@ -5,15 +5,18 @@ import { RecoilRoot } from 'recoil';
 import App from './pages/App';
 import FileUploadPage from './pages/FileUploadPage';
 import reportWebVitals from './reportWebVitals';
+import PageWrapper from './components/PageWrapper';
 import './index.css';
 
 ReactDOM.render(
   <RecoilRoot>
     <Router basename="mcode-coverage-checker">
-      <Routes>
-        <Route path="/file-upload" element={<FileUploadPage />} />
-        <Route path="/" element={<App />} />
-      </Routes>
+      <PageWrapper>
+        <Routes>
+          <Route path="/file-upload" element={<FileUploadPage />} />
+          <Route path="/" element={<App />} />
+        </Routes>
+      </PageWrapper>
     </Router>
   </RecoilRoot>,
   document.getElementById('root'),
