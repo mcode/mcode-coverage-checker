@@ -6,7 +6,6 @@ import FileSelect from '../components/FileSelect';
 import Rankings from '../components/Rankings';
 import LineChart from '../components/LineChart';
 import { uploadedFiles } from '../recoil_state';
-import PageWrapper from '../components/PageWrapper';
 
 function App() {
   const dataStatic = [
@@ -64,19 +63,17 @@ function App() {
   );
 
   return (
-    <PageWrapper>
+    <div className="-mt-6">
       {/* Negative margin sized to height of fileSelect –  moves select moved up into margins, aligns titles */}
-      <div className="-mt-6">
-        <FileSelect files={files} onChange={changeDataSource} />
-        <h1 className="font-sans font-bold text-4xl">Coverage Overview</h1>
-        <p className="text-sm text-gray-600">Select a category to analyze it in finer detail</p>
-        <div className="flex flex-row gap-5 items-start">
-          <MainVisualization coverageData={coverageData} />
-          <Rankings coverageData={coverageData} />
-        </div>
-        <LineChart data={dataStatic} xKey="name" yKey="uv" hexColor="#8884d8" />
+      <FileSelect files={files} onChange={changeDataSource} />
+      <h1 className="font-sans font-bold text-4xl">Coverage Overview</h1>
+      <p className="text-sm text-gray-600">Select a category to analyze it in finer detail</p>
+      <div className="flex flex-row gap-5 items-start">
+        <MainVisualization coverageData={coverageData} />
+        <Rankings coverageData={coverageData} />
       </div>
-    </PageWrapper>
+      <LineChart className="w-3/5" data={dataStatic} xKey="name" yKey="uv" hexColor="#8884d8" />
+    </div>
   );
 }
 

@@ -14,6 +14,7 @@ module.exports = {
         link: '#2f80ed',
         'link-icon-background': '#c8d7eb',
         'link-tinted': '#e3e6eb',
+        'heading-grey': '#767676',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
