@@ -72,7 +72,7 @@ function App() {
         <MainVisualization coverageData={coverageData} />
         <Rankings coverageData={coverageData} />
       </div>
-      <LineChart data={dataStatic} xKey="name" yKey="uv" hexColor="#8884d8" />
+      <LineChart className="w-3/5" data={dataStatic} xKey="name" yKey="uv" hexColor="#8884d8" />
     </div>
   );
 }
