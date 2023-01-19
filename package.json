@@ -2,6 +2,7 @@
   "name": "mcode-coverage-checker",
   "homepage": "http://mcode.github.io/mcode-coverage-checker",
   "version": "0.1.0",
+  "type": "module",
   "contributors": [
     "Julian Carter <jacarter@mitre.org>",
     "Dylan Mendelowitz <dmendelowitz@mitre.org>",
@@ -33,7 +34,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "predeploy": "npm run build",
@@ -58,6 +59,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "transform": {}
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [

@@ -1,6 +1,5 @@
-/* eslint-disable global-require */
-const testBundle = require('./bundles/diseaseBundle.json');
-const { getDiseaseCoverage } = require('../src/lib/coverageChecker/diseaseCoverage');
+import testBundle from './bundles/diseaseBundle.json';
+import getDiseaseCoverage from '../src/lib/coverageChecker/diseaseCoverage';
 
 describe('getDiseaseCoverage()', () => {
   const res = getDiseaseCoverage(testBundle);
@@ -21,7 +20,7 @@ describe('getDiseaseCoverage()', () => {
 
   test('Coverage arrays should not include non-compliant resources if they do not include a meta.profile element', () => {
     // Iterate through our empty resources and delete their profile arrays
-    const modifiedTestBundle = require('./bundles/diseaseBundle.json');
+    const modifiedTestBundle = { ...testBundle };
     modifiedTestBundle.entry
       .filter((entry) => entry.resource.id.startsWith('empty'))
       .forEach((entry) => delete entry.resource.meta.profile); // eslint-disable-line no-param-reassign
@@ -39,7 +38,7 @@ describe('getDiseaseCoverage()', () => {
 
   test('Coverage arrays should still include compliant resources if they do not include a meta.profile element', () => {
     // Iterate through all resources and delete their profile arrays
-    const modifiedTestBundle = require('./bundles/diseaseBundle.json');
+    const modifiedTestBundle = { ...testBundle };
     modifiedTestBundle.entry.forEach((entry) => delete entry.resource.meta.profile); // eslint-disable-line no-param-reassign
 
     const updatedRes = getDiseaseCoverage(modifiedTestBundle);

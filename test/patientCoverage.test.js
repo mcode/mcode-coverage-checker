@@ -1,5 +1,5 @@
-const testBundle = require('./bundles/patientBundle.json');
-const { getPatientCoverage } = require('../src/lib/coverageChecker/patientCoverage');
+import testBundle from './bundles/patientBundle.json';
+import getPatientCoverage from '../src/lib/coverageChecker/patientCoverage';
 
 describe('getPatientCoverage()', () => {
   const res = getPatientCoverage(testBundle);
