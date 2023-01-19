@@ -1,6 +1,6 @@
 import { LineChart, Line } from 'recharts';
 
-const staticData = [
+const StaticData = [
   {
     name: 'Page A',
     uv: 4000,
@@ -45,10 +45,12 @@ const staticData = [
   },
 ];
 
-export default function Sparkline() {
+function Sparkline({ data }) {
   return (
-    <LineChart width={50} height={18} data={staticData}>
+    <LineChart width={50} height={18} data={data}>
       <Line type="monotone" dataKey="pv" stroke="#000000" dot={false} strokeWidth={1.5} animationDuration={0} />
     </LineChart>
   );
 }
+
+export { Sparkline, StaticData };
