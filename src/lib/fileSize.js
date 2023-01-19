@@ -10,6 +10,4 @@ function formatBytes(bytes, decimals = 2) {
 
   return `${parseFloat((bytes / k ** i).toFixed(dm))} ${sizes[i]}`;
 }
-module.exports = {
-  formatBytes,
-};
+export default formatBytes;

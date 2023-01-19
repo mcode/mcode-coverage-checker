@@ -1,6 +1,6 @@
-const fhirpath = require('fhirpath');
 // NOTE: See here: https://stackoverflow.com/questions/33704714/cant-require-default-export-value-in-babel-6-x
-const { ValueSetCodeChecker } = require('./ValueSetCodeChecker');
+import fhirpath from 'fhirpath';
+import ValueSetCodeChecker from './ValueSetCodeChecker';
 
 const vsChecker = new ValueSetCodeChecker();
 
@@ -334,7 +334,7 @@ function getRadiotherapyVolume(bundle) {
   return mergeWithoutDuplicates(metaProfiledResources, constrainedResources);
 }
 
-module.exports = {
+export {
   getPatient,
   getDiseaseStatus,
   getTumor,

@@ -1,12 +1,12 @@
-const {
+import {
   patientSectionId,
   outcomeSectionId,
   diseaseSectionId,
   treatmentSectionId,
   assessmentSectionId,
   genomicsSectionId,
-} = require('../coverageSectionIds');
-const { getAllSectionsCoverage } = require('./statsUtils');
+} from '../coverageSectionIds';
+import { getAllSectionsCoverage } from './statsUtils';
 
 /**
  * Compute overall coverage stats across all sections
@@ -77,7 +77,7 @@ function getGenomicsStats(coverageData) {
   return getOverallStats(genomicsData);
 }
 
-module.exports = {
+export {
   getOverallStats,
   getPatientStats,
   getOutcomeStats,

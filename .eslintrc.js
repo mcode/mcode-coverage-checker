@@ -19,6 +19,8 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     // TEMPORARY - we should enable this once we are confident in our data model for stats and coverage info
     'react/prop-types': 'off',
+    // I know how to import/export, son
+    // 'import/prefer-default-export': 'off',
     // allow jsx syntax in js files
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     // workaround for
