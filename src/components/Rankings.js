@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { getAllFieldCoveredCounts } from '../lib/coverageStats/statsUtils';
 import { sectionColors } from '../lib/coverageSectionIds';
+import { Sparkline, StaticData } from './Sparklines';
 
 const MINNUMSHOWN = 5;
 
@@ -57,6 +58,9 @@ function Rankings({ coverageData, className }) {
                     <td className="w-full py-1">
                       <p className="text-[15px]">{field.name}</p>
                       <p className="text-xs text-gray-400">{field.profile}</p>
+                    </td>
+                    <td className="px-2">
+                      <Sparkline data={StaticData} />
                     </td>
                     <td className="text-[15px] py-1">{`${field.covered}/${field.total}`}</td>
                   </tr>
