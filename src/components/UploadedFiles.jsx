@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useRecoilState, useRecoilValue } from 'recoil';
 import { useAutoAnimate } from '@formkit/auto-animate/react';
-import ReactJson from 'react-json-view';
+import { JsonViewer } from '@textea/json-viewer';
 import { Icon } from '@iconify/react';
 import { uploadedFilesLookup, uploadedFiles } from '../recoil_state';
 
@@ -80,9 +80,9 @@ function UploadedFiles() {
                 {jsonViewKeys.has(file.id) && (
                   <tr>
                     <td className="px-6" colSpan="3">
-                      <ReactJson
-                        src={file.body}
-                        collapsed={3}
+                      <JsonViewer
+                        value={file.body}
+                        defaultInspectDepth={3}
                         groupArraysAfterLength={20}
                         style={{ maxHeight: '400px', overflow: 'auto' }}
                       />

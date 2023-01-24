@@ -41,7 +41,7 @@ const genomicsProfileIds = {
   genomicRegionStudiedId: 'Genomic Region Studied',
 };
 
-module.exports = {
+export {
   treatmentProfileIds,
   assessmentProfileIds,
   outcomeProfileIds,

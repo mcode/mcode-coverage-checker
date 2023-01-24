@@ -1,6 +1,6 @@
-const fhirpath = require('fhirpath');
+import fhirpath from 'fhirpath';
 // NOTE: See here: https://stackoverflow.com/questions/33704714/cant-require-default-export-value-in-babel-6-x
-const { ValueSetCodeChecker } = require('./ValueSetCodeChecker');
+import { ValueSetCodeChecker } from './ValueSetCodeChecker';
 
 const vsChecker = new ValueSetCodeChecker();
 
@@ -16,6 +16,7 @@ function mergeWithoutDuplicates(metaArr, constrainedArr) {
 // Patient
 // No reliable conformance requirements for mCODE Patients or US Core Patients: https://hl7.org/fhir/us/mcode/StructureDefinition-mcode-cancer-patient.html#conformance
 function getPatient(bundle) {
+  console.log(bundle);
   const metaProfiledResources = fhirpath.evaluate(
     bundle,
     "Bundle.entry.resource.where(meta.profile = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient')",
@@ -334,7 +335,7 @@ function getRadiotherapyVolume(bundle) {
   return mergeWithoutDuplicates(metaProfiledResources, constrainedResources);
 }
 
-module.exports = {
+export {
   getPatient,
   getDiseaseStatus,
   getTumor,

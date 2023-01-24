@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-module.exports = {
+export {
   log: console.log,
   error: console.error,
   warn: console.warn,

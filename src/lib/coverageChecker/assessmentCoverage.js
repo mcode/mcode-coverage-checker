@@ -1,7 +1,7 @@
-const fhirpath = require('fhirpath');
-const { getKarnofskyPerformanceStatus, getComorbidities, getECOGPerfomanceStatus } = require('../resourceFilters');
-const { assessmentSectionId } = require('../coverageSectionIds');
-const { assessmentProfileIds } = require('../coverageProfileIds');
+import fhirpath from 'fhirpath';
+import { getKarnofskyPerformanceStatus, getComorbidities, getECOGPerfomanceStatus } from '../resourceFilters';
+import { assessmentSectionId } from '../coverageSectionIds';
+import { assessmentProfileIds } from '../coverageProfileIds';
 
 /**
  * Takes a bundle and returns the coverage of Karnofsky performance status resources in that bundle
@@ -107,6 +107,4 @@ function getAssessmentCoverage(bundle) {
   };
 }
 
-module.exports = {
-  getAssessmentCoverage,
-};
+export { getAssessmentCoverage };

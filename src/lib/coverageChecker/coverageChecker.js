@@ -1,9 +1,9 @@
-const { getPatientCoverage } = require('./patientCoverage');
-const { getOutcomeCoverage } = require('./outcomeCoverage');
-const { getDiseaseCoverage } = require('./diseaseCoverage');
-const { getTreatmentCoverage } = require('./treatmentCoverage');
-const { getAssessmentCoverage } = require('./assessmentCoverage');
-const { getGenomicsCoverage } = require('./genomicsCoverage');
+import { getPatientCoverage } from './patientCoverage';
+import { getOutcomeCoverage } from './outcomeCoverage';
+import { getDiseaseCoverage } from './diseaseCoverage';
+import { getTreatmentCoverage } from './treatmentCoverage';
+import { getAssessmentCoverage } from './assessmentCoverage';
+import { getGenomicsCoverage } from './genomicsCoverage';
 
 /**
  * Computes mCODE coverage statistics for a FHIR bundle

@@ -15,7 +15,7 @@ const sectionColors = {
   Genomics: 'fill-genomics',
 };
 
-module.exports = {
+export {
   patientSectionId,
   outcomeSectionId,
   diseaseSectionId,

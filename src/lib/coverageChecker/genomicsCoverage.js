@@ -1,12 +1,7 @@
-const fhirpath = require('fhirpath');
-const {
-  getGenomicRegionStudied,
-  getGenomicSpecimen,
-  getGenomicVariant,
-  getGenomicsReport,
-} = require('../resourceFilters');
-const { genomicsSectionId } = require('../coverageSectionIds');
-const { genomicsProfileIds } = require('../coverageProfileIds');
+import fhirpath from 'fhirpath';
+import { getGenomicRegionStudied, getGenomicSpecimen, getGenomicVariant, getGenomicsReport } from '../resourceFilters';
+import { genomicsSectionId } from '../coverageSectionIds';
+import { genomicsProfileIds } from '../coverageProfileIds';
 
 /**
  * Takes a bundle and returns the coverage of genomic region studied resources in that bundle
@@ -242,6 +237,4 @@ function getGenomicsCoverage(bundle) {
   };
 }
 
-module.exports = {
-  getGenomicsCoverage,
-};
+export { getGenomicsCoverage };

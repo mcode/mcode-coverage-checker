@@ -1,7 +1,7 @@
-const fhirpath = require('fhirpath');
-const { getDiseaseStatus, getTumor, getTumorSize, getTumorSpecimen } = require('../resourceFilters');
-const { outcomeSectionId } = require('../coverageSectionIds');
-const { outcomeProfileIds } = require('../coverageProfileIds');
+import fhirpath from 'fhirpath';
+import { getDiseaseStatus, getTumor, getTumorSize, getTumorSpecimen } from '../resourceFilters';
+import { outcomeSectionId } from '../coverageSectionIds';
+import { outcomeProfileIds } from '../coverageProfileIds';
 
 /**
  * Takes a bundle and returns the coverage of disease status resources in that bundle
@@ -129,6 +129,4 @@ function getOutcomeCoverage(bundle) {
   };
 }
 
-module.exports = {
-  getOutcomeCoverage,
-};
+export { getOutcomeCoverage };
