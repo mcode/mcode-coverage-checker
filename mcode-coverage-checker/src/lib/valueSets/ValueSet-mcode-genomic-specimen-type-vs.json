@@ -1,0 +1,197 @@
+{
+  "resourceType": "ValueSet",
+  "id": "mcode-genomic-specimen-type-vs",
+  "language": "en",
+  "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-genomic-specimen-type-vs",
+  "version": "2.1.0",
+  "name": "GenomicSpecimenTypeVS",
+  "title": "Genomic Specimen Type Value Set",
+  "status": "active",
+  "experimental": false,
+  "expansion": {
+    "identifier": "urn:uuid:3d2cbcf4-570f-4152-9ae0-5f84d73d8121",
+    "timestamp": "2022-10-05T22:14:54.098Z",
+    "parameter": [
+      {
+        "name": "expansion-source",
+        "valueUri": "ValueSet/mcode-genomic-specimen-type-vs"
+      },
+      {
+        "name": "version",
+        "valueUri": "http://terminology.hl7.org/CodeSystem/v2-0487|2.9"
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "AMN",
+        "display": "Amniotic fluid"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "BIFL",
+        "display": "Bile Fluid"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "BLD",
+        "display": "Whole blood"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "BLDA",
+        "display": "Blood arterial"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "BLDCO",
+        "display": "Cord blood"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "BLDV",
+        "display": "Blood venous"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "BON",
+        "display": "Bone"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "CSERU",
+        "display": "Serum, Convalescent"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "CSF",
+        "display": "Cerebral spinal fluid"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "CVM",
+        "display": "Cervical Mucus"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "DUFL",
+        "display": "Duodenal fluid"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "FBLOOD",
+        "display": "Blood, Fetal"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "FGA",
+        "display": "Fluid, Abdomen"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "GENV",
+        "display": "Genital vaginal"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "HYDC",
+        "display": "Fluid, Hydrocele"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "JNTFLD",
+        "display": "Fluid, Joint"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "KIDFLD",
+        "display": "Fluid, Kidney"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "LSAC",
+        "display": "Fluid, Lumbar Sac"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "MAR",
+        "display": "Marrow"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "PAFL",
+        "display": "Pancreatic fluid"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "PCFL",
+        "display": "Fluid, Pericardial"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "PLC",
+        "display": "Placenta"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "PLR",
+        "display": "Pleural fluid (thoracentesis fluid)"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "SAL",
+        "display": "Saliva"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "SKN",
+        "display": "Skin"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "SMN",
+        "display": "Seminal fluid"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "SNV",
+        "display": "Fluid, synovial (Joint fluid)"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "SPT",
+        "display": "Sputum"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "TISS",
+        "display": "Tissue"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "TUMOR",
+        "display": "Tumor"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "VITF",
+        "display": "Vitreous Fluid"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "WND",
+        "display": "Wound"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "UR",
+        "display": "Urine"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "code": "STL",
+        "display": "Stool = Fecal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "resourceType": "ValueSet",
+  "id": "mcode-radiotherapy-volume-type-vs",
+  "language": "en",
+  "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-radiotherapy-volume-type-vs",
+  "version": "2.1.0",
+  "name": "RadiotherapyVolumeTypeVS",
+  "title": "Radiotherapy Volume Type Value Set",
+  "status": "active",
+  "experimental": false,
+  "expansion": {
+    "identifier": "urn:uuid:493f7c93-3d92-4254-8c64-c0a68c80d1d5",
+    "timestamp": "2022-10-05T22:14:54.004Z",
+    "parameter": [
+      {
+        "name": "expansion-source",
+        "valueUri": "ValueSet/mcode-radiotherapy-volume-type-vs"
+      },
+      {
+        "name": "version",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "228793007",
+        "display": "Planning target volume (observable entity)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "228791009",
+        "display": "Gross tumor volume (observable entity)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "228792002",
+        "display": "Clinical target volume (observable entity)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1162586008",
+        "display": "Irradiated volume of organ at risk (observable entity)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1201745009",
+        "display": "Internal target volume (observable entity)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1201746005",
+        "display": "Internal gross tumor volume (observable entity)"
+      }
+    ]
+  }
+}
