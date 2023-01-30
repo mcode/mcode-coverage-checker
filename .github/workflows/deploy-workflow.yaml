@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - deploy-fixes
 
 jobs:
   deploy-to-pages:
