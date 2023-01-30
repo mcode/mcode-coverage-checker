@@ -2,9 +2,7 @@
   "resourceType": "Bundle",
   "id": "mcode-patient-bundle-jenny-m",
   "meta": {
-    "profile": [
-      "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle"
-    ]
+    "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle"]
   },
   "type": "collection",
   "entry": [
@@ -13,9 +11,7 @@
         "resourceType": "Observation",
         "id": "empty-disease-status",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status"]
         }
       }
     },
@@ -25,9 +21,7 @@
         "resourceType": "Observation",
         "id": "cancer-disease-status-jenny-m",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status"]
         },
         "text": {
           "status": "extensions",
@@ -88,9 +82,7 @@
         "resourceType": "BodyStructure",
         "id": "empty-tumor",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor"]
         }
       }
     },
@@ -100,9 +92,7 @@
         "resourceType": "BodyStructure",
         "id": "tumor-lobular-carcinoma-left-breast",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor"]
         },
         "text": {
           "status": "extensions",
@@ -159,9 +149,7 @@
         "resourceType": "Observation",
         "id": "empty-tumor-size",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-size"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-size"]
         }
       }
     },
@@ -171,9 +159,7 @@
         "resourceType": "Observation",
         "id": "tumor-size-jenny-m",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-size"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-size"]
         },
         "text": {
           "status": "generated",
@@ -252,9 +238,7 @@
         "resourceType": "Specimen",
         "id": "empty-tumor-specimen",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-specimen"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-specimen"]
         }
       }
     },
@@ -264,9 +248,7 @@
         "resourceType": "Specimen",
         "id": "tumor-specimen-left-breast-jenny-m",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-specimen"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-specimen"]
         },
         "text": {
           "status": "generated",

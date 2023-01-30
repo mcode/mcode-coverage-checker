@@ -1,5 +1,5 @@
 import testBundle from './bundles/outcomeBundle.json';
-import getOutcomeCoverage from '../src/lib/coverageChecker/outcomeCoverage';
+import getOutcomeCoverage from '../lib/coverageChecker/outcomeCoverage';
 
 describe('getOutcomeCoverage()', () => {
   const res = getOutcomeCoverage(testBundle);

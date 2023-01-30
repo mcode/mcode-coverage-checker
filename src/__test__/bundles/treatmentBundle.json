@@ -2,9 +2,7 @@
   "resourceType": "Bundle",
   "id": "mcode-patient-bundle-jenny-m",
   "meta": {
-    "profile": [
-      "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle"
-    ]
+    "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle"]
   },
   "type": "collection",
   "entry": [
@@ -14,9 +12,7 @@
         "resourceType": "MedicationRequest",
         "id": "empty-cancer-related-medication-request",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request"]
         }
       }
     },
@@ -26,9 +22,7 @@
         "resourceType": "MedicationRequest",
         "id": "cancer-related-medication-request-doxorubicin-jenny-m",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request"]
         },
         "text": {
           "status": "extensions",
@@ -134,9 +128,7 @@
         "resourceType": "MedicationAdministration",
         "id": "empty-cancer-related-medication-admin",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration"]
         }
       }
     },
@@ -146,9 +138,7 @@
         "resourceType": "MedicationAdministration",
         "id": "cancer-related-medication-admin-doxorubicin-jenny-m",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration"]
         },
         "text": {
           "status": "generated",
@@ -233,9 +223,7 @@
         "resourceType": "Procedure",
         "id": "empty-cancer-related-surgical-procedure",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure"]
         }
       }
     },
@@ -245,9 +233,7 @@
         "resourceType": "Procedure",
         "id": "cancer-related-surgical-procedure-jenny-m",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure"]
         },
         "text": {
           "status": "extensions",
@@ -326,9 +312,7 @@
         "resourceType": "Procedure",
         "id": "empty-radiotherapy-treatment-summary",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-course-summary"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-course-summary"]
         }
       }
     },
@@ -338,9 +322,7 @@
         "resourceType": "Procedure",
         "id": "radiotherapy-treatment-summary-chest-wall-jenny-m",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-course-summary"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-course-summary"]
         },
         "text": {
           "status": "extensions",
@@ -526,9 +508,7 @@
         "resourceType": "BodyStructure",
         "id": "empty-volume",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-volume"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-volume"]
         }
       }
     },
@@ -538,9 +518,7 @@
         "resourceType": "BodyStructure",
         "id": "jenny-m-chest-wall-treatment-volume",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-volume"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-volume"]
         },
         "text": {
           "status": "generated",

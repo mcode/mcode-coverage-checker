@@ -1,5 +1,5 @@
 import testBundle from './bundles/patientBundle.json';
-import getPatientCoverage from '../src/lib/coverageChecker/patientCoverage';
+import getPatientCoverage from '../lib/coverageChecker/patientCoverage';
 
 describe('getPatientCoverage()', () => {
   const res = getPatientCoverage(testBundle);

@@ -1,5 +1,5 @@
 import testBundle from './bundles/assessmentBundle.json';
-import getAssessmentCoverage from '../src/lib/coverageChecker/assessmentCoverage';
+import getAssessmentCoverage from '../lib/coverageChecker/assessmentCoverage';
 
 describe('getAssessmentCoverage()', () => {
   const res = getAssessmentCoverage(testBundle);

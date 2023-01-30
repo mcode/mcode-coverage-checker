@@ -1,5 +1,5 @@
 import testBundle from './bundles/genomicsBundle.json';
-import getGenomicsCoverage from '../src/lib/coverageChecker/genomicsCoverage';
+import getGenomicsCoverage from '../lib/coverageChecker/genomicsCoverage';
 
 describe('getGenomicsCoverage()', () => {
   const res = getGenomicsCoverage(testBundle);

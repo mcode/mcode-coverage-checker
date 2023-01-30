@@ -2,9 +2,7 @@
   "resourceType": "Bundle",
   "id": "mcode-patient-bundle-jenny-m",
   "meta": {
-    "profile": [
-      "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle"
-    ]
+    "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle"]
   },
   "type": "collection",
   "entry": [
@@ -14,9 +12,7 @@
         "resourceType": "Observation",
         "id": "empty-tumor-marker-test",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test"]
         }
       }
     },
@@ -26,9 +22,7 @@
         "resourceType": "Observation",
         "id": "tumor-marker-test-er-jenny-m",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test"]
         },
         "text": {
           "status": "generated",
@@ -80,9 +74,7 @@
         "resourceType": "Condition",
         "id": "empty-primary-cancer",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition"]
         }
       }
     },
@@ -92,9 +84,7 @@
         "resourceType": "Condition",
         "id": "primary-cancer-condition-jenny-m",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition"]
         },
         "text": {
           "status": "extensions",
@@ -216,9 +206,7 @@
         "resourceType": "Condition",
         "id": "empty-secondary-cancer",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition"]
         }
       }
     },
@@ -228,9 +216,7 @@
         "resourceType": "Condition",
         "id": "secondary-cancer-condition-brain-mets",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition"]
         },
         "text": {
           "status": "extensions",
@@ -296,9 +282,7 @@
         "resourceType": "Observation",
         "id": "empty-stage-group",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-stage-group"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-stage-group"]
         }
       }
     },
@@ -365,9 +349,7 @@
         "resourceType": "Observation",
         "id": "empty-primary-tumor",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-primary-tumor-category"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-primary-tumor-category"]
         }
       }
     },
@@ -422,9 +404,7 @@
         "resourceType": "Observation",
         "id": "empty-distant-metastases",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category"]
         }
       }
     },
@@ -479,9 +459,7 @@
         "resourceType": "Observation",
         "id": "empty-regional-nodes",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-regional-nodes-category"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-regional-nodes-category"]
         }
       }
     },

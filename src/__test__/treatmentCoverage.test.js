@@ -1,6 +1,6 @@
 /* eslint-disable global-require */
 import testBundle from './bundles/treatmentBundle.json';
-import getTreatmentCoverage from '../src/lib/coverageChecker/treatmentCoverage';
+import getTreatmentCoverage from '../lib/coverageChecker/treatmentCoverage';
 
 describe('getTreatmentCoverage()', () => {
   const res = getTreatmentCoverage(testBundle);
