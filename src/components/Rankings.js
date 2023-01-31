@@ -51,7 +51,7 @@ function Rankings({ coverageData, className }) {
                 .map((field) => (
                   <tr key={[field.profile, field.name].join()}>
                     <td className="w-5 py-1">
-                      <svg className={`${sectionColors[field.section]}`} width="5" height="40">
+                      <svg className={`${sectionColors.fill[field.section]}`} width="5" height="40">
                         <rect width="5" height="40" rx="1" />
                       </svg>
                     </td>
