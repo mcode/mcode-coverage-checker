@@ -5,11 +5,10 @@ import MainVisualization from '../components/MainVisualization';
 import coverageChecker from '../lib/coverageChecker/coverageChecker';
 import FileSelect from '../components/FileSelect';
 import Rankings from '../components/Rankings';
-// import LineChart from '../components/LineChart';
+import LineChart from '../components/LineChart';
 import SubcategoryTable from '../components/SubcategoryTable';
 
 function App() {
-  // eslint-disable-next-line no-unused-vars
   const dataStatic = [
     {
       name: 'Page A',
@@ -84,7 +83,7 @@ function App() {
       <div className="flex flex-row gap-5 items-start">
         <SubcategoryTable selectedSection={selectedSection} coverageData={coverageData} />
       </div>
-      {/* <LineChart className="w-3/5" data={dataStatic} xKey="name" yKey="uv" hexColor="#8884d8" /> */}
+      <LineChart className="w-3/5" data={dataStatic} xKey="name" yKey="uv" hexColor="#8884d8" />
     </div>
   );
 }
