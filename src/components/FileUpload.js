@@ -4,7 +4,7 @@ import { useAutoAnimate } from '@formkit/auto-animate/react';
 import { Icon } from '@iconify/react';
 import { v4 as uuidv4 } from 'uuid';
 import { uploadedFilesLookup } from '../recoil_state';
-import { formatBytes } from '../lib/fileSize';
+import formatBytes from '../lib/fileSize';
 import FileNotification from './FileNotification';
 import RejectedFileNotification from './RejectedFileNotification';
 

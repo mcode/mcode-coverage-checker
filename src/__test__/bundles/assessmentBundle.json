@@ -2,9 +2,7 @@
   "resourceType": "Bundle",
   "id": "mcode-patient-bundle-jenny-m",
   "meta": {
-    "profile": [
-      "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle"
-    ]
+    "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle"]
   },
   "type": "collection",
   "entry": [
@@ -14,9 +12,7 @@
         "resourceType": "Observation",
         "id": "empty-comorbidities",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbidities-elixhauser"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbidities-elixhauser"]
         }
       }
     },
@@ -26,9 +22,7 @@
         "resourceType": "Observation",
         "id": "cancer-related-mcode-comorbidities-elixhauser-jenny-m",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbidities-elixhauser"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbidities-elixhauser"]
         },
         "text": {
           "status": "extensions",
@@ -64,13 +58,13 @@
                 }
               },
               {
-                "url" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbid-condition-code",
-                "valueCodeableConcept" : {
-                  "coding" : [
+                "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbid-condition-code",
+                "valueCodeableConcept": {
+                  "coding": [
                     {
-                      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
-                      "code" : "I50.32",
-                      "display" : "Chronic diastolic (congestive) heart failure"
+                      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                      "code": "I50.32",
+                      "display": "Chronic diastolic (congestive) heart failure"
                     }
                   ]
                 }
@@ -103,9 +97,7 @@
         "resourceType": "Observation",
         "id": "empty-ecog",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-ecog-performance-status"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-ecog-performance-status"]
         }
       }
     },
@@ -115,9 +107,7 @@
         "resourceType": "Observation",
         "id": "ecog-performance-status-jenny-m",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-ecog-performance-status"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-ecog-performance-status"]
         },
         "text": {
           "status": "generated",
@@ -170,9 +160,7 @@
         "resourceType": "Observation",
         "id": "empty-karnofsky",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-karnofsky-performance-status"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-karnofsky-performance-status"]
         }
       }
     },
@@ -182,9 +170,7 @@
         "resourceType": "Observation",
         "id": "karnofsky-performance-status-normal-activity",
         "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-karnofsky-performance-status"
-          ]
+          "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-karnofsky-performance-status"]
         },
         "text": {
           "status": "generated",

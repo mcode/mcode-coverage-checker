@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
-          node-version: "16.x"
+          node-version: '16.x'
       - run: npm install
       - run: npm run build
       - name: Publish build to github pages
@@ -22,5 +22,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: build
           publish_branch: gh-pages
-          user_name: "github-actions[bot]"
-          user_email: "github-actions[bot]@users.noreply.github.com"
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'

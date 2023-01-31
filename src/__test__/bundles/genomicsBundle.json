@@ -2,9 +2,7 @@
   "resourceType": "Bundle",
   "id": "mcode-patient-bundle-jenny-m",
   "meta": {
-    "profile": [
-      "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle"
-    ]
+    "profile": ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle"]
   },
   "type": "collection",
   "entry": [

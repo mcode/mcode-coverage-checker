@@ -1,13 +1,13 @@
-const fhirpath = require('fhirpath');
-const {
+import fhirpath from 'fhirpath';
+import {
   getCancerRelatedMedicationRequest,
   getCancerRelatedMedicationAdministration,
   getCancerRelatedSurgicalProcedure,
   getRadiotherapyCourseSummary,
   getRadiotherapyVolume,
-} = require('../resourceFilters');
-const { treatmentSectionId } = require('../coverageSectionIds');
-const { treatmentProfileIds } = require('../coverageProfileIds');
+} from '../resourceFilters';
+import { treatmentSectionId } from '../coverageSectionIds';
+import { treatmentProfileIds } from '../coverageProfileIds';
 
 /**
  * Takes a bundle and returns the coverage of cancer related medication request resources in that bundle
@@ -249,6 +249,4 @@ function getTreatmentCoverage(bundle) {
   };
 }
 
-module.exports = {
-  getTreatmentCoverage,
-};
+export default getTreatmentCoverage;

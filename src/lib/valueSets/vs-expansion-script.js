@@ -1,6 +1,6 @@
-const fs = require('fs');
-const path = require('path');
-const axios = require('axios');
+import fs from 'fs';
+import path from 'path';
+import axios from 'axios';
 
 // NOTE: Update this to point to pre-expansion valuesets on your local machine
 const PREEXPANSIONPATH = path.resolve(__dirname, '../../../../fhir-mCODE-ig/fsh-generated/resources/valuesets');

@@ -1,7 +1,7 @@
-const fhirpath = require('fhirpath');
-const { getPatient } = require('../resourceFilters');
-const { patientSectionId } = require('../coverageSectionIds');
-const { patientProfileIds } = require('../coverageProfileIds');
+import fhirpath from 'fhirpath';
+import { getPatient } from '../resourceFilters';
+import { patientSectionId } from '../coverageSectionIds';
+import { patientProfileIds } from '../coverageProfileIds';
 /**
  * Takes a bundle and returns the coverage of patient resources in that bundle
  * @param {Object} bundle, an mCODE bundle
@@ -49,6 +49,4 @@ function getPatientCoverage(bundle) {
   };
 }
 
-module.exports = {
-  getPatientCoverage,
-};
+export default getPatientCoverage;

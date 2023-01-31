@@ -1,5 +1,5 @@
-const fhirpath = require('fhirpath');
-const {
+import fhirpath from 'fhirpath';
+import {
   getTumorMarkerTest,
   getSecondaryCancerCondition,
   getPrimaryCancerCondition,
@@ -7,9 +7,9 @@ const {
   getTNMPrimaryTumorCategory,
   getTNMDistantMetastasesCategory,
   getTNMRegionalNodesCategory,
-} = require('../resourceFilters');
-const { diseaseSectionId } = require('../coverageSectionIds');
-const { diseaseProfileIds } = require('../coverageProfileIds');
+} from '../resourceFilters';
+import { diseaseSectionId } from '../coverageSectionIds';
+import { diseaseProfileIds } from '../coverageProfileIds';
 
 /**
  * Takes a bundle and returns the coverage of tummor marker test resources in that bundle
@@ -221,6 +221,4 @@ function getDiseaseCoverage(bundle) {
   };
 }
 
-module.exports = {
-  getDiseaseCoverage,
-};
+export default getDiseaseCoverage;
