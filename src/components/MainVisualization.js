@@ -9,6 +9,15 @@ import {
   getTreatmentStats,
 } from '../lib/coverageStats/coverageStats';
 import { getAllFieldCoveredCounts } from '../lib/coverageStats/statsUtils';
+import {
+  patientSectionId,
+  outcomeSectionId,
+  diseaseSectionId,
+  treatmentSectionId,
+  assessmentSectionId,
+  genomicsSectionId,
+  overallSectionId,
+} from '../lib/coverageSectionIds';
 
 function MainVisualization({ className, coverageData, selectedSection, setSelectedSection }) {
   const overall = getOverallStats(coverageData);
@@ -21,89 +30,89 @@ function MainVisualization({ className, coverageData, selectedSection, setSelect
 
   const fields = getAllFieldCoveredCounts(coverageData);
   const patientSubcategories = `${
-    fields.filter((field) => field.section === 'Patient' && field.percentage === 1).length
-  }/${fields.filter((field) => field.section === 'Patient').length}`;
+    fields.filter((field) => field.section === patientSectionId && field.percentage === 1).length
+  }/${fields.filter((field) => field.section === patientSectionId).length}`;
   const outcomeSubcategories = `${
-    fields.filter((field) => field.section === 'Outcome' && field.percentage === 1).length
-  }/${fields.filter((field) => field.section === 'Outcome').length}`;
+    fields.filter((field) => field.section === outcomeSectionId && field.percentage === 1).length
+  }/${fields.filter((field) => field.section === outcomeSectionId).length}`;
   const diseaseSubcategories = `${
-    fields.filter((field) => field.section === 'Disease' && field.percentage === 1).length
-  }/${fields.filter((field) => field.section === 'Disease').length}`;
+    fields.filter((field) => field.section === diseaseSectionId && field.percentage === 1).length
+  }/${fields.filter((field) => field.section === diseaseSectionId).length}`;
   const treatmentSubcategories = `${
-    fields.filter((field) => field.section === 'Treatment' && field.percentage === 1).length
-  }/${fields.filter((field) => field.section === 'Treatment').length}`;
+    fields.filter((field) => field.section === treatmentSectionId && field.percentage === 1).length
+  }/${fields.filter((field) => field.section === treatmentSectionId).length}`;
   const assessmentSubcategories = `${
-    fields.filter((field) => field.section === 'Assessment' && field.percentage === 1).length
-  }/${fields.filter((field) => field.section === 'Assessment').length}`;
+    fields.filter((field) => field.section === assessmentSectionId && field.percentage === 1).length
+  }/${fields.filter((field) => field.section === assessmentSectionId).length}`;
   const genomicsSubcategories = `${
-    fields.filter((field) => field.section === 'Genomics' && field.percentage === 1).length
-  }/${fields.filter((field) => field.section === 'Genomics').length}`;
+    fields.filter((field) => field.section === genomicsSectionId && field.percentage === 1).length
+  }/${fields.filter((field) => field.section === genomicsSectionId).length}`;
 
   return (
     <div className={`grid grid-cols-3 gap-5 flex-auto ${className}`}>
       <SectionCard
-        className={selectedSection === 'Overall' ? 'h-48 border-2 border-black' : 'h-48'}
-        colspan="col-span-3"
+        className={selectedSection === overallSectionId ? 'h-48 border-2 border-black' : 'h-48'}
+        buttonClassName="col-span-3"
         header={<p className="font-sans font-bold text-4xl">Overall mCODE Coverage</p>}
         text={<p className="text-s text-gray-400">{patient.possible} Patients</p>}
         gaugeSize="h-44 w-44"
         percentage={overall.percentage}
         color="#000000"
-        onClick={() => setSelectedSection('Overall')}
+        onClick={() => setSelectedSection(overallSectionId)}
       />
       <SectionCard
-        className={selectedSection === 'Patient' ? 'border-2 border-patient' : ''}
+        className={selectedSection === patientSectionId ? 'border-2 border-patient' : ''}
         header={<p className="font-sans font-bold text-{32px}">Patient</p>}
         text={<p className="text-xs text-gray-400">{patientSubcategories} Subcategories</p>}
         gaugeSize="h-24 w-24"
         percentage={patient.percentage}
         color="#d24200"
-        onClick={() => setSelectedSection('Patient')}
+        onClick={() => setSelectedSection(patientSectionId)}
       />
       <SectionCard
-        className={selectedSection === 'Outcome' ? 'border-2 border-outcome' : ''}
+        className={selectedSection === outcomeSectionId ? 'border-2 border-outcome' : ''}
         header={<p className="font-sans font-bold text-{32px}">Outcome</p>}
         text={<p className="text-xs text-gray-400">{outcomeSubcategories} Subcategories</p>}
         gaugeSize="h-24 w-24"
         percentage={outcome.percentage}
         color="#8a45d9"
-        onClick={() => setSelectedSection('Outcome')}
+        onClick={() => setSelectedSection(outcomeSectionId)}
       />
       <SectionCard
-        className={selectedSection === 'Disease' ? 'border-2 border-disease' : ''}
+        className={selectedSection === diseaseSectionId ? 'border-2 border-disease' : ''}
         header={<p className="font-sans font-bold text-{32px}">Disease</p>}
         text={<p className="text-xs text-gray-400">{diseaseSubcategories} Subcategories</p>}
         gaugeSize="h-24 w-24"
         percentage={disease.percentage}
         color="#f2b84b"
-        onClick={() => setSelectedSection('Disease')}
+        onClick={() => setSelectedSection(diseaseSectionId)}
       />
       <SectionCard
-        className={selectedSection === 'Treatment' ? 'border-2 border-treatment' : ''}
+        className={selectedSection === treatmentSectionId ? 'border-2 border-treatment' : ''}
         header={<p className="font-sans font-bold text-{32px}">Treatment</p>}
         text={<p className="text-xs text-gray-400">{treatmentSubcategories} Subcategories</p>}
         gaugeSize="h-24 w-24"
         percentage={treatment.percentage}
         color="#04b2d9"
-        onClick={() => setSelectedSection('Treatment')}
+        onClick={() => setSelectedSection(treatmentSectionId)}
       />
       <SectionCard
-        className={selectedSection === 'Assessment' ? 'border-2 border-assessment' : ''}
+        className={selectedSection === assessmentSectionId ? 'border-2 border-assessment' : ''}
         header={<p className="font-sans font-bold text-{32px}">Assessment</p>}
         text={<p className="text-xs text-gray-400">{assessmentSubcategories} Subcategories</p>}
         gaugeSize="h-24 w-24"
         percentage={assessment.percentage}
         color="#f2913d"
-        onClick={() => setSelectedSection('Assessment')}
+        onClick={() => setSelectedSection(assessmentSectionId)}
       />
       <SectionCard
-        className={selectedSection === 'Genomics' ? 'border-2 border-genomics' : ''}
+        className={selectedSection === genomicsSectionId ? 'border-2 border-genomics' : ''}
         header={<p className="font-sans font-bold text-{32px}">Genomics</p>}
         text={<p className="text-xs text-gray-400">{genomicsSubcategories} Subcategories</p>}
         gaugeSize="h-24 w-24"
         percentage={genomics.percentage}
         color="#26c485"
-        onClick={() => setSelectedSection('Genomics')}
+        onClick={() => setSelectedSection(genomicsSectionId)}
       />
     </div>
   );

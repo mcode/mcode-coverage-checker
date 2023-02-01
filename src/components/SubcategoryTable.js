@@ -1,11 +1,39 @@
-import ProgressBar from '@ramonak/react-progress-bar';
 import { Icon } from '@iconify/react';
-import { sectionColors } from '../lib/coverageSectionIds';
+import {
+  patientSectionId,
+  outcomeSectionId,
+  diseaseSectionId,
+  treatmentSectionId,
+  assessmentSectionId,
+  genomicsSectionId,
+  overallSectionId,
+} from '../lib/coverageSectionIds';
 import { getProfileFieldsCoveredCount } from '../lib/coverageStats/statsUtils';
+import ProgressBar from './ProgressBar';
+
+const sectionTextColors = {
+  [patientSectionId]: 'text-patient',
+  [outcomeSectionId]: 'text-outcome',
+  [diseaseSectionId]: 'text-disease',
+  [treatmentSectionId]: 'text-treatment',
+  [assessmentSectionId]: 'text-assessment',
+  [genomicsSectionId]: 'text-genomics',
+  [overallSectionId]: 'text-black',
+};
+
+const sectionBarColors = {
+  [patientSectionId]: 'bg-patient',
+  [outcomeSectionId]: 'bg-outcome',
+  [diseaseSectionId]: 'bg-disease',
+  [treatmentSectionId]: 'bg-treatment',
+  [assessmentSectionId]: 'bg-assessment',
+  [genomicsSectionId]: 'bg-genomics',
+  [overallSectionId]: 'bg-black',
+};
 
 function SubcategoryTable({ className, selectedSection, coverageData }) {
   let sectionData;
-  if (selectedSection === 'Overall') {
+  if (selectedSection === overallSectionId) {
     sectionData = [];
     coverageData.forEach((section) => {
       sectionData.push(...section.data);
@@ -24,10 +52,10 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
   });
 
   return (
-    <div className={`${className} flex flex-col bg-white m-2 rounded-widgit w-1/2 h-96`}>
+    <div className={`${className} flex flex-col bg-white my-2 rounded-widgit w-1/2 h-96`}>
       {/* Header */}
-      <h3 className="p-2 font-sans font-semibold text-xl">
-        <span className={`${sectionColors.text[selectedSection]}`}>{selectedSection}</span> Subcategories
+      <h3 className="p-4 font-sans font-semibold text-xl">
+        <span className={`${sectionTextColors[selectedSection]}`}>{selectedSection}</span> Subcategories
       </h3>
       <div className="grow overflow-y-auto">
         {/* Table of profiles */}
@@ -55,11 +83,8 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
                         <p className="pl-2 text-[15px] font-medium">{profile.name}</p>
                         <div className="flex flex-row flex-nowrap items-center">
                           <ProgressBar
-                            className="grow p-1"
-                            height="10px"
-                            isLabelVisible={false}
-                            bgColor={sectionColors.hex[selectedSection]}
-                            completed={(profile.covered / profile.total) * 100}
+                            percentage={(profile.covered / profile.total) * 100}
+                            color={sectionBarColors[selectedSection]}
                           />
                           <p className="text-[12px]">
                             {profile.covered}/{profile.total}
@@ -84,11 +109,8 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
                           <td>
                             <div className="flex flex-row flex-nowrap items-center">
                               <ProgressBar
-                                className="grow p-1"
-                                height="10px"
-                                isLabelVisible={false}
-                                bgColor={sectionColors.hex[selectedSection]}
-                                completed={(field.covered / field.total) * 100}
+                                percentage={(field.covered / field.total) * 100}
+                                color={sectionBarColors[selectedSection]}
                               />
                               <p className="text-[12px]">
                                 {field.covered}/{field.total}

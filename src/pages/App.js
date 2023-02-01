@@ -7,6 +7,7 @@ import FileSelect from '../components/FileSelect';
 import Rankings from '../components/Rankings';
 import LineChart from '../components/LineChart';
 import SubcategoryTable from '../components/SubcategoryTable';
+import { overallSectionId } from '../lib/coverageSectionIds';
 
 function App() {
   const dataStatic = [
@@ -55,7 +56,7 @@ function App() {
   ];
   const files = useRecoilValue(uploadedFiles);
   const [coverageData, setCoverageData] = useState(coverageChecker(files[0].body));
-  const [selectedSection, setSelectedSection] = useState('Overall');
+  const [selectedSection, setSelectedSection] = useState(overallSectionId);
 
   const changeDataSource = useCallback(
     (event) => {
