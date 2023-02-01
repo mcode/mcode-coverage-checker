@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+import { useState } from 'react';
 import { Icon } from '@iconify/react';
 import {
   patientSectionId,
@@ -51,6 +53,12 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
     };
   });
 
+  const initialOpen = {};
+  profiles.forEach((profile) => {
+    initialOpen[profile.name] = false;
+  });
+  const [open, setOpen] = useState(initialOpen);
+
   return (
     <div className={`${className} flex flex-col bg-white my-2 rounded-widgit w-1/2 h-96`}>
       {/* Header */}
@@ -75,21 +83,66 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
           </thead>
           <tbody>
             {profiles?.map((profile) => (
-              <tr className="h-10 border-y-2 border-gray-200" key={profile.name}>
-                <td className="h-10 hover:bg-gray-200" colSpan={3}>
-                  <details>
-                    <summary className="cursor-pointer">
-                      <div className="grid grid-cols-3 items-center">
-                        <p className="pl-2 text-[15px] font-medium">{profile.name}</p>
+              <>
+                <tr
+                  onClick={() => {
+                    setOpen({ ...open, [profile.name]: !open[profile.name] });
+                  }}
+                  className="h-10 hover:bg-gray-200 border-y-2 border-gray-200"
+                  key={profile.name}
+                >
+                  <td>
+                    <div className="flex flex-row items-center">
+                      <Icon
+                        icon="bi:caret-down-fill"
+                        className="ml-2"
+                        height="12"
+                        rotate={open[profile.name] ? '0deg' : '270deg'}
+                      />
+                      <p className="pl-2 text-[15px] font-medium">{profile.name}</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="flex flex-row flex-nowrap items-center">
+                      <ProgressBar
+                        percentage={(profile.covered / profile.total) * 100}
+                        color={sectionBarColors[selectedSection]}
+                      />
+                      <p className="text-[12px]">
+                        {profile.covered}/{profile.total}
+                      </p>
+                    </div>
+                  </td>
+                  <td>
+                    <a
+                      href="https://build.fhir.org/ig/HL7/fhir-mCODE-ig/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="pl-2 flex flex-row items-center"
+                    >
+                      <p className="text-link">link placeholder</p>
+                      <Icon icon="humbleicons:external-link" color="#2f80ed" height="24" />
+                    </a>
+                  </td>
+                </tr>
+                {open[profile.name] &&
+                  profile.fields.map((field) => (
+                    <tr className="h-10 hover:bg-gray-200 border-y-2 border-gray-200" key={field.name}>
+                      <td>
+                        <p className="pl-10 text-[15px] font-medium">{field.name}</p>
+                      </td>
+                      <td>
                         <div className="flex flex-row flex-nowrap items-center">
                           <ProgressBar
-                            percentage={(profile.covered / profile.total) * 100}
+                            percentage={(field.covered / field.total) * 100}
                             color={sectionBarColors[selectedSection]}
                           />
                           <p className="text-[12px]">
-                            {profile.covered}/{profile.total}
+                            {field.covered}/{field.total}
                           </p>
                         </div>
+                      </td>
+                      <td>
                         <a
                           href="https://build.fhir.org/ig/HL7/fhir-mCODE-ig/"
                           target="_blank"
@@ -99,41 +152,10 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
                           <p className="text-link">link placeholder</p>
                           <Icon icon="humbleicons:external-link" color="#2f80ed" height="24" />
                         </a>
-                      </div>
-                    </summary>
-                    {/* Table of fields in a profile */}
-                    <table className="w-full table-fixed text-left">
-                      {profile.fields.map((field) => (
-                        <tr className="h-10 border-y-2 border-gray-200 bg-white" key={field.name}>
-                          <td className="pl-5 text-[15px] font-medium">{field.name}</td>
-                          <td>
-                            <div className="flex flex-row flex-nowrap items-center">
-                              <ProgressBar
-                                percentage={(field.covered / field.total) * 100}
-                                color={sectionBarColors[selectedSection]}
-                              />
-                              <p className="text-[12px]">
-                                {field.covered}/{field.total}
-                              </p>
-                            </div>
-                          </td>
-                          <td>
-                            <a
-                              href="https://build.fhir.org/ig/HL7/fhir-mCODE-ig/"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="pl-2 flex flex-row items-center"
-                            >
-                              <p className="text-link">link placeholder</p>
-                              <Icon icon="humbleicons:external-link" color="#2f80ed" height="24" />
-                            </a>
-                          </td>
-                        </tr>
-                      ))}
-                    </table>
-                  </details>
-                </td>
-              </tr>
+                      </td>
+                    </tr>
+                  ))}
+              </>
             ))}
           </tbody>
         </table>
