@@ -76,8 +76,4 @@ function getAllSectionsCoverage(coverageData) {
   };
 }
 
-module.exports = {
-  getAllSectionsCoverage,
-  getProfileFieldsCoveredCount,
-  getAllFieldCoveredCounts,
-};
+export { getAllSectionsCoverage, getProfileFieldsCoveredCount, getAllFieldCoveredCounts };
