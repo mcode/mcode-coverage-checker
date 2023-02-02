@@ -5,15 +5,7 @@ const diseaseSectionId = 'Disease';
 const treatmentSectionId = 'Treatment';
 const assessmentSectionId = 'Assessment';
 const genomicsSectionId = 'Genomics';
-
-const sectionColors = {
-  Patient: 'fill-patient',
-  Outcome: 'fill-outcome',
-  Disease: 'fill-disease',
-  Treatment: 'fill-treatment',
-  Assessment: 'fill-assessment',
-  Genomics: 'fill-genomics',
-};
+const overallSectionId = 'Overall';
 
 export {
   patientSectionId,
@@ -22,5 +14,5 @@ export {
   treatmentSectionId,
   assessmentSectionId,
   genomicsSectionId,
-  sectionColors,
+  overallSectionId,
 };
