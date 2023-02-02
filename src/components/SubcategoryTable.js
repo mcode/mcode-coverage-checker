@@ -34,24 +34,37 @@ const sectionBarColors = {
 };
 
 function SubcategoryTable({ className, selectedSection, coverageData }) {
-  let sectionData;
+  let profiles;
   if (selectedSection === overallSectionId) {
-    sectionData = [];
+    profiles = [];
     coverageData.forEach((section) => {
-      sectionData.push(...section.data);
+      profiles.push(
+        ...section.data.map((profile) => {
+          const fields = getProfileFieldsCoveredCount(profile, selectedSection);
+          return {
+            name: profile.profile,
+            section: section.section,
+            covered: fields.map((f) => f.covered).reduce((a, b) => a + b, 0),
+            total: fields.map((f) => f.total).reduce((a, b) => a + b, 0),
+            fields,
+          };
+        }),
+      );
     });
   } else {
-    sectionData = coverageData.filter((x) => x.section === selectedSection)[0]?.data;
+    profiles = coverageData
+      .filter((x) => x.section === selectedSection)[0]
+      ?.data?.map((profile) => {
+        const fields = getProfileFieldsCoveredCount(profile, selectedSection);
+        return {
+          name: profile.profile,
+          section: selectedSection,
+          covered: fields.map((f) => f.covered).reduce((a, b) => a + b, 0),
+          total: fields.map((f) => f.total).reduce((a, b) => a + b, 0),
+          fields,
+        };
+      });
   }
-  const profiles = sectionData?.map((profile) => {
-    const fields = getProfileFieldsCoveredCount(profile, selectedSection);
-    return {
-      name: profile.profile,
-      covered: fields.map((f) => f.covered).reduce((a, b) => a + b, 0),
-      total: fields.map((f) => f.total).reduce((a, b) => a + b, 0),
-      fields,
-    };
-  });
 
   const initialOpen = {};
   profiles.forEach((profile) => {
@@ -106,7 +119,7 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
                     <div className="flex flex-row flex-nowrap items-center">
                       <ProgressBar
                         percentage={(profile.covered / profile.total) * 100}
-                        color={sectionBarColors[selectedSection]}
+                        color={sectionBarColors[profile.section]}
                       />
                       <p className="text-[12px]">
                         {profile.covered}/{profile.total}
@@ -135,7 +148,7 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
                         <div className="flex flex-row flex-nowrap items-center">
                           <ProgressBar
                             percentage={(field.covered / field.total) * 100}
-                            color={sectionBarColors[selectedSection]}
+                            color={sectionBarColors[profile.section]}
                           />
                           <p className="text-[12px]">
                             {field.covered}/{field.total}
