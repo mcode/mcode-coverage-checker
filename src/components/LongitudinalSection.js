@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import LineChart from './LineChart';
 import Metrics from './Metrics';
 
-function Logitudinal() {
+function Longitudinal() {
   const dataStatic = [
     {
       name: 'Page A',
@@ -79,4 +79,4 @@ function Logitudinal() {
   );
 }
 
-export default Logitudinal;
+export default Longitudinal;

@@ -5,14 +5,9 @@ import MainVisualization from '../components/MainVisualization';
 import coverageChecker from '../lib/coverageChecker/coverageChecker';
 import FileSelect from '../components/FileSelect';
 import Rankings from '../components/Rankings';
-<<<<<<< HEAD
-import LineChart from '../components/LineChart';
 import SubcategoryTable from '../components/SubcategoryTable';
 import { overallSectionId } from '../lib/coverageSectionIds';
-=======
-import { uploadedFiles } from '../recoil_state';
-import Logitudinal from '../components/LogitudinalSection';
->>>>>>> created a Section component for the Logitudinal data.
+import Longitudinal from '../components/LongitudinalSection';
 
 function App() {
   const files = useRecoilValue(uploadedFiles);
@@ -40,18 +35,14 @@ function App() {
         />
         <Rankings coverageData={coverageData} />
       </div>
-<<<<<<< HEAD
       <h2 className="font-sans font-semibold text-2xl">Analysis</h2>
       <p className="text-sm text-gray-600">Fine tune your analysis through your selection of subcategories</p>
       <div className="flex flex-row gap-5 items-start">
         <SubcategoryTable selectedSection={selectedSection} coverageData={coverageData} />
       </div>
-      <LineChart className="w-3/5" data={dataStatic} xKey="name" yKey="uv" hexColor="#8884d8" />
-=======
       <div className="pw-2 py-10">
-        <Logitudinal />
+        <Longitudinal />
       </div>
->>>>>>> created a Section component for the Logitudinal data.
     </div>
   );
 }
