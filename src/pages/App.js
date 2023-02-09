@@ -39,9 +39,7 @@ function App() {
       <p className="text-sm text-gray-600">Fine tune your analysis through your selection of subcategories</p>
       <div className="flex flex-row gap-5 items-start">
         <SubcategoryTable selectedSection={selectedSection} coverageData={coverageData} />
-      </div>
-      <div className="pw-2 py-10">
-        <Longitudinal />
+        <Longitudinal selectedSection={selectedSection} coverageData={coverageData} />
       </div>
     </div>
   );

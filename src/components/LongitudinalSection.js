@@ -1,8 +1,37 @@
 import React, { useState } from 'react';
 import LineChart from './LineChart';
 import Metrics from './Metrics';
+import {
+  patientSectionId,
+  outcomeSectionId,
+  diseaseSectionId,
+  treatmentSectionId,
+  assessmentSectionId,
+  genomicsSectionId,
+  overallSectionId,
+} from '../lib/coverageSectionIds';
 
-function Longitudinal() {
+const sectionTextColors = {
+  [patientSectionId]: 'text-patient',
+  [outcomeSectionId]: 'text-outcome',
+  [diseaseSectionId]: 'text-disease',
+  [treatmentSectionId]: 'text-treatment',
+  [assessmentSectionId]: 'text-assessment',
+  [genomicsSectionId]: 'text-genomics',
+  [overallSectionId]: 'text-black',
+};
+
+const sectionLineColors = {
+  [patientSectionId]: '#d24200',
+  [outcomeSectionId]: '#8a45d9',
+  [diseaseSectionId]: '#f2b84b',
+  [treatmentSectionId]: '#04b2d9',
+  [assessmentSectionId]: '#f2913d',
+  [genomicsSectionId]: '#26c485',
+  [overallSectionId]: '#000000',
+};
+
+function Longitudinal({ selectedSection, coverageData }) {
   const dataStatic = [
     {
       name: 'Page A',
@@ -47,6 +76,7 @@ function Longitudinal() {
       amt: 2100,
     },
   ];
+
   const [selectedOption, setSelectedOption] = useState('Last 7 days');
 
   const handleOptionChange = (event) => {
@@ -57,7 +87,7 @@ function Longitudinal() {
     <div className="bg-white p-5 w-1/2 float-right rounded-lg shadow-widgit">
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-bold">
-          <span style={{ color: '#8a45d9' }}>Outcome</span> Longitudinal Data
+          <span className={`${sectionTextColors[selectedSection]}`}>{selectedSection}</span> Longitudinal Data
         </h2>
         <div className="float-right">
           <select
@@ -73,8 +103,17 @@ function Longitudinal() {
           </select>
         </div>
       </div>
-      <LineChart className="p-2" data={dataStatic} xKey="name" yKey="uv" hexColor="#8a45d9" />
-      <Metrics />
+      <LineChart
+        className="p-2"
+        data={dataStatic}
+        xKey="name"
+        yKey="uv"
+        hexColor={sectionLineColors[selectedSection]}
+      />
+      <div className="flex items-center justify-center">
+        <Metrics coverageData={coverageData} />
+        <Metrics />
+      </div>
     </div>
   );
 }
