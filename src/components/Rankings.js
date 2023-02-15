@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { getAllFieldCoveredCounts } from '../lib/coverageStats/statsUtils';
+import { getAllFieldCoveredSums } from '../lib/coverageStats/statsUtils';
 import {
   patientSectionId,
   outcomeSectionId,
@@ -22,7 +22,7 @@ const sectionColors = {
 const MINNUMSHOWN = 5;
 
 function Rankings({ coverageData, className }) {
-  const fields = getAllFieldCoveredCounts(coverageData);
+  const fields = getAllFieldCoveredSums(coverageData);
   const [sortFunction, setSortFunction] = useState('Ascending');
   const [numShown, setNumShown] = useState(MINNUMSHOWN);
 
