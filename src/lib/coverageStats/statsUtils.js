@@ -1,5 +1,17 @@
+import fieldIds from '../coverageFieldIds';
+
 // Number of covered fields nested in a profile object's several coverage objects
+// Here a field is considered covered if at least resource has a true covered value for it
+// thus the total can't exceed the number of fields in the profile
 function getProfileCoveredCount(profileObject) {
+  return fieldIds[profileObject.profile].filter((field) => profileObject.coverage.some((r) => r.data[field].covered))
+    .length;
+}
+
+// Number of total fields covered across all resources
+// this counts each instance of a field being covered across all resources
+// thus the total can exceed the number of fields in the profile
+function getProfileCoveredSum(profileObject) {
   return profileObject.coverage.reduce(
     (accum2, coverageObject) =>
       // Filter to only the elements in the coverageObject for whom the `covered` property is true
@@ -8,7 +20,29 @@ function getProfileCoveredCount(profileObject) {
   );
 }
 
+// Returns an array of objects representing if each field in a profile is covered
+// Here a field is considered covered if at least one resource has a true covered value for it
+// Thus total is always 1 and covered can be only 0 or 1
 function getProfileFieldsCoveredCount(profileObject, section) {
+  const fieldCounts = [];
+  fieldIds[profileObject.profile].forEach((field) => {
+    const coveredCount = profileObject.coverage.some((r) => r.data[field].covered) ? 1 : 0;
+    fieldCounts.push({
+      name: field,
+      profile: profileObject.profile,
+      section,
+      covered: coveredCount,
+      total: 1,
+      percentage: coveredCount / 1,
+    });
+  });
+  return fieldCounts;
+}
+
+// Returns an array of objects representing how many instances of each field in a profile are covered
+// This counts each instance of a field being covered across all resources
+// Thus total will be the number of resources present and covered can be between 0 and the number of resources
+function getProfileFieldsCoveredSum(profileObject, section) {
   if (profileObject.coverage.length === 0) {
     return [];
   }
@@ -32,6 +66,9 @@ function getProfileFieldsCoveredCount(profileObject, section) {
   return fieldCounts;
 }
 
+// Returns an array of all fields covered counts (from getProfileFieldsCoveredCount) for each section
+// Here a field is considered covered if at least one resource has a true covered value for it
+// Thus total is always 1 and covered can be only 0 or 1
 function getAllFieldCoveredCounts(coverageData) {
   const allFieldsCoveredCount = [];
   coverageData.forEach((section) => {
@@ -42,9 +79,22 @@ function getAllFieldCoveredCounts(coverageData) {
   return allFieldsCoveredCount;
 }
 
+// Returns an array of all fields covered sums (from getProfileFieldsCoveredSum) for each section
+// This counts each instance of a field being covered across all resources
+// Thus total will be the number of resources present and covered can be between 0 and the number of resources
+function getAllFieldCoveredSums(coverageData) {
+  const allFieldsCoveredSum = [];
+  coverageData.forEach((section) => {
+    section.data.forEach((profile) => {
+      allFieldsCoveredSum.push(...getProfileFieldsCoveredSum(profile, section.section));
+    });
+  });
+  return allFieldsCoveredSum;
+}
+
 // Number of total coverable-fields nested in a profile object's several coverage objects
 function getProfileTotalCount(profileObject) {
-  return profileObject.coverage.reduce((accum2, coverageObject) => accum2 + Object.keys(coverageObject.data).length, 0);
+  return fieldIds[profileObject.profile].length;
 }
 
 // Number of covered fields across an entire sections k-many profiles
@@ -76,4 +126,10 @@ function getAllSectionsCoverage(coverageData) {
   };
 }
 
-export { getAllSectionsCoverage, getProfileFieldsCoveredCount, getAllFieldCoveredCounts };
+export {
+  getAllSectionsCoverage,
+  getProfileFieldsCoveredCount,
+  getAllFieldCoveredCounts,
+  getProfileCoveredSum,
+  getAllFieldCoveredSums,
+};
