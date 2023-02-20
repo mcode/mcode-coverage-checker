@@ -164,8 +164,15 @@ function Longitudinal({ selectedSection, coverageData }) {
           rotation="180deg"
           color="#d24200"
           fraction={sectionFractions[selectedSection]}
+          title="Current"
         />
-        <Metrics percentage={percentage} rotation="0deg" color="#26c485" fraction={sectionFractions[selectedSection]} />
+        <Metrics
+          percentage={percentage}
+          rotation="0deg"
+          color="#26c485"
+          fraction={sectionFractions[selectedSection]}
+          title="Monthly Average"
+        />
       </div>
     </div>
   );
