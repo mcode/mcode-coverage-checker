@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LineChart from './LineChart';
 import Metrics from './Metrics';
+import { getAllFieldCoveredCounts } from '../lib/coverageStats/statsUtils';
 import {
   patientSectionId,
   outcomeSectionId,
@@ -10,6 +11,15 @@ import {
   genomicsSectionId,
   overallSectionId,
 } from '../lib/coverageSectionIds';
+import {
+  getAssessmentStats,
+  getDiseaseStats,
+  getGenomicsStats,
+  getOutcomeStats,
+  getPatientStats,
+  getTreatmentStats,
+  getOverallStats,
+} from '../lib/coverageStats/coverageStats';
 
 const sectionTextColors = {
   [patientSectionId]: 'text-patient',
@@ -29,6 +39,16 @@ const sectionLineColors = {
   [assessmentSectionId]: '#f2913d',
   [genomicsSectionId]: '#26c485',
   [overallSectionId]: '#000000',
+};
+
+const sectionPercentages = {
+  [patientSectionId]: getPatientStats,
+  [outcomeSectionId]: getOutcomeStats,
+  [diseaseSectionId]: getDiseaseStats,
+  [treatmentSectionId]: getTreatmentStats,
+  [assessmentSectionId]: getAssessmentStats,
+  [genomicsSectionId]: getGenomicsStats,
+  [overallSectionId]: getOverallStats,
 };
 
 function Longitudinal({ selectedSection, coverageData }) {
@@ -77,6 +97,34 @@ function Longitudinal({ selectedSection, coverageData }) {
     },
   ];
 
+  const fields = getAllFieldCoveredCounts(coverageData);
+  const sectionFractions = {
+    [patientSectionId]: `${
+      fields.filter((field) => field.section === patientSectionId && field.percentage === 1).length
+    }/${fields.filter((field) => field.section === patientSectionId).length}`,
+    [outcomeSectionId]: `${
+      fields.filter((field) => field.section === outcomeSectionId && field.percentage === 1).length
+    }/${fields.filter((field) => field.section === outcomeSectionId).length}`,
+    [diseaseSectionId]: `${
+      fields.filter((field) => field.section === diseaseSectionId && field.percentage === 1).length
+    }/${fields.filter((field) => field.section === diseaseSectionId).length}`,
+    [treatmentSectionId]: `${
+      fields.filter((field) => field.section === treatmentSectionId && field.percentage === 1).length
+    }/${fields.filter((field) => field.section === treatmentSectionId).length}`,
+    [assessmentSectionId]: `${
+      fields.filter((field) => field.section === assessmentSectionId && field.percentage === 1).length
+    }/${fields.filter((field) => field.section === assessmentSectionId).length}`,
+    [genomicsSectionId]: `${
+      fields.filter((field) => field.section === genomicsSectionId && field.percentage === 1).length
+    }/${fields.filter((field) => field.section === genomicsSectionId).length}`,
+    [overallSectionId]: `${
+      fields.filter((field) => field.section === overallSectionId && field.percentage === 1).length
+    }/${fields.filter((field) => field.section === overallSectionId).length}`,
+  };
+
+  const sectionPercentage = sectionPercentages[selectedSection](coverageData);
+  const percentage = Math.round(sectionPercentage.percentage * 100).toLocaleString();
+
   const [selectedOption, setSelectedOption] = useState('Last 7 days');
 
   const handleOptionChange = (event) => {
@@ -111,8 +159,13 @@ function Longitudinal({ selectedSection, coverageData }) {
         hexColor={sectionLineColors[selectedSection]}
       />
       <div className="flex items-center justify-center">
-        <Metrics coverageData={coverageData} />
-        <Metrics />
+        <Metrics
+          percentage={percentage}
+          rotation="180deg"
+          color="#d24200"
+          fraction={sectionFractions[selectedSection]}
+        />
+        <Metrics percentage={percentage} rotation="0deg" color="#26c485" fraction={sectionFractions[selectedSection]} />
       </div>
     </div>
   );
