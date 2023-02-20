@@ -117,13 +117,11 @@ function Longitudinal({ selectedSection, coverageData }) {
     [genomicsSectionId]: `${
       fields.filter((field) => field.section === genomicsSectionId && field.percentage === 1).length
     }/${fields.filter((field) => field.section === genomicsSectionId).length}`,
-    [overallSectionId]: `${
-      fields.filter((field) => field.section === overallSectionId && field.percentage === 1).length
-    }/${fields.filter((field) => field.section === overallSectionId).length}`,
+    [overallSectionId]: `${fields.filter((field) => field.percentage === 1).length}/${fields.length}`,
   };
 
   const sectionPercentage = sectionPercentages[selectedSection](coverageData);
-  const percentage = Math.round(sectionPercentage.percentage * 100).toLocaleString();
+  const percentage = (sectionPercentage.percentage * 100).toFixed(2);
 
   const [selectedOption, setSelectedOption] = useState('Last 7 days');
 
