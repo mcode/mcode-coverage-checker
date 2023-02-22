@@ -130,11 +130,12 @@ function Longitudinal({ selectedSection, coverageData }) {
   };
 
   return (
-    <div className="bg-white p-5 w-1/2 float-right rounded-lg shadow-widgit">
+    <div className="bg-white px-5 my-2 w-1/2 h-[500px] float-right rounded-lg shadow-widgit">
+      {/* Header */}
       <div className="flex items-center justify-between">
-        <h2 className="text-xl font-bold">
+        <h3 className="py-4 font-sans font-semibold text-xl">
           <span className={`${sectionTextColors[selectedSection]}`}>{selectedSection}</span> Longitudinal Data
-        </h2>
+        </h3>
         <div className="float-right">
           <select
             className="bg-white border rounded-lg p-2 shadow-widgit"
@@ -149,8 +150,9 @@ function Longitudinal({ selectedSection, coverageData }) {
           </select>
         </div>
       </div>
+      {/* Body */}
       <LineChart
-        className="p-2"
+        className="p-2 h-72"
         data={dataStatic}
         xKey="name"
         yKey="uv"

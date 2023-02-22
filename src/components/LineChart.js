@@ -3,7 +3,7 @@ import { ResponsiveContainer, AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, A
 export default function LineChart({ className, data, xKey, yKey, hexColor }) {
   return (
     <div className={className}>
-      <ResponsiveContainer height={400}>
+      <ResponsiveContainer>
         <AreaChart data={data} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
           {/* Defines a linear gradient SVG that we can reference for our Area's fill color */}
           <defs>

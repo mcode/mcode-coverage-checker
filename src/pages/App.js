@@ -26,8 +26,8 @@ function App() {
       {/* Negative margin sized to height of fileSelect –  moves select moved up into margins, aligns titles */}
       <FileSelect files={files} onChange={changeDataSource} />
       <h1 className="font-sans font-bold text-4xl">Coverage Overview</h1>
-      <p className="text-sm text-gray-600">Select a category to analyze it in finer detail</p>
-      <div className="flex flex-row pb-5 gap-5 items-start">
+      <p className="text-sm text-gray-600 pb-2">Select a category to analyze it in finer detail</p>
+      <div className="flex flex-row pb-5 gap-5 items-stretch">
         <MainVisualization
           coverageData={coverageData}
           selectedSection={selectedSection}
