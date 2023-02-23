@@ -83,7 +83,7 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
   const [open, setOpen] = useState(initialOpen);
 
   return (
-    <div className={`${className} flex flex-col bg-white my-2 rounded-widgit w-1/2 h-96`}>
+    <div className={`${className} flex flex-col bg-white my-2 rounded-widgit w-1/2 h-[500px]`}>
       {/* Header */}
       <h3 className="p-4 font-sans font-semibold text-xl">
         <span className={`${sectionTextColors[selectedSection]}`}>{selectedSection}</span> Subcategories
@@ -93,13 +93,13 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
         <table className="w-full table-fixed text-left">
           <thead className="bg-gray-100 text-gray-500 font-thin rounded">
             <tr>
-              <th scope="col" className="px-6 font-normal py-3">
+              <th scope="col" className="px-6 font-normal py-2">
                 Name
               </th>
-              <th scope="col" className="font-normal py-3">
+              <th scope="col" className="font-normal py-2">
                 Coverage
               </th>
-              <th scope="col" className="font-normal py-3">
+              <th scope="col" className="font-normal py-2">
                 Link
               </th>
             </tr>
