@@ -22,24 +22,26 @@ function App() {
   );
 
   return (
-    <div className="-mt-6">
-      {/* Negative margin sized to height of fileSelect –  moves select moved up into margins, aligns titles */}
-      <FileSelect files={files} onChange={changeDataSource} />
-      <h1 className="font-sans font-bold text-4xl">Coverage Overview</h1>
-      <p className="text-sm text-gray-600 pb-2">Select a category to analyze it in finer detail</p>
-      <div className="flex flex-row pb-5 gap-5 items-stretch">
-        <MainVisualization
-          coverageData={coverageData}
-          selectedSection={selectedSection}
-          setSelectedSection={setSelectedSection}
-        />
-        <Rankings coverageData={coverageData} />
-      </div>
-      <h2 className="font-sans font-semibold text-2xl">Analysis</h2>
-      <p className="text-sm text-gray-600">Fine tune your analysis through your selection of subcategories</p>
-      <div className="flex flex-row gap-5 items-start">
-        <SubcategoryTable selectedSection={selectedSection} coverageData={coverageData} />
-        <Longitudinal selectedSection={selectedSection} coverageData={coverageData} />
+    <div className="flex justify-center">
+      <div className="-mt-6 max-w-6xl">
+        {/* Negative margin sized to height of fileSelect –  moves select moved up into margins, aligns titles */}
+        <FileSelect files={files} onChange={changeDataSource} />
+        <h1 className="font-sans font-bold text-4xl">Coverage Overview</h1>
+        <p className="text-sm text-gray-600 pb-2">Select a category to analyze it in finer detail</p>
+        <div className="flex flex-row pb-5 gap-5 items-stretch">
+          <MainVisualization
+            coverageData={coverageData}
+            selectedSection={selectedSection}
+            setSelectedSection={setSelectedSection}
+          />
+          <Rankings coverageData={coverageData} />
+        </div>
+        <h2 className="font-sans font-semibold text-2xl">Analysis</h2>
+        <p className="text-sm text-gray-600">Fine tune your analysis through your selection of subcategories</p>
+        <div className="flex flex-row gap-5 items-start">
+          <SubcategoryTable selectedSection={selectedSection} coverageData={coverageData} />
+          <Longitudinal selectedSection={selectedSection} coverageData={coverageData} />
+        </div>
       </div>
     </div>
   );

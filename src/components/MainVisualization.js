@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react';
 import SectionCard from './SectionCard';
 import {
   getAssessmentStats,
@@ -54,7 +55,12 @@ function MainVisualization({ className, coverageData, selectedSection, setSelect
         className={selectedSection === overallSectionId ? 'h-48 border-2 border-black' : 'h-48'}
         buttonClassName="col-span-3"
         header={<p className="font-sans font-bold text-4xl">Overall mCODE Coverage</p>}
-        text={<p className="text-s text-gray-400">{patient.possible} Patients</p>}
+        text={
+          <div className="flex flex-row">
+            <Icon icon="bi:people-fill" height="24" color="#9ca3af" className="pr-2" />
+            <p className="text-s text-gray-400">{patient.possible} Patients</p>
+          </div>
+        }
         gaugeSize="h-44 w-44"
         percentage={overall.percentage}
         color="#000000"

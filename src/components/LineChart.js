@@ -13,8 +13,8 @@ export default function LineChart({ className, data, xKey, yKey, hexColor }) {
               <stop offset="95%" stopColor={hexColor} stopOpacity={0} />
             </linearGradient>
           </defs>
-          <XAxis dataKey={xKey} />
-          <YAxis />
+          <XAxis style={{ fontWeight: 'bold' }} dataKey={xKey} />
+          <YAxis style={{ fontWeight: 'bold' }} />
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
           <Area type="monotone" dataKey={yKey} stroke={hexColor} fillOpacity={1} fill="url(#colorGradient)" />

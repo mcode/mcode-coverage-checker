@@ -59,7 +59,7 @@ function Rankings({ coverageData, className }) {
         </select>
       </div>
       {/* Table of fields */}
-      <div className="px-2 h-96 overflow-y-auto">
+      <div className="px-4 h-96 overflow-y-auto">
         <table className="table-auto">
           <tbody>
             {fields
@@ -67,7 +67,7 @@ function Rankings({ coverageData, className }) {
               .slice(0, numShown)
               .map((field) => (
                 <tr key={[field.profile, field.name].join()}>
-                  <td className="w-5 py-1">
+                  <td className="w-5 py-1 pr-2">
                     <svg className={`${sectionColors[field.section]}`} width="5" height="40">
                       <rect width="5" height="40" rx="1" />
                     </svg>
