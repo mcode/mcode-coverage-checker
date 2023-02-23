@@ -33,6 +33,16 @@ const sectionBarColors = {
   [overallSectionId]: 'bg-black',
 };
 
+const sectionIconColors = {
+  [patientSectionId]: '#d24200',
+  [outcomeSectionId]: '#8a45d9',
+  [diseaseSectionId]: '#f2b84b',
+  [treatmentSectionId]: '#04b2d9',
+  [assessmentSectionId]: '#f2913d',
+  [genomicsSectionId]: '#26c485',
+  [overallSectionId]: '#000000',
+};
+
 function SubcategoryTable({ className, selectedSection, coverageData }) {
   let profiles;
   if (selectedSection === overallSectionId) {
@@ -146,13 +156,11 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
                       </td>
                       <td>
                         <div className="flex flex-row flex-nowrap items-center">
-                          <ProgressBar
-                            percentage={(field.covered / field.total) * 100}
-                            color={sectionBarColors[profile.section]}
+                          <Icon
+                            icon={field.covered ? 'ph:check-circle-fill' : 'ph:x-circle-fill'}
+                            color={field.covered ? sectionIconColors[profile.section] : '#808080'}
+                            height="24"
                           />
-                          <p className="text-[12px]">
-                            {field.covered}/{field.total}
-                          </p>
                         </div>
                       </td>
                       <td>
