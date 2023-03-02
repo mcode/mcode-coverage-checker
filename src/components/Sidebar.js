@@ -7,9 +7,9 @@ export default function Sidebar() {
 
   return (
     <div
-      className={`flex flex-col ${
+      className={`z-50 bg-background flex flex-col ${
         open ? 'w-60' : 'w-[4.5rem]'
-      } p-4 h-screen sticky top-0 flex-shrink-0 shadow-sidebarButton transition-all`}
+      } p-4 h-screen sticky top-0 left-0 flex-shrink-0 shadow-sidebarButton transition-all`}
     >
       {/* sidebar header */}
       <div className="flex flex-row mb-8">
