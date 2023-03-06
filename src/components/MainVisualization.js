@@ -50,7 +50,7 @@ function MainVisualization({ className, coverageData, selectedSection, setSelect
   }/${fields.filter((field) => field.section === genomicsSectionId).length}`;
 
   return (
-    <div className={`grid grid-cols-3 gap-5 flex-auto ${className}`}>
+    <div className={`${className} grid grid-cols-3 gap-5 flex-auto`}>
       <SectionCard
         className={selectedSection === overallSectionId ? 'h-48 border-2 border-black' : 'h-48'}
         buttonClassName="col-span-3"

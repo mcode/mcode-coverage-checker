@@ -51,7 +51,7 @@ const sectionPercentages = {
   [overallSectionId]: getOverallStats,
 };
 
-function Longitudinal({ selectedSection, coverageData }) {
+function Longitudinal({ className, selectedSection, coverageData }) {
   const dataStatic = [
     {
       name: 'Page A',
@@ -130,7 +130,7 @@ function Longitudinal({ selectedSection, coverageData }) {
   };
 
   return (
-    <div className="bg-white px-5 my-2 w-1/2 h-[500px] float-right rounded-lg shadow-widgit">
+    <div className={`${className} bg-white px-5 my-2 rounded-lg shadow-widgit`}>
       {/* Header */}
       <div className="flex items-center justify-between">
         <h3 className="py-4 font-sans font-semibold text-xl">

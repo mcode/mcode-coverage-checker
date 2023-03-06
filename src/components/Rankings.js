@@ -42,7 +42,7 @@ function Rankings({ coverageData, className }) {
   };
 
   return (
-    <div className={`flex-auto ${className} bg-white rounded-widgit flex flex-col`}>
+    <div className={`${className} flex-auto bg-white rounded-widgit flex flex-col`}>
       {/* Header */}
       <div className="p-4 flex flex-row justify-between">
         <h1 className="font-bold text-xl">Rankings</h1>
