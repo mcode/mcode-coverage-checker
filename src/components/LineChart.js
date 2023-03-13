@@ -1,6 +1,7 @@
 import { ResponsiveContainer, AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, Area } from 'recharts';
 
 export default function LineChart({ className, data, xKey, yKey, hexColor }) {
+  const formatPercent = (tickValue) => `${tickValue}%`;
   return (
     <div className={className}>
       <ResponsiveContainer>
@@ -13,11 +14,18 @@ export default function LineChart({ className, data, xKey, yKey, hexColor }) {
               <stop offset="95%" stopColor={hexColor} stopOpacity={0} />
             </linearGradient>
           </defs>
-          <XAxis style={{ fontWeight: 'bold' }} dataKey={xKey} />
-          <YAxis style={{ fontWeight: 'bold' }} />
-          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis style={{ fontSize: 12 }} dataKey={xKey} />
+          <YAxis style={{ fontSize: 12 }} tickFormatter={formatPercent} />
+          <CartesianGrid strokeDasharray="3 7" horizontal={false} />
           <Tooltip />
-          <Area type="monotone" dataKey={yKey} stroke={hexColor} fillOpacity={1} fill="url(#colorGradient)" />
+          <Area
+            type="monotone"
+            dataKey={yKey}
+            stroke={hexColor}
+            strokeWidth={2}
+            fillOpacity={1}
+            fill="url(#colorGradient)"
+          />
         </AreaChart>
       </ResponsiveContainer>
     </div>

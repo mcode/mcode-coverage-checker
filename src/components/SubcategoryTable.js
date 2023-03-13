@@ -88,7 +88,7 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
       <h3 className="p-4 font-sans font-semibold text-xl">
         <span className={`${sectionTextColors[selectedSection]}`}>{selectedSection}</span> Subcategories
       </h3>
-      <div className="grow overflow-y-auto">
+      <div className="grow-0 overflow-y-auto">
         {/* Table of profiles */}
         <table className="w-full table-fixed text-left">
           <thead className="bg-gray-100 text-gray-500 font-thin rounded">
@@ -128,6 +128,7 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
                   <td>
                     <div className="flex flex-row flex-nowrap items-center">
                       <ProgressBar
+                        className="mr-1"
                         percentage={(profile.covered / profile.total) * 100}
                         color={sectionBarColors[profile.section]}
                       />
