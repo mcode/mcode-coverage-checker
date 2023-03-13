@@ -88,7 +88,7 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
       <h3 className="p-4 font-sans font-semibold text-xl">
         <span className={`${sectionTextColors[selectedSection]}`}>{selectedSection}</span> Subcategories
       </h3>
-      <div className="grow-0 overflow-y-auto">
+      <div className="grow overflow-y-auto">
         {/* Table of profiles */}
         <table className="w-full table-fixed text-left">
           <thead className="bg-gray-100 text-gray-500 font-thin rounded">
