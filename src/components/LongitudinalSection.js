@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import LineChart from './LineChart';
 import Metrics from './Metrics';
 import { getAllFieldCoveredCounts } from '../lib/coverageStats/statsUtils';
@@ -122,13 +122,13 @@ function Longitudinal({ className, selectedSection, coverageData }) {
 
   const sectionPercentage = sectionPercentages[selectedSection](coverageData);
   const percentage = (sectionPercentage.percentage * 100).toFixed(2);
-
+  /* hiding filtering pt.1 
   const [selectedOption, setSelectedOption] = useState('Last 7 days');
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
   };
-
+  */
   return (
     <div className={`${className} bg-white px-5 my-2 rounded-lg shadow-widgit`}>
       {/* Header */}
@@ -136,9 +136,10 @@ function Longitudinal({ className, selectedSection, coverageData }) {
         <h3 className="py-4 font-sans font-semibold text-xl">
           <span className={`${sectionTextColors[selectedSection]}`}>{selectedSection}</span> Longitudinal Data
         </h3>
+        {/* hiding filtering pt.2
         <div className="float-right">
           <select
-            className="hidden bg-white border rounded-lg p-2 shadow-widgit"
+            className="bg-white border rounded-lg p-2 shadow-widgit"
             value={selectedOption}
             onChange={handleOptionChange}
           >
@@ -149,6 +150,7 @@ function Longitudinal({ className, selectedSection, coverageData }) {
             <option value="All time">All time</option>
           </select>
         </div>
+        */}
       </div>
       {/* Body */}
       <LineChart

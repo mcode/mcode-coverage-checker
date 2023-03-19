@@ -4,7 +4,6 @@ import { uploadedFiles } from '../recoil_state';
 import MainVisualization from '../components/MainVisualization';
 import coverageChecker from '../lib/coverageChecker/coverageChecker';
 import FileSelect from '../components/FileSelect';
-import Rankings from '../components/Rankings';
 import SubcategoryTable from '../components/SubcategoryTable';
 import { overallSectionId } from '../lib/coverageSectionIds';
 import Longitudinal from '../components/LongitudinalSection';
@@ -39,7 +38,9 @@ function App() {
           selectedSection={selectedSection}
           coverageData={coverageData}
         />
-        <Rankings className="hidden max-lg:w-full lg:w-2/5" coverageData={coverageData} />
+        {/*
+        <Rankings className="max-lg:w-full lg:w-2/5" coverageData={coverageData} />
+        */}
       </div>
       <h2 className="font-sans font-semibold text-2xl">Analysis</h2>
       <p className="text-sm text-gray-600">Fine tune your analysis through your selection of subcategories</p>
