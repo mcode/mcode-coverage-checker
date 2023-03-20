@@ -3,7 +3,7 @@ import FileUpload from '../components/FileUpload';
 
 function FileUploadPage() {
   return (
-    <div className="h-screen max-w-6xl min-w-[600px]">
+    <div className="h-screen max-w-7xl min-w-[600px]">
       <div className="mb-6">
         <h1 className="font-sans font-bold text-4xl">Upload Files</h1>
         <p className="text-sm text-gray-600">Upload your files here to view them in the dashboard</p>

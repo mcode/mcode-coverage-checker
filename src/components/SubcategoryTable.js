@@ -128,6 +128,7 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
                   <td>
                     <div className="flex flex-row flex-nowrap items-center">
                       <ProgressBar
+                        className="mr-1"
                         percentage={(profile.covered / profile.total) * 100}
                         color={sectionBarColors[profile.section]}
                       />
