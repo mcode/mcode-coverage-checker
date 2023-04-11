@@ -1,5 +1,6 @@
 import UploadedFiles from '../components/UploadedFiles';
 import FileUpload from '../components/FileUpload';
+import Endpoint from '../components/FHIRendpoint';
 
 function FileUploadPage() {
   return (
@@ -8,6 +9,7 @@ function FileUploadPage() {
         <h1 className="font-sans font-bold text-4xl">Upload Files</h1>
         <p className="text-sm text-gray-600">Upload your files here to view them in the dashboard</p>
         <FileUpload />
+        <Endpoint />
       </div>
       <div className="mb-6">
         <UploadedFiles />
