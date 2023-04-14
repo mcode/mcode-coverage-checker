@@ -7,6 +7,7 @@ import { uploadedFilesLookup } from '../recoil_state';
 import formatBytes from '../lib/fileSize';
 import FileNotification from './FileNotification';
 import RejectedFileNotification from './RejectedFileNotification';
+import Endpoint from './FHIRendpoint';
 
 function FileUpload() {
   const setFilesLookup = useSetRecoilState(uploadedFilesLookup);
@@ -221,6 +222,11 @@ function FileUpload() {
           <RejectedFileNotification key={file.id} file={file} removeFile={removeFile} />
         ))}
       </div>
+      <Endpoint
+        createFile={(fileObject) => createFile(fileObject)}
+        loadFiles={(files) => loadFiles(files)}
+        setLocalFilesLookup={setLocalFilesLookup}
+      />
     </>
   );
 }

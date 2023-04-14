@@ -1,13 +1,39 @@
 import { useState } from 'react';
+import axios from 'axios';
 import Advanced from './AdvancedOptions';
 
-function Endpoint() {
+function Endpoint({ createFile, loadFiles, setLocalFilesLookup }) {
   const [link, setLink] = useState('');
   const [buttonHover, setButtonHover] = useState(false);
   const [buttonClick, setButtonClick] = useState(false);
 
+  async function loadFromEndpoint(query, requestHeaders) {
+    const bundle = await axios
+      .get(query, { headers: requestHeaders })
+      .then((res) => res.data)
+      .catch((e) => {
+        setLocalFilesLookup((previousFilesLookup) => {
+          const rejectedFilesLookup = { ...previousFilesLookup };
+          const rejectionNotification = {
+            ...createFile(new File([], `bundle-${new Date().toISOString()}.json`)),
+            rejected: true,
+          };
+          rejectionNotification.reason = `Error retrieving bundle from URL: ${e}`;
+          rejectedFilesLookup[rejectionNotification.id] = rejectionNotification;
+          return rejectedFilesLookup;
+        });
+      });
+    if (bundle) {
+      const newFile = new File([JSON.stringify(bundle)], `bundle-${new Date().toISOString()}.json`, {
+        type: 'application/json',
+      });
+      loadFiles([newFile]);
+    }
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
+    loadFromEndpoint(link);
   };
 
   const handleButtonHover = () => {
