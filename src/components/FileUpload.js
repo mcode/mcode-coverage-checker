@@ -214,6 +214,11 @@ function FileUpload() {
           />
         </label>
       </div>
+      <Endpoint
+        createFile={(fileObject) => createFile(fileObject)}
+        loadFiles={(files) => loadFiles(files)}
+        setLocalFilesLookup={setLocalFilesLookup}
+      />
       <div ref={parent}>
         {localFiles.map((file) => (
           <FileNotification key={file.id} file={file} progress={progress} removeFile={removeFile} />
@@ -222,11 +227,6 @@ function FileUpload() {
           <RejectedFileNotification key={file.id} file={file} removeFile={removeFile} />
         ))}
       </div>
-      <Endpoint
-        createFile={(fileObject) => createFile(fileObject)}
-        loadFiles={(files) => loadFiles(files)}
-        setLocalFilesLookup={setLocalFilesLookup}
-      />
     </>
   );
 }
