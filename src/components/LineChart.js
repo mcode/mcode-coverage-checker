@@ -1,7 +1,24 @@
 import { ResponsiveContainer, AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, Area } from 'recharts';
 
+const formatDate = (tickValue) => new Date(tickValue).toLocaleDateString();
+
+function CustomTooltip({ active, payload, label }) {
+  if (active && payload && payload.length) {
+    return (
+      <div className="bg-white border-2 border-black p-1">
+        <p className="label">{payload[0].payload.name}</p>
+        <p className="label">{formatDate(label)}</p>
+        <p className="label">{`Coverage: ${payload[0].value}%`}</p>
+      </div>
+    );
+  }
+
+  return null;
+}
+
 export default function LineChart({ className, data, xKey, yKey, hexColor }) {
   const formatPercent = (tickValue) => `${tickValue}%`;
+
   return (
     <div className={className}>
       <ResponsiveContainer>
@@ -14,10 +31,10 @@ export default function LineChart({ className, data, xKey, yKey, hexColor }) {
               <stop offset="95%" stopColor={hexColor} stopOpacity={0} />
             </linearGradient>
           </defs>
-          <XAxis style={{ fontSize: 12 }} dataKey={xKey} />
-          <YAxis style={{ fontSize: 12 }} tickFormatter={formatPercent} />
+          <XAxis style={{ fontSize: 12 }} dataKey={xKey} tickFormatter={formatDate} />
+          <YAxis style={{ fontSize: 12 }} domain={[0, 100]} tickFormatter={formatPercent} />
           <CartesianGrid strokeDasharray="3 7" horizontal={false} />
-          <Tooltip />
+          <Tooltip content={<CustomTooltip />} />
           <Area
             type="monotone"
             dataKey={yKey}
