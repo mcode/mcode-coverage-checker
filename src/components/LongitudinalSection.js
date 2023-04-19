@@ -51,51 +51,12 @@ const sectionPercentages = {
   [overallSectionId]: getOverallStats,
 };
 
-function Longitudinal({ className, selectedSection, coverageData }) {
-  const dataStatic = [
-    {
-      name: 'Jan',
-      uv: 20,
-      pv: 2400,
-      amt: 2400,
-    },
-    {
-      name: 'Feb',
-      uv: 26,
-      pv: 1398,
-      amt: 2210,
-    },
-    {
-      name: 'Mar',
-      uv: 37,
-      pv: 9800,
-      amt: 2290,
-    },
-    {
-      name: 'Apr',
-      uv: 20,
-      pv: 3908,
-      amt: 2000,
-    },
-    {
-      name: 'May',
-      uv: 30,
-      pv: 4800,
-      amt: 2181,
-    },
-    {
-      name: 'Jun',
-      uv: 50,
-      pv: 3800,
-      amt: 2500,
-    },
-    {
-      name: 'Jul',
-      uv: 55,
-      pv: 4300,
-      amt: 2100,
-    },
-  ];
+function Longitudinal({ className, selectedSection, coverageData, data }) {
+  const lineChartData = data.map((file) => ({
+    name: file.name,
+    date: Date.parse(file.dateAdded),
+    coverage: file.stats[selectedSection],
+  }));
 
   const fields = getAllFieldCoveredCounts(coverageData);
   const sectionFractions = {
@@ -155,9 +116,9 @@ function Longitudinal({ className, selectedSection, coverageData }) {
       {/* Body */}
       <LineChart
         className="p-2 h-72"
-        data={dataStatic}
-        xKey="name"
-        yKey="uv"
+        data={lineChartData}
+        xKey="date"
+        yKey="coverage"
         hexColor={sectionLineColors[selectedSection]}
       />
       <div className="flex items-center justify-center">

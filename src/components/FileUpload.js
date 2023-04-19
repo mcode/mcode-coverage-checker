@@ -5,9 +5,19 @@ import { Icon } from '@iconify/react';
 import { v4 as uuidv4 } from 'uuid';
 import { uploadedFilesLookup } from '../recoil_state';
 import formatBytes from '../lib/fileSize';
+import {
+  getAssessmentStats,
+  getDiseaseStats,
+  getGenomicsStats,
+  getOutcomeStats,
+  getOverallStats,
+  getPatientStats,
+  getTreatmentStats,
+} from '../lib/coverageStats/coverageStats';
 import FileNotification from './FileNotification';
 import RejectedFileNotification from './RejectedFileNotification';
 import Endpoint from './FHIRendpoint';
+import coverageChecker from '../lib/coverageChecker/coverageChecker';
 
 function FileUpload() {
   const setFilesLookup = useSetRecoilState(uploadedFilesLookup);
@@ -65,7 +75,17 @@ function FileUpload() {
         return newProgress;
       });
       const body = JSON.parse(fileReader.result);
-      const fileWithBody = { ...newFile, body };
+      const coverageData = coverageChecker(body);
+      const stats = {
+        Overall: (getOverallStats(coverageData).percentage * 100).toFixed(2),
+        Assessment: (getAssessmentStats(coverageData).percentage * 100).toFixed(2),
+        Treatment: (getTreatmentStats(coverageData).percentage * 100).toFixed(2),
+        Genomics: (getGenomicsStats(coverageData).percentage * 100).toFixed(2),
+        Patient: (getPatientStats(coverageData).percentage * 100).toFixed(2),
+        Disease: (getDiseaseStats(coverageData).percentage * 100).toFixed(2),
+        Outcome: (getOutcomeStats(coverageData).percentage * 100).toFixed(2),
+      };
+      const fileWithBody = { ...newFile, body, stats };
       resolve(fileWithBody);
     },
     [setProgress],
@@ -92,6 +112,7 @@ function FileUpload() {
       type: fileObject.type,
       dateAdded: new Intl.DateTimeFormat('en-US').format(new Date()),
       body: null,
+      stats: null,
     };
   }
 

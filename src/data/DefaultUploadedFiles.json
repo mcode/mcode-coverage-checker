@@ -4,7 +4,7 @@
     "name": "bundle1.json",
     "size": "500 KB",
     "type": "application/json",
-    "dateAdded": "10/10/2022",
+    "dateAdded": "1/1/2022",
     "body": {
       "resourceType": "Bundle",
       "id": "mcode-patient-bundle-jenny-m",
@@ -3022,6 +3022,15 @@
           }
         }
       ]
+    },
+    "stats": {
+      "Overall": 59.09,
+      "Patient": 87.5,
+      "Outcome": 87.5,
+      "Disease": 61.54,
+      "Treatment": 56.52,
+      "Assessment": 55.56,
+      "Genomics": 44.44
     }
   },
   "1234": {
@@ -3029,7 +3038,7 @@
     "name": "bundle2.json",
     "size": "500 KB",
     "type": "application/json",
-    "dateAdded": "10/10/2022",
+    "dateAdded": "6/1/2022",
     "body": {
       "resourceType": "Bundle",
       "id": "5dbfda1c-ed0b-4184-95ee-2324061fe3c0",
@@ -3344,6 +3353,15 @@
           }
         }
       ]
+    },
+    "stats": {
+      "Overall": 9.09,
+      "Patient": 0,
+      "Outcome": 0,
+      "Disease": 0,
+      "Treatment": 34.78,
+      "Assessment": 0,
+      "Genomics": 0
     }
   },
   "12345": {
@@ -3351,9 +3369,18 @@
     "name": "bundle3.json",
     "size": "500 KB",
     "type": "application/json",
-    "dateAdded": "10/10/2022",
+    "dateAdded": "12/1/2022",
     "body": {
       "resourceType": "StructureDefinition"
+    },
+    "stats": {
+      "Overall": 0,
+      "Patient": 0,
+      "Outcome": 0,
+      "Disease": 0,
+      "Treatment": 0,
+      "Assessment": 0,
+      "Genomics": 0
     }
   }
 }

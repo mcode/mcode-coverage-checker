@@ -37,6 +37,7 @@ function App() {
           className="h-[500px] lg:w-2/5 max-lg:w-full"
           selectedSection={selectedSection}
           coverageData={coverageData}
+          data={files}
         />
         {/*
         <Rankings className="max-lg:w-full lg:w-2/5" coverageData={coverageData} />
