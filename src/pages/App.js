@@ -12,10 +12,13 @@ function App() {
   const files = useRecoilValue(uploadedFiles);
   const [coverageData, setCoverageData] = useState(coverageChecker(files[0].body));
   const [selectedSection, setSelectedSection] = useState(overallSectionId);
+  const [selectedFile, setSelectedFile] = useState(files[0].name);
 
   const changeDataSource = useCallback(
     (event) => {
-      setCoverageData(coverageChecker(files.find((file) => file.id === event.target.value).body));
+      const newFile = files.find((file) => file.id === event.target.value);
+      setCoverageData(coverageChecker(newFile.body));
+      setSelectedFile(newFile.name);
     },
     [files],
   );
@@ -36,12 +39,10 @@ function App() {
         <Longitudinal
           className="h-[500px] lg:w-2/5 max-lg:w-full"
           selectedSection={selectedSection}
+          selectedFile={selectedFile}
           coverageData={coverageData}
           data={files}
         />
-        {/*
-        <Rankings className="max-lg:w-full lg:w-2/5" coverageData={coverageData} />
-        */}
       </div>
       <h2 className="font-sans font-semibold text-2xl">Analysis</h2>
       <p className="text-sm text-gray-600">Fine tune your analysis through your selection of subcategories</p>

@@ -4,7 +4,7 @@
     "name": "bundle1.json",
     "size": "500 KB",
     "type": "application/json",
-    "dateAdded": "1/1/2022",
+    "dateAdded": "6/1/2022",
     "body": {
       "resourceType": "Bundle",
       "id": "mcode-patient-bundle-jenny-m",
@@ -3038,7 +3038,7 @@
     "name": "bundle2.json",
     "size": "500 KB",
     "type": "application/json",
-    "dateAdded": "6/1/2022",
+    "dateAdded": "1/1/2022",
     "body": {
       "resourceType": "Bundle",
       "id": "5dbfda1c-ed0b-4184-95ee-2324061fe3c0",

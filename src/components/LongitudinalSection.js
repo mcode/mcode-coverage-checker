@@ -51,12 +51,19 @@ const sectionPercentages = {
   [overallSectionId]: getOverallStats,
 };
 
-function Longitudinal({ className, selectedSection, coverageData, data }) {
-  const lineChartData = data.map((file) => ({
-    name: file.name,
-    date: Date.parse(file.dateAdded),
-    coverage: file.stats[selectedSection],
-  }));
+function Longitudinal({ className, selectedSection, selectedFile, coverageData, data }) {
+  const lineChartData = data
+    .map((file) => ({
+      name: file.name,
+      date: Date.parse(file.dateAdded),
+      coverage: file.stats[selectedSection],
+    }))
+    .sort((a, b) => a.date - b.date);
+
+  const index = lineChartData.findIndex((item) => item.name === selectedFile);
+  const isGreater = index === 0 ? true : lineChartData[index].coverage - lineChartData[index - 1].coverage > 0;
+
+  const average = (lineChartData.reduce((accum, item) => accum + item.coverage, 0) / lineChartData.length).toFixed(2);
 
   const fields = getAllFieldCoveredCounts(coverageData);
   const sectionFractions = {
@@ -83,13 +90,7 @@ function Longitudinal({ className, selectedSection, coverageData, data }) {
 
   const sectionPercentage = sectionPercentages[selectedSection](coverageData);
   const percentage = (sectionPercentage.percentage * 100).toFixed(2);
-  /* hiding filtering pt.1 
-  const [selectedOption, setSelectedOption] = useState('Last 7 days');
 
-  const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
-  };
-  */
   return (
     <div className={`${className} bg-white px-5 my-2 rounded-lg shadow-widgit`}>
       {/* Header */}
@@ -97,21 +98,6 @@ function Longitudinal({ className, selectedSection, coverageData, data }) {
         <h3 className="py-4 font-sans font-semibold text-xl">
           <span className={`${sectionTextColors[selectedSection]}`}>{selectedSection}</span> Longitudinal Data
         </h3>
-        {/* hiding filtering pt.2
-        <div className="float-right">
-          <select
-            className="bg-white border rounded-lg p-2 shadow-widgit"
-            value={selectedOption}
-            onChange={handleOptionChange}
-          >
-            <option value="Last 7 days">Last 7 days</option>
-            <option value="Last 30 days">Last 30 days</option>
-            <option value="Last quarter">Last quarter</option>
-            <option value="Last year">Last year</option>
-            <option value="All time">All time</option>
-          </select>
-        </div>
-        */}
       </div>
       {/* Body */}
       <LineChart
@@ -121,22 +107,9 @@ function Longitudinal({ className, selectedSection, coverageData, data }) {
         yKey="coverage"
         hexColor={sectionLineColors[selectedSection]}
       />
-      <div className="flex items-center justify-center">
-        {/* hiding for now */}
-        <Metrics
-          percentage={percentage}
-          rotation="180deg"
-          color="#d24200"
-          fraction={sectionFractions[selectedSection]}
-          title="Current"
-        />
-        <Metrics
-          percentage={percentage}
-          rotation="0deg"
-          color="#26c485"
-          fraction={sectionFractions[selectedSection]}
-          title="Monthly Average"
-        />
+      <div className="flex items-start justify-center">
+        <Metrics percentage={percentage} up={isGreater} fraction={sectionFractions[selectedSection]} title="Current" />
+        <Metrics percentage={average} title="Average" noTrend />
       </div>
     </div>
   );
