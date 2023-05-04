@@ -108,7 +108,12 @@ function Longitudinal({ className, selectedSection, selectedFile, coverageData, 
         hexColor={sectionLineColors[selectedSection]}
       />
       <div className="flex items-start justify-center">
-        <Metrics percentage={percentage} up={isGreater} fraction={sectionFractions[selectedSection]} title="Current" />
+        <Metrics
+          percentage={percentage}
+          trendUp={isGreater}
+          fraction={sectionFractions[selectedSection]}
+          title="Current"
+        />
         <Metrics percentage={average} title="Average" noTrend />
       </div>
     </div>
