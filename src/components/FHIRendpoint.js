@@ -2,12 +2,12 @@ import { useState } from 'react';
 import axios from 'axios';
 import Advanced from './AdvancedOptions';
 
-function Endpoint({ createFile, loadFiles, setLocalFilesLookup }) {
+function Endpoint({ createFile, loadFiles, setLocalFilesLookup, requestHeaders }) {
   const [link, setLink] = useState('');
   const [buttonHover, setButtonHover] = useState(false);
   const [buttonClick, setButtonClick] = useState(false);
 
-  async function loadFromEndpoint(query, requestHeaders) {
+  async function loadFromEndpoint(query) {
     const bundle = await axios
       .get(query, { headers: requestHeaders })
       .then((res) => res.data)
