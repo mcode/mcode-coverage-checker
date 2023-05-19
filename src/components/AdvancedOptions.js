@@ -59,7 +59,7 @@ function Advanced() {
             <span className="mr-1 font-semibold">Add</span>
             <Icon icon="ic:round-plus" />
           </button>
-          {savedHeaders.length > 0 &&
+          {savedHeaders.length > 0 && //* handles the display and removal of the request headers *//
             savedHeaders.map((header) => (
               <div key={header.id} className="flex justify-between items-center max-w-[15rem]">
                 <p className="opacity-50 text-sm font-semibold py-1 mr-2">{`${header.key}: ${header.value}`}</p>
