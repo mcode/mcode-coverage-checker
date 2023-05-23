@@ -10,8 +10,9 @@ import {
   genomicsSectionId,
   overallSectionId,
 } from '../lib/coverageSectionIds';
-import { getProfileFieldsCoveredCount } from '../lib/coverageStats/statsUtils';
+import { getProfileFieldsCoveredSum, getProfileFieldsCoveredCount } from '../lib/coverageStats/statsUtils';
 import ProgressBar from './ProgressBar';
+import FieldCountPopup from './FieldCountPopup';
 
 const sectionTextColors = {
   [patientSectionId]: 'text-patient',
@@ -54,9 +55,11 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
           return {
             name: profile.profile,
             section: section.section,
+            count: profile.coverage.length,
             covered: fields.map((f) => f.covered).reduce((a, b) => a + b, 0),
             total: fields.map((f) => f.total).reduce((a, b) => a + b, 0),
             fields,
+            fieldSums: getProfileFieldsCoveredSum(profile, selectedSection),
           };
         }),
       );
@@ -69,9 +72,11 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
         return {
           name: profile.profile,
           section: selectedSection,
+          count: profile.coverage.length,
           covered: fields.map((f) => f.covered).reduce((a, b) => a + b, 0),
           total: fields.map((f) => f.total).reduce((a, b) => a + b, 0),
           fields,
+          fieldSums: getProfileFieldsCoveredSum(profile, selectedSection),
         };
       });
   }
@@ -122,7 +127,13 @@ function SubcategoryTable({ className, selectedSection, coverageData }) {
                         height="12"
                         rotate={open[profile.name] ? '0deg' : '270deg'}
                       />
-                      <p className="pl-2 text-[15px] font-medium">{profile.name}</p>
+                      <div className="group relative">
+                        <p className="pl-2">
+                          <span className="text-[15px] font-medium">{profile.name}</span>{' '}
+                          <span className="text-[10px] italic text-gray-400">{profile.count} instances</span>
+                        </p>
+                        <FieldCountPopup fieldCounts={profile.fieldSums} />
+                      </div>
                     </div>
                   </td>
                   <td>
