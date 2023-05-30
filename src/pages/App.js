@@ -48,7 +48,7 @@ function App() {
       <p className="text-sm text-gray-600">Fine tune your analysis through your selection of subcategories</p>
       <div className="flex flex-row max-lg:flex-wrap gap-5 items-start">
         <SubcategoryTable
-          className="max-h-[500px] max-lg:w-full"
+          className="max-h-[500px] min-h-[300px] max-lg:w-full"
           selectedSection={selectedSection}
           coverageData={coverageData}
         />

@@ -43,10 +43,7 @@ function getProfileFieldsCoveredCount(profileObject, section) {
 // This counts each instance of a field being covered across all resources
 // Thus total will be the number of resources present and covered can be between 0 and the number of resources
 function getProfileFieldsCoveredSum(profileObject, section) {
-  if (profileObject.coverage.length === 0) {
-    return [];
-  }
-  const fields = Object.keys(profileObject.coverage[0].data);
+  const fields = fieldIds[profileObject.profile];
   const fieldCounts = [];
   const totalCount = profileObject.coverage.length;
   fields.forEach((field) => {
@@ -129,6 +126,7 @@ function getAllSectionsCoverage(coverageData) {
 export {
   getAllSectionsCoverage,
   getProfileFieldsCoveredCount,
+  getProfileFieldsCoveredSum,
   getAllFieldCoveredCounts,
   getProfileCoveredSum,
   getAllFieldCoveredSums,
