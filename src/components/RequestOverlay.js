@@ -1,36 +1,52 @@
+/* eslint-disable react/no-array-index-key */
 import { useState } from 'react';
 import { Icon } from '@iconify/react';
-import RHInput from './RequestH_input';
 
-export default function RequestOverlay({ onCloseOverlay, onSaveHeaders }) {
-  const [layers, setLayers] = useState([1]);
-  const [overlayOpen, setOverlayOpen] = useState(true);
-  const [headers] = useState([]);
+export default function RequestOverlay({ requestHeaders, setRequestHeaders, setOverlayVisible }) {
+  const [editedRequestHeaders, setEditedRequestHeaders] = useState([...requestHeaders]);
 
-  const handleAddLayer = () => {
-    setLayers((prevLayers) => [...prevLayers, layers.length + 1]);
-  };
+  function addHeader() {
+    const modifiedHeadersArr = [...editedRequestHeaders];
+    modifiedHeadersArr.push(['', '']);
+    setEditedRequestHeaders(modifiedHeadersArr);
+  }
 
-  const handleRemoveLayer = (layerId) => {
-    setLayers((prevLayers) => prevLayers.filter((id) => id !== layerId));
-  };
+  function removeHeader(idx) {
+    const modifiedHeadersArr = [...editedRequestHeaders];
+    modifiedHeadersArr.splice(idx, 1);
+    setEditedRequestHeaders(modifiedHeadersArr);
+  }
 
-  const handleCloseOverlay = () => {
-    setOverlayOpen(false);
-    onCloseOverlay();
-  };
+  function handleKeyChange(e) {
+    // Update relevant tuple
+    const { value } = e.target;
+    const changedSetIdx = e.target.id.replace('key-', '');
+    const changedSet = [...editedRequestHeaders[changedSetIdx]];
+    changedSet[0] = value;
 
-  const handleSaveHeaders = () => {
-    const newHeaders = layers.map((layerId) => {
-      const keyInput = document.getElementById(`key-${layerId}`);
-      const valueInput = document.getElementById(`value-${layerId}`);
-      const key = keyInput.value.trim();
-      const value = valueInput.value.trim();
-      return { id: layerId, key, value };
-    });
-    onSaveHeaders(newHeaders);
-    handleCloseOverlay();
-  };
+    // Update request headers prop
+    const modifiedHeadersArr = [...editedRequestHeaders];
+    modifiedHeadersArr.splice(changedSetIdx, 1, changedSet);
+    setEditedRequestHeaders(modifiedHeadersArr);
+  }
+
+  function handleValueChange(e) {
+    // Update relevant tuple
+    const { value } = e.target;
+    const changedSetIdx = e.target.id.replace('value-', '');
+    const changedSet = [...editedRequestHeaders[changedSetIdx]];
+    changedSet[1] = value;
+
+    // Update request headers prop
+    const modifiedHeadersArr = [...editedRequestHeaders];
+    modifiedHeadersArr.splice(changedSetIdx, 1, changedSet);
+    setEditedRequestHeaders(modifiedHeadersArr);
+  }
+
+  function handleSaveHeaders() {
+    setRequestHeaders(editedRequestHeaders);
+    setOverlayVisible(false);
+  }
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
@@ -38,22 +54,53 @@ export default function RequestOverlay({ onCloseOverlay, onSaveHeaders }) {
     }
   };
 
-  if (!overlayOpen) {
-    return null;
-  }
-
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-25 z-50">
       <button type="button" className="bg-background p-4 rounded-lg w-[37rem]" onKeyDown={handleKeyDown}>
         <div className="flex justify-between items-center">
           <p className="text-lg font-semibold">Key</p>
           <p className="text-lg font-semibold ml-4">Value</p>
-          <Icon icon="ic:round-plus" className="text-2xl cursor-pointer" onClick={handleAddLayer} />
+          <Icon
+            icon="ic:round-plus"
+            className="text-2xl cursor-pointer"
+            onClick={(e) => {
+              e.preventDefault();
+              addHeader();
+            }}
+          />
         </div>
         <div className="mt-1 mb-4 bg-black bg-opacity-25 h-px rounded" />
-        {layers.map((layerId) => (
-          <RHInput key={layerId} onRemove={() => handleRemoveLayer(layerId)} layerId={layerId} />
-        ))}
+        {editedRequestHeaders.length > 0 ? (
+          editedRequestHeaders.map(([key, value], idx) => (
+            <div key={`headerfield-${idx}`} className="flex justify-between items-center py-2">
+              <input
+                type="text"
+                className="border border-gray-300 px-2 py-1 rounded-lg focus:outline-none focus:ring focus:border-blue-500 flex-1 mr-2"
+                placeholder="e.g. Content-Type"
+                id={`key-${idx}`}
+                value={key || ''}
+                onChange={handleKeyChange}
+              />
+              <input
+                type="text"
+                className="border border-gray-300 px-2 py-1 rounded-lg focus:outline-none focus:ring focus:border-blue-500 flex-1 ml-2"
+                placeholder="e.g. application/json"
+                id={`value-${idx}`}
+                value={value || ''}
+                onChange={handleValueChange}
+              />
+              <Icon
+                icon="uil:trash-alt"
+                className="text-2xl ml-4 cursor-pointer"
+                onClick={() => {
+                  removeHeader(idx);
+                }}
+              />
+            </div>
+          ))
+        ) : (
+          <p>No request headers added</p>
+        )}
         <div className="flex justify-center mt-4">
           <button
             type="button"
@@ -65,19 +112,11 @@ export default function RequestOverlay({ onCloseOverlay, onSaveHeaders }) {
           <button
             type="button"
             className="bg-gray-300 hover:opacity-70 transition text-gray-700 px-4 py-2 rounded-lg"
-            onClick={handleCloseOverlay}
+            onClick={() => setOverlayVisible(false)}
           >
             Close
           </button>
         </div>
-        {headers.length > 0 && (
-          <div className="mt-4">
-            <h3 className="font-bold text-lg">Saved Headers:</h3>
-            {headers.map((header) => (
-              <p key={header.id}>{`${header.key}: ${header.value}`}</p>
-            ))}
-          </div>
-        )}
       </button>
     </div>
   );

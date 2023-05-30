@@ -1,31 +1,11 @@
+/* eslint-disable react/no-array-index-key */
 import { useState } from 'react';
 import { Icon } from '@iconify/react';
 import RequestOverlay from './RequestOverlay';
 
-function Advanced() {
+function Advanced({ requestHeaders, setRequestHeaders }) {
   const [showAdvancedOptions, setShowAdvancedOptions] = useState(false);
   const [overlayVisible, setOverlayVisible] = useState(false);
-  const [savedHeaders, setSavedHeaders] = useState([]);
-
-  const handleAdvancedOptionsClick = () => {
-    setShowAdvancedOptions((prev) => !prev);
-  };
-
-  const handleAddClick = () => {
-    setOverlayVisible(true);
-  };
-
-  const handleCloseOverlay = () => {
-    setOverlayVisible(false);
-  };
-
-  const handleSaveHeaders = (headers) => {
-    setSavedHeaders((prevHeaders) => [...prevHeaders, ...headers]);
-  };
-
-  const handleRemoveHeader = (headerId) => {
-    setSavedHeaders((prevHeaders) => prevHeaders.filter((header) => header.id !== headerId));
-  };
 
   return (
     <div>
@@ -33,10 +13,10 @@ function Advanced() {
         className="flex items-center cursor-pointer pt-1 font"
         role="button"
         tabIndex={0}
-        onClick={handleAdvancedOptionsClick}
+        onClick={() => setShowAdvancedOptions((prev) => !prev)}
         onKeyDown={(event) => {
           if (event.key === 'Enter' || event.key === ' ') {
-            handleAdvancedOptionsClick();
+            setShowAdvancedOptions((prev) => !prev);
           }
         }}
       >
@@ -54,27 +34,24 @@ function Advanced() {
           <button
             type="button"
             className="bg-white text-black rounded-lg px-24 py-1 flex items-center my-2 shadow-widgit transition hover:bg-[#F1F1F1]"
-            onClick={handleAddClick}
+            onClick={() => setOverlayVisible(true)}
           >
-            <span className="mr-1 font-semibold">Add</span>
+            <span className="mr-1 font-semibold">Edit</span>
             <Icon icon="ic:round-plus" />
           </button>
-          {savedHeaders.length > 0 && //* handles the display and removal of the request headers *//
-            savedHeaders.map((header) => (
-              <div key={header.id} className="flex justify-between items-center max-w-[15rem]">
-                <p className="opacity-50 text-sm font-semibold py-1 mr-2">{`${header.key}: ${header.value}`}</p>
-                <button
-                  type="button"
-                  className="text-red-500 cursor-pointer focus:outline-none"
-                  onClick={() => handleRemoveHeader(header.id)}
-                >
-                  <Icon icon="uil:trash-alt" />
-                </button>
-              </div>
+          {requestHeaders.length > 0 &&
+            requestHeaders.map(([key, value], idx) => (
+              <p key={idx} className="opacity-50 text-sm font-semibold py-1 mr-2">{`${key}: ${value}`}</p>
             ))}
         </div>
       )}
-      {overlayVisible && <RequestOverlay onCloseOverlay={handleCloseOverlay} onSaveHeaders={handleSaveHeaders} />}
+      {overlayVisible && (
+        <RequestOverlay
+          requestHeaders={requestHeaders}
+          setRequestHeaders={setRequestHeaders}
+          setOverlayVisible={setOverlayVisible}
+        />
+      )}
     </div>
   );
 }

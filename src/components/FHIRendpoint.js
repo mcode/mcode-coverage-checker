@@ -2,14 +2,24 @@ import { useState } from 'react';
 import axios from 'axios';
 import Advanced from './AdvancedOptions';
 
-function Endpoint({ createFile, loadFiles, setLocalFilesLookup, requestHeaders }) {
+// eslint-disable-next-line no-unused-vars
+function Endpoint({ createFile, loadFiles, setLocalFilesLookup }) {
   const [link, setLink] = useState('');
   const [buttonHover, setButtonHover] = useState(false);
   const [buttonClick, setButtonClick] = useState(false);
+  const [requestHeaders, setRequestHeaders] = useState([]);
+
+  function formatRequestHeaders(headers) {
+    const formattedHeaders = {};
+    headers.forEach(([key, value]) => {
+      formattedHeaders[key] = value;
+    });
+    return formattedHeaders;
+  }
 
   async function loadFromEndpoint(query) {
     const bundle = await axios
-      .get(query, { headers: requestHeaders })
+      .get(query, { headers: formatRequestHeaders(requestHeaders) })
       .then((res) => res.data)
       .catch((e) => {
         setLocalFilesLookup((previousFilesLookup) => {
@@ -75,7 +85,7 @@ function Endpoint({ createFile, loadFiles, setLocalFilesLookup, requestHeaders }
           Connect
         </button>
       </div>
-      <Advanced />
+      <Advanced requestHeaders={requestHeaders} setRequestHeaders={setRequestHeaders} />
     </form>
   );
 }
