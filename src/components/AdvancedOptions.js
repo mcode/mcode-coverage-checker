@@ -39,10 +39,13 @@ function Advanced({ requestHeaders, setRequestHeaders }) {
             <span className="mr-1 font-semibold">Edit</span>
             <Icon icon="ic:round-plus" />
           </button>
-          {requestHeaders.length > 0 &&
+          {requestHeaders.length > 0 ? (
             requestHeaders.map(([key, value], idx) => (
-              <p key={idx} className="opacity-50 text-sm font-semibold py-1 mr-2">{`${key}: ${value}`}</p>
-            ))}
+              <p key={idx} className="opacity-75 text-md font-semibold py-1 mr-2">{`${key}: ${value}`}</p>
+            ))
+          ) : (
+            <p className="opacity-75 text-md font-semibold py-1 mr-2">No request headers added</p>
+          )}
         </div>
       )}
       {overlayVisible && (

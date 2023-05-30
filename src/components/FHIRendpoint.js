@@ -2,7 +2,6 @@ import { useState } from 'react';
 import axios from 'axios';
 import Advanced from './AdvancedOptions';
 
-// eslint-disable-next-line no-unused-vars
 function Endpoint({ createFile, loadFiles, setLocalFilesLookup }) {
   const [link, setLink] = useState('');
   const [buttonHover, setButtonHover] = useState(false);
