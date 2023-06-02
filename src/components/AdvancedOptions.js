@@ -1,11 +1,11 @@
+/* eslint-disable react/no-array-index-key */
 import { useState } from 'react';
 import { Icon } from '@iconify/react';
+import RequestOverlay from './RequestOverlay';
 
-function Advanced() {
+function Advanced({ requestHeaders, setRequestHeaders }) {
   const [showAdvancedOptions, setShowAdvancedOptions] = useState(false);
-  const handleAdvancedOptionsClick = () => {
-    setShowAdvancedOptions((prev) => !prev);
-  };
+  const [overlayVisible, setOverlayVisible] = useState(false);
 
   return (
     <div>
@@ -13,10 +13,10 @@ function Advanced() {
         className="flex items-center cursor-pointer pt-1 font"
         role="button"
         tabIndex={0}
-        onClick={handleAdvancedOptionsClick}
+        onClick={() => setShowAdvancedOptions((prev) => !prev)}
         onKeyDown={(event) => {
           if (event.key === 'Enter' || event.key === ' ') {
-            handleAdvancedOptionsClick();
+            setShowAdvancedOptions((prev) => !prev);
           }
         }}
       >
@@ -30,10 +30,33 @@ function Advanced() {
       </div>
       {showAdvancedOptions && (
         <div>
-          <h1 className="opacity-50 text-xs">Placeholder</h1>
+          <h3 className="font-bold text-lg mt-3">Request Headers</h3>
+          <button
+            type="button"
+            className="bg-white text-black rounded-lg px-24 py-1 flex items-center my-2 shadow-widgit transition hover:bg-[#F1F1F1]"
+            onClick={() => setOverlayVisible(true)}
+          >
+            <span className="mr-1 font-semibold">Edit</span>
+            <Icon icon="ic:round-plus" />
+          </button>
+          {requestHeaders.length > 0 ? (
+            requestHeaders.map(([key, value], idx) => (
+              <p key={idx} className="opacity-75 text-md font-semibold py-1 mr-2">{`${key}: ${value}`}</p>
+            ))
+          ) : (
+            <p className="opacity-75 text-md font-semibold py-1 mr-2">No request headers added</p>
+          )}
         </div>
+      )}
+      {overlayVisible && (
+        <RequestOverlay
+          requestHeaders={requestHeaders}
+          setRequestHeaders={setRequestHeaders}
+          setOverlayVisible={setOverlayVisible}
+        />
       )}
     </div>
   );
 }
+
 export default Advanced;
