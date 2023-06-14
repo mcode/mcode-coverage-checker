@@ -2,7 +2,6 @@ import { ResponsiveContainer, AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, A
 
 const formatDate = (tickValue) => new Date(tickValue).toLocaleDateString();
 
-// eslint-disable-next-line no-unused-vars
 function CustomizedDot({ cx, cy, payload, selectedFile, color }) {
   if (payload.name === selectedFile) {
     return <Dot cx={cx} cy={cy} r={5} stroke="white" fill={color} />;

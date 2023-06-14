@@ -18,7 +18,6 @@ const uploadedFiles = selector({
 const selectedSectionState = atom({ key: 'selectedSectionState', default: overallSectionId });
 const selectedFile = atom({ key: 'selectedFile', default: 'bundle1.json' });
 
-// some sort of selector to act as a wrapper and check if a file got deleted on get
 const selectedFileState = selector({
   key: 'selectedFileState',
   get: ({ get }) => {
