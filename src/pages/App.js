@@ -1,18 +1,18 @@
 import { useCallback, useState } from 'react';
-import { useRecoilValue } from 'recoil';
-import { uploadedFiles } from '../recoil_state';
+import { useRecoilState, useRecoilValue } from 'recoil';
+import { uploadedFiles, selectedFileState } from '../recoil_state';
 import MainVisualization from '../components/MainVisualization';
 import coverageChecker from '../lib/coverageChecker/coverageChecker';
 import FileSelect from '../components/FileSelect';
 import SubcategoryTable from '../components/SubcategoryTable';
-import { overallSectionId } from '../lib/coverageSectionIds';
 import Longitudinal from '../components/LongitudinalSection';
 
 function App() {
   const files = useRecoilValue(uploadedFiles);
-  const [coverageData, setCoverageData] = useState(coverageChecker(files[0].body));
-  const [selectedSection, setSelectedSection] = useState(overallSectionId);
-  const [selectedFile, setSelectedFile] = useState(files[0].name);
+  const [selectedFile, setSelectedFile] = useRecoilState(selectedFileState);
+  const [coverageData, setCoverageData] = useState(
+    coverageChecker(files.find((file) => file.name === selectedFile).body),
+  );
 
   const changeDataSource = useCallback(
     (event) => {
@@ -30,28 +30,13 @@ function App() {
       <h1 className="font-sans font-bold text-4xl">Coverage Overview</h1>
       <p className="text-sm text-gray-600 pb-2">Select a category to analyze it in finer detail</p>
       <div className="flex flex-row max-lg:flex-wrap pb-5 gap-5 items-stretch">
-        <MainVisualization
-          className="max-lg:w-full lg:w-3/5"
-          coverageData={coverageData}
-          selectedSection={selectedSection}
-          setSelectedSection={setSelectedSection}
-        />
-        <Longitudinal
-          className="h-[500px] lg:w-2/5 max-lg:w-full"
-          selectedSection={selectedSection}
-          selectedFile={selectedFile}
-          coverageData={coverageData}
-          data={files}
-        />
+        <MainVisualization className="max-lg:w-full lg:w-3/5" coverageData={coverageData} />
+        <Longitudinal className="h-[500px] lg:w-2/5 max-lg:w-full" coverageData={coverageData} data={files} />
       </div>
       <h2 className="font-sans font-semibold text-2xl">Analysis</h2>
       <p className="text-sm text-gray-600">Fine tune your analysis through your selection of subcategories</p>
       <div className="flex flex-row max-lg:flex-wrap gap-5 items-start">
-        <SubcategoryTable
-          className="max-h-[500px] min-h-[300px] max-lg:w-full"
-          selectedSection={selectedSection}
-          coverageData={coverageData}
-        />
+        <SubcategoryTable className="max-h-[500px] min-h-[300px] max-lg:w-full" coverageData={coverageData} />
       </div>
     </div>
   );

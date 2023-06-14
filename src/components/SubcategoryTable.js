@@ -1,6 +1,7 @@
 /* eslint-disable no-param-reassign */
 import { useState } from 'react';
 import { Icon } from '@iconify/react';
+import { useRecoilValue } from 'recoil';
 import {
   patientSectionId,
   outcomeSectionId,
@@ -13,6 +14,7 @@ import {
 import { getProfileFieldsCoveredSum, getProfileFieldsCoveredCount } from '../lib/coverageStats/statsUtils';
 import ProgressBar from './ProgressBar';
 import FieldCountPopup from './FieldCountPopup';
+import { selectedSectionState } from '../recoil_state';
 
 const sectionTextColors = {
   [patientSectionId]: 'text-patient',
@@ -44,7 +46,8 @@ const sectionIconColors = {
   [overallSectionId]: '#000000',
 };
 
-function SubcategoryTable({ className, selectedSection, coverageData }) {
+function SubcategoryTable({ className, coverageData }) {
+  const selectedSection = useRecoilValue(selectedSectionState);
   let profiles;
   if (selectedSection === overallSectionId) {
     profiles = [];

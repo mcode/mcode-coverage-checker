@@ -1,4 +1,5 @@
 import { Icon } from '@iconify/react';
+import { useRecoilState } from 'recoil';
 import SectionCard from './SectionCard';
 import {
   getAssessmentStats,
@@ -19,8 +20,10 @@ import {
   genomicsSectionId,
   overallSectionId,
 } from '../lib/coverageSectionIds';
+import { selectedSectionState } from '../recoil_state';
 
-function MainVisualization({ className, coverageData, selectedSection, setSelectedSection }) {
+function MainVisualization({ className, coverageData }) {
+  const [selectedSection, setSelectedSection] = useRecoilState(selectedSectionState);
   const overall = getOverallStats(coverageData);
   const patient = getPatientStats(coverageData);
   const outcome = getOutcomeStats(coverageData);
