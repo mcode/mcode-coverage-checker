@@ -1,6 +1,14 @@
-import { ResponsiveContainer, AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, Area } from 'recharts';
+import { ResponsiveContainer, AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, Area, Dot } from 'recharts';
 
 const formatDate = (tickValue) => new Date(tickValue).toLocaleDateString();
+
+function CustomizedDot({ cx, cy, payload, selectedFile, color }) {
+  if (payload.name === selectedFile) {
+    return <Dot cx={cx} cy={cy} r={5} stroke="white" fill={color} />;
+  }
+
+  return <svg />;
+}
 
 function CustomTooltip({ active, payload, label }) {
   if (active && payload && payload.length) {
@@ -16,7 +24,7 @@ function CustomTooltip({ active, payload, label }) {
   return null;
 }
 
-export default function LineChart({ className, data, xKey, yKey, hexColor }) {
+export default function LineChart({ className, data, xKey, yKey, hexColor, selectedFile }) {
   const formatPercent = (tickValue) => `${tickValue}%`;
 
   return (
@@ -42,6 +50,7 @@ export default function LineChart({ className, data, xKey, yKey, hexColor }) {
             strokeWidth={2}
             fillOpacity={1}
             fill="url(#colorGradient)"
+            dot={<CustomizedDot selectedFile={selectedFile} color={hexColor} />}
           />
         </AreaChart>
       </ResponsiveContainer>
