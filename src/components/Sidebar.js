@@ -46,6 +46,15 @@ export default function Sidebar() {
             <Icon icon="fluent:database-20-filled" height="24" className="ml-2" />
             <p className={`${open ? 'pl-2' : 'hidden'}`}>mCODE Coverage</p>
           </Link>
+          <Link
+            to="/settings"
+            className={`flex flex-row py-2 rounded-sidebarButton ${
+              useLocation().pathname === '/settings' ? 'shadow-sidebarButton' : ''
+            }`}
+          >
+            <Icon icon="material-symbols:settings" height="24" className="ml-2" />
+            <p className={`${open ? 'pl-2' : 'hidden'}`}>Settings</p>
+          </Link>
         </div>
         {/* lower section */}
         <div className="flex flex-col gap-5">
