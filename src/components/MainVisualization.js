@@ -1,5 +1,5 @@
 import { Icon } from '@iconify/react';
-import { useRecoilState } from 'recoil';
+import { useRecoilState, useRecoilValue } from 'recoil';
 import SectionCard from './SectionCard';
 import {
   getAssessmentStats,
@@ -20,19 +20,20 @@ import {
   genomicsSectionId,
   overallSectionId,
 } from '../lib/coverageSectionIds';
-import { selectedSectionState } from '../recoil_state';
+import { filterState, selectedSectionState } from '../recoil_state';
 
 function MainVisualization({ className, coverageData }) {
+  const fieldFilter = useRecoilValue(filterState);
   const [selectedSection, setSelectedSection] = useRecoilState(selectedSectionState);
-  const overall = getOverallStats(coverageData);
-  const patient = getPatientStats(coverageData);
-  const outcome = getOutcomeStats(coverageData);
-  const disease = getDiseaseStats(coverageData);
-  const treatment = getTreatmentStats(coverageData);
-  const assessment = getAssessmentStats(coverageData);
-  const genomics = getGenomicsStats(coverageData);
+  const overall = getOverallStats(coverageData, fieldFilter);
+  const patient = getPatientStats(coverageData, fieldFilter);
+  const outcome = getOutcomeStats(coverageData, fieldFilter);
+  const disease = getDiseaseStats(coverageData, fieldFilter);
+  const treatment = getTreatmentStats(coverageData, fieldFilter);
+  const assessment = getAssessmentStats(coverageData, fieldFilter);
+  const genomics = getGenomicsStats(coverageData, fieldFilter);
 
-  const fields = getAllFieldCoveredCounts(coverageData);
+  const fields = getAllFieldCoveredCounts(coverageData, fieldFilter);
   const patientSubcategories = `${
     fields.filter((field) => field.section === patientSectionId && field.percentage === 1).length
   }/${fields.filter((field) => field.section === patientSectionId).length}`;

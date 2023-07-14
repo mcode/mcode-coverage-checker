@@ -21,7 +21,7 @@ import {
   getTreatmentStats,
   getOverallStats,
 } from '../lib/coverageStats/coverageStats';
-import { selectedFileState, selectedSectionState } from '../recoil_state';
+import { filterState, selectedFileState, selectedSectionState } from '../recoil_state';
 
 const sectionTextColors = {
   [patientSectionId]: 'text-patient',
@@ -54,6 +54,7 @@ const sectionPercentages = {
 };
 
 function Longitudinal({ className, coverageData, data }) {
+  const fieldFilter = useRecoilValue(filterState);
   const selectedSection = useRecoilValue(selectedSectionState);
   const selectedFile = useRecoilValue(selectedFileState);
   const lineChartData = data
@@ -75,7 +76,7 @@ function Longitudinal({ className, coverageData, data }) {
           100
         ).toFixed(2); // (lineChartData.reduce((accum, item) => accum + item.coverage, 0) / lineChartData.length).toFixed(2);
 
-  const fields = getAllFieldCoveredCounts(coverageData);
+  const fields = getAllFieldCoveredCounts(coverageData, fieldFilter);
   const sectionFractions = {
     [patientSectionId]: `${
       fields.filter((field) => field.section === patientSectionId && field.percentage === 1).length
@@ -98,7 +99,7 @@ function Longitudinal({ className, coverageData, data }) {
     [overallSectionId]: `${fields.filter((field) => field.percentage === 1).length}/${fields.length}`,
   };
 
-  const sectionPercentage = sectionPercentages[selectedSection](coverageData);
+  const sectionPercentage = sectionPercentages[selectedSection](coverageData, fieldFilter);
   const percentage = (sectionPercentage.percentage * 100).toFixed(2);
 
   return (
