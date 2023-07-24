@@ -1,9 +1,9 @@
 import { useState, useMemo, useCallback } from 'react';
-import { useSetRecoilState } from 'recoil';
+import { useRecoilValue, useSetRecoilState } from 'recoil';
 import { useAutoAnimate } from '@formkit/auto-animate/react';
 import { Icon } from '@iconify/react';
 import { v4 as uuidv4 } from 'uuid';
-import { uploadedFilesLookup } from '../recoil_state';
+import { filterState, uploadedFilesLookup } from '../recoil_state';
 import formatBytes from '../lib/fileSize';
 import {
   getAssessmentStats,
@@ -20,6 +20,7 @@ import Endpoint from './FHIRendpoint';
 import coverageChecker from '../lib/coverageChecker/coverageChecker';
 
 function FileUpload() {
+  const fieldFilter = useRecoilValue(filterState);
   const setFilesLookup = useSetRecoilState(uploadedFilesLookup);
   // What files are valid to upload
   function relevantFileFilter(file) {
@@ -77,13 +78,13 @@ function FileUpload() {
       const body = JSON.parse(fileReader.result);
       const coverageData = coverageChecker(body);
       const stats = {
-        Overall: (getOverallStats(coverageData).percentage * 100).toFixed(2),
-        Assessment: (getAssessmentStats(coverageData).percentage * 100).toFixed(2),
-        Treatment: (getTreatmentStats(coverageData).percentage * 100).toFixed(2),
-        Genomics: (getGenomicsStats(coverageData).percentage * 100).toFixed(2),
-        Patient: (getPatientStats(coverageData).percentage * 100).toFixed(2),
-        Disease: (getDiseaseStats(coverageData).percentage * 100).toFixed(2),
-        Outcome: (getOutcomeStats(coverageData).percentage * 100).toFixed(2),
+        Overall: (getOverallStats(coverageData, fieldFilter).percentage * 100).toFixed(2),
+        Assessment: (getAssessmentStats(coverageData, fieldFilter).percentage * 100).toFixed(2),
+        Treatment: (getTreatmentStats(coverageData, fieldFilter).percentage * 100).toFixed(2),
+        Genomics: (getGenomicsStats(coverageData, fieldFilter).percentage * 100).toFixed(2),
+        Patient: (getPatientStats(coverageData, fieldFilter).percentage * 100).toFixed(2),
+        Disease: (getDiseaseStats(coverageData, fieldFilter).percentage * 100).toFixed(2),
+        Outcome: (getOutcomeStats(coverageData, fieldFilter).percentage * 100).toFixed(2),
       };
       const fileWithBody = { ...newFile, body, stats };
       resolve(fileWithBody);

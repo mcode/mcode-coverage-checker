@@ -14,7 +14,7 @@ import {
 import { getProfileFieldsCoveredSum, getProfileFieldsCoveredCount } from '../lib/coverageStats/statsUtils';
 import ProgressBar from './ProgressBar';
 import FieldCountPopup from './FieldCountPopup';
-import { selectedSectionState } from '../recoil_state';
+import { filterState, selectedSectionState } from '../recoil_state';
 
 const sectionTextColors = {
   [patientSectionId]: 'text-patient',
@@ -47,6 +47,7 @@ const sectionIconColors = {
 };
 
 function SubcategoryTable({ className, coverageData }) {
+  const fieldFilter = useRecoilValue(filterState);
   const selectedSection = useRecoilValue(selectedSectionState);
   let profiles;
   if (selectedSection === overallSectionId) {
@@ -54,7 +55,7 @@ function SubcategoryTable({ className, coverageData }) {
     coverageData.forEach((section) => {
       profiles.push(
         ...section.data.map((profile) => {
-          const fields = getProfileFieldsCoveredCount(profile, selectedSection);
+          const fields = getProfileFieldsCoveredCount(profile, selectedSection, fieldFilter);
           return {
             name: profile.profile,
             section: section.section,
@@ -62,7 +63,7 @@ function SubcategoryTable({ className, coverageData }) {
             covered: fields.map((f) => f.covered).reduce((a, b) => a + b, 0),
             total: fields.map((f) => f.total).reduce((a, b) => a + b, 0),
             fields,
-            fieldSums: getProfileFieldsCoveredSum(profile, selectedSection),
+            fieldSums: getProfileFieldsCoveredSum(profile, selectedSection, fieldFilter),
           };
         }),
       );
@@ -71,7 +72,7 @@ function SubcategoryTable({ className, coverageData }) {
     profiles = coverageData
       .filter((x) => x.section === selectedSection)[0]
       ?.data?.map((profile) => {
-        const fields = getProfileFieldsCoveredCount(profile, selectedSection);
+        const fields = getProfileFieldsCoveredCount(profile, selectedSection, fieldFilter);
         return {
           name: profile.profile,
           section: selectedSection,
@@ -79,7 +80,7 @@ function SubcategoryTable({ className, coverageData }) {
           covered: fields.map((f) => f.covered).reduce((a, b) => a + b, 0),
           total: fields.map((f) => f.total).reduce((a, b) => a + b, 0),
           fields,
-          fieldSums: getProfileFieldsCoveredSum(profile, selectedSection),
+          fieldSums: getProfileFieldsCoveredSum(profile, selectedSection, fieldFilter),
         };
       });
   }

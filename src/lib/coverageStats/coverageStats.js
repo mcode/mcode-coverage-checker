@@ -13,8 +13,8 @@ import { getAllSectionsCoverage } from './statsUtils';
  * @param {CoverageData Object} coverageData conforming to the standard CoverageData format (explored in README)
  * @returns An object reporting percentage coverage and raw counts
  */
-function getOverallStats(coverageData) {
-  return getAllSectionsCoverage(coverageData);
+function getOverallStats(coverageData, fieldFilter = null) {
+  return getAllSectionsCoverage(coverageData, fieldFilter);
 }
 
 /**
@@ -22,9 +22,9 @@ function getOverallStats(coverageData) {
  * @param {CoverageData Object} coverageData conforming to the standard CoverageData format (explored in README)
  * @returns An object reporting percentage coverage and raw counts
  */
-function getPatientStats(coverageData) {
+function getPatientStats(coverageData, fieldFilter = null) {
   const patientData = coverageData.filter((sectionObject) => sectionObject.section === patientSectionId);
-  return getOverallStats(patientData);
+  return getOverallStats(patientData, fieldFilter);
 }
 
 /**
@@ -32,9 +32,9 @@ function getPatientStats(coverageData) {
  * @param {CoverageData Object} coverageData conforming to the standard CoverageData format (explored in README)
  * @returns An object reporting percentage coverage and raw counts
  */
-function getOutcomeStats(coverageData) {
+function getOutcomeStats(coverageData, fieldFilter = null) {
   const outcomeData = coverageData.filter((sectionObject) => sectionObject.section === outcomeSectionId);
-  return getOverallStats(outcomeData);
+  return getOverallStats(outcomeData, fieldFilter);
 }
 
 /**
@@ -42,9 +42,9 @@ function getOutcomeStats(coverageData) {
  * @param {CoverageData Object} coverageData conforming to the standard CoverageData format (explored in README)
  * @returns An object reporting percentage coverage and raw counts
  */
-function getDiseaseStats(coverageData) {
+function getDiseaseStats(coverageData, fieldFilter = null) {
   const diseaseStatusData = coverageData.filter((sectionObject) => sectionObject.section === diseaseSectionId);
-  return getOverallStats(diseaseStatusData);
+  return getOverallStats(diseaseStatusData, fieldFilter);
 }
 
 /**
@@ -52,9 +52,9 @@ function getDiseaseStats(coverageData) {
  * @param {CoverageData Object} coverageData conforming to the standard CoverageData format (explored in README)
  * @returns An object reporting percentage coverage and raw counts
  */
-function getTreatmentStats(coverageData) {
+function getTreatmentStats(coverageData, fieldFilter = null) {
   const treatmentData = coverageData.filter((sectionObject) => sectionObject.section === treatmentSectionId);
-  return getOverallStats(treatmentData);
+  return getOverallStats(treatmentData, fieldFilter);
 }
 
 /**
@@ -62,9 +62,9 @@ function getTreatmentStats(coverageData) {
  * @param {CoverageData Object} coverageData conforming to the standard CoverageData format (explored in README)
  * @returns An object reporting percentage coverage and raw counts
  */
-function getAssessmentStats(coverageData) {
+function getAssessmentStats(coverageData, fieldFilter = null) {
   const assessmentData = coverageData.filter((sectionObject) => sectionObject.section === assessmentSectionId);
-  return getOverallStats(assessmentData);
+  return getOverallStats(assessmentData, fieldFilter);
 }
 
 /**
@@ -72,9 +72,9 @@ function getAssessmentStats(coverageData) {
  * @param {CoverageData Object} coverageData conforming to the standard CoverageData format (explored in README)
  * @returns An object reporting percentage coverage and raw counts
  */
-function getGenomicsStats(coverageData) {
+function getGenomicsStats(coverageData, fieldFilter = null) {
   const genomicsData = coverageData.filter((sectionObject) => sectionObject.section === genomicsSectionId);
-  return getOverallStats(genomicsData);
+  return getOverallStats(genomicsData, fieldFilter);
 }
 
 export {

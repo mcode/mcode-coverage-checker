@@ -1,6 +1,7 @@
 import { atom, selector } from 'recoil';
 import defaultUploadedFiles from './data/DefaultUploadedFiles.json';
 import { overallSectionId } from './lib/coverageSectionIds';
+import fieldIds from './lib/coverageFieldIds';
 
 const uploadedFilesLookup = atom({
   key: 'uploadedFilesLookup',
@@ -31,4 +32,11 @@ const selectedFileState = selector({
   set: ({ set }, newValue) => set(selectedFile, newValue),
 });
 
-export { uploadedFilesLookup, uploadedFiles, selectedSectionState, selectedFileState };
+const initialFilter = {};
+Object.entries(fieldIds).forEach(([key, value]) => {
+  // convert each field id array to an object with an initial value of true for each field
+  initialFilter[key] = value.reduce((ac, a) => ({ ...ac, [a]: true }), {});
+});
+const filterState = atom({ key: 'filterState', default: initialFilter });
+
+export { uploadedFilesLookup, uploadedFiles, selectedSectionState, selectedFileState, filterState };
