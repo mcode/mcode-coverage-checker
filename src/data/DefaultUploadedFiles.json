@@ -1889,15 +1889,6 @@
           }
         }
       ]
-    },
-    "stats": {
-      "Overall": 21.59,
-      "Patient": 62.5,
-      "Outcome": 12.5,
-      "Disease": 23.08,
-      "Treatment": 13.04,
-      "Assessment": 55.56,
-      "Genomics": 7.41
     }
   },
   "1234": {
@@ -4382,15 +4373,6 @@
           }
         }
       ]
-    },
-    "stats": {
-      "Overall": 40.91,
-      "Patient": 62.5,
-      "Outcome": 50,
-      "Disease": 53.85,
-      "Treatment": 21.74,
-      "Assessment": 55.56,
-      "Genomics": 37.04
     }
   },
   "12345": {
@@ -17315,15 +17297,6 @@
           "resource": {}
         }
       ]
-    },
-    "stats": {
-      "Overall": 69.32,
-      "Patient": 87.5,
-      "Outcome": 87.5,
-      "Disease": 76.92,
-      "Treatment": 78.26,
-      "Assessment": 77.78,
-      "Genomics": 44.44
     }
   }
 }
