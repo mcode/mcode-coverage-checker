@@ -21,6 +21,7 @@ import {
   getTreatmentStats,
   getOverallStats,
 } from '../lib/coverageStats/coverageStats';
+import coverageChecker from '../lib/coverageChecker/coverageChecker';
 import { filterState, selectedFileState, selectedSectionState } from '../recoil_state';
 
 const sectionTextColors = {
@@ -61,7 +62,9 @@ function Longitudinal({ className, coverageData, data }) {
     .map((file) => ({
       name: file.name,
       date: Date.parse(file.dateAdded),
-      coverage: file.stats[selectedSection],
+      coverage: (sectionPercentages[selectedSection](coverageChecker(file.body), fieldFilter).percentage * 100).toFixed(
+        2,
+      ),
     }))
     .sort((a, b) => a.date - b.date);
 

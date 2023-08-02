@@ -1,26 +1,15 @@
 import { useState, useMemo, useCallback } from 'react';
-import { useRecoilValue, useSetRecoilState } from 'recoil';
+import { useSetRecoilState } from 'recoil';
 import { useAutoAnimate } from '@formkit/auto-animate/react';
 import { Icon } from '@iconify/react';
 import { v4 as uuidv4 } from 'uuid';
-import { filterState, uploadedFilesLookup } from '../recoil_state';
+import { uploadedFilesLookup } from '../recoil_state';
 import formatBytes from '../lib/fileSize';
-import {
-  getAssessmentStats,
-  getDiseaseStats,
-  getGenomicsStats,
-  getOutcomeStats,
-  getOverallStats,
-  getPatientStats,
-  getTreatmentStats,
-} from '../lib/coverageStats/coverageStats';
 import FileNotification from './FileNotification';
 import RejectedFileNotification from './RejectedFileNotification';
 import Endpoint from './FHIRendpoint';
-import coverageChecker from '../lib/coverageChecker/coverageChecker';
 
 function FileUpload() {
-  const fieldFilter = useRecoilValue(filterState);
   const setFilesLookup = useSetRecoilState(uploadedFilesLookup);
   // What files are valid to upload
   function relevantFileFilter(file) {
@@ -76,17 +65,7 @@ function FileUpload() {
         return newProgress;
       });
       const body = JSON.parse(fileReader.result);
-      const coverageData = coverageChecker(body);
-      const stats = {
-        Overall: (getOverallStats(coverageData, fieldFilter).percentage * 100).toFixed(2),
-        Assessment: (getAssessmentStats(coverageData, fieldFilter).percentage * 100).toFixed(2),
-        Treatment: (getTreatmentStats(coverageData, fieldFilter).percentage * 100).toFixed(2),
-        Genomics: (getGenomicsStats(coverageData, fieldFilter).percentage * 100).toFixed(2),
-        Patient: (getPatientStats(coverageData, fieldFilter).percentage * 100).toFixed(2),
-        Disease: (getDiseaseStats(coverageData, fieldFilter).percentage * 100).toFixed(2),
-        Outcome: (getOutcomeStats(coverageData, fieldFilter).percentage * 100).toFixed(2),
-      };
-      const fileWithBody = { ...newFile, body, stats };
+      const fileWithBody = { ...newFile, body };
       resolve(fileWithBody);
     },
     [setProgress],
